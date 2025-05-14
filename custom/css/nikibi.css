@@ -1,0 +1,1519 @@
+.pc{
+    display: inherit;
+}
+.sp{
+    display: none;
+}
+
+.pc-table{
+    display: table;
+}
+.sp-table{
+    display: none;
+}
+
+.big{font-size: 140%;}
+.taC{text-align: center;}
+.taL{text-align: left;}
+.taR{text-align: right;}
+
+.white-color{color: #fff !important;}
+.green-color{color: #4C8237 !important;}
+.red-color{color: #ff0000 !important;}
+.brown-color{color: #822520 !important;}
+
+.mb10{margin-bottom: 10px;}
+.mb20{margin-bottom: 20px;}
+.mb30{margin-bottom: 30px;}
+.mb40{margin-bottom: 40px;}
+
+.fs23{font-size: 23px;}
+.fs28{font-size: 28px;}
+.fs63p{font-size: 63%;}
+
+.breadcrumbs ol.clrfix br {
+    display: none;
+}
+
+.green-title{
+    font-weight: bold;
+    padding: .5em 0;
+    position: relative;
+    margin: 0.5em auto;
+    text-shadow: 1px 2px 3px #808080;
+    font-family: serif;
+    color: #4C8237;
+}
+
+.white-title {
+    background: #fff;
+    color: #333;
+    text-align: center;
+    padding: 0.6em;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: serif;
+}
+
+.greenHeading{
+    background-color: #4C8237;
+    color: #fff;
+    text-align: center;
+    padding: 0.6em;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: serif;
+}
+
+.brown-frame {
+    background: #7d3423;
+    text-align: center;
+    position: relative;
+    line-height: 38px;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+hr.white-line{
+    height: 1px;
+    background-color: #fff;
+    border: none;
+}
+
+hr.brown-line{
+    border: none;
+    border-top: 1px solid #7c3424;
+    height: 1px;
+    color: #FFFFFF;
+}
+
+hr.dashed{
+    border: none;
+    border-top: dashed 1px #7c3424;
+    height: 1px;
+    color: #FFFFFF;
+}
+
+ul.circle li:before{
+   content: '●';
+}
+
+.bg-white{
+    background: #fff;
+}
+
+.nikibi p.checkMoreBtn {
+	background-color: #fba733;
+	width: 250px;
+	margin: auto;
+	text-align: center;
+	padding: 10px 0 10px 10px;
+	font-size: 1.3em;
+	border-radius: 5px;
+	color: #ffffff;
+	cursor: pointer;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.nikibi .blogRanking {
+	padding: 3%;
+}
+
+.nikibi .blogRanking ul li {
+	font-size: 1.2em;
+	font-weight: 600;
+	line-height: 2;
+	margin: 0 7% 15px;
+}
+
+.nikibi .blogRanking ul li span {
+	display: inline-block;
+	color: white;
+	width: 30px;
+	text-align: center;
+	box-sizing: border-box;
+	margin-right: 10px;
+}
+
+.nikibi .blogRanking ul li a {
+    color: #333;
+	text-decoration: none;
+}
+
+.nikibi h3.subTitle {
+    padding: 0.5em;
+    color: #3c3f42;
+    background: #f4f2f3;
+    border-left: solid 5px #4c0604;
+    text-align: left;
+}
+.nikibi .payment h4 {
+	text-align: center;
+	font-size: 2.4em;
+	margin: 50px auto;
+	font-family: serif;
+}
+
+.nikibi .payment .payment_box {
+	display: table;
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+.nikibi .payment .payment_box_title {
+	width: 220px;
+	color: white;
+	font-size: 1.2em;
+	font-weight: 600;
+	background-color: #848B96;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.nikibi .payment .payment_box p {
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 20px;
+}
+@media screen and (max-width:767px) {
+
+	.nikibi .payment h4 {
+		font-size: 25px;
+		margin: 20px auto;
+	}
+
+	.nikibi .payment .payment_box {
+		display: block;
+		margin-bottom: 30px;
+		width: 100%;
+	}
+
+	.nikibi .payment .payment_box_title {
+		width: 100%;
+		text-align: center;
+		display: block;
+		padding: 7px 0;
+	}
+
+	.nikibi .payment .payment_box p {
+		display: block;
+		padding: 10px 0;
+		width: 100%;
+	}
+	.nikibi .top-menu {
+		margin-top: 0;
+	}
+
+	.nikibi .topNav li {
+		width: 44%;
+		font-size: 14px;
+		padding: 1.5% 2.7%;
+	}
+
+}
+
+em {
+font-style: normal;
+}
+
+/* 20210209 */
+.pc{
+    display: inherit;
+}
+.sp{
+    display: none;
+}
+.big{
+    font-size: 140%;
+}
+
+hr.white-line{
+    height: 1px;
+    background-color: #fff;
+    border: none;
+}
+
+section.bg-nikibi-wallpaper {
+    background: url(https://www.ike-sunshine.co.jp/img/operations/nikibi/nikibi-wallpaper.png);
+    padding: 1em 1em;
+    margin: 2em auto;
+}
+
+section.bg-beige {
+    background: #f0ede1;
+    padding: 1em;
+    margin: 2em auto;
+}
+
+section.bg-reddish-brown {
+    background: #7d3423;
+    padding: 3em 1em 1em;
+    margin: 2em auto;
+    position: relative;
+}
+
+section.bg-reddish-brown.triangle:before {
+    position: absolute;
+    top: -22px;
+    left: 0px;
+    right: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    border: 60px solid transparent;
+    border-top: 60px solid rgb(255 255 255 / 80%);
+}
+
+section.bg-spot-wallpaper {
+    background: url(/common/img/background.webp);
+    padding: 1em 1em;
+    margin: 2em auto 0;
+}
+
+/**/
+.nowebp  #pageTitle.nikibi {
+    background: #f4f2f3 url(https://www.ike-sunshine.co.jp/wp-content/uploads/ISC_21_PC_nikibi_01.jpg)no-repeat;
+    background-size: cover;
+    border: none;
+    padding: 25px;
+    height: 338px;
+}
+.webp #pageTitle.nikibi {
+    background: #f4f2f3 url(https://www.ike-sunshine.co.jp/wp-content/uploads/ISC_21_PC_nikibi_01.jpg.webp)no-repeat;
+    background-size: cover;
+    border: none;
+    padding: 25px;
+    height: 338px;
+}
+
+#pageTitle.nikibi h1 {
+    position: relative;
+    top: 23px;
+    left: 374px;
+    width: 220px;
+    text-align: center;
+    font-family: serif;
+}
+
+#pageTitle.nikibi p {
+    position: relative;
+    top: 24px;
+    left: 188px;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: serif;
+    text-align: center;
+}
+
+#pageTitle.nikibi .price-setting {
+    margin-top: 20px;
+    display: block;
+    font-family: serif;
+}
+
+#pageTitle.nikibi .small {
+    font-size: 80%;
+}
+
+#pageTitle.nikibi .fee {
+    font-size: 160%;
+    color: #7c3424;
+}
+
+
+.nikibi .top-menu {
+    margin-top: -87px;
+}
+
+.nikibi .topNav ul {
+    margin-top: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nikibi .topNav li {
+    padding: 1% 1.8%;
+    font-size: 1.2em;
+    line-height: 1;
+    flex: 1;
+    border-right: 1px solid #fff;
+    border-collapse: collapse;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nikibi .topNav li:first-child{
+    border-left: 1px solid #fff;
+    margin-left: 0.1em;
+}
+
+.nikibi .topNav li:last-child{
+    margin-right: 0.1em;
+}
+
+.nikibi .topNav li a {
+    color: #fff;
+}
+
+/**/
+.case-photo-list{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+.c-photo {
+    margin: 0 1em;
+    width:100%;
+    flex-basis: auto;
+}
+
+.c-photo h3 {
+    background: #f0ede1;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: serif;
+    padding: 0.3em 0;
+    margin-bottom: 0.3em;
+}
+
+.internal-link{
+    margin: 1em auto;
+    text-align: right;
+}
+
+.internal-link a{
+    color: #434343;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding: 0 16px 0 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.internal-link a:before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #434343;
+}
+.internal-link a:after {
+    position: absolute;
+    top: 5px;
+    bottom: 0;
+    right: 2px;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 4px;
+    height: 4px;
+    border: 4px solid transparent;
+    border-top: 4px solid #fff;
+}
+/**/
+.linkBtn02 a, a.linkBtn02 {
+    display: block;
+    background: #e2453d;
+    text-align: center;
+    position: relative;
+    line-height: 38px;
+    color: #fff;
+    font-size: 1.1em;
+    transition: all linear .2s;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+
+.lineTitle {
+    color: #7d3423;
+    font-size: 1.7em;
+    padding: .5em 15px;
+    position: relative;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #7d3423;
+    text-shadow: 1px 2px 3px #808080;
+    font-family: serif;
+}
+
+.ThicklineTitle {
+    color: #7d3423;
+    font-size: 1.7em;
+    padding: .5em 15px;
+    position: relative;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #7d3423;
+    text-shadow: 1px 2px 3px #808080;
+    font-family: serif;
+}
+
+.lineTitle-white{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    font-size: 1.8rem;
+    padding: .5em 15px;
+    position: relative;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px 3px #808080;
+    font-family: serif;
+}
+
+.nolineTitle{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #7d3423;
+    padding: .5em 0;
+    position: relative;
+    margin-bottom: 0.5em;
+    text-shadow: 1px 2px 3px #808080;
+    font-family: serif;
+}
+
+.reddish-brown-title{
+    background: #7d3423;
+    color: #fff;
+    text-align: center;
+    padding: 0.6em;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: serif;
+}
+
+.reddish-beige-title{
+    background-color: #f0ede1;
+    color: #7c3424;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 1em;
+    font-family: serif;
+}
+
+.reddish-beige-txt{
+    background-color: #f0ede1;
+    color: #333;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 1em;
+    font-family: serif;
+    margin: 0.9em;
+    min-height: 52px;
+}
+
+.white-title{
+    background: #fff;
+    color: #333;
+    text-align: center;
+    padding: 0.6em;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: serif;
+}
+
+.black-title{
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.6em;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: serif;
+}
+
+.brown-title{
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #7c3424;
+    padding: 1em 0;
+    font-family: serif;
+}
+
+
+h3.ttl {
+    color: #7d3423;
+    font-size: 1.7em;
+    font-family: serif;
+    font-weight: bold;
+    text-shadow: 1px 2px 3px #808080;
+    margin-bottom: 0.5em;
+    line-height: 1.3;
+}
+
+/**/
+.features {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+    padding: 1em;
+    margin-bottom: 1em;
+    background: #fff;
+    box-shadow: 0.5em 0.5em 0.5em #ddd;
+}
+
+.features-left {
+    flex: 0.5;
+    padding: 1em;
+    border-right: 1px solid #555;
+}
+
+.features-left p {
+    font-size: 1.3em;
+    font-family: serif;
+    color: #e40c1d;
+    text-shadow: 1px 2px 3px #808080;
+}
+
+.features-center {
+    flex: 2.5;
+    padding: 1em 1.5em;
+}
+
+.features-center h3 {
+    font-size: 1.8em;
+    font-family: serif;
+    text-shadow: 1px 2px 3px #808080;
+    margin-bottom: 0.5em;
+    line-height: 1.3;
+}
+
+.features-right {
+    flex: 1.5;
+}
+
+/**/
+.flex-box{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-between;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.flex-box.flst{
+    justify-content: flex-start;
+}
+.flex-box .box-left{
+    flex: 1;
+}
+
+.flex-box .box-right{
+    flex: 1;
+}
+
+.price-table {
+    border-bottom: 1px solid #7c3424;
+}
+
+.price-table tr {
+    border-top: 1px solid #7c3424;
+}
+
+.price-table th {
+    background-color: #f0ede1;
+    color: #7c3424;
+    font-size: 1.5em;
+    padding: 1em 0;
+    font-family: serif;
+}
+
+.price-table td {
+    background-color: #fff;
+    color: #7c3424;
+    font-size: 1.5em;
+    font-family: serif;
+}
+/**/
+#case h3.ttl {
+    color: #7c3424;
+    text-align: center;
+    background: #fff;
+    padding: 0.5em;
+    font-size: 1.3em;
+    font-family: serif;
+}
+
+.case-img {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.case-left {
+    flex: 1.3;
+}
+
+.case-right {
+    flex: 1;
+    margin-left: 1em;
+}
+.case-img .label {
+    margin-bottom: 0;
+}
+
+.case-img li{
+    position: relative;
+    padding-left: 1em;
+}
+
+.case-img li:before{
+    position: absolute;
+    content: '－';
+    top: 0;
+    left: 0;
+}
+
+/**/
+table.overview {
+    margin-bottom: 2rem;
+}
+.overview tr {
+    border-top: 1px solid #7d3423;
+    border-bottom: 1px solid #7d3423;
+}
+
+.overview th {
+    width: 20%;
+    padding: 0.5em;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: serif;
+    color: #7d3423;
+    vertical-align: middle;
+}
+
+.overview td {
+    padding: 1em 1em;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/**/
+#faq{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+#faq .acbox {
+    background: #fff;
+    padding: 1em;
+    margin: 1em auto;
+    width: 45%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+.acbox .faq-box h3 {
+    padding: 2rem 0 1rem;
+    position: relative;
+    font-size: 1.3em;
+    border-bottom: 1px solid #555;
+    min-height: 42px;
+}
+
+.acbox .faq-box p {
+    padding: 2rem 0 1rem;
+    position: relative;
+}
+
+.acbox .faq-box-img img {
+    height: 210px;
+    object-fit: cover;
+}
+
+.acbox .signboard {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: baseline;
+    justify-content: space-evenly;
+    text-align: center;
+    flex: 1.5;
+    padding-top: 1rem;
+    font-size: 1.7rem;
+}
+
+.acbox .que {
+    font-family: serif;
+    background: #7d3423;
+    padding: 1em;
+    color: #fff;
+    width: 100%;
+}
+
+.acbox .ans {
+    font-family: serif;
+    background: #f0ede1;
+    padding: 1em;
+    color: #7d3423;
+    width: 100%;
+}
+
+.acbox .faq-box {
+    flex: 9;
+    padding: 0 0 0 1em;
+}
+
+/**/
+.doctor_greeting {
+    background: url(https://www.ike-sunshine.co.jp/img/operations/nikibi/PC_ISC_mwr_image16_doctor.png) no-repeat;
+    background-position: bottom right;
+    background-size: 34%;
+    width: 100%;
+}
+
+.nowebp .doctor_greeting {
+    background: url(https://www.ike-sunshine.co.jp/img/operations/nikibi/PC_ISC_mwr_image16_doctor.png) no-repeat;
+    background-position: bottom right;
+    background-size: 34%;
+    width: 100%;
+}
+
+.webp .doctor_greeting {
+    background: url(https://www.ike-sunshine.co.jp/wp-content/uploads/PC_ISC_mwr_image16_doctor.png.webp) no-repeat;
+    background-position: bottom right;
+    background-size: 34%;
+    width: 100%;
+}
+
+.doctor_greeting h3 {
+    color: #7d3423;
+    font-size: 2.2em;
+    font-family: serif;
+    font-weight: bold;
+    line-height: 1.6;
+    position: relative;
+    padding-bottom: 30px;
+    text-shadow: 1px 2px 3px #808080;
+}
+
+.doctor_greeting .degree {
+    text-align: center;
+    font-weight: bold;
+    font-family: serif;
+}
+
+.doctor_greeting .txt {
+    width: 62%;
+}
+
+.doctor_career {
+    background: #f0ede1;
+    padding: 1em;
+    margin: 1em auto;
+}
+
+.doctor_career ul {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+.doctor_career li {
+    float: left;
+    font-size: 14px;
+    min-height: 100px;
+    padding: 5px 10px 5px 5px;
+    color: #444;
+}
+
+.doctor_career li:nth-child(2){
+    border-left: 1px solid #666;
+}
+
+.visit {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+    background: #fff;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.visit-left {
+    flex: 1;
+    order: 1;
+}
+
+.visit-right {
+    flex: 1;
+    order: 2;
+}
+
+.nikibi .visit .ttl {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: serif;
+    text-shadow: 1px 2px 3px #808080;
+}
+
+.visit-left img {
+    margin: 0 0 0 -26px;
+}
+
+.visit-right img {
+    margin: 0 0 0 30px;
+}
+
+.flow {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.flow-box {
+    width: 30%;
+}
+
+.flow .img img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.flow-box .txt {
+    margin-top: 1em;
+}
+
+.flow .txt .ttl {
+    color: #7d3423;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nikibi #recommended .box .txt .ttl {
+    color: #7d3423;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.nikibi #recommended {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.nikibi #recommended .box {
+    width: 44%;
+    background: #fff;
+    padding: 1em;
+    margin: 1em auto;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.nikibi #recommended .box .img {
+    flex: 1;
+    margin-right: 1em;
+}
+
+.nikibi #recommended .box .txt {
+    flex: 2;
+}
+
+
+.payment_box {
+    display: table;
+    margin-bottom: 30px;
+    width: 100%;
+    border-bottom: 1px dashed #7d3423;
+}
+
+.payment_box_title {
+    width: 220px;
+    color: #7d3423;
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: #fff;
+    text-align: center;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.payment_box p {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.nkibi-nayami{
+    background: url(https://www.ike-sunshine.co.jp/wp-content/uploads/ISC_21_PC_nikibi_17.png) no-repeat center;
+    text-align: center;
+    display: block;
+}
+.nkibi-nayami ul {
+    display: inline-block;
+}
+
+.nkibi-nayami ul li{
+    color: #333;
+    font-size: 2rem;
+    padding: .5em 15px;
+    position: relative;
+    font-weight: 700;
+    text-align: left;
+    text-shadow: 1px 2px 3px #808080;
+    font-family: serif;
+    line-height: 2;
+}
+.nkibi-nayami ul li:before{
+    content: '';
+    background: url(https://www.ike-sunshine.co.jp/wp-content/uploads/check.png) no-repeat;
+    position: absolute;
+    top: 12px;
+    left: -29px;
+    width: 38px;
+    height: 38px;
+}
+
+.nkibi-nayami ul li span{
+    color: #7d3423;
+    font-size: 110%;
+    border-bottom: 1px dashed #7d3423;
+}
+
+.lux-box{
+    background: #fff url(https://www.ike-sunshine.co.jp/wp-content/uploads/ISC_21_PC_nikibi_19.png) no-repeat right;
+    background-size: contain;
+    margin: 0 auto;
+    width: 98%;
+}
+
+.herf-box{
+    width: 70%;
+    padding: 0.3em;
+}
+
+.care-box{
+    background: #f0ede1 url(https://www.ike-sunshine.co.jp/wp-content/uploads/ISC_21_PC_nikibi_26.jpg) no-repeat right;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.flex-half{
+    width: 49%;
+}
+
+.flex-first,
+.flex-second,
+.flex-third,
+.flex-four {
+    width: 23%;
+    margin: 0 0.5em;
+}
+
+.flex-first p,
+.flex-second p,
+.flex-third p,
+.flex-four p {
+    margin-top: 1em;
+}
+
+.flex-box-one,
+.flex-box-two,
+.flex-box-three{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    background: #fff;
+}
+
+.flex-box-one-img img,
+.flex-box-two-img img,
+.flex-box-three-img img{
+    height: 150px;
+    object-fit: contain;
+}
+
+.flex-box .flex-text{
+    width: 75%;
+    padding: 0 1em;
+}
+
+.flex-box .flex-img{
+    width: 25%;
+    padding: 0 1em;
+    text-align: center;
+}
+
+.flex-box .flex-img img{
+    max-width: 100%;
+}
+
+.beige-bar li {
+    background-color: #f0ede1;
+    color: #333;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0.5em;
+    font-family: serif;
+    margin: 0.5em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+dl.caseDescription {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.caseDescription dt{
+    width: 30%;
+    border-bottom: 1px solid #7d3423;
+    padding: 0.5em 0;
+}
+
+.caseDescription dd {
+    width: 70%;
+    border-bottom: 1px solid #7d3423;
+    padding: 0.5em 0;
+}
+
+.caseDescription dt.bn,
+.caseDescription dd.bn{
+    border-bottom: none;
+}
+
+.visit-right dt {
+    color: #7d3423;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.visit-right dd {
+    display: inline;
+}
+
+@media only screen and (max-width: 599px){
+    .pc{ display: none; }
+    .sp{ display: block; }
+    .pc-table{ display: none; }
+    .sp-table{ display: table; }
+    .fs23{ font-size: 1.3em; }
+    .fs28{ font-size: 1.5em; }
+
+    .catch{
+        margin-top: -15px;
+        background-image: linear-gradient(225deg, #24A43E 0%, #47829E 100%);
+    }
+    .catch ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .catch ul li{
+        color: #fff;
+        font-weight: bold;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        width: calc(100%/3);
+        padding: 0.5em;
+        text-align: center;
+    }
+    .catch ul li:first-child{
+        border-left: none;
+        border-right: none;
+    }
+    .catch ul li:last-child{
+        border-left: none;
+        border-right: none;
+    }
+    .nowebp #pageTitle.nikibi {
+        background: #f4f2f3 url(https://www.ike-sunshine.co.jp/wp-content/uploads/ISC_21_SP_nikibi_01.png) no-repeat;
+        background-size: cover;
+        border: none;
+        padding: 25px;
+        height: 311px;
+        position: relative;
+    }
+    .webp #pageTitle.nikibi {
+        background: #f4f2f3 url(https://www.ike-sunshine.co.jp/wp-content/uploads/ISC_21_SP_nikibi_01.png.webp) no-repeat;
+        background-size: cover;
+        border: none;
+        padding: 25px;
+        height: 311px;
+        position: relative;
+    }
+    #pageTitle.nikibi h1 {
+        position: absolute;
+        top: 57px;
+        left: 22px;
+        width: 278px;
+        text-align: center;
+        font-family: serif;
+        font-size: 1.8rem;
+    }
+    #pageTitle.nikibi p {
+        position: absolute;
+        top: 119px;
+        left: 46px;
+        font-weight: bold;
+        font-size: 1em;
+        display: block;
+    }
+    .nikibi .top-menu {
+        margin-top: -5px;
+    }
+    .nikibi .topNav li {
+        padding: 1em;
+        font-size: 1.2em;
+        line-height: 1;
+        flex: 1;
+        border-right: 1px solid #fff;
+        border-collapse: collapse;
+        background: #7d3423;
+        opacity: 0.8;
+        flex-basis: auto;
+        width: 166px;
+        border-bottom: 1px solid #fff;
+    }
+    .nikibi .topNav li:first-child{
+        border-left: none;
+        margin-left: 0;
+    }
+    .nikibi .topNav li:last-child{
+        margin-right: 0;
+    }
+    .nikibi .topNav li a {
+        color: #fff;
+        display: inline;
+        vertical-align: middle;
+    }
+
+    .flex-box.spwrap{
+        flex-wrap: wrap;
+    }
+    .flex-first,
+    .flex-second,
+    .flex-third,
+    .flex-four{
+        width: 45%;
+    }
+    .c-photo{
+        margin: 0 auto;
+    }
+
+    .case-photo-list{
+        display: block;
+    }
+
+    .nkibi-nayami{
+        height: 300px;
+        background: url(https://www.ike-sunshine.co.jp/wp-content/uploads/ISC_21_SP_nikibi_16.png) no-repeat center bottom;
+        background-size: contain;
+    }
+    .nkibi-nayami ul li {
+        color: #333;
+        font-size: 1.1em;
+    }
+    .nkibi-nayami ul li:before{
+        background: url(https://www.ike-sunshine.co.jp/wp-content/uploads/sp-check-1.png) no-repeat;
+        top: 11px;
+        left: -15px;
+        width: 28px;
+        height: 28px;
+    }
+
+    .lux-box{
+        background: #FFF url(https://www.ike-sunshine.co.jp/wp-content/uploads/ISC_21_PC_nikibi_19.png) no-repeat top right;
+        background-size: 70%;
+        width: 100%;
+    }
+    .lux-box .herf-box{
+        width: 98%;
+    }
+    .lux-box .herf-box h3.green-title{
+        position: relative;
+        top: 0;
+        left: -51px;
+    }
+    .beige-bar li{
+        font-size: 1em;
+    }
+    .flex-box-one, .flex-box-two, .flex-box-three{
+        width: 100%;
+        margin: 0 auto 1em;
+    }
+    .reddish-beige-txt {
+        background-color: #f0ede1;
+        color: #333;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 0.5em 0.3em;
+        font-family: serif;
+        margin: 0.5em;
+        min-height: auto;
+    }
+
+    .flex-box .flex-half{
+        width: 100%;
+        margin: 0 auto 1em;
+    }
+    .flex-box .flex-text {
+        width: 60%;
+        padding: 0 1em;
+        text-align: left;
+    }
+    .flex-box .flex-text.w100p{
+        width: 100%;
+    }
+    .flex-box .flex-img {
+        width: 40%;
+        padding: 0 1em;
+        text-align: center;
+    }
+    .flex-box .flex-img.w100p{
+        width: 100%;
+        padding: 1em;
+    }
+    .flex-box .flex-img.w100p img{
+        width: 50vw;
+
+    }
+
+    .lineTitle{
+        font-size: 4.5vw;
+    }
+    .white-title {
+        font-size: 4vw;
+    }
+    .ThicklineTitle{
+        font-size: 6vw;
+        text-align: left;
+    }
+    .lineTitle-white{
+        font-size: 4vw;
+    }
+    .greenHeading{
+        font-size: 4vw;
+    }
+
+    .care-box {
+        background: #f0ede1 url(https://www.ike-sunshine.co.jp/wp-content/uploads/ISC_21_PC_nikibi_26.jpg) no-repeat top right;
+        background-size: 40%;
+    }
+    .care-box .herf-box{
+        width: 100%;
+        padding: 0.5em;
+    }
+    .care-box .nolineTitle {
+        font-size: 1em;
+    }
+
+    .features {
+        display: block;
+    }
+    .features-left p {
+        font-size: 1.3em;
+        font-family: serif;
+        color: #e40c1d;
+        text-shadow: 1px 2px 3px #808080;
+        border-bottom: 1px solid #555;
+    }
+    .features-center {
+        flex: 2.5;
+        padding: 0.5em;
+    }
+    .features-center h3 {
+        font-size: 1.2em;
+    }
+
+    .case-img{
+        display: block;
+    }
+    .case-left{
+        margin-bottom: 1em;
+    }
+
+    #faq .acbox{
+        width: 100%;
+    }
+
+    .doctor_greeting h3 {
+        font-size: 1.3em;
+        padding-bottom: 0;
+    }
+    .doctor_greeting .txt {
+        width: 100%;
+    }
+    .nowebp .doctor_greeting {
+        background: url(https://www.ike-sunshine.co.jp/img/operations/nikibi/SP_ISC_mwr_image16doctor.png) no-repeat;
+        background-position: bottom center;
+        background-size: 77%;
+        width: 100%;
+        min-height: 600px;
+    }
+    .webp .doctor_greeting {
+        background: url(https://www.ike-sunshine.co.jp/wp-content/uploads/SP_ISC_mwr_image16doctor.png.webp) no-repeat;
+        background-position: bottom center;
+        background-size: 77%;
+        width: 100%;
+        min-height: 600px;
+    }
+
+    .doctor_career ul {
+        display: block;
+    }
+    .doctor_career li{
+        float: none;
+    }
+    .doctor_career li:nth-child(2) {
+        border-top: 1px solid #666;
+        border-left: none;
+    }
+    .overview th {
+        width: 27%;
+        font-size: 1em;
+    }
+    .overview td {
+        padding: 0.5em;
+    }
+    .visit {
+        display: block;
+    }
+    .visit-right img {
+        margin: 0 0 -27px 0;
+    }
+    .visit-left img {
+        margin: 0 0 -27px 0;
+    }
+    .nikibi .visit .ttl{
+        font-size: 1.4em;
+    }
+
+    #toc5 .flow {
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: space-between;
+        justify-content: space-between;
+        overflow-x:scroll;
+    }
+    #toc5 .flow-box {
+        width: 100%;
+        flex: 0 0 100%;
+        border-top: 2px solid #ddd;
+        border-left: 2px solid #ddd;
+        border-bottom: 2px solid #ddd;
+    }
+    #toc5 .flow-box:last-child{
+        border-right: 2px solid #ddd;
+    }
+    #toc5 .flow-box .img {
+        margin: 1em auto;
+        text-align: center;
+    }
+    #toc5 .flow-box .txt {
+        margin-top: 1em;
+        padding: 0 1em 0;
+    }
+    .nikibi #recommended .box {
+        width: 100%;
+        background: #fff;
+        padding: 1em;
+        margin: 1em auto;
+        display: flex;
+        align-content: space-between;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .nikibi #recommended .box .img {
+        order: 2;
+        flex: 0 0 100%;
+        margin-top: 1em;
+        text-align: center;
+    }
+    .nikibi #recommended .box .txt {
+        order: 1;
+        flex: 0 0 100%;
+    }
+    .payment_box {
+        display: block;
+        padding: 1em;
+        max-width: 100%;
+        width: auto;
+    }
+    .payment_box_title {
+        width: auto;
+        text-align: left;
+        display: block;
+    }
+    .payment_box p {
+        display: block;
+        vertical-align: middle;
+        margin-top: 1em;
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+    .nikibi .blogRanking ul li {
+        font-size: 1em;
+        font-weight: 600;
+        line-height: 2;
+        margin: 0 auto;
+        display: flex;
+        align-items: baseline;
+    }
+}
+@media only screen and (max-width: 415px){
+    .nowebp #pageTitle.nikibi,
+    .webp #pageTitle.nikibi {
+        height: 203px;
+    }
+    #pageTitle.nikibi h1 {
+        top: 46px;
+        left: 117px;
+        width: 138px;
+    }
+    #pageTitle.nikibi p {
+        top: 104px;
+        left: 138px;
+        width: 138px;
+    }
+    #pageTitle.nikibi .price-setting {
+        margin-top: 0px;
+    }
+    .nikibi .topNav li{
+        width: 135px;
+    }
+}

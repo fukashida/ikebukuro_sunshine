@@ -1,0 +1,15 @@
+/* disableが分かりにくいので塗りつぶす */
+    .datepicker td.disabled, .datepicker td.disabled:hover {
+        border-radius: 0;
+        background-color: #ddd;
+    }
+
+    .secBox input {
+    vertical-align: middle;
+    margin-right: 5px;
+    }
+
+    .btnarea input[name="re"] {
+    margin-top: 10px;
+    background: #ccc;
+    }

@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php
+session_start();
+get_header();
+
+$booking = $_SESSION['booking_data'] ?? null;
+?>
 
 <div class="breadcrumbs">
 <ol class="clrfix">

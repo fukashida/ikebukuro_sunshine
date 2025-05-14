@@ -1,0 +1,664 @@
+.profile li {
+    float: left;
+    min-height: 75pt;
+    padding: 5px 10px 5px 5px;
+    border-left: 3px solid #dd856e;
+    color: #b39071
+  }
+  .profile .photoR {
+      margin-left: 5px
+  }
+  
+  .mphList li {
+      text-align: center;
+      margin: 0 0 10px
+  }
+  
+  .cItem,.hairItem,.placentaItem {
+      margin: 0 0 20px
+  }
+  
+  .cItem dt {
+      float: left;
+      width: 15pc;
+      text-align: center
+  }
+  
+  .cItem dt.left {
+      text-align: left
+  }
+  
+  .cItem dd,.hairItem dd,.placentaItem dd {
+      float: left;
+      width: 100%;
+      box-sizing: border-box
+  }
+  
+  .cItem dd {
+      margin: 0 0 0 -15pc;
+      padding: 0 0 0 260px
+  }
+  
+  .cItem dt ul {
+      margin: 0 -5px
+  }
+  
+  .cItem dt ul li {
+      float: left;
+      list-style-type: none;
+      margin: 0;
+      padding: 0 5px
+  }
+  
+  #pageTitle.bodyline {
+    display: none
+  }
+  
+  .bodyline_wrap .profile li, .profile li {
+    font-size: 14px
+  }
+  
+  .bodyline_wrap p {
+    font-size: 1pc !important
+  }
+  
+  .bodyline_wrap .hp_imgCenter {
+    margin: auto;
+    display: block
+  }
+  
+  .bodyline_wrap h3.subTitle {
+    background: #d9d9d9;
+    border-left: solid 5px #6d1111;
+    padding: 5px 5px 5px 10px
+  }
+  
+  .bodyline_wrap .section_title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700
+  }
+  
+  .bodyline_wrap .labelTitle {
+    font-size: 1pc !important
+  }
+  
+  .bodyline_wrap .topNav ul {
+    margin-top: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap
+  }
+  
+  .bodyline_wrap .topNav li {
+    background: -moz-linear-gradient(bottom, #ededed, #76614a);
+    background: -webkit-linear-gradient(bottom, #ededed, #76614a);
+    background: linear-gradient(to bottom, #ededed, #76614a);
+    padding: 1.5% 1.8%;
+    font-size: 1.2em;
+    border-radius: 3px;
+    border: 1px solid #ddd0c8;
+    line-height: 1
+  }
+  
+  .bodyline_wrap .topNav li:hover {
+    background: -moz-linear-gradient(bottom, #f2b087, #a65d30);
+    background: -webkit-linear-gradient(bottom, #f2b087, #a65d30);
+    background: linear-gradient(to bottom, #f2b087, #a65d30)
+  }
+  
+  .bodyline_wrap .topNav li.toForm {
+    background: -moz-linear-gradient(bottom, #bee77a, #00a704);
+    background: -webkit-linear-gradient(bottom, #bee77a, #00a704);
+    background: linear-gradient(to bottom, #bee77a, #00a704);
+    border: 1px solid #00a300
+  }
+  
+  .bodyline_wrap .topNav li.toForm:hover {
+    background: -moz-linear-gradient(bottom, #00a704, #bee77a);
+    background: -webkit-linear-gradient(bottom, #00a704, #bee77a);
+    background: linear-gradient(to bottom, #00a704, #bee77a);
+    border: 1px solid #00a300
+  }
+  
+  .bodyline_wrap .topNav li.heightAjst {
+    line-height: 2
+  }
+  
+  .bodyline_wrap .topNav li a {
+    color: #fff;
+    display: block
+  }
+  
+  .bodyline_wrap .slider {
+    display: none;
+    position: relative
+  }
+  
+  .bodyline_wrap .slider li img {
+    height: 150px;
+    width: 100%
+  }
+  
+  .bodyline_wrap .slider .flex-direction-nav a:before {
+    font-size: 30px
+  }
+  
+  .bodyline_wrap .slider .flex-direction-nav a {
+    width: 30px;
+    height: 30px;
+    margin: -30px 0 0;
+    bottom: 60px
+  }
+  
+  .bodyline_wrap .slider .flex-direction-nav .flex-prev {
+    left: -10px !important
+  }
+  
+  .bodyline_wrap .slider .flex-direction-nav .flex-next {
+    right: -10px !important
+  }
+  
+  .bodyline_wrap .baseTbl01 table td, .bodyline_wrap .baseTbl01 table th {
+    font-size: 1pc;
+    width: auto
+  }
+  
+  .bodyline_ly_regret {
+    background-color: #ddf2fe;
+    padding: 25px;
+    border-radius: 5px;
+    border: 2px solid #76adcc;
+    margin-bottom: 20px
+  }
+  
+  .bl_bodyline_regret_wrapper {
+    min-height: 230px;
+    padding-left: 22%;
+    background-position: top left;
+    background-repeat: no-repeat
+  }
+  
+  .bl_bodyline_regret_wrapper.bl_bodyline_regret__rev {
+    padding-right: 22%;
+    padding-left: 0;
+    background-position: top right
+  }
+  
+  .bl_bodyline_regret_wrapper:nth-of-type(1) {
+    background-image: url(../../img/operations/bodyline/regret01.png)
+  }
+  
+  .bl_bodyline_regret_wrapper:nth-of-type(2) {
+    background-image: url(../../img/operations/bodyline/regret02.png)
+  }
+  
+  .bl_bodyline_regret_wrapper:nth-of-type(3) {
+    background-image: url(../../img/operations/bodyline/regret03.png)
+  }
+  
+  .bl_bodyline_regret_wrapper:nth-of-type(4) {
+    background-image: url(../../img/operations/bodyline/regret04.png)
+  }
+  
+  .bl_bodyline_regret_wrapper:nth-of-type(5) {
+    background-image: url(../../img/operations/bodyline/regret05.png)
+  }
+  
+  .bl_bodyline_regret_wrapper p {
+    padding-right: 10%
+  }
+  
+  .bl_bodyline_regret_wrapper.bl_bodyline_regret__rev p {
+    padding-right: 0;
+    padding-left: 5%
+  }
+  
+  .bl_bodyline_regret_wrapper p span {
+    display: block;
+    font-size: 24px;
+    color: #036;
+    line-height: 250%
+  }
+  
+  .bodyline_wrap .point ul {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden
+  }
+  
+  .bodyline_wrap .point ul li {
+    letter-spacing: 0;
+    float: left;
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    box-sizing: border-box
+  }
+  
+  .bodyline_wrap .point ul li p {
+    padding: 10px;
+    width: calc(100% - 4px);
+    background: #f5f5f5;
+    margin: 0 auto;
+    box-sizing: border-box;
+    line-height: 1.5;
+    height: 20pc;
+    font-size: 14px
+  }
+  
+  .no-webp .bodyline_wrap .treatment {
+    padding: 30px 20px;
+    background: url(https://ike-sunshine.co.jp/wp-content/uploads/2021/03/treatment_bg.jpg)center no-repeat;
+    background-size: cover
+  }
+  
+  .webp .bodyline_wrap .treatment {
+    padding: 30px 20px;
+    background: url(https://ike-sunshine.co.jp/wp-content/uploads/2021/03/treatment_bg.jpg.webp)center no-repeat;
+    background-size: cover
+  }
+  
+  .bodyline_wrap .treatment ul {
+    letter-spacing: -.4em
+  }
+  
+  .bodyline_wrap .treatment ul li {
+    letter-spacing: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 20%
+  }
+  
+  .bodyline_wrap .treatment ul li .num {
+    height: 75pt;
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 1pc;
+    text-align: center;
+    line-height: 1.4;
+    box-sizing: border-box;
+    padding: 10px 0
+  }
+  
+  .bodyline_wrap .treatment ul li:nth-child(1) .num {
+    background: #ebf4ff
+  }
+  
+  .bodyline_wrap .treatment ul li:nth-child(2) .num {
+    background: #c0daf9
+  }
+  
+  .bodyline_wrap .treatment ul li:nth-child(3) .num {
+    background: #9ac9f7
+  }
+  
+  .bodyline_wrap .treatment ul li:nth-child(4) .num {
+    background: #7db0ef
+  }
+  
+  .bodyline_wrap .treatment ul li:nth-child(5) .num {
+    background: #659ae5
+  }
+  
+  .bodyline_wrap .treatment ul li .num:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 0 50px 15px;
+    position: absolute;
+    right: -15px;
+    top: 0;
+    z-index: 2
+  }
+  
+  .bodyline_wrap .treatment ul li:nth-child(1) .num:after {
+    border-color: transparent transparent transparent #ebf4ff
+  }
+  
+  .bodyline_wrap .treatment ul li:nth-child(2) .num:after {
+    border-color: transparent transparent transparent #c0daf9
+  }
+  
+  .bodyline_wrap .treatment ul li:nth-child(3) .num:after {
+    border-color: transparent transparent transparent #9ac9f7
+  }
+  
+  .bodyline_wrap .treatment ul li:nth-child(4) .num:after {
+    border-color: transparent transparent transparent #7db0ef
+  }
+  
+  .bodyline_wrap .treatment ul li:nth-child(5) .num:after {
+    border-color: transparent transparent transparent #659ae5
+  }
+  
+  .bodyline_wrap .treatment ul li .num span {
+    font-size: 30px;
+    display: block;
+    font-style: italic;
+    margin-bottom: 10px;
+    line-height: 1
+  }
+  
+  .bodyline_wrap .treatment ul li .img {
+    box-sizing: border-box;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    margin-bottom: 9pt
+  }
+  
+  .bodyline_wrap .treatment ul li .img img {
+    width: 100%
+  }
+  
+  .bodyline_wrap .treatment ul li p {
+    width: calc(100% - 4px);
+    background: hsla(0, 0, 100%, .6);
+    margin: 0 auto;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    height: 366px;
+    font-size: 1pc
+  }
+  
+  .bodyline_wrap .treatment2 ul {
+    margin: 0;
+    display: table;
+    line-height: 0
+  }
+  
+  .bodyline_wrap .treatment2 li {
+    display: table-cell
+  }
+  
+  .bodyline_wrap .treatment2 li img {
+    max-width: 100%
+  }
+  
+  .bodyline_wrap .feature {
+    overflow: hidden;
+    font-size: 1pc
+  }
+  
+  .bodyline_wrap .feature dt {
+    float: left;
+    width: 10%;
+    display: inline-block
+  }
+  
+  .bodyline_wrap .feature dd {
+    float: left;
+    width: 90%;
+    display: inline-block
+  }
+  
+  .bodyline_wrap .flex-control-thumbs li {
+    width: 16%;
+    margin-right: .7%;
+    margin-bottom: .7%
+  }
+  
+  .bodyline_wrap .flex-control-thumbs li:nth-of-type(6n) {
+    margin-right: 0
+  }
+  
+  .bodyline_wrap .flexslider {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px
+  }
+  
+  .bodyline_wrap .flex-control-thumbs {
+    order: 1;
+    margin-bottom: 20px
+  }
+  
+  .bodyline_wrap .flex-viewport {
+    order: 2
+  }
+  
+  .bodyline_wrap .flex-viewport>ul>li>div {
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid 2px #ccc
+  }
+  
+  .bodyline_wrap .flex-direction-nav a {
+    opacity: 1 !important;
+    top: auto;
+    bottom: 250px
+  }
+  
+  .bodyline_wrap .flex-direction-nav .flex-prev {
+    left: -10px !important
+  }
+  
+  .bodyline_wrap .flex-direction-nav .flex-next {
+    right: -10px !important
+  }
+  
+  .bodyline_wrap .caseTable {
+    font-size: 1pc
+  }
+  
+  .bodyline_wrap .caseTable th {
+    word-break: keep-all
+  }
+  
+  .mphList li img {
+    margin: 0 auto
+  }
+  
+  .bodyline_wrap #qa {
+    margin-bottom: 5pc;
+    font-size: 1pc
+  }
+  
+  .bodyline_wrap #qa dt {
+    line-height: 45px;
+    padding: 5px 0 5px 73px;
+    border: 2px solid #fdacc6;
+    border-radius: 7px;
+    background: url(//ike-sunshine.staging.nedia-lab.net/img/operations/bodyline/qa_ic.png)no-repeat 10px;
+    cursor: pointer;
+    margin: 10px 0
+  }
+  
+  .bodyline_wrap #qa dd {
+    margin-bottom: 30px;
+    padding: 10px;
+    padding-left: 75px;
+    display: none;
+    background: #fff8fa
+  }
+  
+  .bodyline_wrap .blogRanking {
+    border: 1px solid #dd856e;
+    padding: 3%;
+    background: #fefcf9
+  }
+  
+  .bodyline_wrap .blogRanking h4 {
+    font-size: 2em;
+    font-family: serif;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 10px
+  }
+  
+  .bodyline_wrap .blogRanking ul li {
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 2;
+    margin: 0 10% 15px
+  }
+  
+  .bodyline_wrap .blogRanking ul li span {
+    display: inline-block;
+    color: #fff;
+    width: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-right: 10px
+  }
+  
+  .bodyline_wrap .blogRanking a {
+    text-decoration: underline
+  }
+  .doctor_r {
+      letter-spacing: -.4em;
+      margin-bottom: 60px
+  }
+  
+  .doctor_r .left {
+      letter-spacing: 0;
+      display: inline-block;
+      vertical-align: top;
+      width: 65%;
+      margin-right: 20px
+  }
+  
+  .doctor_r .left h2,.doctor_r .left h3 {
+      color: #a8815a;
+      font-size: 2.2em;
+      font-family: serif;
+      line-height: 1.6;
+      position: relative;
+      padding-bottom: 30px
+  }
+  
+  .doctor_r .left h2 div:nth-child(1),.doctor_r .left h3 div:nth-child(1) {
+      text-align: left;
+      font-weight: 700
+  }
+  
+  .doctor_r .left h2 div:nth-child(2),.doctor_r .left h3 div:nth-child(2) {
+      text-align: right;
+      font-weight: 700
+  }
+  
+  .doctor_r .left h2:after,.doctor_r .left h3:after {
+      content: "";
+      background: -moz-linear-gradient(left,hsla(0,0,100%,0) 0,hsla(0,0,99%,0) 1%,#ccc 25%,#999 50%,#ccc 75%,hsla(0,0,100%,0) 100%);
+      background: -webkit-linear-gradient(left,hsla(0,0,100%,0) 0,hsla(0,0,99%,0) 1%,#ccc 25%,#999 50%,#ccc 75%,hsla(0,0,100%,0) 100%);
+      background: linear-gradient(to right,hsla(0,0,100%,0) 0,hsla(0,0,99%,0) 1%,#ccc 25%,#999 50%,#ccc 75%,hsla(0,0,100%,0) 100%);
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      bottom: 15px
+  }
+  
+  .doctor_r .left img {
+      max-width: 100%;
+      margin-top: 15px
+  }
+  
+  .doctor_r .right {
+      width: 30%;
+      letter-spacing: 0;
+      display: inline-block;
+      vertical-align: top
+  }
+  @media screen and (max-width:767px) {
+    .bodyline_wrap .top-menu {
+      margin-bottom: 10px
+    }
+    .bodyline_wrap .topNav li {
+      width: 45.3%;
+      font-size: 1em;
+      margin-bottom: 3px
+    }
+    .bodyline_wrap .topNav li:last-of-type {
+      width: 100%;
+      font-size: 1em
+    }
+    .no-webp .bl_aboutTattoo {
+      background: #fffceb url(https://ike-sunshine.co.jp/wp-content/uploads/2021/03/Dr_bg_x_sp.png)right bottom/auto no-repeat
+    }
+    .webp .bl_aboutTattoo {
+      background: #fffceb url(https://ike-sunshine.co.jp/wp-content/uploads/2021/03/Dr_bg_x_sp.png.webp)right bottom/auto no-repeat
+    }
+    .bl_aboutTattoo p span.paddingAdjust {
+      padding-right: 0
+    }
+    .bl_bodyline_regret_wrapper {
+      background-size: 120%;
+      padding-left: 30%;
+      margin: 20px 0
+    }
+    .bl_bodyline_regret_wrapper p {
+      padding-right: 0
+    }
+    .bl_bodyline_regret_wrapper p span {
+      font-size: 18px;
+      line-height: 1.5
+    }
+    .bl_bodyline_regret_wrapper.bl_bodyline_regret__rev {
+      padding-right: 30%
+    }
+    .bl_bodyline_regret_wrapper.bl_bodyline_regret__rev p {
+      padding-right: 0;
+      padding-left: 0
+    }
+    .bodyline_wrap .baseTbl01 table td, .bodyline_wrap .baseTbl01 table th {
+      white-space: normal
+    }
+    .bodyline_wrap .blogRanking h4 {
+      font-size: 1.5em
+    }
+  }
+  @media screen and (max-width:767px) {
+      .bodyline_wrap .photoL, .bodyline_wrap .photoR {
+        max-width: 100%;
+        float: none;
+        clear: both;
+        text-align: center
+      }
+      .bodyline_wrap .point ul li {
+        width: 100%;
+        float: none;
+        height: auto;
+        margin-bottom: 20px
+      }
+      .bodyline_wrap .point ul li p {
+        height: auto
+      }
+      .bodyline_wrap .point ul li img {
+        width: 80%;
+        display: block;
+        margin: auto
+      }
+      .bodyline_wrap .treatment ul li {
+        width: 100%;
+        float: none;
+        height: auto;
+        margin-bottom: 20px
+      }
+      .bodyline_wrap .treatment ul li p {
+        height: auto
+      }
+      .bodyline_wrap .feature dt {
+        width: 20%
+      }
+      .bodyline_wrap .feature dd {
+        width: 80%;
+        margin-left: 0
+      }
+      .bodyline_wrap .flex-direction-nav a {
+        bottom: 205px
+      }
+      .bodyline_wrap #qa dd {
+        padding: 10px
+      }
+      .bodyline_wrap #qa dt {
+        line-height: 1.2;
+        margin-bottom: 10px;
+        padding: 20px 0 20px 73px
+      }
+  }

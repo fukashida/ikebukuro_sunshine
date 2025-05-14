@@ -1,0 +1,137 @@
+<?php require('../wp-blog-header.php'); ?>
+<?php include (STYLESHEETPATH . '/header_iframe.php'); ?>
+
+<style>
+body{
+	background: none;
+}
+#mainContents{
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
+}
+#header,
+.breadcrumbs,
+#subContents,
+#sideReservationWrap,
+#footer{
+	display: none;
+}
+</style>
+<div id="mainContents">
+	<main class="reservation2 confirm">
+		<div id="pageTitle" class="reservation" style="margin-bottom: 1200px;">
+			<h2>カウンセリング・再診予約</h2>
+			<p>カウンセリング・再診のご予約を受け付けております。<br>スターラックスの2回目以降の照射予約はお電話ください。</p>
+		</div>
+		<section class="secBox">
+			<p class="mb20">
+				◯本日のカウンセリングをご希望の方はお電話にてご予約ください。<a href="tel:0120331244">0120-331-244</a><br>
+				◯再診・2回目以降のスターラックス照射のご予約はお電話にてご予約ください。<a href="tel:0120331244">0120-331-244</a><br>
+				◯保険診療（ほくろ・いぼ・あざ・わきが治療）をご希望の方は保険証をご持参ください。<br>
+				◯妊娠中・授乳中の方は、局所麻酔を使用した治療（わきが・刺青除去・ほくろ除去）はお控え頂いております。<br>
+				　出産・授乳が終わられてからご予約をお願いいたします。<br>
+				◯未成年の方は保護者とのご同伴が可能な日時にてご予約をお願いいたします。<br>
+				◯基本的には、当日診療および当日治療を心掛けておりますが、<br>
+				　混雑状況に応じて手術を別日にてご案内する可能性がございますことをご了承ください。<br>
+				◯このカウンセリング予約を送信頂きました時点で、ご予約確定となります。
+			</p>
+			<p class="att mb10"><span class="att">必須</span> は必須項目になります。必ずご入力ください。</p>
+			<h3 class="baseTitle">カウンセリング・再診予約フォーム</h3>
+			<form method="post" name="sfm-form" id="sfm-form" action="<?php echo $sfm_script; ?>">
+				<div class="baseTbl01 contactTbl nowrap mb20">
+					<ul class="form-step">
+						<li>情報入力</li><li class="current">入力内容の確認</li><li>完了</li>
+					</ul>
+					<div class="wrap">
+						<section class="form">
+							<p>
+								以下の入力内容が正しければ、送信ボタンをクリックしてください。<br>
+								内容の追加、変更を行う場合は、修正ボタンをクリックしてお戻りください。
+							</p>
+						</section>
+						<table>
+							<tr>
+								<th>ご希望の日時<span class="att">必須</span></th>
+								<td>
+									<?php echo $sfm_html->date; ?> <?php echo $sfm_html->time; ?>
+								</td>
+							</tr>
+						
+							<tr>
+								<th>初診・再診<span class="att">必須</span></th>
+								<td>
+									<?php echo $sfm_html->shoshin; ?>
+								</td>
+							</tr>
+							<tr>
+								<th>診察券番号</th>
+								<td>
+									<?php echo $sfm_html->shinsatsuNum; ?>
+								</td>
+							</tr>
+							<tr>
+								<th>お名前<span class="att">必須</span></th>
+								<td>
+									<?php echo $sfm_html->name; ?>
+								</td>
+							</tr>
+							<tr>
+								<th>ふりがな</th>
+								<td>
+									<?php echo $sfm_html->kana; ?>
+								</td>
+							</tr>
+							<tr>
+								<th>年齢<span class="att">必須</span></th>
+								<td>
+									<?php echo $sfm_html->age; ?>
+								</td>
+							</tr>
+							<tr>
+								<th>電話番号<span class="att">必須</span></th>
+								<td>
+									<?php echo $sfm_html->tel; ?>
+								</td>
+							</tr>
+							<tr>
+								<th>メールアドレス<span class="att">必須</span></th>
+								<td>
+									<?php echo $sfm_html->email; ?>
+								</td>
+							</tr>
+							<tr class="checkCell">
+								<th>治療項目にチェックしてください。<br>（複数選択可）</th>
+								<td>
+									<?php echo $sfm_html->treatment; ?><br>
+									<?php echo $sfm_html->other; ?>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+				<div class="sendbt">
+					<?php echo $sfm_submit; ?>
+					<input name="autoReply" type="hidden" value="1" >
+					<div class="cf"></div>
+				</div>
+			</form>
+		</section>
+	</main>
+</div>
+<!--/#mainContents-->
+
+<script src="//app.gorilla-efo.com/js/efo.3090.js" type="text/javascript"></script>
+
+<script>
+sendHeight();
+
+function sendHeight(){
+  var h = document.documentElement.scrollHeight;
+  parent.postMessage(h, "*");
+}
+</script>
+
+
+<?php include (STYLESHEETPATH . '/footer_iframe.php'); ?>

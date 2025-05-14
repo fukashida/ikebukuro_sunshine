@@ -1,0 +1,225 @@
+<?php require('../wp-blog-header.php'); ?>
+<?php include (STYLESHEETPATH . '/header.php'); ?>
+
+<script src="http://cdn.jsdelivr.net/webshim/1.12.4/extras/modernizr-custom.js"></script>
+<!-- polyfiller file to detect and load polyfills -->
+<script src="http://cdn.jsdelivr.net/webshim/1.12.4/polyfiller.js"></script>
+<script>
+  webshims.setOptions('waitReady', false);
+  webshims.setOptions('forms-ext', {types: 'date'});
+  webshims.polyfill('forms forms-ext');
+</script>
+
+<div class="breadcrumbs">
+	<ol class="clrfix">
+		<li><a href="/">HOME</a></li>
+		<li>カウンセリング・再診予約</li>
+	</ol>
+</div>
+<div id="mainContents">
+	<main class="reservation2">
+		<div id="pageTitle" class="reservation">
+			<h2>カウンセリング・再診予約</h2>
+			<p>カウンセリング・再診のご予約を受け付けております。<br>スターラックスの2回目以降の照射予約はお電話ください。</p>
+		</div>
+		<section class="secBox">
+			<p class="mb20">
+				◯本日のカウンセリングをご希望の方はお電話にてご予約ください。<a href="tel:0120331244">0120-331-244</a><br>
+				◯再診・2回目以降のスターラックス照射のご予約はお電話にてご予約ください。<a href="tel:0120331244">0120-331-244</a><br>
+				◯保険診療（ほくろ・いぼ・あざ・わきが治療）をご希望の方は保険証をご持参ください。<br>
+				◯妊娠中・授乳中の方は、局所麻酔を使用した治療（わきが・刺青除去・ほくろ除去）はお控え頂いております。<br>
+				　出産・授乳が終わられてからご予約をお願いいたします。<br>
+				◯未成年の方は保護者とのご同伴が可能な日時にてご予約をお願いいたします。<br>
+				◯基本的には、当日診療および当日治療を心掛けておりますが、<br>
+				　混雑状況に応じて手術を別日にてご案内する可能性がございますことをご了承ください。<br>
+				◯このカウンセリング予約を送信頂きました時点で、ご予約確定となります。
+			</p>
+			<p class="att mb10"><span class="att">必須</span> は必須項目になります。必ずご入力ください。</p>
+			<form method="post" name="sfm-form" id="sfm-form" action="<?php echo $sfm_script; ?>">
+				<h3 class="baseTitle">カウンセリング・再診予約フォーム</h3>
+				<div class="baseTbl01 contactTbl nowrap mb20">
+					<ul class="form-step">
+						<li class="current">情報入力</li><li>入力内容の確認</li><li>完了</li>
+					</ul>
+					<div class="wrap">
+						<div class="calendar_wrap">
+							<?php echo do_shortcode('[dopbsp id=1 lang=ja]'); ?>
+							<script>
+								$(document).on('click', function() {
+									setTimeout(function(){
+										var date = $('.dopbsp-cart tr:nth-of-type(1) .dopbsp-value').text();
+										var time = $('#DOPBSPCalendar-start-hour1').val();
+										$('.reserve_date').val( date ).text( date );
+										$('.reserve_time').val( time ).text( time );
+									},200);
+								});
+							</script>
+						</div>
+						<table>
+							
+
+							
+							<tr>
+								<th>ご希望の日時<span class="att">必須</span></th>
+								<td>
+									<input name="date_s" type="hidden" value="" class="reserve_date">
+									<input name="time" type="hidden" value="" class="reserve_time">
+									<span class="reserve_date"><span class="att">カレンダーから<br class="sp">選択してください。</span></span> <span class="reserve_time"></span>
+								</td>
+							</tr>
+							
+							<tr>
+								<th>初診・再診<span class="att">必須</span></th>
+								<td>
+									<input name="shoshin" type="radio" value="初診" placeholder="" class="" required="required" aria-required="true" checked> 初診　
+									<input name="shoshin" type="radio" value="再診" placeholder="" class="" required="required" aria-required="true"> 再診　診察券番号 <input name="shinsatsuNum" type="text" value="" placeholder="再診の場合はご記入ください" class="formM"><br>
+									<span>※ 日時変更ご希望の場合は、現在予約されている日時を備考欄にご記入をお願いいたします。</span>
+								</td>
+							</tr>
+                            
+							<tr>
+								<th>お名前<span class="att">必須</span></th>
+								<td>
+									<input name="name_s" type="text" value="" placeholder="山田 花子" class="formM" required="required" aria-required="true">
+								</td>
+							</tr>
+							
+							<tr>
+								<th>ふりがな</th>
+								<td>
+									<input name="kana" type="text" value="" placeholder="やまだ はなこ" class="formM">
+								</td>
+							</tr>
+
+							<tr>
+								<th>年齢<span class="att">必須</span></th>
+								<td>
+									<select name="age_s">
+										<option value="16">16</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+										<option value="24">24</option>
+										<option value="25" selected>25</option>
+										<option value="26">26</option>
+										<option value="27">27</option>
+										<option value="28">28</option>
+										<option value="29">29</option>
+										<option value="30">30</option>
+										<option value="31">31</option>
+										<option value="32">32</option>
+										<option value="33">33</option>
+										<option value="34">34</option>
+										<option value="35">35</option>
+										<option value="36">36</option>
+										<option value="37">37</option>
+										<option value="38">38</option>
+										<option value="39">39</option>
+										<option value="40">40</option>
+										<option value="41">41</option>
+										<option value="42">42</option>
+										<option value="43">43</option>
+										<option value="44">44</option>
+										<option value="45">45</option>
+										<option value="46">46</option>
+										<option value="47">47</option>
+										<option value="48">48</option>
+										<option value="49">49</option>
+										<option value="50">50</option>
+										<option value="51">51</option>
+										<option value="52">52</option>
+										<option value="53">53</option>
+										<option value="54">54</option>
+										<option value="55">55</option>
+										<option value="56">56</option>
+										<option value="57">57</option>
+										<option value="58">58</option>
+										<option value="59">59</option>
+										<option value="60">60</option>
+										<option value="61">61</option>
+										<option value="62">62</option>
+										<option value="63">63</option>
+										<option value="64">64</option>
+										<option value="65">65</option>
+								</select>
+								歳　<a href="#young" class="icon">未成年の方はこちら</a></td>
+							</tr>
+							<tr>
+								<th>電話番号<span class="att">必須</span></th>
+								<td>
+									<input name="tel_s" type="tel" value="" placeholder="090-1234-5678" style="ime-mode:disabled;" class="formM" required="required" aria-required="true">
+								</td>
+							</tr>
+
+							<tr>
+								<th>メールアドレス<span class="att">必須</span></th>
+								<td>
+									<input name="email_s" type="email" value="" placeholder="example@ike-sunshine.co.jp" style="ime-mode:disabled;" class="formL" required="required" aria-required="true">
+								</td>
+							</tr>
+							<tr>
+								<th>
+									治療項目にチェックしてください。<br>(複数選択可)
+								</th>
+								<td>
+									<p>
+										<input type="hidden" name="treatment[]" value="">
+										<input type="checkbox" id="treatment1" name="treatment[]" value="わきが治療（保険適用）"><label for="treatment1">わきが治療（保険適用）</label><br>
+										<input type="checkbox" id="treatment9" name="treatment[]" value="多汗症治療"><label for="treatment9">多汗症治療</label><br>
+										<input type="checkbox" id="treatment2" name="treatment[]" value="タトゥー・刺青除去手術"><label for="treatment2">タトゥー・刺青除去手術</label><br>
+										<input type="checkbox" id="treatment3" name="treatment[]" value="ニキビ・ニキビ跡"><label for="treatment3">ニキビ・ニキビ跡</label><br>
+										<input type="checkbox" id="treatment4" name="treatment[]" value="リストカット傷跡治療"><label for="treatment4">リストカット傷跡治療</label><br>
+										<input type="checkbox" id="treatment5" name="treatment[]" value="事故・手術の傷跡治療"><label for="treatment5">事故・手術の傷跡治療</label><br>
+										<input type="checkbox" id="treatment6" name="treatment[]" value="ホクロ・イボ除去・皮膚腫瘍等のでき物(保険適用)"><label for="treatment6">ホクロ・イボ除去・皮膚腫瘍等のでき物(保険適用)</label><br>
+										<input type="checkbox" id="treatment7" name="treatment[]" value="シミ・そばかす・肝班・色素沈着"><label for="treatment7">シミ・そばかす・肝班・色素沈着</label><br>
+										<input type="checkbox" id="treatment8" name="treatment[]" value="フェイス・デザイン(お顔のシワ・タルミ・二重・鼻)"><label for="treatment8">フェイス・デザイン(お顔のシワ・タルミ・二重・鼻)</label><br>
+										<input type="checkbox" id="treatment10" name="treatment[]" value="プラセンタ・にんにく・ビタミン注射"><label for="treatment10">プラセンタ・にんにく・ビタミン注射</label><br>
+										<input type="checkbox" id="treatment11" name="treatment[]" value="男性型脱毛症治療（プロペシア）"><label for="treatment11">男性型脱毛症治療（プロペシア）</label><br>
+									</p>
+									その他：<input name="other" type="text" value="" class="formM">
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+				<div class="btn_submit">
+					<input type="submit" value="確認画面へ">
+					<input type="hidden" name="mode" id="mode" value="CONFIRM">
+				</div>
+
+			</form>
+		</section>
+		<section class="secBox clrfix" id="young">
+			<h3 class="baseTitle">未成年者の施術について</h3>
+			<p class="mb10">池袋サンシャイン美容外科では未成年者の方の施術において、親権者の同意書が必要になっております。</p>
+			<p>下のボタンよりダウンロード出来る親権者同意書（pdf形式）をプリントアウトしていただきまして、全ての項目にご記入のうえ、お手数ですが当院までご持参ください。</p>
+			<div class="btnPdf mb10"><a href="<?php echo get_template_directory_uri(); ?>/pdf/douisyo.pdf" target="_blank"><span>親権者同意書をダウンロード</span></a></div>
+			<p>※PDF書を閲覧・印刷するにはADOBE READERが必要です。</p>
+			<a href="http://get.adobe.com/jp/reader/" target="_blank" class="getPdf">
+			<div class="photoL"><img src="<?php echo get_template_directory_uri(); ?>/common/img/img_adobe.jpg" alt="ADOBE READER"></div>
+			<p>ADOBE READERはこちらから無料でダウンロードできます。</p>
+			</a>
+		</section>
+
+	</main>
+</div>
+<!--/#mainContents-->
+
+<!--/ここまでコンテンツ-->
+<?php include (STYLESHEETPATH . '/sidecontact.php'); ?>
+
+<div class="breadcrumbs">
+	<ol class="clrfix">
+		<li><a href="/">HOME</a></li>
+		<li>カウンセリング・再診予約</li>
+	</ol>
+</div>
+
+<script src="//app.gorilla-efo.com/js/efo.3158.js" type="text/javascript"></script>
+
+<?php include (STYLESHEETPATH . '/footer.php'); ?>

@@ -1,0 +1,510 @@
+.mphList li {
+	text-align: center;
+	margin: 0 0 10px;
+}
+.treatmentStep li {
+	background: #F4F2F3;
+	position: relative;
+	padding: 20px;
+	margin: 0 0 40px 0;
+}
+.treatmentStep li .tl {
+	background: #fff;
+	padding: 10px 20px;
+	margin: 0 0 10px;
+	font-weight: bold;
+}
+.treatmentStep li .tl span {
+	background: #E0807C;
+	color: #FFF;
+	display: inline-block;
+	padding: 10px 20px;
+	margin: -10px 20px -10px -20px;
+}
+.treatmentStep li p {
+	margin: 0;
+}
+.treatmentStep li::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: -30px;
+	width: 40px;
+	height: 15px;
+	margin: 0 0 0 -20px;
+	background: url(/common/img/ic_arrowunder.png) no-repeat;
+}
+.treatmentStep li:last-child {
+	margin: 0;
+}
+.treatmentStep li:last-child::after {
+	display: none;
+}
+.treatmentStep dl dt {
+	float: left;
+	width: 170px;
+}
+.treatmentStep dl dt img {
+	width: 170px;
+	height: auto;
+}
+.treatmentStep dl dd {
+	float: left;
+	width: 100%;
+	margin: 0 0 0 -170px;
+	padding: 0 0 0 190px;
+	box-sizing: border-box;
+}
+
+/**/
+.about {
+	border-bottom: 1px solid #DCD6D8;
+	padding: 0;
+	margin: 0 0 20px;
+}
+.about dt {
+	float: left;
+	font-weight: bold;
+	width: 170px;
+	box-sizing: border-box;
+	border: 1px solid #822520;
+	padding: 10px;
+	background: #F4F2F3;
+}
+.about dd {
+	float: left;
+	padding: 0 0 0 190px;
+	margin: 0 0 0 -170px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+/**/
+.item {
+	margin: 0 0 20px;
+}
+.item dt {
+	float: left;
+	width: 120px;
+}
+.item dd {
+	float: left;
+	padding: 0 0 0 140px;
+	margin: 0 0 0 -120px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+/**/
+.causeStepbox {
+	margin: 0 0 20px;
+}
+.causeStepbox .causeStep {
+	margin: 0 -10px;
+}
+.causeStep li {
+	float: left;
+	padding: 0 10px;
+	box-sizing: border-box;
+	width: 50%;
+	margin: 0 0 20px;
+}
+.causeStep li .box {
+	background: #F4F2F3;
+	padding: 20px;
+}
+.causeStep li .tl {
+	background: #E1DBDE;
+	padding: 10px 20px;
+	margin: 0 0 10px;
+	font-weight: bold;
+}
+.causeStep li .tl span {
+	background: #e0807c;
+	color: #FFF;
+	display: inline-block;
+	padding: 10px 20px;
+	margin: -10px 20px -10px -20px;
+}
+.causeStep li p {
+	margin: 0;
+}
+.causeStep li .box .inner {
+	position: relative;
+	margin: 0 0 50px;
+}
+.causeStep li .box .inner::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: -30px;
+	width: 40px;
+	height: 15px;
+	margin: 0 0 0 -20px;
+	background: url(/common/img/ic_arrowunder.png) no-repeat;
+}
+.causeStep li .box .inner:last-child {
+	margin: 0;
+}
+.causeStep li .box .inner:last-child::after {
+	display: none;
+}
+.causeStep li .box .inner dt {
+	float: left;
+	width: 80px;
+}
+.causeStep li .box .inner dd {
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 0 0 90px;
+	margin: 0 0 0 -80px;
+}
+
+/**/
+.hairStep li {
+	background: #F4F2F3;
+	position: relative;
+	padding: 20px;
+	margin: 0 0 20px 0;
+}
+.hairStep li .tl {
+	color: #822520;
+	padding: 10px 20px;
+	margin: 0 0 10px;
+	font-weight: bold;
+}
+.hairStep li p {
+	margin: 0;
+}
+.hairStep dl dt {
+	float: left;
+	width: 200px;
+}
+.hairStep dl dt img {
+	width: 200px;
+	height: auto;
+}
+.hairStep dl dd {
+	float: left;
+	width: 100%;
+	margin: 0 0 0 -200px;
+	padding: 0 0 0 220px;
+	box-sizing: border-box;
+}
+
+/**/
+.cItem, .placentaItem, .hairItem {
+	margin: 0 0 20px;
+}
+.placentaItem dt, .hairItem dt {
+	float: left;
+	width: 160px;
+	text-align: center;
+}
+.cItem dt {
+	float: left;
+	width: 240px;
+	text-align: center;
+}
+.cItem dt.left {
+	text-align: left;
+}
+.placentaItem dt img, .hairItem dt img {
+	max-width: 160px;
+	height: auto;
+}
+.placentaItem dd, .hairItem dd {
+	float: left;
+	width: 100%;
+	margin: 0 0 0 -160px;
+	padding: 0 0 0 180px;
+	box-sizing: border-box;
+}
+.cItem dd {
+	float: left;
+	width: 100%;
+	margin: 0 0 0 -240px;
+	padding: 0 0 0 260px;
+	box-sizing: border-box;
+}
+.cItem dt ul {
+	margin: 0 -5px;
+}
+.cItem dt ul li {
+	float: left;
+	list-style-type: none;
+	margin: 0;
+	padding: 0 5px;
+}
+
+/**/
+.mediaList {
+	margin: 0 -10px;
+}
+.mediaList li {
+	padding: 0 10px;
+	box-sizing: border-box;
+	float: left;
+}
+
+/**/
+.btncase {
+	text-align: center;
+	margin: 20px 0;
+}
+.btncase dt {
+	padding: 10px 50px;
+	font-weight: bold;
+	color: #822520;
+	border: 1px solid #D2D2D2;
+	display: inline-block;
+	text-align: center;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1.00, #EBEBEB), color-stop(0.00, #FFF));
+	background: -webkit-linear-gradient(#FFF, #EBEBEB);
+	background: -moz-linear-gradient(#FFF, #EBEBEB);
+	background: -o-linear-gradient(#FFF, #EBEBEB);
+	background: -ms-linear-gradient(#FFF, #EBEBEB);
+	background: linear-gradient(#FFF, #EBEBEB);
+	cursor: pointer;
+}
+.btncase dt span {
+	background: url(/common/img/ic_arrow01.png) no-repeat left .5em;
+	padding: 0 0 0 .8em;
+}
+.btncase dd {
+	margin: 30px 0 0;
+}
+.operationsList {
+	margin: 0 -10px;
+}
+.operationsList li {
+	width: 50%;
+	padding: 0 10px;
+	margin: 0 0 20px;
+	float: left;
+	box-sizing: border-box;
+}
+.operationsList li a {
+	padding: 10px;
+	display: block;
+	background-color: #EEEEEE;
+	box-sizing: border-box;
+	color: #313131;
+}
+.operationsList li dl {
+	margin: 0 0 10px;
+}
+.operationsList li dt {
+	width: 60px;
+	float: left;
+	box-sizing: border-box;
+}
+.operationsList li dd {
+	width: 100%;
+	margin: 0 0 0 -60px;
+	padding: 0 0 0 80px;
+	height: 100%;
+	float: left;
+	box-sizing: border-box;
+}
+.operationsList li dd h3 {
+	margin: 0 0 10px;
+	font-weight: bold;
+	font-size: 18px;
+	font-size: 1.8rem;
+	display: table;
+	width: 100%;
+}
+.operationsList li dd h3 span {
+	display: table-cell;
+	height: 49px;
+	vertical-align: middle;
+	border-bottom: 1px solid #82231F;
+	color: #82231F;
+}
+.operationsList li a:hover {
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+.centerBox {
+	width: 100%;
+}
+.doubleItem {
+	margin: 0 auto;
+	width: 400px;
+	overflow: hidden;
+}
+.doubleItem li {
+	width: 180px;
+	float: left;
+	margin-left: 40px;
+}
+.doubleItem li:first-child {
+	margin-left: 0px;
+}
+.doubleItem li p {
+	margin-top: 1em;
+	font-size: 12px;
+}
+.btncase dd {
+	text-align: left;
+}
+.imgCenter {margin: 30px 0; text-align: center;}
+.photoL {text-align: center;}
+.imgBlock img {padding: 10px;}
+@media screen and (max-width:767px) {
+	/*toppage*/
+	.operationsList {
+		margin: 0
+	}
+	.operationsList li {
+		width: auto;
+		padding: 0;
+		float: none;
+		margin-bottom: 10px;
+	}
+	.operationsList li dd h3 {
+		font-size: 15px;
+		display: block;
+		width: auto;
+		margin: 0.8em 0 0;
+		line-height: 1.4
+	}
+	.operationsList li dd h3 span {
+		display: block;
+		border-bottom: none;
+	}
+	.operationsList li p {
+		font-size: 13px
+	}
+
+	/**detail*/
+	.operationsFlow .photoR {
+		float: none;
+		width: auto;
+		max-width: none;
+		text-align: center;
+		margin: 0 0 15px;
+	}
+	.treatmentStep li .tl {
+		background: none;
+		padding: 0;
+		font-size: 15px;
+		text-align: center;
+	}
+	.treatmentStep li .tl span {
+		background: #E0807C;
+		color: #FFF;
+		display: block;
+		padding: 5px;
+		text-align: center;
+		font-size: 12px;
+		margin: 0 0 10px
+	}
+	.treatmentStep dl dt {
+		float: none;
+		width: auto;
+		margin: 0 0 10px;
+		text-align: center;
+	}
+	.treatmentStep dl dd {
+		float: none;
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+	.placentaItem dt, .hairItem dt, .cItem dt, .item dt {
+		float: none;
+		width: auto;
+		text-align: center !important;
+		margin: 0 0 10px;
+	}
+	.placentaItem dd, .hairItem dd, .cItem dd, .item dd {
+		float: none;
+		width: auto;
+		margin: 0 0 10px;
+		padding: 0;
+	}
+	.causeStepbox .causeStep {
+		margin: 0;
+	}
+	.causeStepbox .causeStep li {
+		float: none;
+		padding: 0;
+		width: auto;
+	}
+	.causeStep li .box {
+		height: auto !important;
+	}
+	.causeStepbox .causeStep .tl {
+		background: none;
+		padding: 0;
+		font-size: 15px;
+		text-align: center;
+	}
+	.causeStepbox .causeStep .tl span {
+		display: block;
+		padding: 5px;
+		text-align: center;
+		font-size: 12px;
+		margin: 0 0 10px
+	}
+	.causeStep li .box .inner dd {
+		font-size: 12px;
+	}
+	.hairStep li .tl {
+		padding: 5px;
+		text-align: center;
+	}
+	.hairStep dl dt {
+		float: none;
+		width: auto;
+		text-align: center;
+		margin: 0 0 15px;
+	}
+	.hairStep dl dd {
+		float: none;
+		width: auto;
+		margin: 0;
+		padding: 0;
+		font-size: 12px;
+	}
+	.mediaList {
+		margin: 0
+	}
+	.mediaList li {
+		padding: 0;
+		margin: 0 0 10px;
+		float: none;
+		text-align: center;
+	}
+	.mediaList li img {
+		min-width: 265px;
+	}
+	.about dt {
+		float: none;
+		display: inline-block;
+		width: auto;
+		margin: 0 0 10px;
+	}
+	.about dd {
+		float: none;
+		padding: 0;
+		margin: 0;
+	}
+	.doubleItem {
+		width: 100%;
+	}
+	.doubleItem li {
+		width: 50%;
+		margin: 15px auto;
+		padding: 10px;
+		box-sizing: border-box;
+		text-align: center;
+	}
+	.tatooList li,.faceList li,.laserList li,.placentaList li,.datsumouList li {width: 50%!important; float: left;}
+	.tatooList li:first-child {width: 100%!important;}
+	.imgCenter {margin: 20px 0; }
+}

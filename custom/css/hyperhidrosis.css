@@ -1,0 +1,72 @@
+.btn-square-soft-blogitiran {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #f9a9ae;
+    width: 360px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    font-weight: bold;
+    background: linear-gradient(#fcffb7b8 0%, #f4ff45ba 100%);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+  }
+  
+  .btn-square-soft-blogitiran:active {
+    /*押したとき*/
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);/*沈むように*/
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    background-image: linear-gradient(#fed6e3 0%, #f4ff4569 100%);/*グラデーションを明るく*/
+  }
+  
+  h3.subTitle {
+      padding: 0.5em;
+      color: #3c3f42;
+      background: #f4f2f3;
+      border-left: solid 5px #4c0604;
+  }
+  
+  h4 {
+      font-size: 16px;
+      line-height: 22px;
+      text-decoration: none;
+      color: #555;
+      font-weight: bold;
+  }
+  
+  h4 b {
+      color: #4a0603;
+      font-size: 21px;
+  }
+  
+  table.blogs{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  table.blogs th,table blogs td{
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  table.blogs tr:nth-child(odd){
+    background-color: #eee
+  }
+  
+  
+  
+  @media screen and (max-width: 767px) {
+    img.sp {
+    width:30%;
+    }
+}
+  
+  p.flow-op {
+      width: 250px;
+  }
+  

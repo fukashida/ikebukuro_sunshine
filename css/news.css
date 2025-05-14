@@ -1,0 +1,91 @@
+.baseTitle a {text-decoration: underline;}
+section.author {
+    position: relative;
+    margin: 2em 0;
+    padding: 1.5em 1em;
+    border: solid 3px #82231F;
+    border-radius: 8px;
+}
+
+span.author_info {
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 19px;
+    background: #FFF;
+    color: #82231F;
+    font-weight: bold;
+}
+
+.author img {
+    float: left;
+    border-radius: 50%;
+    margin: 0px 10px 0px 5px;
+    width: 20%;
+}
+
+section.author p {
+    margin: 0;
+}
+
+span.clinic {
+    font-size: 20px;
+}
+
+p.doctor {
+    font-size: 18px;
+}
+
+.doctor span {
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+.doctor a {
+    color: #333;
+}
+
+.overview {
+    margin-top: 10px;
+}
+
+.overview p {
+    font-size: 12.5px;
+}
+
+p.member {
+    float: left;
+    padding-right: 15px;
+}
+
+.description {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 767px){
+
+.author img {
+    width: 35%;
+}
+
+span.clinic {
+    font-size: 15px;
+}
+
+.overview {
+    margin-top: 55px;
+}
+
+.overview p {
+    line-height: 20px;
+    padding-top: 10px;
+}
+
+p.member {
+    float: none;
+}
+
+}

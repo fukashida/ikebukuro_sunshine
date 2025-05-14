@@ -1,0 +1,3609 @@
+@charset "utf-8";
+
+/* CSS Document */
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic);
+@import url(//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
+
+/*---------------------------------------------------------------
+  link
+----------------------------------------------------------------*/
+a:link {
+	text-decoration: none;
+	color: #82231F;
+}
+a:visited {
+	text-decoration: none;
+	color: #82231F;
+}
+a:hover {
+	text-decoration: none;
+	color: #e0807c;
+}
+a:hover img {
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+
+/*---------------------------------------------------------------
+  base
+----------------------------------------------------------------*/
+html {
+	font-size: 62.5%; /*10px*/
+}
+body {
+	color: #333;
+	font-family: Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1.6;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	background: url(/common/img/bg_body.png) left top repeat-x;
+}
+table {
+	font-size: 100%;
+}
+
+/*---------------------------------------------------------------
+  spacing
+----------------------------------------------------------------*/
+.mb05 {
+	margin-bottom: 5px !important;
+}
+.mb10 {
+	margin-bottom: 10px !important;
+}
+.mb15 {
+	margin-bottom: 15px !important;
+}
+.mb20 {
+	margin-bottom: 20px !important;
+}
+.mb25 {
+	margin-bottom: 25px !important;
+}
+.mb30 {
+	margin-bottom: 30px !important;
+}
+.mb35 {
+	margin-bottom: 35px !important;
+}
+.mb40 {
+	margin-bottom: 40px !important;
+}
+.mb45 {
+	margin-bottom: 45px !important;
+}
+.mb50 {
+	margin-bottom: 50px !important;
+}
+.mb60 {
+	margin-bottom: 60px !important;
+}
+.mr15 {
+	margin-right: 15px !important;
+}
+.notes {
+	font-weight: bold;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+/*---------------------------------------------------------------
+  clear
+----------------------------------------------------------------*/
+.clr {
+	clear: both;
+}
+.clrfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	font-size: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clrfix {
+	display: inline-block;
+}
+
+/* Hides from IE Mac */
+* html .clrfix {
+	height: 1%;
+}
+.clrfix {
+	display: block;
+}
+
+/* End Hack */
+.pc_hide {
+	display: none;
+}
+.disnon {
+	display: none;
+}
+
+
+
+/*---------------------------------------------------------------
+  sns-link
+----------------------------------------------------------------*/
+
+.sns-link{
+	margin: 50px auto;
+	text-align: center;
+}
+.sns-link ul{
+	width: 90%;
+	margin: auto;
+	max-width: 360px;
+	font-size: 0;
+	letter-spacing: -2em;
+}
+.sns-link ul li{
+	display: inline-block;
+	font-size: 12px;
+	letter-spacing: normal;
+	width: 22%;
+	margin: auto 1.5%;
+}
+.sns-link ul li img{
+	width: 100%;
+	height: auto;
+}
+
+
+/*---------------------------------------------------------------
+  header
+----------------------------------------------------------------*/
+#header {
+	width: 100%;
+	background: url(/common/img/wood.png);
+}
+header {
+	width: 980px;
+	position: relative;
+	margin: 0 auto;
+/*	height: 131px;*/
+	height: 160px;
+}
+#headText {
+	font-size: 1px;
+	font-size: 1rem;
+	line-height: 1;
+	position: absolute;
+	top: 12px;
+	left: 7px;
+	color: #fff;
+}
+#headNav {
+	position: absolute;
+	line-height: 1;
+	top: 10px;
+	right: 0;
+	border-left: 1px solid #333;
+	display: none;
+}
+#headNav li {
+	float: left;
+	border-right: 1px solid #333;
+	padding: 0 29px;
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+#headNav li a {
+	color: #333;
+}
+#gnav {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	bottom: 10px
+}
+#gnav ul {
+	margin: 0 -2px;
+}
+#gnav li {
+	width: 14.28%;
+	float: left;
+	box-sizing: border-box;
+	padding: 0 1px;
+/*	height:30px;*/
+}
+#gnav li a {
+	display: block;
+/*	height:30px;*/
+    line-height: 30px;
+    color: #82231F;
+    text-align: center;
+    background: -moz-linear-gradient( top, #ffffff 0%, #ffffff 50%, #d6d6d6);
+    background: -webkit-gradient( linear, left top, left bottom, from(#ffffff), color-stop(0.50, #ffffff), to(#d6d6d6));
+	background:linear-gradient(to bottom, #ffffff, #ffffff, #d6d6d6); /* IE */
+    -moz-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 3px rgba(255,255,255,1);
+    -webkit-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 3px rgba(255,255,255,1);
+    box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 3px rgba(255,255,255,1);
+    text-shadow: 0px -1px 0px rgba(000,000,000,0.1), 0px 1px 0px rgba(255,255,255,1);
+	/* IE8 IE9 */
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#ffffff, endcolorstr=#d6d6d6))";
+	zoom: 1;
+}
+#gnav li a:hover {
+	opacity: .8;
+}
+#gnav li a img{
+	width: 25px;
+	height: auto;
+}
+#headLogo {
+	width: 471px;
+	height: 49px;
+	position: absolute;
+	left: 4px;
+	top: 35px;
+/*	background: url(../img/logo01.png) no-repeat;*/
+	background: url("https://www.ike-sunshine.co.jp/wp-content/uploads/2020/07/ikesunlogo.png") no-repeat;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+#headLogo a {
+	display: block;
+}
+#headTel {
+	position: absolute;
+	top: 33px;
+	right: 160px;
+}
+#headContact {
+	position: absolute;
+	top: 33px;
+	right: 0;
+}
+#headContact li {
+	margin-bottom: 4px;
+	position: relative;
+}
+#headContact li img {
+	width: auto;
+	height: auto;
+}
+#headContact li a {
+	background-color: #FBA733;
+	display: block;
+	color: #FFF;
+	text-align: center;
+	padding: 0 13px;
+}
+#headContact li a:after {
+	content: "";
+	display: block;
+	width: 5px;
+	height: 5px;
+	background: url(../img/ic_btarrow.png);
+	position: absolute;
+	bottom: 4px;
+	right: 2px;
+}
+#headContact li a:hover {
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+
+/*---------------------------------------------------------------
+  footer
+----------------------------------------------------------------*/
+#footer {
+	clear: both;
+	width: 100%;
+	background: #F4F2F3 url(../img/bg_footer.gif) repeat-x left top;
+	position: relative;
+}
+#footer .inner {
+	clear: both;
+	width: 980px;
+	margin: 0 auto;
+	position: relative;
+}
+#footHead {
+	padding: 15px 0
+}
+#footHead .inner {
+	clear: both;
+	width: 960px;
+	margin: 0 auto;
+}
+#footHead .name {
+	font-size: 18px;
+	font-size: 1.8rem;
+	color: #7F251D;
+	line-height: 20px;
+	float: left;
+	margin: 0 20px 0 0;
+}
+#footHead .tel, #footHead .tel dt, #footHead .tel dd {
+	float: left;
+	line-height: 20px;
+}
+#footHead .tel dt {
+	font-size: 17px;
+	font-size: 1.7rem;
+	font-weight: bold;
+	color: #5D5B5C;
+	font-family: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	margin: 0 10px 0 0;
+	background: url(../img/ic_freedial.gif) no-repeat left center;
+	padding: 0 0 0 36px;
+}
+#footNav {
+/*	padding: 35px 20px 35px 0;*/
+	padding: 35px 0 35px 0;
+}
+#footNav .box {
+	float: left;
+	margin-left: 100px;
+}
+#footNav .box:first-child {
+	margin: 0;
+}
+#footNav .box ul {
+	margin: 0 0 1.5em;
+}
+#footNav .box li {
+	line-height: 1;
+	margin: 0 0 10px;
+}
+#footNav .box li a {
+	font-size: 13px;
+	font-size: 1.3rem;
+}
+#footNav .box li a::before {
+	content: "\e800";
+	font-family: "fontello";
+	padding-right: 5px;
+}
+#footNav .map{
+	float: right;
+	width: 50%;
+}
+#gotoTop {
+	position: absolute;
+	right: 0;
+	top: 15px;
+	line-height: 20px;
+}
+#gotoTop a:after {
+	content: "\e801";
+	font-family: "fontello";
+	padding-left: 5px;
+}
+#copyright {
+	position: absolute;
+	right: 20px;
+	bottom: 20px
+}
+
+.float_nav{
+	display: none;
+}
+
+@media screen and (max-width:767px) {
+	.float_nav{
+		display: block;
+		position: fixed;
+		width: 100%;
+		margin: 0;
+		bottom: 0;
+		left: 0;
+		top: auto;
+		z-index: 9999;
+		padding: 5px 3px;
+		box-sizing: border-box;
+		background: #832420;
+	}
+	.float_nav ul{
+		display: -webkit-box;
+		display: flex;
+		justify-content:space-between;
+	}
+	.float_nav li{
+		width: 49%;
+		float: left;
+		margin: 0 0.5%;
+		box-sizing: border-box;
+		position: relative;
+		background: #FBA733;
+		height: 65px;
+		display: table;
+		line-height: 1.4em;
+		font-weight: bold;
+	}
+	.float_nav li a{
+		color: #ffffff;
+		text-align: center;
+		display: table-cell;
+		vertical-align: middle;
+		padding-left: 25px;
+		white-space: nowrap;
+	}
+
+	.float_nav li:first-child a{
+		font-size: 16.8px;
+	}
+
+	.float_nav li a:hover{
+		opacity: 0.8;
+	}
+
+	.float_nav li img{
+		width: 30px;
+		position: absolute;
+		left: 2%;
+		top: 27%;
+	}
+	.float_nav li a:hover img{
+		opacity: 1;
+	}
+	.float_nav li .number{
+		font-size: 1.4em;
+		font-weight: bold;
+	}
+	.float_nav li .time{
+		font-size: 0.8em;
+		font-weight: normal;
+		display: block;
+		margin-top: -0.2em;
+	}
+}
+
+/*column layout*/
+.clmBox {
+	clear: both;
+	margin: 0 -12px;
+	position: relative;
+}
+.clmBox::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+.clmBox > .box {
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+	padding: 0 12px;
+}
+.clmBox.box2 > .box {
+	width: 50%;
+}
+.clmBox.box3 > .box {
+	width: 33.33333%;
+}
+.clmBox.box4 > .box {
+	width: 25%;
+}
+.clmBox.box5 > .box {
+	width: 20%;
+}
+#sideReservationWrap {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 920px;
+	margin: 0 0 0 -440px;
+}
+@media screen and (max-width:1400px) {
+	#sideReservationWrap {
+		display: none;
+	}
+}
+#sideReservationWrap.fixed {
+	position: fixed;
+}
+#sideReservation {
+	position: absolute;
+	right: -244px;
+	top: 15px;
+	border: 2px solid #832420;
+	background: #F4F2F3;
+	width: 220px;
+	padding: 15px 15px 10px;
+	box-sizing: border-box;
+}
+#sideReservationWrap.fixed #sideReservation {
+	top: 15px;
+}
+#sideReservation .tel {
+	text-align: center;
+
+}
+#sideReservation .tel span {
+	display: inline-block;
+	font-size: 22px;
+	font-size: 2.2rem;
+	font-family: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	font-weight: bold;
+	color: #5C5B5B;
+	background: url(../img/ic_freedial.gif) no-repeat left center;
+	padding: 0 0 0 35px;
+}
+#sideReservation .time {
+	text-align: center;
+	line-height: 1.3;
+	font-size: 14px;
+	font-size: 1.4rem;
+	margin: 0 0 1em
+}
+
+#sideReservation .pc_none {
+	display:none;
+}
+#sideReservation .linkBtn01 {
+	margin-bottom: 25px;
+}
+#sideReservation .linkBtn01 li {
+	margin: 0 0 10px
+}
+#sideReservation .linkBtn01 li a{
+	background-color: #FBA733;
+	display: block;
+	color: #FFF;
+	text-align: center;
+	padding: 10px 13px;
+	}
+#sideReservation .linkBtn01 li a:after{
+	content: "";
+	display: block;
+	width: 8px;
+	height: 8px;
+	background: url(../img/ic_btnlink01.png);
+	position: absolute;
+	bottom: 4px;
+	right: 2px;
+}
+#sideReservation .linkBtn01 li a:hover {
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+#sideReservation .time span {
+	display: block;
+}
+#sideReservation .search {
+	text-align: center;
+}
+#sideReservation .search dt {
+	margin: 0 0 5px;
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1;
+}
+#sideReservation .search dd input[type="text"] {
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #848484;
+	font-size: 14px;
+	font-size: 1.4rem;
+	padding: 5px;
+}
+#sideReservation .search dd input[type="submit"] {
+	background: #82231F;
+	color: #FFF;
+	border: none;
+	text-align: center;
+	padding: 5px 10px;
+	margin: 10px 0 0;
+}
+#container {
+	clear: both;
+	width: 980px;
+	margin: 0 auto;
+	position: relative;
+	background: #fff;
+	padding: 10px 0 20px;
+}
+.breadcrumbs {
+	clear: both;
+	line-height: 30px;
+	padding: 0 15px;
+	margin: 0 0 10px;
+}
+.breadcrumbs li {
+	float: left;
+}
+.breadcrumbs li::before {
+	content: "\e803";
+	margin: 0 .5em;
+	font-family: "fontello";
+}
+.breadcrumbs li:first-child::before {
+	display: none;
+}
+#mainContents {
+	width: 945px;
+	float: right;
+	margin-bottom: 50px;
+	margin-right: 15px;
+}
+#subContents {
+	width: 240px;
+	float: left;
+	background: #F4F2F3;
+	min-height: 500px;
+	box-sizing: border-box;
+	padding: 20px 20px 0;
+	margin-bottom: 50px;
+	margin-left: 15px;
+}
+#subContents h3 {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	line-height: 1;
+	margin: 0 0 15px;
+}
+#subContents h3 span {
+	display: inline-block;
+	padding: 0 9px;
+	position: relative;
+	z-index: 1;
+	background: #F4F2F3;
+	min-width: 4em;
+	color: #82231F;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+#subContents h3::before, #subContents h3::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	top: 50%;
+	left: 0;
+	background: #82231F;
+}
+#subContents h3::before {
+	margin-top: -3px;
+}
+#subContents h3::after {
+	margin-bottom: -3px;
+}
+#subContents .list01 {
+	margin-bottom: 30px;
+}
+#subContents .list01 li {
+	margin: 0 0 .5em;
+}
+#subContents .list01 a {
+	display: block;
+	line-height: 1.2;
+	position: relative;
+	padding-left: 10px;
+}
+#subContents .list01 a::before {
+	content: "\e800";
+	font-family: "fontello";
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+}
+#subContents .bnr {
+	margin-bottom: 30px;
+}
+#subContents .bnr li {
+	margin: 0 0 8px;
+}
+#subContents .bnr + .bnr {
+	margin-top: -10px;
+	padding-top: 13px;
+	border-top: 1px solid #DDD7D9;
+}
+#sideGototop {
+	text-align: center;
+	line-height: 1;
+	margin-top: 30px;
+}
+#sideGototop a::after {
+	content: "\e801";
+	font-family: "fontello";
+	padding-left: 5px;
+}
+
+/*layout*/
+#pageTitle {
+	border: 1px solid #B57B79;
+	background: #F4F2F3;
+	padding: 25px;
+	margin: 0 0 30px;
+}
+#pageTitle.greetings {
+	background: #F4F2F3 url(/common/img/kv_bg_greetings.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.operations {
+	background: #F4F2F3 url(/common/img/kv_bg_operations.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.aga {
+	background: #F4F2F3 url(/common/img/kv_bg_aga.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.blogs {
+	background: #F4F2F3 url(/common/img/kv_bg_blogs.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.bodyline {
+	background: #F4F2F3 url(/common/img/kv_bg_bodyline.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.charge {
+	background: #F4F2F3 url(/common/img/kv_bg_charge.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.datsumou {
+	background: #F4F2F3 url(/common/img/kv_bg_datsumou.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.datumousyou {
+	background: #F4F2F3 url(/common/img/kv_bg_datumousyou.png) no-repeat right;
+	background-size: cover;
+}
+#pageTitle.faceline {
+	background: #F4F2F3 url(/common/img/kv_bg_faceline.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.flow {
+	background: #F4F2F3 url(/common/img/kv_bg_flow.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.futae {
+	background: #F4F2F3 url(/common/img/kv_bg_futae.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.hatumou {
+	background: #F4F2F3 url(/common/img/kv_bg_hatumou.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.ikumou {
+	background: #F4F2F3 url(/common/img/kv_bg_ikumou.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.inquiry {
+	background: #F4F2F3 url(/common/img/kv_bg_inquiry.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.laser {
+	background: #F4F2F3 url(/common/img/kv_bg_laser.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.map {
+	background: #F4F2F3 url(/common/img/kv_bg_map.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.media {
+	background: #F4F2F3 url(/common/img/kv_bg_media.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.monitor {
+	background: #F4F2F3 url(/common/img/kv_bg_monitor.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.news {
+	background: #F4F2F3 url(/common/img/kv_bg_news.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.nikibi {
+	background: #F4F2F3 url(/common/img/kv_bg_nikibi.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.placenta {
+	background: #F4F2F3 url(/common/img/kv_bg_placenta.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.recruit {
+	background: #F4F2F3 url(/common/img/kv_bg_recruit.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.reservation {
+	background: #F4F2F3 url(/common/img/kv_bg_reservation.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.reservation2 {
+	background: #F4F2F3 url(/common/img/kv_bg_reservation.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.shiwa {
+	background: #F4F2F3 url(/common/img/kv_bg_shiwa.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.skincare {
+	background: #F4F2F3 url(/common/img/kv_bg_skincare.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.wakiga {
+	background: #F4F2F3 url(/common/img/kv_bg_wakiga.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.hyperhidrosis {
+	background: #F4F2F3 url(/common/img/kv_bg_wakiga.png) no-repeat;
+	background-size: cover;
+}
+#pageTitle.wakiga_operations {
+	background: #F4F2F3 url(/common/img/kv_bg_wakiga.png) no-repeat;
+	background-size: cover;
+}
+
+#pageTitle.hokuro_operations {
+	background: #F4F2F3 url(/common/img/kv_bg_skincare.png) no-repeat;
+	background-size: cover;
+}
+
+#pageTitle.mwlift {
+	background: #F4F2F3 url(/common/img/kv_bg_mwlift.png) no-repeat;
+	background-size: cover;
+}
+
+#pageTitle h1 {
+	font-size: 24px;
+	font-size: 2.4rem;
+	color: #822520;
+	font-weight: bold;
+	line-height: 1;
+}
+
+#pageTitle h2 {
+	font-size: 24px;
+	font-size: 2.4rem;
+	color: #822520;
+	font-weight: bold;
+	line-height: 1;
+}
+
+#pageTitle .categoryName {
+	font-size: 24px;
+	font-size: 2.4rem;
+	color: #822520;
+	font-weight: bold;
+	line-height: 1;
+}
+
+
+#pageTitle p {
+	max-width: 600px;
+	line-height: 1.4;
+	margin-top: .7em;
+	font-size: 15px;
+	font-size: 1.5rem;
+}
+.baseTitle {
+	font-size: 18px;
+	font-size: 1.8rem;
+	padding: .5em 15px;
+	color: #fff;
+	position: relative;
+	font-weight: bold;
+	margin-bottom: 20px;
+	background: url(/common/img/wood_title_common.png);
+}
+.baseTitle a {
+	color: #fff;
+}
+.subTitle {
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: bold;
+	line-height: 1.3;
+	margin-bottom: 1em;
+}
+.bold {
+	font-weight: bold;
+	margin: 0 0 1em;
+}
+.baseList {
+	margin: 0 0 1.5em;
+}
+.baseList li {
+	margin: 0 0 .5em;
+	padding: 0 0 0 1.5em;
+	position: relative;
+}
+.baseList li::before {
+	content: "●";
+	color: #82231F;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.baseList.border li {
+	padding-bottom: .5em;
+	margin-bottom: .5em;
+}
+.baseList li .w20 {
+	width: 20%;
+	display: inline-block;
+}
+.fsXS {
+	font-size: 10px;
+	font-size: 1.0rem;
+}
+.fsS {
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+.fsM {
+	font-size: 13px;
+	font-size: 1.3rem;
+}
+.fsL {
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+.fsXL {
+	font-size: 20px;
+	font-size: 2.0rem;
+}
+.labelTitle {
+	background: #faeaea;
+	display: inline-block;
+	padding: .5em 1em;
+	line-height: 1.2;
+	margin: 0 0 1em;
+	color: #822520;
+}
+.secBox {
+	display: block;
+	margin: 0 0 3em;
+}
+.secBox p {
+	margin-bottom: 1.2em;
+}
+.secBox .none {
+	margin-bottom: 0;
+}
+.secBox img {
+/*	max-width: 700px;*/
+	max-width: 100%;
+	height: auto;
+}
+a.icon::before {
+	content: "\e802";
+	font-family: "fontello";
+	padding-right: 5px;
+}
+.baseTbl01 table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #B57B79;
+}
+.baseTbl01 table th, .baseTbl01 table td {
+	border: 1px solid #B57B79;
+	padding: 1em;
+}
+.baseTbl01 table th {
+	background: #F4F2F3;
+	width: 20%
+}
+.baseTbl01.w70 table {
+	width: 70%;
+}
+.baseTbl01.nowrap table th {
+	white-space: nowrap;
+}
+.contactTbl input[type=text], .contactTbl select, .contactTbl textarea {
+	box-sizing: border-box;
+	padding: 5px;
+	border: 1px solid;
+	border-color: #D6D6D6 #D6D6D6 #CCC #CCC;
+}
+
+a.linkBtn01, .linkBtn01 a {
+	display: block;
+	background: #FBA733;
+	text-align: center;
+	position: relative;
+	line-height: 38px;
+	color: #FFF;
+	font-size: 16px;
+	font-size: 1.6rem;
+	transition: all linear .2s;
+}
+a.linkBtn01::after, .linkBtn01 a::after {
+	content: "";
+	display: block;
+	width: 8px;
+	height: 8px;
+	background: url(../img/ic_btnlink01.png);
+	position: absolute;
+	bottom: 3px;
+	right: 3px;
+}
+a.linkBtn01:hover, .linkBtn01 a:hover {
+	opacity: .8;
+}
+
+/*img*/
+.photoL {
+	float: left;
+	clear: left;
+	margin: 0 20px 0 0;
+}
+.photoR {
+	float: right;
+	clear: right;
+	margin: 0 0 0 20px;
+}
+.photoL p, .photoR p {
+	text-align: center;
+}
+.btnCommon, .btnPdf {
+	text-align: center;
+}
+.btnCommon a, .btnPdf a {
+	padding: 10px 30px;
+	border: 1px solid #D2D2D2;
+	display: block;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1.00, #EBEBEB), color-stop(0.00, #FFF));
+	background: -webkit-linear-gradient(#FFF, #EBEBEB);
+	background: -moz-linear-gradient(#FFF, #EBEBEB);
+	background: -o-linear-gradient(#FFF, #EBEBEB);
+	background: -ms-linear-gradient(#FFF, #EBEBEB);
+	background: linear-gradient(#FFF, #EBEBEB);
+}
+.btnPdf a span {
+	background: url(../img/icon_pdf.png) no-repeat left top;
+	color: #822520;
+	font-size: 20px;
+	padding: 0 0 0 40px;
+	font-size: 2.0rem;
+	display: inline-block;
+	line-height: 33px;
+	font-weight: bold;
+}
+.btnCommon a span {
+	background: url(../img/icon_pdf.png) no-repeat left top;
+	color: #822520;
+	font-size: 20px;
+	padding: 0 0 0 40px;
+	font-size: 2.0rem;
+	display: inline-block;
+	line-height: 33px;
+	font-weight: bold;
+}
+.btnCommon a:hover, .btnPdf a:hover {
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+.textL {
+	text-align: left;
+}
+.textR {
+	text-align: right;
+}
+.textC {
+	text-align: center;
+}
+
+/*FAQ*/
+.faq_area_all {
+	margin: 0 0 20px;
+}
+.faq_area_all .faq_q {
+	font-weight: bold;
+	margin: 0 0 10px;
+	background: url(../img/icon_q.gif) no-repeat left top;
+	padding: 0 0 0 30px;
+	line-height: 26px;
+	border: none;
+}
+.faq_area_all .faq_a {
+	background: url(../img/icon_a.gif) no-repeat left top;
+	padding: 0 0 0 30px;
+	margin: 0;
+	line-height: 25px;
+	font-weight: normal;
+}
+.faq_area_all .monphR {
+	width: 150px;
+	float: right;
+	text-align: center;
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+.faq_area_all .montxtL {
+	width: 100%;
+	float: right;
+	margin: 0 -150px 0 0;
+	padding: 0 170px 0 0;
+	box-sizing: border-box;
+}
+
+/*pagemenu*/
+.menuList {
+	margin: 0 -5px 20px;
+	padding: 0;
+}
+.menuList li {
+	margin: 0;
+	float: left;
+	padding: 0 5px;
+	box-sizing: border-box;
+	width: 33.33333%;
+	margin: 0 0 10px;
+}
+.menuList.long li {
+	width: 100%;
+	float: none;
+}
+.menuList.half li {
+	width: 50%;
+}
+.menuList li a {
+	border: 2px solid #F4F2F3;
+	padding: 10px 20px 10px 10px;
+	display: block;
+	position: relative;
+	color: #822520;
+}
+.menuList li a::after {
+	content: "\e804";
+	position: absolute;
+	font-family: "fontello";
+	top: 50%;
+	margin-top: -11px;
+}
+.menuList li a:hover {
+	background-color: #F4F2F3;
+}
+.menuList li.beside a::after {
+	content: "\e803";
+	position: absolute;
+	font-family: "fontello";
+	line-height: inherit;
+}
+
+/*ページ上部コンテンツナビ*/
+.menuList.head li a {
+	border: none;
+	padding: 0;
+	display: table;
+	width: 100%;
+}
+.menuList li a::after {
+	right: 10px;
+}
+.menuList.head li a span {
+	display: table-cell;
+	line-height: 1.4;
+	height: 2.8em;
+	border: 2px solid #F4F2F3;
+	padding: 10px 25px 10px 10px;
+	vertical-align: middle;
+	font-size: 12px;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+.menuList.head.half li a span, .menuList.head.long li a span {
+	height: auto;
+}
+.att {
+	color: #FF0000;
+	font-weight: bold;
+}
+.italic {
+	font-style: italic;
+}
+.pageLink li {
+	float: right;
+	display: block;
+	margin: 0 5px 0 0;
+}
+.pageLink li a::before {
+	content: "\e802";
+	font-family: "fontello";
+	padding-right: 5px;
+}
+.pageLink li.up a {
+	display: inline-block;
+	background: url(../img/ic_arrow04.png) no-repeat left .6em;
+	padding: 0 0 0 .8em;
+}
+.pageLink li.under a {
+	display: inline-block;
+	background: url(../img/ic_arrow06.png) no-repeat left .6em;
+	padding: 0 0 0 .8em;
+}
+.spHeadNav {
+	display: none;
+}
+#navLayer {
+	display: none;
+}
+.formL, .formM, .formS, .formSS {
+	padding: 5px 10px;
+}
+.formL {
+	width: 96%;
+}
+.formM {
+	width: 50%;
+}
+.formS {
+	width: 30%;
+}
+.formSS {
+	width: 10%;
+}
+.txtArea {
+	width: 96%;
+	height: 150px;
+}
+.btnarea {
+	text-align: center;
+}
+.btnarea a, .btnarea input {
+	background-color: #FBA733;
+	padding: 10px 50px;
+	border: none;
+	color: #FFF;
+	font-size: 16px;
+	font-size: 1.6rem;
+	cursor: pointer;
+}
+.btnarea a:hover, .btnarea input:hover {
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+
+/**/
+#paging-detail {
+	text-align: center;
+	padding-top: 25px;
+}
+#paging-detail li {
+	display: inline-block;
+	font-size: 84.6%;
+}
+#paging-detail li {
+	margin: 0 3px;
+}
+#paging-detail li a {
+	display: block;
+	border: 1px solid #82231F;
+	line-height: 35px;
+	min-width: 2em;
+	text-align: center;
+	padding: 0 10px;
+}
+#paging-detail li a {
+	padding: 0 25px;
+	color: #82231F;
+}
+#paging-detail li a:link, #paging-detail li a:visited {
+	color: #82231F;
+}
+#paging-detail li a:hover {
+	background: #82231F;
+	color: #FFF;
+}
+
+/*paging*/
+.pagination_n {
+	clear: both;
+	padding: 20px 0;
+	position: relative;	/*font-size: 14px;*/
+	line-height: 1.4em;
+}
+.pagination_n span, .pagination_n a {
+	display: inline;
+	border: 1px solid #82231F;
+	float: left;
+	width: auto;
+	margin: 2px 5px 2px 0;
+	padding: 6px 10px 5px;
+	color: #82231F;
+	text-decoration: none;
+}
+.pagination_n a:hover {
+	background: #82231F;
+	color: #fff !important;
+}
+.pagination_n .current {
+	padding: 6px 10px 5px;
+	background: #82231F;
+	color: #fff;
+}
+.spMenu, .spNav {
+	display: none;
+}
+
+/*----------------------------------------------------------
+					dt_column
+----------------------------------------------------------*/
+
+h3.subTitle {
+    padding: 0.5em;
+    color: #3c3f42;
+    background: #f4f2f3;
+    border-left: solid 5px #4c0604;
+}
+
+h4 a {
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+}
+
+h4 b {
+    color: #4a0603;
+    font-size: 21px;
+}
+
+
+.balloon5 {
+  width: 100%;
+  margin: 1.5em 0;
+  overflow: hidden;
+}
+
+.balloon5 .faceicon {
+  float: left;
+  margin-right: -90px;
+  width: 80px;
+}
+
+.balloon5 .faceicon img{
+  width: 100%;
+  height: auto;
+  border: solid 3px #f5deb3;
+  border-radius: 50%;
+}
+
+.balloon5 .chatting {
+  width: 100%;
+}
+
+.says {
+  display: inline-block;
+  position: relative;
+  margin: 5px 0 0 105px;
+  padding: 17px 13px;
+  border-radius: 12px;
+  background: #f5deb3;
+}
+
+.says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #f5deb3;
+}
+
+.says p {
+  margin: 0;
+  padding: 0;
+}
+
+.under1 {
+  background: linear-gradient(transparent 70%, #f5deb3 70%);
+}
+
+.column {
+position: relative;
+margin: 36px 0 16px;
+padding: 10px 10px 10px 10px;
+border: 2px solid #e0aba9;
+background-color: #fffbf5;
+}
+
+.column::before {
+position: absolute;
+bottom: 100%;
+left: -2px;
+padding: 2px 6px;
+content: "関連記事";
+background-color: #e0aba9;
+color: #fff;
+font-weight: bold;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table th,table td{
+  padding: 10px 0;
+  text-align: center;
+}
+
+/*table tr:nth-child(odd){
+  background-color: #eee
+}
+*/s
+.btn-square-soft {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #f9a9ae;
+  width: 360px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+  font-weight: bold;
+  background: linear-gradient(#fed6e3 0%, #ffaaaa 100%);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+}
+
+.btn-square-soft:active {
+  /*押したとき*/
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);/*沈むように*/
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(#fed6e3 0%, #ffbcbc 100%);/*グラデーションを明るく*/
+}
+
+
+.under1 {
+  background: linear-gradient(transparent 70%, #f5deb3 70%);
+}
+
+
+/*----------------------------------------------------------
+					目次
+----------------------------------------------------------*/
+#toc_box{
+	width: 100%;
+	background: #F4F2F3;
+	margin: 10px 0;
+}
+#toc_box .toc_title{
+	display: block;
+	background: #bdbdbd;
+	color: #ffffff;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 10px;
+	margin: 0;
+	text-align: center;
+	cursor: pointer;
+}
+#toc_box .open .toc_status:before{
+	content: "非";
+}
+
+#toc_box .toc_list{
+	display: none;
+	border: 1px solid #bdbdbd;
+	padding: 20px 20px 15px;
+	border-top: none;
+}
+#toc_box li {
+	position:relative;
+	list-style:none;
+	line-height: 1.6;
+}
+#toc_box li a{
+	color: #82231F;
+}
+#toc_box > a {
+	display: block;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 5px;
+	position: relative;
+}
+#toc_box .toc_list ul li{
+	margin-bottom: 10px;
+}
+#toc_box .toc_list ul li > a{
+	line-height: 1.4;
+}
+#toc_box .toc_list ul ul{
+	margin-left: 15px;
+}
+#toc_box .toc_list ul li .toc_num{
+	padding-right: 5px;
+}
+#toc_box .toc_list ul li ul{
+	margin-top: 5px;
+}
+#toc_box .toc_list ul li ul li{
+	margin-bottom: 5px;
+}
+
+
+@media screen and (max-width:1023px) and (min-width:768px) {
+#headText {
+	padding: 0 7px;
+}
+#gnav ul {
+    margin: 0 5px;
+}
+#headContact {
+	right: 5px;
+}
+#footHead {
+	padding: 15px 10px;
+}
+#gotoTop {
+	right: 10px;
+}
+#footNav {
+    padding: 35px 20px;
+}
+}
+
+@media screen and (max-width:767px) {
+	body {
+		background: none;
+	}
+	.pc_hide {
+		display: block;
+	}
+	.secBox img, img {
+		max-width: 100%;
+		height: auto;
+	}
+	iframe {
+		max-width: 100%;
+	}
+	.att {
+		padding-left: 5px;
+	}
+	header {
+		background: url("https://www.ike-sunshine.co.jp/wp-content/uploads/2020/11/wood-s.png");
+		width: auto;
+		position: relative;
+		padding: 5px 10px 0;
+		height: 32px;
+	}
+	#headTel, #headContact, #headNav {
+		display: none;
+	}
+	#header {
+		width: auto;
+		margin: 0;
+		height: auto;
+	}
+	#headText {
+		position: static;
+		/* padding: 10px 0; */
+		font-size: 7px;
+		/* display: none; */
+	}
+	#headLogo {
+		position: static;
+		background: none;
+		padding-top: 3px;
+		width: 201px;
+		height: 21px;
+	}
+	#headLogo a {
+		display: block;
+		background: url("https://www.ike-sunshine.co.jp/wp-content/uploads/2020/07/ikesunlogo.png") no-repeat;
+		background-size: 201px 21px;
+		width: 201px;
+		height: 21px;
+	}
+	#headLogo a span {
+		display: none;
+	}
+	#container {
+		width: auto;
+		margin: 0;
+		padding: 0 15px;
+	}
+	#footer {
+		background-image: none;
+		margin-top: 10px;
+	}
+	#footer .inner {
+		width: auto;
+	}
+	#footNav {
+		padding: 40px 15px 20px;
+	}
+	#footNav .box {
+		width: 50%;
+		margin-left: 0;
+		margin-bottom: 20px !important;
+		box-sizing: border-box;
+	}
+	#footNav .box ul {
+		margin: 0;
+	}
+	#footNav .box li a {
+		font-size: 11px;
+		display: block;
+		line-height: 1.3;
+		background-position: left .35em
+	}
+	#footNav .box:nth-child(2n+1) {
+		clear: both;
+	}
+	#footNav .box:nth-child(odd) {
+		padding-right: 10px;
+	}
+	#footNav .box:nth-child(even) {
+		padding-left: 10px;
+	}
+	#footNav .map{
+		width: 100%;
+		float: none;
+		margin-bottom: 20px;
+	}
+	#copyright {
+		position: static;
+		text-align: center;
+		padding: 0 20px 80px;
+	}
+	#navLayer {
+		position: fixed;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		background: #e0807c;
+		display: none;
+		z-index: 99;
+	}
+	#spNavClose {
+		position: fixed;
+		top: 10px;
+		right: 10px;
+		height: 40px;
+		width: 40px;
+		background: url(../img/ic_sphead_close.png) no-repeat;
+		background-size: 100%;
+	}
+	#gnav {
+		position: fixed;
+		top: 50%;
+		bottom: auto;
+		left: 50%;
+		width: 300px;
+		z-index: 999;
+		margin: -192px 0 0 -150px;
+		display: none;
+	}
+	#gnav li {
+		float: none;
+		padding: 0;
+		width: auto;
+		background: none;
+	}
+	#gnav li a {
+		background: none;
+		color: #fff;
+		line-height: 55px;
+		font-size: 20px;
+	}
+	#gnav li:first-child a {
+		border-radius: 5px 5px 0 0;
+	}
+	#gnav li:last-child a {
+		border: none;
+		border-radius: 0 0 5px 5px;
+	}
+	.clmBox {
+		margin: 0;
+	}
+	.clmBox > .box {
+		float: none;
+		width: auto !important;
+		padding: 0;
+	}
+	#sideReservation {
+		position: static;
+		border: 0;
+		width: auto;
+		padding: 0;
+		background: #832420;
+	}
+	#sideReservation .search dd input[type="submit"] {
+		width: 50%;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	#sideReservation .tel, #sideReservation .tel span a {
+		color: #fff;
+	}
+	#sideReservation .tel span {
+		font-size: 1.5rem;
+		padding: 0 0 0 30px;
+		background: url(../img/ic_freedial.gif) no-repeat 5px center;
+		background-size: 22px auto;
+	}
+	#sideReservation .time {
+		font-size: 10px;
+		padding-left: 7px;
+	}
+	#sideReservation .pc_none {
+		display:block !important;
+	}
+	#sideReservation .sp_none {
+		display:none;
+	}
+	#sideReservation .linkBtn01 {
+		overflow: hidden;
+		margin-bottom: 0;
+		padding: 0 5px;
+	}
+	#sideReservation .linkBtn01 li {
+		margin: 0;
+		float: left;
+		/*width: 50%;
+		padding: 5px;*/
+		box-sizing: border-box;
+	}
+	#sideReservation .search {
+		display: none;
+	}
+	#sideReservation .icon-down-open-big {
+		position: absolute;
+		top: -20px;
+		right: 0;
+		background: #832420;
+		color: #fff;
+		padding: 2px 4px;
+		opacity: 0.7;
+	}
+	#sideReservationWrap {
+	/*	display: block;*/
+		width: 100%;
+		margin: 0;
+		bottom: 0;
+		left: 0;
+		top: auto;
+		position: fixed;
+		z-index: 9999;
+		padding: 5px 0;
+		background: #832420;
+	}
+	#sideReservationWrap.fixed_close {
+		height: 0;
+	}
+	#sideReservationWrap.fixed_close .icon-down-open-big::before {
+		content: '\e809';
+	}
+	#sideGototop {
+		/*display: none;*/
+		margin-top: 0;
+	    visibility: hidden;
+	    line-height: 0;
+	}
+	#sideGototop a:after{
+		position: fixed;
+		right: 10px;
+		bottom: 18%;
+	    visibility: visible;
+	    padding-left: 0;
+	    font-size: 40px;
+	}
+
+	#footHead {
+		display: none;
+	}
+	#mainContents {
+		width: auto;
+		float: none;
+		margin-right: 0;
+	}
+	#subContents {
+		display: none;
+	}
+	.linkBtn01 a {
+		font-size: 14px;
+		line-height: inherit;
+	}
+	.spHeadNav {
+		display: block;
+		margin: 0;
+		position: relative;
+		height: 60px;
+		background: #F4F2F3;
+		margin: 0 -20px;
+		box-shadow: inset 0 1px 2px rgba(0, 0, 0, .15);
+	}
+	#header.fixed {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		margin: 0;
+		z-index: 9999;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+	}
+	.spMenu {
+		display: block;
+		color: #fff !important;
+		position: absolute;
+		right: 7px;
+		top: 4px;
+		font-size: 20px;
+	}
+	.spMenu.active .icon-menu-1::before {
+		content: '\e80a';
+	}
+	.spNav {
+		color: #fff;
+		position: absolute;
+		top: 40px;
+		z-index: 10000;
+/*		left: 0;
+		width: 100%;*/
+		width: 200px;
+		min-height: 100vh;
+		right: 0;
+		background: #fff;
+		overflow: hidden;
+		border-bottom: 1px solid #EFEFEF;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+	}
+	.spNav li {
+/*		float: left;
+		width: 25%;
+		border-left: 1px solid #EFEFEF;*/
+		border-bottom: 1px solid #EFEFEF;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	/*
+	.spNav li:first-child {
+		border-left: 0;
+	}
+	*/
+	.spNav li:last-child {
+		border-bottom: none;
+	}
+	.spNav li a {
+		display: block;
+/*		text-align: center;
+		padding: 5px;
+		font-size: 10px;*/
+		padding: 10px;
+	}
+	.spNav li a img {
+		width: 25px;
+/*		padding-bottom: 5px;*/
+		padding-right: 10px;
+	}
+	.spNav li.bg{
+		background: #82231f;
+		color: #ffffff;
+	}
+	.spNav li.bg a,
+	.spNav li.bg a:visited{
+		color: #ffffff;
+	}
+
+	.spNav .sns-link{
+		text-align: center;
+		width: 90%;
+		margin: 10px auto;
+		max-width: 360px;
+		font-size: 0;
+		letter-spacing: -2em;
+	}
+	.spNav .sns-link li{
+		display: inline-block;
+		font-size: 12px;
+		letter-spacing: normal;
+		width: 22%;
+		margin: auto 1.5%;
+		border: none;
+	}
+	.spNav .sns-link li a{
+		padding: 0;
+	}
+	.spNav .sns-link li img{
+		width: 100%;
+		height: auto;
+		max-width: 50px;
+	}
+
+
+
+	.spBtn {
+		position: absolute;
+		top: 50%;
+		right: 10px;
+		margin: -20px 0 0;
+		width: 40px;
+		height: 40px;
+		text-indent: -9999px;
+		overflow: hidden;
+		background: url(../img/ic_sphead_nav.png) no-repeat;
+		background-size: 100%;
+	}
+	.spHeadNav {
+		display: none;
+	}
+	.spHeadNav .contact {
+		position: absolute;
+		top: 50%;
+		left: 10px;
+		margin-top: -27px;
+	}
+	.spHeadNav .contact li {
+		float: left;
+		margin: 0 20px 0 0;
+		font-size: 10px;
+		text-align: center;
+	}
+	.spHeadNav .contact li a {
+		display: block;
+	}
+	.spHeadNav .contact li a:hover {
+		color: #82231F;
+	}
+	.spHeadNav .contact li span {
+		font-size: 20px;
+	}
+	#gotoTop {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		font-size: 10px;
+		text-align: right;
+		background: #E9E7E8;
+	}
+	#gotoTop a {
+		display: block;
+		overflow: hidden;
+		padding: 0 5px 0 0;
+	}
+	.cScroll th, .cScroll td {
+		white-space: nowrap;
+		font-size: 12px;
+	}
+	.spTbl01 table, .spTbl01 tbody, .spTbl01 thead, .spTbl01 tr, .spTbl01 th, .spTbl01 td {
+		display: block;
+		width: auto !important;
+	}
+	.spTbl01 table {
+		border-top: none;
+	}
+	.spTbl01 table th, .spTbl01 table td {
+		border-width: 1px 0 0;
+	}
+	.spTbl01 th {
+		font-weight: bold;
+	}
+	.spTbl01 th br {
+		display: none;
+	}
+	.contactTbl table, .contactTbl tbody, .contactTbl thead, .contactTbl tr, .contactTbl th, .contactTbl td {
+		display: block;
+		width: auto !important;
+		border: none !important;
+		padding: 0;
+	}
+	.contactTbl table th {
+		padding: 0 0 10px;
+		background: none;
+		font-weight: bold;
+		white-space: normal !important;
+		vertical-align: middle;
+	}
+	.contactTbl table th br {
+		display: none;
+	}
+	.contactTbl table td {
+		padding: 0 0 20px;
+	}
+	.contactTbl table td input[type=text], .contactTbl table td select {
+		width: 100%;
+		box-sizing: border-box;
+		border: 1px solid #CCC;
+		padding: 8px;
+		font-size: 13px;
+	}
+	.contactTbl table td select {
+		margin-top: 10px;
+		padding-right: 20px;
+		background: url(/common/img/ic_arrow03.png) no-repeat right 10px center;
+	}
+	.contactTbl table td textarea {
+		width: 100%;
+		box-sizing: border-box;
+		border: 1px solid #CCC;
+		padding: 8px;
+		font-size: 13px;
+	}
+	.contactTbl table td input[name="old"] {
+		width: 6em;
+		margin: 0 10px 0 0;
+	}
+	.contactTbl table td label {
+		border: solid #CCC;
+		border-width: 1px 1px 0;
+		padding: 10px;
+		font-size: 12px;
+		display: block;
+	}
+	.contactTbl table input:checked + label {
+		background: #82231F;
+		color: #FFF;
+	}
+	.contactTbl table td label:first-of-type {
+		border-radius: 5px 5px 0 0;
+	}
+	.contactTbl table td label:last-of-type {
+		border-width: 1px;
+		border-radius: 0 0 5px 5px
+	}
+	.contactTbl table td label:last-of-type + br {
+		display: block;
+	}
+	.contactTbl table td br, .contactTbl table th br {
+		display: none;
+	}
+	.contactTbl table .checkCell td br {
+		display: inline;
+	}
+	.contactTbl table td input[type=radio], .contactTbl table td input[type=checkbox] {
+		display: none;
+	}
+	input[type="button"], input[type="text"], input[type="submit"], select {
+		border-radius: 0px;
+		-webkit-appearance: none;
+	}
+	.touch .overItem .close {
+		display: block;
+	}
+	.breadcrumbs {
+		margin: 0 -15px;
+		padding: 0 15px;
+		font-size: 12px;
+	}
+	#pageTitle {
+		border: none;
+		padding: 0;
+		/*height: 50px;*/
+		margin: 0 -15px 15px;
+	}
+	#pageTitle h1 {
+		padding: .5em 1em;
+		line-height: 1.4;
+		font-size: 20px;
+		font-size: 2.0rem;
+		/*text-indent: 15px;*/
+	}
+	#pageTitle h2 {
+		padding: .5em 1em;
+		line-height: 1.4;
+		font-size: 20px;
+		font-size: 2.0rem;
+		/*text-indent: 15px;*/
+	}
+
+	#pageTitle .categoryName {
+		padding: .5em 1em;
+		line-height: 1.4;
+		font-size: 20px;
+		font-size: 2.0rem;
+		/*text-indent: 15px;*/
+	}
+
+	#pageTitle p {
+		display: none;
+	}
+	.baseTitle {
+		font-size: 16px;
+		font-size: 1.6rem;
+		margin: 0 -15px 20px;
+	}
+	.menuList{
+		margin-bottom: 8px;
+	}
+	.menuList li {
+		float: none;
+		width: auto;
+	}
+
+	.menuList.head li a span {
+		line-height: 1.4;
+		height: auto;
+	}
+	.menuList.half li {
+		width: auto;
+	}
+	.faq_area_all .faq_a {
+		padding: 0 0 0 30px;
+		margin: 0;
+		line-height: 1.6;
+	}
+	.faq_area_all {
+		margin: 0 0 40px;
+	}
+	.photoR, .photoL {
+		max-width: 30%;
+		margin-bottom: 10px;
+	}
+	.photoR.spFull, .photoL.spFull {
+		float: none;
+		margin: 0 0 15px;
+		text-align: center;
+		width: auto;
+		max-width: none;
+	}
+	.photoR img, .photoL img {
+		max-width: 100%;
+		height: auto;
+	}
+	.btnPdf a span {
+		font-size: 14px;
+		padding-left: 35px;
+		background-size: auto 25px;
+		line-height: 25px;
+	}
+	.getPdf {
+		font-size: 12px;
+		text-align: center;
+		display: block;
+	}
+	.getPdf .photoL {
+		float: none;
+		margin: 0 0 10px;
+		max-width: none;
+	}
+	.paging {
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		margin: 0 -15px 0 0;
+	}
+	.pagingWrap {
+		white-space: nowrap;
+	}
+	.pagination_n span, .pagination_n a {
+		float: none;
+		display: inline-block;
+	}
+	.pagination_n span:last-child, .pagination_n a:last-child {
+		margin-right: 15px;
+	}
+	#accordion > dt {
+		position: relative;
+	}
+	#accordion > dt:after {
+		position: absolute;
+		right: 0;
+		color: #fff;
+		content: "\e80c";
+		font-family: "fontello";
+		line-height: 32px;
+		top: 0;
+		bottom: 0;
+	}
+	#accordion > dt.is-open:after {
+		content: "\e80d";
+	}
+	#accordion > dd {
+		display: none;
+	}
+	.menuList li a {
+		font-size: 12px;
+	}
+	.menuList li a::after {
+		margin-top: -9.5px;
+	}
+	.pageLink li {
+		float: none;
+	}
+	#paging-detail li a {
+		padding: 0 15px;
+	}
+}
+@media screen and (max-width:400px) {
+	.spHeadNav {
+		margin: 0 -10px;
+	}
+	.breadcrumbs {
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width:767px) {
+	#sideReservation .linkBtn01 li a:after{
+		content: "";
+		display: block;
+		width: 8px;
+		height: 8px;
+		background: none;
+		position: absolute;
+		bottom: 4px;
+		right: 2px;
+	}
+	/*
+	#sideReservation .linkBtn01 li {
+		margin: 0 0 10px
+	}
+	*/
+	#sideReservation .linkBtn01 li a{
+		background-color: none;
+		display: block;
+		color: none;
+		text-align: left;
+		padding: 0px ;
+	}
+
+	#sideReservation .time img {
+		display: block;
+		width: 96%;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.linkBtn01 img{
+	width:100%;
+	height:auto;
+	}
+	.linkBtn01 .btn_01{
+		width:29.5%;
+		height:auto;
+	}
+	.linkBtn01 .btn_02{
+		width:41%;
+		height:auto;
+	}
+	.linkBtn01 .btn_03{
+		width:29.5%;
+		height:auto;
+	}
+}
+/*1905*/
+
+.b-thumbnail{
+	width: 100%;
+}
+.b-thumbnail img{
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	margin: auto auto 30px;
+}
+.archives-box{
+	padding-bottom: 20px;
+	border-bottom: 1px dotted #B57B79;
+}
+.archives-box .archives-box-inner{
+	font-size: 0;
+	letter-spacing: -.4em;
+}
+.archives-box .archives-box-inner .archives-left{
+	display: inline-block;
+	width: 26%;
+	font-size: 16px;
+	letter-spacing: normal;
+	vertical-align: top;
+}
+.archives-box .archives-box-inner .archives-left img{
+	width: 100%;
+}
+.archives-box .archives-box-inner .archives-right{
+	display: inline-block;
+	width: 68%;
+	margin-left: 5%;
+	font-size: 16px;
+	letter-spacing: normal;
+	vertical-align: top;
+}
+.archives-box .archives-box-inner .archives-right .archives-title{
+	font-size: 16px;
+	font-weight: bold;
+	margin: auto auto 2px;
+}
+.archives-box .archives-box-inner .archives-right .archives-meta{
+	font-size: 12px;
+	font-weight: bold;
+	margin: auto auto 10px;
+}
+.archives-box .archives-box-inner .archives-right .archives-meta .archives-update{
+    display: inline-block;
+	margin-right: 10px;
+	color: #ccc;
+	vertical-align: middle;
+}
+.archives-box .archives-box-inner .archives-right .archives-meta .archives-cate{
+    display: inline-block;
+    color: #fff;
+    padding: 0 4px;
+    background: #81221F;
+	vertical-align: middle;
+}
+.archives-box .archives-box-inner .archives-right .archives-description{
+	font-size: 12px;
+	margin: auto auto 10px;
+}
+.archives-box .archives-box-inner .archives-right .archives-detail{
+	font-size: 12px;
+	text-align: right;
+}
+.archives-box .archives-box-inner .archives-right .archives-detail::before {
+    content: "\e800";
+    font-family: "fontello";
+    margin: auto 6px auto auto;
+}
+
+
+/****************************************
+		フォーム
+*****************************************/
+
+/* フォームステップ */
+.form-step{
+  list-style-type: none;
+  display:table;
+  width:100%;
+  padding:0;
+  margin: 15px 0;
+  overflow:hidden;
+}
+.form-step li{
+  display:table-cell;
+  position:relative;
+  background: #c8c8c8;
+  padding: 1em 0 1em 15px;
+  color: #fff;
+  text-align: center;
+  width: 33.33%;
+  font-size: 14px;
+  font-weight: bold;
+}
+.form-step li:last-child{
+  padding-right: 1em;
+}
+.form-step li:last-child:before,
+.form-step li:last-child:after{
+  display:none;
+}
+.form-step li:before,
+.form-step li:after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: auto;
+}
+.form-step li:before{
+  top:-15px;
+  right:-1em;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+  border-width: 40px 0 40px 1em;
+  z-index: 10;
+}
+.form-step li:after{
+  top:-15px;
+  right:-.8em;
+  border-style: solid;
+  border-color: transparent transparent transparent #c8c8c8;
+  border-width: 40px 0 40px 1em;
+  z-index: 10;
+}
+.form-step li.current{
+  background: #fba733;
+  font-weight: bold;
+}
+.form-step li.current:after{
+  border-color: transparent transparent transparent #fba733;
+}
+
+/* フォームテーブル */
+form .must{
+	color: #f1705c;
+}
+#container .reservation2 form#sfm-form{
+	overflow: hidden;
+}
+
+#container .reservation2 .baseTbl01 .wrap > table{
+	border: solid 1px #b57b79 !important;
+	border-radius: 3px;
+}
+
+#container .reservation2 .baseTbl01 table th{
+	font-weight: bold;
+	vertical-align: top;
+	font-size: 15px;
+}
+
+#container .reservation2 .baseTbl01 table th span.att{
+	float: right;
+	font-size: 13px;
+}
+#container .reservation2 .baseTbl01 table td{
+	font-size: 15px;
+}
+#container .reservation2 .baseTbl01 table input[type=text],
+#container .reservation2 .baseTbl01 table select,
+#container .reservation2 .baseTbl01 table textarea{
+	font-size: 14px;
+	border-color: #a9a9a9;
+}
+
+#container .reservation2 .baseTbl01 .wrap > table td .formL{
+	width: 94%;
+}
+
+#container .reservation2 span.att{
+	background: #f1705c;
+	color: #ffffff;
+	padding: 5px;
+	border-radius: 3px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+/* プレイスホルダー */
+input::placeholder {
+  color: #dcdcdc;
+}
+
+/* IE */
+input:-ms-input-placeholder {
+  color: #dcdcdc;
+}
+
+/* Edge */
+input::-ms-input-placeholder {
+  color: #dcdcdc;
+}
+
+
+/* フォームボタン */
+.btn_submit {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.btn_submit input {
+	display: inline-block;
+    margin: 14px auto 0 auto;
+    background: #FBA733;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 2.5em;
+    text-align: center;
+    width: 180px;
+    transition: 0s;
+    cursor: pointer;
+	border: none;
+	font-family: Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
+	font-weight: bold;
+}
+
+.btn_submit input:hover {
+	opacity: 0.7;
+	text-decoration: none;
+}
+
+
+div.sendbt{
+	margin: 50px auto;
+	max-width: 420px;
+	text-align: center;
+}
+
+div.sendbt input {
+	display: inline-block;
+    margin: 14px 10px 0 10px;
+    background-color: #FBA733;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 2.5em;
+    text-align: center;
+    width: 180px;
+    transition: .3s;
+    cursor: pointer;
+    box-sizing: border-box;
+	float: left;
+	border: none;
+	font-family: Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
+	font-weight: bold;
+}
+
+div.sendbt input:hover {
+	opacity: 0.7;
+	text-decoration: none;
+}
+
+div.sendbt input.btn_back {
+    background-color: #797979;
+}
+
+div.sendbt input.btn_back:hover {
+	opacity: 0.7;
+}
+
+
+@media (max-width: 768px) {
+
+	div.btn_submit input {
+		-webkit-appearance: none;
+	}
+
+	div.sendbt input {
+		width: 40%;
+	    display: inline;
+	}
+
+}
+
+/* 送信完了ページ */
+#container .reservation2.completion .secBox{
+	text-align: center;
+}
+
+#container .reservation2.completion .btn-back{
+	background: #fba733;
+	padding: 10px 15px;
+	color: #ffffff;
+	border-radius: 3px;
+	font-weight: bold;
+}
+
+
+/****************************************
+		予約フォームプラグイン
+*****************************************/
+
+.calendar_wrap{
+	min-height: 450px;
+}
+@media (max-width: 768px) {
+	.calendar_wrap{
+		min-height: 480px;
+	}
+}
+#container .reservation2 .DOPBSPCalendar-sidebar{
+	display: none !important;
+}
+
+#container .reservation2 .baseTbl01 table.dopbsp-sidebar-content{
+	border: none!important
+}
+#container .reservation2 .DOPBSPCalendar-sidebar .dopbsp-module,
+#container .reservation2 .DOPBSPCalendar-outer-sidebar .dopbsp-module{
+	border: solid 1px #b57b79 !important;
+}
+
+#container .reservation2 .DOPBSPCalendar-sidebar .dopbsp-module h4,
+#container .reservation2 .DOPBSPCalendar-outer-sidebar .dopbsp-module h4{
+	border-right: solid 1px #b57b79 !important;
+	background: #f4f2f3 !important;
+	width: 39% !important;
+	font-family: Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
+}
+
+#container .reservation2 .DOPBSPCalendar-sidebar.dopbsp-style5-medium,
+#container .reservation2 .DOPBSPCalendar-outer-sidebar.dopbsp-style5-medium{
+	display: none;
+}
+
+#container .reservation2 #DOPBSPCalendar-reservation-cart1{
+	width: 56% !important;
+	margin: 15px !important;
+}
+
+#container .reservation2 .dopbsp-row6,
+#container .reservation2 .dopbsp-row7{
+	display: none !important;
+}
+
+.dopbsp-add-btn{
+	display: none !important;
+}
+.dopbsp-row1{
+	display: none;
+}
+
+.dopbsp-payment-first{
+	display: none;
+}
+#container .DOPBSPCalendar-sidebar .dopbsp-row7 .dopbsp-module,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-row7 .dopbsp-module{
+	border: none !important;
+}
+
+#container .DOPBSPCalendar-sidebar .dopbsp-module h4,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module h4{
+	min-height: 100%;
+	height: 100%;
+	display: inline-block !important;
+	width: 37% !important;
+	vertical-align: top !important;
+	padding: 20px 15px !important;
+	background: #fff7ed;
+	position: relative;
+	font-weight: bold;
+	box-sizing: border-box;
+	font-size: 14px !important;
+}
+
+#DOPBSPCalendar-reservation1 .dopbsp-cart .dopbsp-label{
+	width: 20%;
+	display: none;
+}
+#DOPBSPCalendar-reservation-cart1{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 58% !important;
+	margin: 15px 0 0 15px !important;
+}
+
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-message,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-message{
+	margin: 0 !important;
+}
+
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper{
+	margin: 0 !important;
+
+}
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart{
+	margin: 5px 0 0 !important;
+}
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart tr,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart tr{
+	float: left;
+}
+.DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart td.dopbsp-value,
+.DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart td.dopbsp-value{
+	font-size: 16px;
+}
+
+#container .DOPBSPCalendar-sidebar .dopbsp-row7 .dopbsp-module h4,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-row7 .dopbsp-module h4{
+	display: none !important;
+}
+.dopbsp-module{
+	overflow: hidden;
+	padding: 0 !important;
+	border-radius: 5px;
+}
+#container .DOPBSPCalendar-sidebar .dopbsp-row6 .dopbsp-module h4,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-row6 .dopbsp-module h4{
+	display: none !important;
+}
+
+#container .DOPBSPCalendar-sidebar .dopbsp-row6 .dopbsp-module .dopbsp-input-wrapper,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-row6 .dopbsp-module .dopbsp-input-wrapper{
+	padding: 0;
+	clear: both;
+	position: relative;
+	border-bottom: solid 1px #ffd8a3;
+	background: #ffffff;
+	margin: 0;
+}
+#container .DOPBSPCalendar-sidebar .dopbsp-row6 .dopbsp-module .dopbsp-input-wrapper:last-child,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-row6 .dopbsp-module .dopbsp-input-wrapper:last-child{
+	border-bottom: none
+}
+
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper .dopbsp-warning-info,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper .dopbsp-warning-info{
+	position: absolute;
+}
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper label .dopbsp-required,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper label .dopbsp-required{
+	visibility: hidden;
+}
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper label .dopbsp-required:before,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper label .dopbsp-required:before{
+	content: "必須";
+	visibility: visible;
+	color: #ffffff;
+	background: #f1705c;
+	padding: 5px;
+	font-size: 12px;
+	border-radius: 3px;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+
+#container .dopbsp-input-wrapper > label{
+	width: 37% !important;
+	display: inline-block !important;
+	vertical-align: top !important;
+	padding: 20px 15px;
+	background: #fff7ed;
+	position: relative;
+	font-weight: bold;
+}
+#container .DOPBSPCalendar-sidebar .dopbsp-row6 .dopbsp-module .dopbsp-input-wrapper input[type=text],
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-row6 .dopbsp-module .dopbsp-input-wrapper input[type=text]{
+	width: auto !important;
+/*	float: right;*/
+	box-sizing: border-box;
+	margin: 15px 0 15px 15px;
+	border-radius: 3px;
+}
+
+#container .DOPBSPCalendar-sidebar .dopbsp-row6 .dopbsp-module .dopbsp-input-wrapper:nth-of-type(3) .dopselect-select:after,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-row6 .dopbsp-module .dopbsp-input-wrapper:nth-of-type(3) .dopselect-select:after{
+	content: "歳";
+	margin-left: 7px;
+	padding-top: 3px;
+	display: inline-block;
+}
+#container .DOPBSPCalendar-sidebar .dopbsp-row6 .dopbsp-module .dopbsp-input-wrapper:nth-of-type(5) input[type=text],
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-row6 .dopbsp-module .dopbsp-input-wrapper:nth-of-type(5) input[type=text]{
+	width: 93% !important;
+	box-sizing: border-box;
+}
+
+#container .DOPSelect.dopselect-multiple ul{
+	max-height: none !important;
+	overflow-y: auto !important;
+	padding: 0 !important;
+}
+
+#container .DOPBSPCalendar-sidebar .DOPSelect.dopselect-multiple ul{
+    border: none !important;
+}
+
+#container .DOPBSPCalendar-sidebar .dopbsp-row6 .DOPSelect,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-row6 .DOPSelect{
+	width: 93% !important;
+	box-sizing: border-box;
+/*	float: right;*/
+	display: inline-block !important;
+	margin: 15px 0 15px 15px;
+}
+#container .DOPBSPCalendar-sidebar .DOPSelect .dopselect-select,
+#container .DOPBSPCalendar-outer-sidebar .DOPSelect .dopselect-select{
+	width: auto !important;
+	display: inline-block;
+	min-width: 60px;
+	border-radius: 3px;
+}
+#container .DOPBSPCalendar-sidebar .DOPSelect .dopselect-select .dopselect-selection,
+#container .DOPBSPCalendar-outer-sidebar .DOPSelect .dopselect-select .dopselect-selection{
+	width: auto !important;
+}
+
+#container .DOPBSPCalendar-sidebar .dopbsp-row6 .dopbsp-module .dopbsp-input-wrapper ul li,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-row6 .dopbsp-module .dopbsp-input-wrapper ul li{
+	padding: 5px;
+}
+#container .DOPBSPCalendar-sidebar .DOPSelect.dopselect-single ul,
+#container .DOPBSPCalendar-outer-sidebar .DOPSelect.dopselect-single ul{
+	width: auto !important;
+	min-width: 60px;
+}
+
+#container .DOPBSPCalendar-sidebar .DOPSelect.dopselect-single ul li,
+#container .DOPBSPCalendar-outer-sidebar .DOPSelect.dopselect-single ul li{
+	height: 16px !important;
+    line-height: 16px !important;
+	width: auto !important;
+}
+#container .DOPBSPCalendar-sidebar .DOPSelect.dopselect-multiple ul li,
+#container .DOPBSPCalendar-outer-sidebar .DOPSelect.dopselect-multiple ul li{
+	padding: 5px 0 !important;
+}
+.DOPBSPCalendar-hour .dopbsp-bind-middle{
+	border-left: none !important;
+	border: 1px solid #c8c8c8;
+}
+.DOPBSPCalendar-hour.dopbsp-available .dopbsp-bind-middle{
+	border: 1px solid #FBA733;
+}
+.DOPBSPCalendar-hour.dopbsp-selected .dopbsp-bind-middle{
+	border: 1px solid #82231f;
+}
+.DOPBSPCalendar-hour.dopbsp-booked .dopbsp-bind-middle{
+	border: 1px solid #c8c8c8;
+}
+.DOPBSPCalendar-hour.dopbsp-unavailable .dopbsp-bind-middle{
+	border: 1px solid #c8c8c8;
+}
+.DOPBSPCalendar-hour.dopbsp-special .dopbsp-bind-middle{
+	border: 1px solid #BA68BA;
+}
+
+.DOPBSPCalendar-hour.dopbsp-available.dopbsp-selected .dopbsp-bind-middle{
+	border-color: #82231f !important;
+}
+
+.DOPBSPCalendar-hour .dopbsp-bind-middle .dopbsp-hour{
+	background-color: #c8c8c8 !important;
+	color: #ffffff !important;
+}
+.DOPBSPCalendar-hour.dopbsp-available .dopbsp-bind-middle .dopbsp-hour{
+	background-color: #fba733 !important;
+}
+.DOPBSPCalendar-hour.dopbsp-selected .dopbsp-bind-middle .dopbsp-hour{
+	background-color: #82231f !important;
+}
+.DOPBSPCalendar-hour.dopbsp-booked .dopbsp-bind-middle .dopbsp-hour{
+	background-color: #c8c8c8 !important;
+}
+.DOPBSPCalendar-hour.dopbsp-unavailable .dopbsp-bind-middle .dopbsp-hour{
+	background-color: #c8c8c8 !important;
+}
+.DOPBSPCalendar-hour.dopbsp-special .dopbsp-bind-middle .dopbsp-hour{
+	background-color: #BA68BA !important;
+}
+
+.DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-body .dopbsp-co{
+	border: none !important;
+	left: 0 !important;
+}
+.DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-body .dopbsp-ci{
+	border: none !important;
+	right: 0 !important;
+}
+
+#container .DOPBSPCalendar-navigation .dopbsp-next-btn{
+	border-radius: 0;
+	padding: 10px;
+	background-position: -280px 0px;
+	right: 12px;
+	top: 12px;
+}
+#container .DOPBSPCalendar-navigation .dopbsp-previous-btn{
+	border-radius: 0;
+	padding: 10px;
+	background-position: -240px 0px;
+	right: 55px;
+	top: 12px;
+}
+
+
+@media (min-width: 769px) {
+	#container .DOPBSPCalendar-sidebar .dopbsp-row6 .dopbsp-module .dopbsp-input-wrapper,
+	#container .DOPBSPCalendar-outer-sidebar .dopbsp-row6 .dopbsp-module .dopbsp-input-wrapper{
+		display: table;
+		width: 100%;
+	}
+	#container .dopbsp-input-wrapper > label{
+		min-height: 100%;
+		height: 100%;
+		display: table-cell !important;
+	}
+
+}
+@media (max-width: 768px) {
+	.dopbsp-module{
+		padding: 0 !important;
+	}
+	#DOPBSPCalendar-reservation1 .dopbsp-cart .dopbsp-label{
+		width: 30%;
+	}
+	#container .DOPBSPCalendar-sidebar .dopbsp-module h4,
+	#container .DOPBSPCalendar-outer-sidebar .dopbsp-module h4{
+		width: 20% !important;
+		box-sizing: border-box;
+		padding: 5px;
+	}
+	#DOPBSPCalendar-reservation-cart1{
+		width: 91% !important;
+		box-sizing: border-box;
+		margin: 15px 0 15px 15px !important;
+	}
+
+	#container .dopbsp-input-wrapper > label{
+		width: 100% !important;
+		box-sizing: border-box;
+	}
+	#container .DOPBSPCalendar-sidebar .dopbsp-row6 .dopbsp-module .dopbsp-input-wrapper input[type=text],
+	#container .DOPBSPCalendar-outer-sidebar .dopbsp-row6 .dopbsp-module .dopbsp-input-wrapper input[type=text]{
+		float: none;
+	}
+	#container .DOPBSPCalendar-sidebar .dopbsp-row6 .dopbsp-module .dopbsp-input-wrapper:nth-of-type(5) input[type=text],
+	#container .DOPBSPCalendar-outer-sidebar .dopbsp-row6 .dopbsp-module .dopbsp-input-wrapper:nth-of-type(5) input[type=text]{
+		width: 91% !important;
+		box-sizing: border-box;
+	}
+	#container .DOPBSPCalendar-sidebar .dopbsp-row6 .DOPSelect,
+	#container .DOPBSPCalendar-outer-sidebar .dopbsp-row6 .DOPSelect{
+		width: 91% !important;
+		box-sizing: border-box;
+		float: none;
+	}
+
+	.form-step li{
+	  font-size: 12px;
+	}
+	#container .reservation2 .baseTbl01 table tbody{
+	    display: table-row-group !important;
+	}
+	#container .reservation2 .baseTbl01 table tr{
+	    display: table-row !important;
+	}
+	#container .reservation2 .baseTbl01 .wrap > table{
+		border: 1px solid #B57B79 !important;
+	}
+	#container .reservation2 .baseTbl01 .wrap > table tr{
+		border-bottom: 1px solid #B57B79 !important;
+	}
+	#container .reservation2 .baseTbl01 .wrap > table tr:last-of-type{
+		border-bottom: none !important;
+	}
+	#container .reservation2 .baseTbl01 .wrap > table th{
+		background: #F4F2F3;
+		width: 20% !important;
+		box-sizing: border-box !important;
+		display: table-cell !important;
+		border-right: 1px solid #B57B79 !important;
+		padding: 5px !important;
+		font-size: 13px;
+	}
+	#container .reservation2 .baseTbl01 .wrap > table td{
+		padding: 10px !important;
+		width: 79% !important;
+		box-sizing: border-box !important;
+		display: table-cell !important;
+	}
+	#container .reservation2 .baseTbl01 .wrap > table td .formL{
+		width: 100%;
+	    box-sizing: border-box;
+	}
+	#container .reservation2 .contactTbl .wrap > table td select{
+		width: auto;
+		min-width: 50px;
+	}
+	#container .reservation2 .baseTbl01 .wrap > table th span.att{
+		max-width: 25px;
+		display: block;
+		float: none;
+		font-size: 12px;
+	}
+	#container .reservation2 .DOPBSPCalendar-sidebar.dopbsp-style-small,
+	#container .reservation2 .DOPBSPCalendar-outer-sidebar.dopbsp-style-small{
+		display: none;
+	}
+	#container .reservation2 .DOPBSPCalendar-sidebar .dopbsp-module h4,
+	#container .reservation2 .DOPBSPCalendar-outer-sidebar .dopbsp-module h4{
+		width: 20% !important;
+		padding: 5px !important;
+		height: 60px;
+	}
+	#container .reservation2 #DOPBSPCalendar-reservation-cart1{
+		width: 75% !important;
+		margin: 5px 5px 5px 5px !important;
+	}
+
+}
+
+/* 以下　予約フォームプラグイン色変更 */
+
+
+.DOPBSPCalendar-wrapper .dopbsp-loader{
+    background-color: #f7f6f9 !important;
+    border: 1px solid #f7f6f9 !important;
+}
+#container .DOPBSPCalendar-container{
+    background: #f7f6f9;
+}
+
+#container .DOPBSPCalendar-navigation{
+    background-color: #f7f6f9;
+    border: 1px solid #f7f6f9;
+}
+#container .DOPBSPCalendar-navigation .dopbsp-add-btn,
+#container .DOPBSPCalendar-navigation .dopbsp-next-btn,
+#container .DOPBSPCalendar-navigation .dopbsp-previous-btn,
+#container .DOPBSPCalendar-navigation .dopbsp-remove-btn{
+    background-color: #82231F;
+}
+#container .DOPBSPCalendar-navigation .dopbsp-add-btn:hover,
+#container .DOPBSPCalendar-navigation .dopbsp-next-btn:hover,
+#container .DOPBSPCalendar-navigation .dopbsp-previous-btn:hover,
+#container .DOPBSPCalendar-navigation .dopbsp-remove-btn:hover{
+    background-color: #a85a56;
+}
+#container .DOPBSPCalendar-navigation .dopbsp-add-btn .dopbsp-info,
+#container .DOPBSPCalendar-navigation .dopbsp-next-btn .dopbsp-info,
+#container .DOPBSPCalendar-navigation .dopbsp-previous-btn .dopbsp-info,
+#container .DOPBSPCalendar-navigation .dopbsp-remove-btn .dopbsp-info{
+    background-color: #82231F;
+}
+#container .DOPBSPCalendar-navigation .dopbsp-month-year{
+    color: #252525;
+}
+#container .DOPBSPCalendar-navigation .dopbsp-week .dopbsp-day{
+    color: #666666;
+}
+
+#container .DOPBSPCalendar-month{
+    border: 1px solid #f7f6f9;
+    background: #f7f6f9;
+}
+#container .DOPBSPCalendar-month-year{
+    background-color: #f7f6f9;
+    border: 1px solid #f7f6f9;
+}
+
+#container .DOPBSPCalendar-day .dopbsp-bind-middle{
+	box-sizing: border-box;
+	border: solid 1px #ffffff;
+}
+#container .DOPBSPCalendar-day .dopbsp-bind-left,
+#container .DOPBSPCalendar-day .dopbsp-bind-right{
+	display: none;
+}
+#container .DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-body{
+	border: solid 1px #c8c8c8 !important;
+}
+
+#container .DOPBSPCalendar-day.dopbsp-available .dopbsp-bind-middle .dopbsp-body{
+	border: solid 1px #fba733 !important;
+}
+
+#container .DOPBSPCalendar-day.dopbsp-booked .dopbsp-bind-middle .dopbsp-body,
+#container .DOPBSPCalendar-day.dopbsp-unavailable .dopbsp-bind-middle .dopbsp-body{
+	border: solid 1px #c8c8c8 !important;
+}
+#container .DOPBSPCalendar-day.dopbsp-special .dopbsp-bind-middle .dopbsp-body{
+	border: solid 1px #BA68BA !important;
+}
+#container .DOPBSPCalendar-day.dopbsp-selected .dopbsp-bind-middle .dopbsp-body{
+	border: solid 1px #82231f !important;
+}
+
+#container .DOPBSPCalendar-day .dopbsp-bind-left .dopbsp-head,
+#container .DOPBSPCalendar-day .dopbsp-bind-right .dopbsp-head{
+    border-top: 5px solid #c8c8c8 !important;
+    background: #c8c8c8;
+}
+#container .DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-head{
+    border-top: 5px solid #c8c8c8 !important;
+    background: #c8c8c8 !important;
+}
+#container .DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-head .dopbsp-day{
+    color: #ffffff;
+	line-height: 8px !important;
+}
+#container .DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-head .dopbsp-co{
+	border-bottom: none;
+    border-top: 5px solid #c8c8c8;
+    background: #c8c8c8;
+}
+#container .DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-head .dopbsp-ci{
+	border-bottom: none;
+    border-top: 5px solid #c8c8c8;
+    background: #c8c8c8;
+}
+
+#container .DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-head .dopbsp-info{
+    background-color: #82231F;
+}
+#container .DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-head .dopbsp-info:hover{
+    background-color: #c8c8c8;
+}
+#container .DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-body{
+    color: #666666 !important;
+	padding: 0 !important;
+}
+#container .DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-body .dopbsp-old-price{
+    color: #666666;
+}
+#container .DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-body .dopbsp-price{
+    color: #666666;
+}
+#container .DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-body .dopbsp-available{
+    color: #666666;
+}
+#container .DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-body .dopbsp-info-body{
+    color: #666666;
+}
+#container .DOPBSPCalendar-day.dopbsp-available .dopbsp-head,
+#container .DOPBSPCalendar-day .dopbsp-head .dopbsp-co.dopbsp-available,
+#container .DOPBSPCalendar-day .dopbsp-head .dopbsp-ci.dopbsp-available,
+#container .DOPBSPCalendar-day .dopbsp-bind-left.dopbsp-extended.dopbsp-available .dopbsp-head{
+    background-color: #FBA733 !important;
+    border-color: #FBA733 !important;
+}
+#container .DOPBSPCalendar-day.dopbsp-booked .dopbsp-head,
+#container .DOPBSPCalendar-day .dopbsp-head .dopbsp-co.dopbsp-booked,
+#container .DOPBSPCalendar-day .dopbsp-head .dopbsp-ci.dopbsp-booked{
+    background-color: #c8c8c8 !important;
+    border-top-color: #c8c8c8 !important;
+}
+
+#container .DOPBSPCalendar-day.dopbsp-special .dopbsp-head,
+#container .DOPBSPCalendar-day .dopbsp-head .dopbsp-co.dopbsp-special,
+#container .DOPBSPCalendar-day .dopbsp-head .dopbsp-ci.dopbsp-special,
+#container .DOPBSPCalendar-day .dopbsp-bind-left.dopbsp-extended.dopbsp-special .dopbsp-head{
+    background-color: #BA68BA !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+    border-color: #BA68BA !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+#container .DOPBSPCalendar-day.dopbsp-unavailable .dopbsp-head,
+#container .DOPBSPCalendar-day .dopbsp-head .dopbsp-co.dopbsp-unavailable,
+#container .DOPBSPCalendar-day .dopbsp-head .dopbsp-ci.dopbsp-unavailable{
+    background-color: #c8c8c8 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+    border-color: #c8c8c8 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+	color: #ffffff !important;
+}
+#container .DOPBSPCalendar-day.dopbsp-selected .dopbsp-head,
+#container .DOPBSPCalendar-day.dopbsp-selected .dopbsp-head .dopbsp-co,
+#container .DOPBSPCalendar-day.dopbsp-selected .dopbsp-head .dopbsp-ci,
+#container .DOPBSPCalendar-day.dopbsp-selected .dopbsp-bind-left.dopbsp-extended .dopbsp-head{
+    background-color: #82231f !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+    border-color: #82231f !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+#container .DOPBSPCalendar-day.dopbsp-selected.dopbsp-first .dopbsp-head .dopbsp-co.dopbsp-none,
+#container .DOPBSPCalendar-day.dopbsp-selected.dopbsp-last .dopbsp-head .dopbsp-ci.dopbsp-none{
+    background-color: #c8c8c8 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border-color: #c8c8c8 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+}
+#container .DOPBSPCalendar-day.dopbsp-selected.dopbsp-first .dopbsp-head .dopbsp-co.dopbsp-available,
+#container .DOPBSPCalendar-day.dopbsp-selected.dopbsp-last .dopbsp-head .dopbsp-ci.dopbsp-available,
+#container .DOPBSPCalendar-day.dopbsp-selected.dopbsp-first .dopbsp-bind-left.dopbsp-available.dopbsp-extended .dopbsp-head,
+#container .DOPBSPCalendar-day.dopbsp-available.dopbsp-selected.dopbsp-last .dopbsp-bind-right .dopbsp-head{
+    background-color: #FBA733 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+    border-color: #FBA733 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+#container .DOPBSPCalendar-day.dopbsp-selected.dopbsp-first .dopbsp-head .dopbsp-co.dopbsp-booked,
+#container .DOPBSPCalendar-day.dopbsp-selected.dopbsp-last .dopbsp-head .dopbsp-ci.dopbsp-booked{
+    background-color: #c8c8c8 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+    border-color: #c8c8c8 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+#container .DOPBSPCalendar-day.dopbsp-selected.dopbsp-first .dopbsp-head .dopbsp-co.dopbsp-special,
+#container .DOPBSPCalendar-day.dopbsp-selected.dopbsp-last .dopbsp-head .dopbsp-ci.dopbsp-special,
+#container .DOPBSPCalendar-day.dopbsp-selected.dopbsp-first .dopbsp-bind-left.dopbsp-special.dopbsp-extended .dopbsp-head,
+#container .DOPBSPCalendar-day.dopbsp-special.dopbsp-selected.dopbsp-last .dopbsp-bind-right .dopbsp-head{
+    background-color: #BA68BA !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+    border-color: #BA68BA !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+#container .DOPBSPCalendar-day.dopbsp-selected.dopbsp-first .dopbsp-head .dopbsp-co.dopbsp-unavailable,
+#container .DOPBSPCalendar-day.dopbsp-selected.dopbsp-last .dopbsp-head .dopbsp-ci.dopbsp-unavailable{
+    background-color: #c8c8c8 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+    border-color: #c8c8c8 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+#container .DOPBSPCalendar-hours{
+    background-color: #f7f6f9;
+    border: 1px solid #f7f6f9;
+}
+.DOPBSPCalendar-hour .dopbsp-bind-top,
+.DOPBSPCalendar-hour .dopbsp-bind-bottom{
+    background-color: #ffffff;
+    border-left: 5px solid #b7b7b7; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+}
+.DOPBSPCalendar-hour .dopbsp-bind-top.dopbsp-enabled .dopbsp-hour,
+.DOPBSPCalendar-hour .dopbsp-bind-bottom.dopbsp-enabled .dopbsp-hour{
+    background-color: #b7b7b7; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    color: #b7b7b7; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+}
+
+.DOPBSPCalendar-hour .dopbsp-bind-middle{
+    background-color: #ffffff;
+    border-left: 5px solid #b7b7b7; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+}
+.DOPBSPCalendar-hour .dopbsp-bind-middle .dopbsp-hour{
+    background-color: #fba733;
+    color: #ffffff;
+}
+
+.DOPBSPCalendar-hour .dopbsp-bind-middle .dopbsp-info{
+    background-color: #82231F;
+}
+.DOPBSPCalendar-hour .dopbsp-bind-middle .dopbsp-info:hover{
+    background-color: #c8c8c8 !important;
+}
+
+
+/*
+ * Available hour.
+ */
+.DOPBSPCalendar-hour.dopbsp-available .dopbsp-bind-middle{
+    border-color: #FBA733 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPCalendar-hour.dopbsp-available .dopbsp-bind-top{
+    border-color: #FBA733 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBSPCalendar-hour.dopbsp-available .dopbsp-bind-top .dopbsp-hour{
+    color: #ffffff !important;
+}
+
+.DOPBSPCalendar-hour.dopbsp-available .dopbsp-bind-bottom{
+    border-color: #FBA733 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+/*
+ * Booked hour.
+ */
+.DOPBSPCalendar-hour.dopbsp-booked .dopbsp-bind-middle{
+    border-color: #c8c8c8 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBSPCalendar-hour.dopbsp-booked .dopbsp-bind-top{
+    border-color: #c8c8c8 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBSPCalendar-hour.dopbsp-booked .dopbsp-bind-top .dopbsp-hour{
+    color: #ffffff !important;
+}
+
+.DOPBSPCalendar-hour.dopbsp-booked .dopbsp-bind-bottom{
+    border-color: #c8c8c8 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+/*
+ * Special hour.
+ */
+.DOPBSPCalendar-hour.dopbsp-special .dopbsp-bind-middle{
+    border-color: #BA68BA !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPCalendar-hour.dopbsp-special .dopbsp-bind-top{
+    border-color: #BA68BA !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBSPCalendar-hour.dopbsp-special .dopbsp-bind-top .dopbsp-hour{
+    color: #ffffff !important;
+}
+
+.DOPBSPCalendar-hour.dopbsp-special .dopbsp-bind-bottom{
+    border-color: #BA68BA !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+/*
+ * Unavailable hour.
+ */
+.DOPBSPCalendar-hour.dopbsp-unavailable .dopbsp-bind-middle{
+    border-color: #c8c8c8 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBSPCalendar-hour.dopbsp-unavailable .dopbsp-bind-top{
+    border-color: #c8c8c8 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBSPCalendar-hour.dopbsp-unavailable .dopbsp-bind-top .dopbsp-hour{
+    color: #ffffff !important;
+}
+
+.DOPBSPCalendar-hour.dopbsp-unavailable .dopbsp-bind-bottom{
+    border-color: #c8c8c8 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+/*
+ * ********************************************************* End sidebar styles.
+ */
+
+#container .DOPBSPCalendar-sidebar .dopbsp-module,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module{
+    background: #ffffff;
+    border: solid 1px #ffd8a3 !important;
+}
+
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper .dopbsp-warning-info .dopbsp-icon,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper .dopbsp-warning-info .dopbsp-icon{
+    background-color: #f1705c;
+}
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper .dopbsp-warning-info .dopbsp-message,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper .dopbsp-warning-info .dopbsp-message{
+    background-color: #f1705c;
+}
+
+
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper label .dopbsp-required,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper label .dopbsp-required{
+    color: #f1705c;
+}
+
+
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper label:hover,
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper label a:hover,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper label:hover,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper label a:hover{
+    color: #c8c8c8;
+}
+
+
+/*
+ * Begin text.
+ */
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text],
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text]{
+    border: 1px solid #D6D6D6 !important;
+}
+
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text]:focus,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text]:focus{
+    border: 1px solid #c8c8c8 !important;
+}
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper textarea,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper textarea{
+    border: 1px solid #D6D6D6 !important;
+}
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper textarea:focus,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper textarea:focus{
+    border: 1px solid #c8c8c8 !important;
+}
+
+
+/*
+ * Begin checkbox & radio.
+ */
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox],
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio],
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox],
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio]{
+    border: 1px solid #D6D6D6 !important;
+	border-radius: 3px;
+}
+
+
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:hover,
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio]:hover,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:hover,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio]:hover{
+    border: 1px solid #c8c8c8 !important;
+    color: #c8c8c8;
+}
+
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:checked,
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio]:checked{
+    border: 1px solid #c8c8c8 !important;
+}
+
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:checked:before,
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:checked:after,
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio]:checked:before,
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio]:checked:after,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:checked:before,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:checked:after,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio]:checked:before,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio]:checked:after{
+    background: #FBA733 !important;
+    border: 1px solid #FBA733 !important;
+    color: #cccccc !important;
+}
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:disabled,
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio]:disabled,
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:disabled:hover,
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio]:disabled:hover,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:disabled,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio]:disabled,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=checkbox]:disabled:hover,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=radio]:disabled:hover{
+    border: 1px solid #D6D6D6 !important;
+}
+
+/*
+ * Begin list.
+ */
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper ul.multiple-select,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper ul.multiple-select{
+    background: #ffffff;
+    border: 1px solid #D6D6D6 !important;
+}
+
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=submit],
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=button],
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=submit],
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=button]{
+    border: 1px solid #FBA733;
+    color: #ffffff;
+    background: #FBA733;
+    display: block !important;
+	max-width: 200px;
+	border-radius: 3px;
+}
+
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=submit]:hover,
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=submit]:focus,
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=button]:hover,
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=button]:focus,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=submit]:hover,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=submit]:focus,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=button]:hover,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=button]:focus{
+    border: 1px solid #ffc370;
+    background: #ffc370;
+}
+
+/*
+ * Single select.
+ */
+#container .DOPBSPCalendar-sidebar .DOPSelect .dopselect-select,
+#container .DOPBSPCalendar-outer-sidebar .DOPSelect .dopselect-select{
+    border: 1px solid #D6D6D6;
+}
+
+#container .DOPBSPCalendar-sidebar .DOPSelect .dopselect-select .dopselect-icon,
+#container .DOPBSPCalendar-outer-sidebar .DOPSelect .dopselect-select .dopselect-icon{
+    color: #D6D6D6 !important;
+}
+
+#container .DOPBSPCalendar-sidebar .DOPSelect .dopselect-select:hover .dopselect-icon,
+#container .DOPBSPCalendar-outer-sidebar .DOPSelect .dopselect-select:hover .dopselect-icon{
+    color: #c8c8c8 !important;
+}
+
+#container .DOPBSPCalendar-sidebar .DOPSelect.dopselect-single ul,
+#container .DOPBSPCalendar-outer-sidebar .DOPSelect.dopselect-single ul{
+    border: 1px solid #c8c8c8 !important;
+}
+
+#container .DOPBSPCalendar-sidebar .DOPSelect.dopselect-single ul li:hover,
+#container .DOPBSPCalendar-sidebar .DOPSelect.dopselect-single ul li.dopselect-selected,
+#container .DOPBSPCalendar-outer-sidebar .DOPSelect.dopselect-single ul li:hover,
+#container .DOPBSPCalendar-outer-sidebar .DOPSelect.dopselect-single ul li.dopselect-selected{
+    background: #c8c8c8 !important;
+}
+
+/*
+ * Multiple select.
+ */
+#container .DOPBSPCalendar-sidebar .DOPSelect.dopbsp-phone-code .dopselect-select{
+    background-color: #f1f2f5 !important;
+}
+/*
+ * ************************************************************* Begin messages.
+ */
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-message,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-message{
+    background: #f1705c;
+}
+
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-message.dopbsp-success,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-message.dopbsp-success{
+    background: #FBA733 !important;
+}
+
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-message.dopbsp-error,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-message.dopbsp-error{
+    background: #f1705c;
+}
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart tr.dopbsp-separator td .dopbsp-line,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart tr.dopbsp-separator td .dopbsp-line{
+    border-bottom: 1px solid #82231F;
+}
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart .dopbsp-total td.dopbsp-label,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart .dopbsp-total td.dopbsp-label{
+    background: #c8c8c8;
+}
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart .dopbsp-total td.dopbsp-value,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart .dopbsp-total td.dopbsp-value{
+    background: #c8c8c8;
+}
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart .dopbsp-deposit td.dopbsp-label,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart .dopbsp-deposit td.dopbsp-label{
+    background: #c8c8c8;
+    border-bottom: 1px solid #82231F !important;
+}
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart .dopbsp-deposit td.dopbsp-value,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart .dopbsp-deposit td.dopbsp-value{
+    background: #c8c8c8;
+    border-bottom: 1px solid #82231F !important;
+}
+
+#container .DOPBSPCalendar-datepicker.ui-datepicker{
+    border: 1px solid #c8c8c8 !important;
+}
+
+#container .DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-header{
+    background: #c8c8c8 !important;
+    border-bottom: 1px solid #c8c8c8 !important;
+}
+
+#container .DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-next,
+#container .DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-prev{
+    background-color: #c8c8c8 !important;
+}
+#container .DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-calendar th{
+    background: #f7f6f9 !important;
+    border: 1px solid #82231F !important;
+}
+#container .DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-calendar td{
+    border: 1px solid #82231F !important;
+    padding: 0 !important;
+}
+
+#container .DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-calendar td.ui-datepicker-other-month{
+    background: #f7f6f9 !important;
+    line-height: 17px !important;
+}
+#container .DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-calendar a.ui-state-active{
+    background-color: #c8c8c8 !important;
+}
+
+#container .DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-calendar a.ui-state-active,
+#container .DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-calendar a:hover{
+    border: 1px solid #c8c8c8 !important;
+    line-height: 17px !important;
+}
+
+/*
+ * Success info message.
+ */
+#container .DOPBSPCalendar-info-message.dopbsp-success{
+    border: 1px solid #FBA733 !important;
+}
+
+#container .DOPBSPCalendar-info-message.dopbsp-success .dopbsp-icon{
+    background-color: #FBA733 !important;
+    background-position: 0 -40px;
+}
+
+#container .DOPBSPCalendar-info-message.dopbsp-success .dopbsp-text,
+#container .DOPBSPCalendar-info-message.dopbsp-success .dopbsp-timer{
+    color: #FBA733 !important;
+}
+
+#container .DOPBSPCalendar-info-message.dopbsp-success .dopbsp-close{
+    background-color: #FBA733 !important;
+}
+
+/*
+ * Error info message.
+ */
+#container .DOPBSPCalendar-info-message.dopbsp-error{
+    border: 1px solid #dd6464;
+}
+
+#container .DOPBSPCalendar-info-message.dopbsp-error .dopbsp-icon{
+    background-color: #dd6464;
+}
+
+#container .DOPBSPCalendar-info-message.dopbsp-error .dopbsp-text,
+#container .DOPBSPCalendar-info-message.dopbsp-error .dopbsp-timer{
+    color: #dd6464;
+}
+
+#container .DOPBSPCalendar-info-message.dopbsp-error .dopbsp-close{
+    background-color: #dd6464;
+}
+
+#container .DOPBSPCalendar-info-message .dopbsp-close:hover{
+    background-color: #c8c8c8;
+}
+
+#container .DOPBSPCalendar-referral a:hover{
+    color: #c8c8c8;
+}
+
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper label,
+#container .DOPBSPCalendar-sidebar .dopbsp-module .dopbsp-input-wrapper label a,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper label,
+#container .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-input-wrapper label a{
+	color: #333333;
+}
+.DOPBSPCalendar-tooltip{
+    background: #f7f6f9 !important;
+    border: 1px solid #c8c8c8 !important;
+}
+.DOPBSPCalendar-tooltip.dopbsp-text{
+    background: #c8c8c8 !important;
+    border: 1px solid #c8c8c8 !important;
+}
+.DOPBSPCalendar-hour .dopbsp-bind-top,
+.DOPBSPCalendar-hour .dopbsp-bind-bottom{
+    border-left: 5px solid #c8c8c8 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+}
+
+.DOPBSPCalendar-hour .dopbsp-bind-top.dopbsp-enabled .dopbsp-hour,
+.DOPBSPCalendar-hour .dopbsp-bind-bottom.dopbsp-enabled .dopbsp-hour{
+    background-color: #c8c8c8 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    color: #c8c8c8 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+}
+
+.DOPBSPCalendar-hour .dopbsp-bind-middle{
+    border-left: 1px solid #c8c8c8 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+}

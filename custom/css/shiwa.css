@@ -1,0 +1,120 @@
+em {
+    font-style: normal;
+    }
+    
+    .under1 {
+        background: linear-gradient(transparent 70%, #f5deb3 70%);
+    }
+    
+        /* WebP未対応ブラウザ */
+        .no-webp #flow {
+            background: url(../wp-content/uploads/2021/03/bg-visit.jpg) no-repeat center;
+            background-size: cover;
+            padding: 20px;
+        }
+        /* WebP対応ブラウザ */
+        .webp #flow {
+            background: url(../wp-content/uploads/2021/03/bg-visit.jpg.webp) no-repeat center;
+            background-size: cover;
+            padding: 20px;
+        }
+    
+        #flow .box {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            background: #ffffff;
+            margin-bottom: 50px;
+            padding: 30px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        #flow .box .txt {
+            width: 65%;
+            font-size: 1.8rem;
+        }
+    
+        #flow .box .txt p {
+            margin-bottom: 0;
+        }
+    
+        #flow .box .number {
+            position: absolute;
+            font-family: 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+            font-style: italic;
+            font-size: 9em;
+            font-weight: bold;
+            line-height: 1;
+            top: 5px;
+            left: 5px;
+            color: rgba(0, 0, 0, 0.1);
+        }
+    
+        #flow .box .txt .ttl {
+            font-size: 3rem;
+            line-height: 1.2;
+            color: #563731;
+            margin-left: 3.2em;
+            margin-bottom: 2rem;
+        }
+    
+        #flow .box .img {
+            width: 32%;
+        }
+    
+        #flow .box .img img {
+            width: 100%;
+            height: 25rem;
+            object-fit: cover;
+        }
+    
+        p.checkMoreBtn {
+            background-color: #fba733;
+            width: 250px;
+            margin: auto;
+            text-align: center;
+            padding: 10px 0 10px 10px;
+            font-size: 1.3em;
+            border-radius: 5px;
+            color: #ffffff;
+            cursor: pointer;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    
+        @media screen and (max-width: 767px) {
+    
+    
+            #flow .box {
+                display: block;
+                padding: 1.5em;
+            }
+    
+            #flow .box .txt {
+                width: 100%;
+                margin-bottom: 1em;
+                font-size: 1.1em;
+            }
+    
+            #flow .box .number {
+                font-size: 5em;
+            }
+    
+            #flow .box .txt .ttl {
+                margin-left: 2em;
+                font-size: 1.2em;
+                margin-bottom: 1.2em;
+            }
+    
+            #flow .box .img {
+                width: 100%;
+            }
+    
+            #flow .box .img img {
+                height: auto;
+            }
+    
+            .blogRanking h4 {
+                font-size: 1.5em;
+            }
+        }
