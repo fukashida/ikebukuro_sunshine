@@ -97,12 +97,12 @@ $tit = wp_title( '' , false );
 		
     <section class="author">
     <span class="author_info">監修者情報</span>
-      <img src="https://www.ike-sunshine.co.jp/img/top/im_profile01.jpg" alt="院長の画像">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/top/im_profile01.jpg" alt="院長の画像">
       
     <div class="description">
 	 <p>医療法人社団　栄真会</p>
     <p><span class="clinic">池袋サンシャイン美容外科</span></p>
-    <p class="doctor"><span>院長</span><a href="https://www.ike-sunshine.co.jp/greetings/" rel="author">    鈴木 栄樹</a></p>
+    <p class="doctor"><span>院長</span><a href="/greetings/" rel="author">    鈴木 栄樹</a></p>
     
     <div class="overview">
       <p class="member">日本美容外科学会正会員・認定医<br>

@@ -1,0 +1,47 @@
+<?php require('../wp-blog-header.php'); ?>
+<?php include (STYLESHEETPATH . '/header_iframe_jump.php'); ?>
+
+<style>
+body{
+	background: none;
+}
+#mainContents{
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
+}
+#header,
+.breadcrumbs,
+#subContents,
+#sideReservationWrap,
+#footer{
+	display: none;
+}
+</style>
+<div id="mainContents">
+	<main class="reservation2 completion">
+		<div id="pageTitle" class="reservation" style="margin-bottom: 2200px;">
+			<h2>カウンセリング・再診予約</h2>
+			<p>カウンセリング・再診のご予約を受け付けております。<br>スターラックスの2回目以降の照射予約はお電話ください。</p>
+		</div>
+		<ul class="form-step">
+			<li>情報入力</li><li>入力内容の確認</li><li class="current">完了</li>
+		</ul>
+		<section class="secBox">
+			<h3 class="baseTitle">〈予約完了〉カウンセリング・再診のご予約をうけたまわりました</h3>
+			<p class="mb30">
+				ご予約を頂きありがとうございました。<br>
+				頂きました内容にてご予約をうけたまわりました。<br>
+				ご入力いただきましたメールアドレスに予約完了メールをお送りしておりますので、ご確認ください。<br>
+				<br>
+				ご予約の日時変更やキャンセルはお電話にて承っております。<br>
+				<br>
+				※メールが受信できなかった場合はクリニックまでお電話ください<br>
+			</p>
+			<a href="https://www.ike-sunshine.co.jp/" class="btn-back" target="_blank">トップページへもどる</a>
+		</section>
+	</main>
+</div>
+<!--/#mainContents-->
+
+<?php include (STYLESHEETPATH . '/footer_iframe.php'); ?>

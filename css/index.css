@@ -1,0 +1,1680 @@
+#container {
+  background: inherit;
+}
+
+#topVi img {
+	max-width: 100%;
+	height: auto;
+}
+
+#topVi a:hover img{
+	opacity: 1;
+}
+
+.toppageTitle {
+    line-height: 37px;
+    padding-bottom: 7px;
+    position: relative;
+    font-size: 30px;
+    color: #7d3423;
+    font-weight: bold;
+	margin: auto;
+    margin-bottom: 60px;
+    text-align: center;
+    border-bottom: 2px solid #7d3423;
+}
+@media screen and (max-width:540px) {
+	.toppageTitle {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+	.toppageTitle::before {
+		width: 20px;
+		height: 28px;
+		top: auto;
+		margin-top: auto;
+	}
+}
+#topProfile, #topNews {
+	margin-bottom: 30px;
+}
+#topProfile .im {
+	float: left;
+	width: 130px;
+	margin: 0 30px 0 0;
+}
+#topProfile dd {
+	text-align: center;
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1;
+	margin-top: 10px;
+}
+#topProfile dd b {
+	font-weight: normal;
+}
+#topProfile .tx {
+	overflow: hidden;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+#topProfile .btn, #topNews .btn {
+	text-align: right;
+	font-size: 12px;
+	font-size: 1.2rem;
+	margin: 0 10px;
+	text-decoration: none;
+	display: flex;
+}
+#topNews .newsbox ol {
+	display: table-cell;
+	vertical-align: top;
+	height: 12.5em;
+	padding: 0 10px;
+}
+#topNews .newsbox li {
+	margin: .5em 0;
+	border-bottom: 1px dotted #bbb;
+}
+#topNews .newsbox li:first-child {
+	margin-top: 0;
+}
+#topNews .newsbox li span {
+	margin-right: 1em;
+}
+#topNews .newsbox {
+	font-size: 14px;
+	font-size: 1.4rem;
+	display: table;
+	width: 100%;
+}
+#topProfile .tx p {
+	min-height: 6em;
+}
+@media screen and (max-width:540px) {
+	#topProfile .tx p {
+		min-height: 9em;
+	}
+}
+@media screen and (max-width:380px) {
+	#topProfile .tx p {
+		min-height: 5em;
+	}
+}
+#pickupTreatment {
+	margin: 0 auto;
+	max-width: 100%;
+	margin-bottom: 60px;
+	justify-content: space-between;
+}
+#pickupTreatment .overItem {
+	width: 50%;
+	float: left;
+	padding: 0 12px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	text-align: center;
+}
+#pickupTreatment .box {
+	height: 218px;
+	overflow: hidden;
+	background: #F4F2F3;
+}
+#pickupTreatment .im {
+	width: 166px;
+	float: left;
+	margin: 0 15px 0 0;
+}
+#pickupTreatment .txbox {
+	overflow: hidden;
+}
+#pickupTreatment .tl {
+	font-weight: bold;
+	font-size: 18px;
+	font-size: 1.8rem;
+	color: #666;
+	margin: 2.5em 0 3em;
+}
+#pickupTreatment li {
+	font-size: 12px;
+	font-size: 1.2rem;
+	color: #852320;
+	padding-left: 1em;
+	text-indent: -1em
+}
+#pickupTreatment li::before {
+	content: "・";
+}
+#pickupTreatment .mark {
+	position: absolute;
+	right: 20px;
+	top: 110px;
+}
+#pickupTreatment .mark + ul li {
+	margin-right: 90px;
+}
+.overItem .box {
+	position: relative;
+	overflow: hidden;
+}
+.overItem .box .im img {
+	width: 100%;
+	height: auto;
+}
+.overItem .layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background: rgba(0, 0, 0, .6);
+	transition: all linear .2s;
+}
+.overItem .text {
+	position: absolute;
+	top: 30%;
+	left: 0;
+	z-index: 1;
+	transition: all linear .2s;
+	opacity: 0;
+	color: #FFF;
+}
+.overItem img {
+	max-width: 100%;
+	height: auto;
+}
+#pickupTreatment .text {
+	font-size: 12px;
+	font-size: 1.2rem;
+	left: 30px;
+	right: 30px;
+	top: 30px
+}
+#pickupTreatment .box.hover .text {
+	top: 40px
+}
+.overItem .btn {
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	color: #FFF;
+	left: 25px;
+	right: 25px;
+	bottom: 25px;
+	background: #FFF;
+	line-height: 28px;
+	transition: all linear .2s;
+	text-align: center;
+}
+.overItem .btn a {
+	display: block;
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+.overItem .btn a span {
+	display: block;
+	background: url(../common/img/ic_arrow02.png) no-repeat left center;
+	padding: 0 0 0 20px;
+	margin: 0 15px;
+	font-weight: bold;
+}
+#pickupTreatment .overItem .btn {
+	right: auto;
+	left: 50%;
+	width: 230px;
+	margin: 0 0 0 -115px;
+	bottom: 40px;
+}
+#pickupTreatment .overItem .box.hover .btn {
+	bottom: 30px
+}
+.overItem .close {
+	display: none;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 34px;
+	height: 34px;
+	color: #FFF;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transition: all linear .2s;
+	opacity: 0;
+	background: #000 url(/common/img/ic_sphead_close.png) no-repeat;
+	background-size: 100%;
+}
+.overItem .box.hover .layer {
+	opacity: 1;
+}
+.overItem .box.hover .text {
+	top: 10px;
+	opacity: 1;
+}
+.overItem .box.hover .btn {
+	opacity: 1;
+	bottom: 20px;
+}
+.overItem .box.hover .close {
+	opacity: 1;
+}
+
+/* 20190903 画像テキスト化 */
+#pickupTreatment .overItem2{
+  	width : calc(100% / 3) ;
+}
+#pickupTreatment .overItem2 img{
+  	height: auto;
+	display: block;
+	margin: auto;
+}
+#pickupTreatment .overItem2 a:hover{
+	opacity: 0.7;
+}
+
+#pickupTreatment .overItem2 .title{
+	border-bottom: 6px solid;
+	border-image: linear-gradient(to right, #aca169 0%, #fffbef 70%, #ffffff 100%);
+	border-image-slice: 1;
+	overflow: hidden;
+}
+
+#pickupTreatment .overItem2 h2{
+	float: left;
+	font-weight: 800;
+	font-size: 1.2em;
+	padding: 10px 0;
+	text-align: left;
+	color: #9C8C41;
+	padding: 13px 0 10px 15px;
+	font-family: "ヒラギノ明朝 Pro W3","Hiragino Mincho Pro","ＭＳ Ｐ明朝","MS PMincho",serif;
+}
+#pickupTreatment .overItem2 .hoken{
+	position: relative;
+	float: right;
+	text-align: center;
+	background: #f7e59d;
+	height: 35px;
+	color: #fba733;
+	padding: 10px 15px 0 5px;
+    font-weight: 800;
+    font-size: 1.1em;
+    text-shadow:2px 2px 0 #FFF, -2px -2px 0 #FFF,
+              -2px 2px 0 #FFF, 2px -2px 0 #FFF,
+              0px 2px 0 #FFF, 0 -2px 0 #FFF,
+              -2px 0 0 #FFF, 2px 0 0 #FFF;
+}
+#pickupTreatment .overItem2 .hoken:before {
+  content: '';
+  border-right: 23px solid #f7e59d;
+  border-bottom: 50px solid transparent;
+  position: absolute;
+  left: -20px;
+  top: 0;
+}
+
+#pickupTreatment .overItem2 .detail{
+	text-align: left;
+	color: #fff;
+	padding: 10px 0 50px 10px;
+	font-size: 0.9em;
+}
+#pickupTreatment .overItem2 .price{
+	font-size: 1em;
+	font-weight: 800;
+	text-align: left;
+	color: #714721;
+	padding: 0 0 5px 10px;
+	position: absolute;
+	bottom: 0;
+	font-family: "ヒラギノ明朝 Pro W3","Hiragino Mincho Pro","ＭＳ Ｐ明朝","MS PMincho",serif;
+	line-height: 1.15;
+}
+
+#pickupTreatment .overItem2 .price span{
+	font-size: 1.8em;
+	color: #c3a403;
+    text-shadow:2px 2px 0 #FFF, -2px -2px 0 #FFF,
+              -2px 2px 0 #FFF, 2px -2px 0 #FFF,
+              0px 2px 0 #FFF, 0 -2px 0 #FFF,
+              -2px 0 0 #FFF, 2px 0 0 #FFF;
+/*
+	text-shadow:1px 1px 0 #fffefc, -1px -1px 0 #fffffd,
+				-1px 1px 0 #fffefb, 1px -1px 0 #fffefb,
+				0px 1px 0 #fffffc, 0 -1px 0 #fffefa,
+				-1px 0 0 #fffefb, 1px 0 0 #fffefb;
+	color: #f1dda8;
+    text-shadow:1px 1px 0 #926836, -1px -1px 0 #926836,
+              -1px 1px 0 #926836, 1px -1px 0 #926836,
+              0px 1px 0 #926836, 0 -1px 0 #926836,
+              -1px 0 0 #926836, 1px 0 0 #926836;
+*/
+}
+
+#pickupTreatment .overItem2 a .bg{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	opacity: 1;
+	width: 90% !important;
+	height: auto !important;
+}
+#pickupTreatment .overItem2 a .bg:hover{
+	opacity: 1;
+}
+
+#pickupTreatment .overItem2 .caption {
+	font-size: 130%;
+	text-align: center;
+	padding-top: 80px;
+	color: #fff;
+}
+#pickupTreatment .overItem2 .mask {
+	width: 100%;
+	height: 100%;
+	position: absolute;	/* 絶対位置指定 */
+	top: 0;
+	left: 0;
+	opacity: 0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.6);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+#pickupTreatment .overItem2:hover .mask {
+	opacity:		1;	/* マスクを表示する */
+}
+
+#topSpecial {
+	clear: both;
+	width: 100%;
+}
+#topSpecial .boxWrap {
+	background: #F4F2F3;
+	padding: 24px 14px;
+	margin: 0 0 15px;
+}
+#topSpecial .boxWrap .tl {
+	font-size: 20px;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #8C302C;
+	line-height: 1;
+	margin: 0 0 25px;
+}
+#topSpecial .list01 {
+	margin: 0 -9px;
+}
+#topSpecial .list01::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+#topSpecial .list01 li {
+	width: 25%;
+	float: left;
+	padding: 0 9px;
+	box-sizing: border-box;
+}
+#topSpecial .list01 .lead {
+	margin: 15px 0 0;
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+#topSpecial .list01 .name {
+	background: rgba(0, 0, 0, .6);
+	line-height: 35px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: #FFF;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+#topSpecial .overItem .layer {
+	position: absolute;
+	top: 35px;
+	bottom: 0;
+	height: auto;
+}
+#topSpecial .overItem .text {
+	top: 50px;
+	left: 20px;
+	right: 20px;
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 1.3
+}
+#topSpecial .overItem .btn a {
+	line-height: 1.3;
+	padding: 10px 10px;
+}
+#topSpecial .overItem .btn span {
+	margin: 0 0 0 5px;
+	text-align: left
+}
+#topSpecial .overItem .box.hover .text {
+	top: 60px;
+}
+#topSpecial .tatooIm {
+	width: 216px;
+	float: left;
+	margin-right: 30px;
+}
+#topSpecial .tatooTx {
+	overflow: hidden;
+}
+#topSpecial .tatooTx .lead {
+	margin: 0 0 1.5em;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+#topSpecial .tatooTx .link {
+	margin: 0 -5px
+}
+#topSpecial .tatooTx .link li {
+	float: left;
+	width: 25%;
+}
+#topSpecial .tatooTx .link li a {
+	display: block;
+	margin: 0 5px;
+	background: #D57871;
+}
+#topSpecial .tatooTx .ex {
+	clear: both;
+	padding-top: 25px;
+}
+#topSpecial .tatooTx .ex dt {
+	float: left;
+	padding: .3em .5em .3em 1em;
+	text-align: center;
+	background: #82231F;
+	letter-spacing: .5em;
+	color: #FFF;
+	font-weight: bold;
+	margin: 0 15px 0 0;
+}
+#topSpecial .tatooTx .ex dd {
+	overflow: hidden;
+	padding-top: .3em;
+	color: #82231F;
+}
+#topTrouble .troubleBox {
+	margin: 0 -10px 20px
+}
+#topTrouble .troubleBox .box {
+	float: left;
+	width: 25%;
+	height: auto;
+	box-sizing: border-box;
+	padding: 0 10px;
+	margin-bottom: 20px;
+	position: relative;
+}
+#topTrouble .troubleBox .box a {
+	display: block;
+	padding: 20px 10px 20px 10px;
+	background: #F4F2F3;
+}
+#topTrouble .troubleBox .box .tx {
+	font-size: 12px;
+	font-size: 1.2rem;
+	margin: 15px 0 0;
+	color: #333;
+}
+#topTrouble .troubleBox .box .im {
+	text-align: center;
+}
+#topTrouble .troubleBox .box dt{
+	border-left: 6px solid #81221F;
+	font-size: 14px;
+	font-size: 1.4rem;
+	margin-right: -15px;
+	line-height: 1;
+	padding: 3px 0 3px 10px;
+	margin: 0 0 20px;
+	font-weight: bold;
+}
+#topTrouble .troubleBox .box dt h3{
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+#topTrouble .troubleBox .box dt span {
+	font-size: 11px;
+	font-size: 1.1rem;
+}
+#topBlog {
+	margin: 0 0 30px;
+}
+#topBlog ul {
+	margin-bottom: 100px;
+	padding: 0 10px;
+}
+#topBlog li {
+	margin: 0 0 .5em;
+	line-height: 1.4;
+	padding: 0 0 0 1em;
+	text-indent: -1em;
+	border-bottom: 1px dotted #bbb;
+}
+
+#topBlog .btn {
+	margin-bottom: 0;
+}
+#topBlog .btn li {
+	border-bottom: 0;
+}
+#topBlog .btn a {
+	padding: 0 10px;
+}
+#twitter {
+	margin-bottom: 30px;
+}
+#insta {
+	margin-bottom: 30px;
+}
+#twitter .timeline {
+	overflow: hidden;
+}
+#twitter .timeline .box {
+	margin: -43px 0 -47px;
+}
+#topAccess {
+	margin: 80px 0;
+	width: 100%;
+}
+@media screen and (max-width:540px) {
+	#topAccess {
+		margin: 50px 0;
+	}
+}
+#topAccess .flex{
+	display: flex;
+	gap: 25px;
+}
+@media screen and (max-width:540px) {
+	#topAccess .flex{
+		flex-wrap: wrap;
+		gap: 5px;
+	}
+}
+#topAccess .flex .map{
+	width: 50%;
+}
+@media screen and (max-width:540px) {
+	#topAccess .flex .map{
+		width: 100%;
+	}
+}
+#topAccess .flex .map iframe{
+	width: 100%;
+}
+#topAccess .txBox{
+	width: 50%;
+}
+@media screen and (max-width:540px) {
+	#topAccess .txBox{
+		width: 100%;
+	}
+}
+#topAccess .midashi {
+    background: #82231F;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+    margin: 0 auto 10px;
+    padding: .2em 1em;
+}
+
+#topNews .toppageTitle::before {
+	left: 12px;
+	background-image: url(../img/top/ic_news.png);
+	background-size: 32px auto;
+}
+#topSpecial .toppageTitle::before {
+	left: 15px;
+	background-image: url(../img/top/ic_special.png);
+	background-size: 28px auto;
+}
+#topTrouble .toppageTitle::before {
+	left: 14px;
+	background-image: url(../img/top/ic_trouble.png);
+	background-size: 32px auto;
+}
+#topBlog .toppageTitle::before {
+	left: 14px;
+	margin-top: -15px;
+	background-image: url(../img/top/ic_blog.png);
+	background-size: 34px auto;
+}
+#twitter .toppageTitle::before {
+	left: 12px;
+	background-image: url(../img/top/ic_twitter.png);
+	background-size: 38px auto;
+}
+#insta .toppageTitle::before {
+	left: 12px;
+	background-image: url(../img/top/ic_insta.png);
+	background-size: 38px auto;
+}
+#topAccess .toppageTitle::before {
+	left: 18px;
+	background-image: url(../img/top/ic_access.png);
+	background-size: 25px auto;
+}
+/* 180914追記 */
+.troubleArticle {
+	background: #fbfbfb;
+	color: #333;
+	font-size: 12px;
+	margin-top: 10px;
+	padding: 0 3px 3px 3px;
+}
+.troubleArticle span {
+	display: block;
+	margin-top: 3px;
+}
+
+/*clearfix*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {
+  display:inline-block;
+}
+
+/* Hides from mac */
+* html .clearfix {height: 1%;}
+.clearfix{display:block;}
+/*End hide from IE-mac*/
+
+#topBlog ul{
+	font-size: 0;
+	letter-spacing: -2em;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 50px 0;
+	justify-content: space-between;
+	margin-bottom: 50px;
+	height: 330px;
+}
+@media screen and (max-width:950px) {
+	#topBlog ul{
+		height: auto;
+	}
+}
+#topBlog ul li{
+	position: relative;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: normal;
+    width: calc(100%/4.15);
+    text-indent: inherit;
+    border: none;
+	padding: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+@media screen and (max-width:920px) {
+	#topBlog ul li{
+		width: calc(100%/2.1);
+	}	
+}
+#topBlog ul li .i-catch {
+    max-width: 100%;
+    text-align: center;
+}
+#topBlog ul li .i-catch img {
+    max-width: 100%;
+    height: auto;
+}
+#topBlog ul li .b-title {
+    font-weight: bold;
+    font-size: 100%;
+    margin-top: 0.8em;
+}
+
+#topBlog ul li .b-title .b-cate {
+    display: inline-block;
+    color: #fff;
+    padding: 2px 5px;
+    background: #111;
+    font-size: 90%;
+    font-weight: normal;
+}
+
+#topBlog ul li .b-title .b-date {
+    display: inline-block;
+    color: #333;
+    padding: 2px 5px;
+    font-size: 90%;
+    font-weight: normal;
+}
+
+#topBlog ul li .topblog-bottom {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.topblog-btn {
+    padding: 0.5em;
+    background: #7d3423;
+    color: #fff;
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
+    border-radius: 8px;
+	position: absolute;
+	bottom: 0;
+    width: 90%;
+}
+@media screen and (max-width:950px) {
+	.topblog-btn {
+		position: static;
+	}	
+}
+
+#topBlog ul.pageLink li{
+	border-right: none !important;
+}
+#topBlog .b-blog-link{
+	margin-top: 10px;
+	text-align: center;
+}
+#topBlog .b-blog-link a{
+	line-height: 20px;
+    font-size: 16px;
+	width: 200px;
+    background: #e0807c;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+#topBlog .b-blog-link a:hover{
+	opacity: 0.8;
+}
+
+.sns {
+	padding: 80px 0;
+	background-color: #F8F4E6;
+}
+@media screen and (max-width:540px) {
+	.sns {
+		padding: 60px 0;
+	}
+}
+.sns .toppageTitle{
+	width: 100%;
+}
+#sns-link{
+	display: flex;
+	gap: 30px;
+	max-width: 940px;
+	width: 100%;
+	margin: auto;
+	justify-content: space-between;
+}
+@media screen and (max-width:540px) {
+	#sns-link{
+		flex-wrap: wrap;
+		gap: 40px;
+	}
+}
+#sns-link a:hover{
+	opacity: 0.95;
+}
+#sns-link a p{
+	font-size: 20px;
+	line-height: 1;
+	text-align: center;
+	color: #333;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+
+	/* 20201112トップ改修表示調整 */
+	.pc-hide {
+	display: none;
+	}
+	.sp-hide {
+	display: block;
+	overflow: hidden;
+	}
+
+.swiper-button-prev:hover:after,
+.swiper-button-next:hover:after{
+  color: #FFF;
+}
+.swiper-information .swiper-wrapper img {
+    height: 100px;
+    object-fit: cover;
+}
+.swiper-information .swiper-wrapper .wsp img {
+    width: 8.5vw;
+}
+
+.index_inner{
+	padding: 80px 0;
+}
+@media screen and (max-width:850px) {
+	.index_inner{
+		padding: 60px 0;
+		display: flex;
+		flex-wrap:wrap;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width:767px) {
+    #footer{
+    	margin: 0 auto;
+    }
+	/* 20201112トップ改修表示調整 */
+	.sp-hide {
+	display: none;
+	}
+	.pc-hide {
+	display: block;
+	}
+	#pickupTreatment{
+		-webkit-box-ordinal-group:0;
+		-ms-flex-order:0;
+		-webkit-order:0;
+		order:0;
+	}
+	#topAccess{
+		-webkit-box-ordinal-group:1;
+		-ms-flex-order:1;
+		-webkit-order:1;
+		order:1;
+	}
+
+	#topTrouble{
+		-webkit-box-ordinal-group:2;
+		-ms-flex-order:2;
+		-webkit-order:2;
+		order:2;
+	}
+	#first_block,
+	#sns-link,
+	.clmBox.box2,
+	#topSpecial{
+		-webkit-box-ordinal-group:3;
+		-ms-flex-order:3;
+		-webkit-order:3;
+		order:3;
+	}
+
+	#topProfile .tx {
+		font-size: 12px;
+	}
+	#topProfile dd {
+		font-size: 11px;
+	}
+	#topProfile .im {
+		width: 100px;
+		margin: 0 15px 0 0;
+	}
+	#topProfile .btn, #topNews .btn {
+		margin: 1.5em 0 0;
+		    flex-wrap: wrap;
+	}
+	#topNews .toppageTitle::before {
+		left: 6px;
+		background-size: 20px auto;
+	}
+	#topNews .newsbox ol {
+		height: auto;
+		padding: 0;
+	}
+	#topNews .newsbox li {
+		padding: 0;
+		text-indent: 0;
+	}
+	#pickupTreatment {
+		margin: 0 0 20px;
+	}
+	#pickupTreatment .overItem {
+		width: auto;
+		float: none;
+		margin-bottom: 10px;
+		padding: 0;
+	}
+
+/* 20201112並び変更 */
+/*
+	#pickupTreatment .overItem2 {
+		width: auto;
+		float: none;
+		margin-bottom: 10px;
+		padding: 0;
+	}
+*/
+	#pickupTreatment .overItem2 {
+		width: 47.5%;
+		height: auto;
+		float: left;
+		margin: 1%;
+		padding: 0;
+		z-index: 1;
+	}
+
+	#pickupTreatment .overItem2 a {
+		min-height: 110px;
+	}
+
+	#pickupTreatment .overItem2 a .bg {
+		width: 100%;
+		bottom: 0;
+	}
+
+	#pickupTreatment .overItem2 h2{
+		font-size: 0.9em;
+		padding: 5px 3%;
+	}
+	#pickupTreatment .overItem2 .caption{
+		padding-top: 0;
+		font-size: 13px;
+	}
+	#pickupTreatment .overItem2 .detail{
+		padding: 5px 5px 0px 5px;
+	}
+	#pickupTreatment .overItem2 .hoken{
+		font-size: 1.0em;
+		display: none;
+	}
+	#pickupTreatment .overItem2 .price{
+		font-size: 0.8em;
+		padding: 0 0 5px 10px;
+	}
+
+
+
+	/*
+	#pickupTreatment .overItem2 .price span{
+		font-size: 1.7em;
+	}*/
+	#pickupTreatment .box {
+		height: auto;
+		padding: 0 0 20px;
+	}
+	#pickupTreatment .box::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	#pickupTreatment .layer {
+		display: none;
+	}
+	#pickupTreatment .inbox {
+		position: relative;
+		background: #F4F2F3;
+		padding: 0 0 10px;
+	}
+	#pickupTreatment .inbox::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	#pickupTreatment .im {
+		width: 100px;
+		margin: 0 15px 0 0;
+	}
+	#pickupTreatment .text {
+		position: static;
+		color: inherit;
+		opacity: 1 !important;
+		margin: .8em 20px 0;
+		font-size: 12px;
+	}
+	#pickupTreatment .overItem .btn {
+		position: static;
+		opacity: 1 !important;
+		width: auto;
+		margin: 0;
+		background: none;
+	}
+	#pickupTreatment .btn a {
+		display: block;
+		padding: 5px;
+		margin: 15px 20px 0;
+		background: #FFF;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+	}
+	#pickupTreatment .tl {
+		font-size: 16px;
+		margin: 1.2em 0 1em;
+	}
+	#pickupTreatment .mark + ul li {
+		margin-right: 0;
+	}
+	#pickupTreatment .mark {
+		right: auto;
+		left: 5px;
+		top: 95px;
+		width: 45px;
+	}
+	#pickupTreatment .mark img {
+		width: 100%;
+		height: auto;
+	}
+	#pickupTreatment .close {
+		display: none
+	}
+	#topSpecial .toppageTitle::before {
+		left: 10px;
+		background-size: 15px auto;
+	}
+	#topSpecial .boxWrap .tl {
+		text-align: center;
+	}
+	#topSpecial .list01 li {
+		width: auto;
+		float: none;
+		margin: 0 0 2em
+	}
+	#topSpecial .list01 li:last-child {
+		margin: 0;
+	}
+	#topSpecial .list01 li .overItem {
+		width: auto;
+		max-width: 240px;
+		margin: 0 auto;
+	}
+	#topSpecial .list01 li .overItem .im img {
+		width: 100%;
+		height: auto;
+	}
+	#topSpecial .list01 .lead {display: none;}
+	#topSpecial .tatooIm {
+		width: 100%;
+		max-width: 240px;
+		margin: 0 auto 15px;
+		float: none;
+	}
+	#topSpecial .tatooIm img {
+		width: 100%;
+	}
+	#topSpecial .boxWrap:last-child {
+		position: relative;
+		padding-bottom: 120px;
+	}
+	#topSpecial .tatooTx .link {
+		position: absolute;
+		bottom: 10px;
+		left: 10px;
+		right: 10px;
+	}
+	#topSpecial .tatooTx .link li {
+		float: left;
+		width: 50%;
+		margin: 10px 0 0;
+	}
+	#topSpecial .tatooTx .link li a {
+		line-height: 40px
+	}
+	#topSpecial .tatooTx .ex {
+		font-size: 13px;
+		padding-top: 0;
+	}
+
+	#topTrouble .troubleBox {
+		margin: 0 -5px 0px;
+	}
+	#topTrouble .troubleBox .box {
+		width: 50%;
+		height: auto;
+		box-sizing: border-box;
+		padding: 0 5px;
+		margin-bottom: 10px;
+	}
+	#topTrouble .troubleBox .box a {
+		padding: 10px;
+	}
+	#topTrouble .troubleBox .box dt {
+		line-height: 1.4
+	}
+
+	#topBlog .toppageTitle::before {
+		left: 7px;
+		background-size: 20px auto;
+		margin-top: 0;
+	}
+	#topBlog .btn {
+		position: static;
+		right: 0;
+		padding-right: 10px;
+	}
+	#topBlog ul {
+		margin-bottom: 20px;
+		padding: 0;
+	}
+	#topBlog li {
+		padding: 0;
+		text-indent: 0;
+	}
+	#topBlog .btn a {
+		display: block;
+		margin: 0;
+		padding: 0 0 0 10px;
+		text-align: right;
+	}
+	#twitter .toppageTitle::before {
+		left: 7px;
+		background-size: 20px auto;
+	}
+	#insta .toppageTitle::before {
+		left: 7px;
+		background-size: 20px auto;
+	}
+	#topAccess .toppageTitle::before {
+		left: 10px;
+		background-size: 15px auto;
+	}
+	#topAccess .map {
+		width: auto;
+		float: none;
+		margin: 20px 0 0 0;
+	}
+	.touch .overItem .btn, .touch .overItem .close {
+		pointer-events: none;
+	}
+	.touch .overItem .hover .btn, .touch .overItem .hover .close, .touch #pickupTreatment .overItem .btn, .touch #pickupTreatment .overItem .close {
+		pointer-events: auto;
+	}
+	.bx-wrapper .bx-prev{
+		left: 8px;
+		background: url(../img/top/left.png)no-repeat center!important;
+    	background-size: 25px 25px!important;
+	}
+	.bx-wrapper .bx-next{
+		right: 8px;
+		background: url(../img/top/right.png)no-repeat center!important;
+	    background-size: 25px 25px!important;
+	}
+	.pageLink li {float:right;}
+
+	/* 180914追記 */
+	.troubleArticle { display: none;}
+}
+
+/* 20210727追記  */
+img{
+	max-width: 100%;
+}
+
+.displayflex{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* 背景  */
+.no-webp .backimg{
+	background-image: url(../common/img/background.jpg);
+}
+.webp .backimg{
+	padding: 100px 0;
+	background: #fff;
+}
+@media screen and (max-width:1440px) {
+	.webp .backimg{
+		padding: 60px 0;
+	}
+}
+.webp .backimg #container{
+	max-width: 1200px;
+	width: 100%;
+}
+@media screen and (max-width:1440px) {
+	.webp .backimg #container{
+		width: 90%;
+	}
+}
+.backimg .flex{
+	display: flex;
+	align-items: flex-start;
+	background: #fdfbf6;
+}
+@media screen and (max-width:1200px) {
+	.backimg .flex{
+		flex-wrap: wrap;
+	}
+}
+.backimg .flex .item{
+	width: calc(100%/4);
+}
+@media screen and (max-width:1200px) {
+	.backimg .flex .item{
+		width: calc(100%/2);
+	}
+}
+@media screen and (max-width:540px) {
+	.backimg .flex .item{
+		width: calc(100%/1);
+	}
+}
+.backimg .flex .item ul li{
+	padding: 15px;
+	background: white;
+	border: solid 1px #F3EDD6;
+	font-weight: bold;
+	color: #000;
+	font-size: 16px;
+	position: relative;
+}
+.backimg .flex .item ul li:hover{
+ 	background: #fffaeb;
+}
+@media screen and (max-width:540px) {
+	.backimg .flex .item ul li{
+		padding: 12px 22px;
+		font-size: 14px;
+	}
+}
+.backimg .flex .item ul li .nb{
+	display: none;
+}
+.backimg .flex .item ul li .sp{
+	display: none;
+}
+@media screen and (max-width:1440px) and (min-width:540px) {
+	.backimg .flex .item ul li .nb{
+		display: inline-block;
+	}
+}
+@media screen and (max-width:540px) {
+	.backimg .flex .item ul li .nb2{
+		display: none;
+	}
+}
+@media screen and (max-width:540px) {
+	.backimg .flex .item ul li .sp{
+		display: inline-block;
+	}
+}
+.backimg .flex .item .title{
+	padding: 20px 0;
+	background: #B1867B;
+}
+.backimg .flex .item .title{
+	padding: 20px 0;
+	background: #B1867B;
+}
+.backimg .flex .item .title p{
+	font-size: 22px;
+	line-height: 1.2;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+.backimg .flex .item .title.n2{
+	background: #854E43;
+}
+@media screen and (max-width:540px) {
+	.backimg .flex .item .title{
+		padding: 15px 0;
+	}
+	.backimg .flex .item .title{
+		padding: 15px 0;
+	}
+	.backimg .flex .item .title p{
+		font-size: 20px;
+		line-height: 1;
+	}
+}
+
+/**/
+.no-webp #ClinicConsept {
+    background: url(../common/img/IS_PC_ai_17.png) no-repeat;
+    min-height: 500px;
+    background-size: cover;
+    position: relative;
+}
+.webp #ClinicConsept {
+    background: #898f96;
+	padding: 80px 0;
+}
+@media screen and (max-width:540px) {
+	.webp #ClinicConsept {
+		padding: 60px 0;
+	}
+}
+
+#ClinicConsept .txt {
+	max-width: 1200px;
+    width: 80%;
+	margin: auto;
+}
+@media screen and (max-width:540px) {
+	#ClinicConsept .txt {
+		width: 90%;
+	}
+}
+
+#ClinicConsept .txt h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    padding: 0 0 0.5em;
+    margin-bottom: 0.7em;
+    border-bottom: 1px solid #fff;
+}
+#ClinicConsept .txt p {
+    color: #fff;
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.5;
+}
+/*症例情報*/
+#Caseinformation{
+	background-color: #F8F4E6;
+	padding: 80px 0;
+}
+@media screen and (max-width: 540px){
+	#Caseinformation{
+		padding: 60px 0;
+	}
+}
+#Caseinformation .flex{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	width: 100%;
+	gap: 40px 0;
+	margin: auto;
+	justify-content: space-between;
+}
+@media screen and (max-width: 1440px){
+	#Caseinformation .flex{
+		width: 90%;
+	}
+}
+#Caseinformation .flex a{
+	width: calc(100% /4.1);
+}
+@media screen and (max-width: 850px){
+	#Caseinformation .flex a{
+		width: calc(100% /2.05);
+	}
+}
+#Caseinformation .flex a p{
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1;
+	color: #333;
+}
+#Caseinformation .flex a p:nth-child(2){
+	font-size: 18px;
+}
+#Caseinformation .flex a p:hover{
+	color: #822520;
+}
+@media screen and (max-width: 1080px){
+	#Caseinformation .flex a p{
+		font-size: 14px;
+	}
+}
+#Caseinformation .flex a img{
+	margin: 7px 0 15px;
+}
+#Caseinformation a.more{
+	display: block;
+    line-height: 20px;
+    font-size: 18px;
+    width: 200px;
+    background: #e0807c;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+	margin: 40px auto 0;
+	text-align: center;
+	font-weight: bold;
+}
+@media screen and (max-width: 1080px){
+	#Caseinformation a.more{
+		font-size: 15px;
+		line-height: 1;
+		width: 160px;
+	}
+}
+
+.swiper-information {
+  position: relative;
+  overflow: hidden;
+  max-height: 150px;
+  object-fit: contain;
+}
+.swiper-information .swiper-slide {
+    text-align: center;
+    line-height: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+.swiper-slide img {
+	display: inline;
+	width: auto;
+	max-width: 100%;
+	max-height: 100%;
+	align-self: center;
+}
+/**/
+
+.cta {
+	margin: 60px 0;
+}
+
+/* 院長のご紹介  */
+#topProfile{
+	background-color: #F5F0DA;
+	padding: 50px 0;
+	margin: 0;
+	position: relative;
+}
+#topProfile picture img{
+	position: absolute;
+	content: "";
+	bottom:-50px;
+	right: 0;
+}
+@media screen and (max-width:800px) {
+	#topProfile picture img{
+		width: 60%;
+		right: -30px;
+	}	
+}
+
+#topProfile .conta{
+	max-width: 980px;
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+#topProfile .box {
+    width: 50%;
+	position: relative;
+	z-index: 1;
+}
+@media screen and (max-width:540px) {
+	#topProfile .box {
+		width: 100%;
+	}	
+}
+
+#topProfile .box img {
+    width: 400px;
+    margin: -40px auto 0;
+}
+
+#topProfile .pageLink li {
+    float: none;
+    display: block;
+    margin: 0 5px 0 0;
+    width: 100%;
+}
+#topProfile .pageLink li a{
+	text-align: center;
+	    font-size: 16px;
+	    background: #82231f;
+	    color: #fff;
+	    display: block;
+	    border-radius: 10px;
+	    padding: 0.3em 0;
+}
+
+#topProfile .pageLink li a:hover{
+	opacity: 0.6;
+}
+#topProfile .pageLink li a:before {
+  content: none;
+}
+
+#topProfile .pageLink.btn.clrfix a {
+    display: block;
+    color: #fff;
+    background: #82231f;
+    text-decoration: none;
+    padding: 5px 0;
+    border-radius: 10px;
+}
+
+
+/* お悩み別診療 */
+#topTrouble .troubleBox .box a{
+	display: block;
+	padding: 20px 10px 20px 10px;
+	background: #fff;
+	border-top: 5px solid #82231f;
+}
+
+#topTrouble .troubleBox .box dt{
+    border-left: none;
+    font-size: 14px;
+    font-size: 1.4rem;
+    margin-right: -15px;
+    line-height: 1;
+    padding: 3px 0 3px 10px;
+    margin: 0 0 20px;
+    font-weight: bold;
+}
+
+#topTrouble .box .caption {
+	font-size: 110%;
+	text-align: center;
+	padding-top: 80px;
+	color: #fff;
+}
+#topTrouble .box dl .mask {
+	width: 100%;
+	height: 100%;
+	position: absolute;	/* 絶対位置指定 */
+	top: 0;
+	left: 0;
+	opacity: 0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.6);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+#topTrouble .box:hover  dl .mask {
+	opacity:		1;	/* マスクを表示する */
+}
+
+
+
+@media screen and (max-width: 767px){
+
+    #headWrap {
+        margin-top: 0.5em;
+    }
+    #headText {
+        position: static;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    ul#headContact {
+        display: flex;
+    }
+
+    .swiper-container{
+    	overflow: hidden;
+    }
+    .no-webp #ClinicConsept {
+        background: url(../common/img/IS_SP_ai_14.png) no-repeat;
+        min-height: 535px;
+        background-size: cover;
+        margin: -65px auto 0;
+    }
+    #ClinicConsept .txt h2 {
+    	font-size: 26px;
+    }
+    #ClinicConsept .txt p {
+        font-size: 15px;
+    }
+    #topAccess .midashi {
+        background: #82231F;
+        color: #fff;
+        font-weight: bold;
+        text-align: left;
+        font-size: 16px;
+        margin: 10px auto 10px;
+        padding-left: 1em;
+    }
+    #topProfile .pageLink.btn.clrfix {
+        text-align: right;
+        font-size: 12px;
+        font-size: 1.2rem;
+        margin: 0 auto;
+        text-decoration: underline;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #topProfile .pageLink li {
+        float: right;
+        display: block;
+        margin: 5px;
+        width: 50%;
+        list-style: none;
+        box-sizing: border-box;
+    }
+
+    #topProfile .conta{
+    	flex-wrap: wrap;
+    }
+    #topProfile .box img {
+    	width: 200px;
+    	margin: 0 auto;
+    	position: absolute;
+    	bottom: 0;
+    	right: 0;
+    }
+    #topBlog ul li .b-title .b-cate{
+    	font-size: 70%;
+    	padding: 2px 2px;
+    }
+    #topBlog ul li .b-title .b-date {
+        padding: 2px 2px;
+        font-size: 80%;
+    }
+    .swiper-information .swiper-wrapper .wsp img {
+        width: 100%;
+    }
+}

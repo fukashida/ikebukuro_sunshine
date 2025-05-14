@@ -1,0 +1,2444 @@
+.mphList li {
+	text-align: center;
+	margin: 0 0 10px;
+}
+.treatmentStep li {
+	background: #F4F2F3;
+	position: relative;
+	padding: 20px;
+	margin: 0 0 40px 0;
+}
+.treatmentStep li .tl {
+	background: #fff;
+	padding: 10px 20px;
+	margin: 0 0 10px;
+	font-weight: bold;
+}
+.treatmentStep li .tl span {
+	background: #E0807C;
+	color: #FFF;
+	display: inline-block;
+	padding: 10px 20px;
+	margin: -10px 20px -10px -20px;
+}
+.treatmentStep li p {
+	margin: 0;
+}
+.treatmentStep li::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: -30px;
+	width: 40px;
+	height: 15px;
+	margin: 0 0 0 -20px;
+	background: url(/common/img/ic_arrowunder.png) no-repeat;
+}
+.treatmentStep li:last-child {
+	margin: 0;
+}
+.treatmentStep li:last-child::after {
+	display: none;
+}
+.treatmentStep dl dt {
+	float: left;
+	width: 170px;
+}
+.treatmentStep dl dt img {
+	width: 170px;
+	height: auto;
+}
+.treatmentStep dl dd {
+	float: left;
+	width: 100%;
+	margin: 0 0 0 -170px;
+	padding: 0 0 0 190px;
+	box-sizing: border-box;
+}
+
+/**/
+.about {
+	border-bottom: 1px solid #DCD6D8;
+	padding: 0;
+	margin: 0 0 20px;
+}
+.about dt {
+	float: left;
+	font-weight: bold;
+	width: 170px;
+	box-sizing: border-box;
+	border: 1px solid #822520;
+	padding: 10px;
+	background: #F4F2F3;
+}
+.about dd {
+	float: left;
+	padding: 0 0 0 190px;
+	margin: 0 0 0 -170px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+/**/
+.item {
+	margin: 0 0 20px;
+}
+.item dt {
+	float: left;
+	width: 120px;
+}
+.item dd {
+	float: left;
+	padding: 0 0 0 140px;
+	margin: 0 0 0 -120px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+/**/
+.causeStepbox {
+	margin: 0 0 20px;
+}
+.causeStepbox .causeStep {
+	margin: 0 -10px;
+}
+.causeStep li {
+	float: left;
+	padding: 0 10px;
+	box-sizing: border-box;
+	width: 50%;
+	margin: 0 0 20px;
+}
+.causeStep li .box {
+	background: #F4F2F3;
+	padding: 20px;
+}
+.causeStep li .tl {
+	background: #E1DBDE;
+	padding: 10px 20px;
+	margin: 0 0 10px;
+	font-weight: bold;
+}
+.causeStep li .tl span {
+	background: #e0807c;
+	color: #FFF;
+	display: inline-block;
+	padding: 10px 20px;
+	margin: -10px 20px -10px -20px;
+}
+.causeStep li p {
+	margin: 0;
+}
+.causeStep li .box .inner {
+	position: relative;
+	margin: 0 0 50px;
+}
+.causeStep li .box .inner::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: -30px;
+	width: 40px;
+	height: 15px;
+	margin: 0 0 0 -20px;
+	background: url(/common/img/ic_arrowunder.png) no-repeat;
+}
+.causeStep li .box .inner:last-child {
+	margin: 0;
+}
+.causeStep li .box .inner:last-child::after {
+	display: none;
+}
+.causeStep li .box .inner dt {
+	float: left;
+	width: 80px;
+}
+.causeStep li .box .inner dd {
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 0 0 90px;
+	margin: 0 0 0 -80px;
+}
+
+/**/
+.hairStep li {
+	background: #F4F2F3;
+	position: relative;
+	padding: 20px;
+	margin: 0 0 20px 0;
+}
+.hairStep li .tl {
+	color: #822520;
+	padding: 10px 20px;
+	margin: 0 0 10px;
+	font-weight: bold;
+}
+.hairStep li p {
+	margin: 0;
+}
+.hairStep dl dt {
+	float: left;
+	width: 200px;
+}
+.hairStep dl dt img {
+	width: 200px;
+	height: auto;
+}
+.hairStep dl dd {
+	float: left;
+	width: 100%;
+	margin: 0 0 0 -200px;
+	padding: 0 0 0 220px;
+	box-sizing: border-box;
+}
+
+/**/
+.cItem, .placentaItem, .hairItem {
+	margin: 0 0 20px;
+}
+.placentaItem dt, .hairItem dt {
+	float: left;
+	width: 160px;
+	text-align: center;
+}
+.cItem dt {
+	float: left;
+	width: 240px;
+	text-align: center;
+}
+.cItem dt.left {
+	text-align: left;
+}
+.placentaItem dt img, .hairItem dt img {
+	max-width: 160px;
+	height: auto;
+}
+.placentaItem dd, .hairItem dd {
+	float: left;
+	width: 100%;
+	margin: 0 0 0 -160px;
+	padding: 0 0 0 180px;
+	box-sizing: border-box;
+}
+.cItem dd {
+	float: left;
+	width: 100%;
+	margin: 0 0 0 -240px;
+	padding: 0 0 0 260px;
+	box-sizing: border-box;
+}
+.cItem dt ul {
+	margin: 0 -5px;
+}
+.cItem dt ul li {
+	float: left;
+	list-style-type: none;
+	margin: 0;
+	padding: 0 5px;
+}
+
+/**/
+.mediaList {
+	margin: 0 -10px;
+}
+.mediaList li {
+	padding: 0 10px;
+	box-sizing: border-box;
+	float: left;
+}
+
+/**/
+.btncase {
+	text-align: center;
+	margin: 20px 0;
+}
+.btncase dt {
+	padding: 10px 50px;
+	font-weight: bold;
+	color: #822520;
+	border: 1px solid #D2D2D2;
+	display: inline-block;
+	text-align: center;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1.00, #EBEBEB), color-stop(0.00, #FFF));
+	background: -webkit-linear-gradient(#FFF, #EBEBEB);
+	background: -moz-linear-gradient(#FFF, #EBEBEB);
+	background: -o-linear-gradient(#FFF, #EBEBEB);
+	background: -ms-linear-gradient(#FFF, #EBEBEB);
+	background: linear-gradient(#FFF, #EBEBEB);
+	cursor: pointer;
+}
+.btncase dt span {
+	background: url(/common/img/ic_arrow01.png) no-repeat left .5em;
+	padding: 0 0 0 .8em;
+}
+.btncase dd {
+	margin: 30px 0 0;
+}
+.operationsList {
+	margin: 0 -10px;
+}
+.operationsList li {
+	width: 50%;
+	padding: 0 10px;
+	margin: 0 0 20px;
+	float: left;
+	box-sizing: border-box;
+}
+.operationsList li a {
+	padding: 10px;
+	display: block;
+	background-color: #EEEEEE;
+	box-sizing: border-box;
+	color: #313131;
+}
+.operationsList li dl {
+	margin: 0 0 10px;
+}
+.operationsList li dt {
+	width: 60px;
+	float: left;
+	box-sizing: border-box;
+}
+.operationsList li dd {
+	width: 100%;
+	margin: 0 0 0 -60px;
+	padding: 0 0 0 80px;
+	height: 100%;
+	float: left;
+	box-sizing: border-box;
+}
+.operationsList li dd h3 {
+	margin: 0 0 10px;
+	font-weight: bold;
+	font-size: 18px;
+	font-size: 1.8rem;
+	display: table;
+	width: 100%;
+}
+.operationsList li dd h3 span {
+	display: table-cell;
+	height: 49px;
+	vertical-align: middle;
+	border-bottom: 1px solid #82231F;
+	color: #82231F;
+}
+.operationsList li a:hover {
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+.centerBox {
+	width: 100%;
+}
+.doubleItem {
+	margin: 0 auto;
+	width: 400px;
+	overflow: hidden;
+}
+.doubleItem li {
+	width: 180px;
+	float: left;
+	margin-left: 40px;
+}
+.doubleItem li:first-child {
+	margin-left: 0px;
+}
+.doubleItem li p {
+	margin-top: 1em;
+	font-size: 12px;
+}
+.btncase dd {
+	text-align: left;
+}
+.imgCenter {margin: 30px 0; text-align: center;}
+.photoL {text-align: center;}
+.imgBlock img {padding: 10px;}
+/*180928追記*/
+.caseTable {
+	border-collapse: separate;
+	border-spacing: 1px;
+	vertical-align: middle;
+	margin: 10px 0;
+}
+.caseTable th {
+	background: #F4F2F3;
+	padding: 5px 10px;
+	text-align: center;
+}
+.caseTable td {
+	padding: 5px 10px;
+	text-align: left;
+}
+
+/**20190815わきがoperations**/
+
+.wakiga_operations #Doctor h2 {
+    padding-bottom: 20px;
+}
+
+.wakiga_operations #Doctor dl dt {
+    float: left;
+    padding-right: 20px;
+}
+
+.wakiga_operations #Doctor dl dd.DocterSubtitle {
+    padding-bottom: 10px;
+}
+.wakiga_operations #Doctor dl dd {
+    float: left;
+    width: 495px;
+}
+
+.wakiga_operations #Doctor dl dd.DoctorText01 {
+    line-height: 160%;
+}
+
+.wakiga_operations #Doctor dl dd.DocterSubtitle img {
+  width: 495px;
+}
+
+
+.wakiga_operations .drctr_bottom img {
+  margin: 20px auto;
+  width: 100%;
+}
+
+.wakiga_operations .drctr_bottom img {
+  margin: 20px auto;
+  width: 100%;
+}
+
+.wakiga_operations .drc_right{
+	width:100%;
+}
+
+.wakiga_operations .drc_right ul {
+    background: #F7F7F7;
+    padding: 15px 50px 15px 100px;
+    border-radius: 15px;
+    margin-bottom: 45px;
+}
+
+.wakiga_operations .drc_right ul li {
+    color: #666666;
+    font-size: 22px;
+    line-height: 2;
+    position: relative;
+}
+
+.wakiga_operations .drc_right ul li::before {
+    content: "";
+    width: 26px;
+    height: 17px;
+    background: url(../img/operations/test-wakiga/check_icon.png) no-repeat center;
+        background-size: auto;
+    background-size: cover;
+    display: inline-block;
+    margin-left: -46px;
+    margin-right: 20px;
+}
+
+.wakiga_operations .cause {
+  width: 100%;
+}
+
+.wakiga_operations .pruning_steps {
+    background: #efefef;
+    padding: 150px 0 30px;
+}
+
+.wakiga_operations .pruning_steps h2 {
+    background: rgba(255,255,255,0.6);
+    padding: 15px 0;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.wakiga_operations .pruning_steps h2::before {
+    content: "";
+    background: url(../img/operations/test-wakiga/pruning_steps_txt.png);
+        background-size: auto;
+    background-size: cover;
+    width: 365px;
+    height: 97px;
+    position: absolute;
+    left: 0;
+    top: -107px;
+}
+
+.wakiga_operations .pruning_steps h2 div {
+    font-size: 40px;
+    color: #2070D1;
+    text-align: center;
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: 0 auto;
+    position: relative;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-weight: bold;
+}
+
+.wakiga_operations .pruning_steps h2 div::before {
+    content: "「";
+    display: inline-block;
+    position: absolute;
+    left: -60px;
+    bottom: 0;
+}
+
+.wakiga_operations .pruning_steps h2 div::after {
+    content: "」";
+    display: inline-block;
+    right: -60px;
+    bottom: 0;
+    position: absolute;
+}
+
+.wakiga_operations .pruning_steps h2 div span {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.wakiga_operations .pruning_steps .pruning_s_content {
+    background: rgba(255,255,255,0.35);
+    padding: 20px 0;
+    margin-bottom: 60px;
+}
+
+.wakiga_operations .pruning_steps .pruning_s_content .container {
+    position: relative;
+}
+
+.wakiga_operations .pruning_steps .pruning_s_content img {
+    position: absolute;
+    bottom: -40px;
+    right: -30px;
+    z-index: 10;
+	width:250px;
+}
+
+.wakiga_operations .pruning_steps .pruning_s_content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.wakiga_operations .pruning_steps .pruning_s_content p span {
+    color: #2070d1;
+    font-weight: bold;
+}
+
+.wakiga_operations .container{
+	width:90%;
+	margin:0 auto;
+}
+
+.wakiga_operations .price_plan {
+    background: url(../img/operations/test-wakiga/price_plan_bg.jpg) right top no-repeat;
+    /**background-size: auto;
+    background-size: cover;**/
+	background-size:150%;
+    padding: 45px 0 60px;
+}
+
+.wakiga_operations .price_plan h2 {
+    font-size: 40px;
+    color: #fff;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.wakiga_operations .price_plan .price_box {
+    border: 10px #fff solid;
+    background: #fff;
+    width: 500px;
+    box-sizing: border-box;
+    position: relative;
+	margin-top:50px;
+}
+
+.wakiga_operations .price_plan .price_box .curved_txt {
+    width: 210px;
+    height: 170px;
+    padding: 0 0 0 0;
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    border: none;
+    overflow: hidden;
+}
+
+.wakiga_operations .price_plan .price_box .curved_txt::before {
+    content: "";
+}
+
+.wakiga_operations .price_plan .price_box .curved_txt > div {
+    background: #EA566C;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    transform: rotate(-45deg);
+    width: 140%;
+    margin-left: -44%;
+    margin-top: 40px;
+}
+
+.wakiga_operations .price_plan .price_box .prc_note {
+    position: absolute;
+    right: -150px;
+    top: -10px;
+	width:180px;
+}
+
+.wakiga_operations .price_plan .price_box > div {
+    border: 1px solid #BDB7C3;
+    padding: 10px 0 10px 80px;
+    box-sizing: border-box;
+}
+
+.wakiga_operations .price_plan .price_box table {
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-weight: bold;
+}
+
+.wakiga_operations .price_plan .price_box table tr th {
+    font-size: 40px;
+	padding-right:15px;
+}
+
+.wakiga_operations .price_plan .price_box table tr td {
+    font-size: 30px;
+}
+
+.wakiga_operations .price_plan .price_box table tr td span {
+    font-size: 50px;
+}
+
+.wakiga_operations .price_plan .bttm_txt {
+    margin-left: 30px;
+    margin-top: 30px;
+    line-height: 1.4;
+}
+
+.wakiga_operations .good_points {
+    padding: 60px 0 60px;
+}
+
+.wakiga_operations .good_points .container {
+    background: rgba(255,255,255,0.6);
+    padding: 30px 10px;
+    border: 1px solid #C7F0ED;
+    box-shadow: 0 0 0 10px rgba(255,255,255,0.6);
+    width: 90%;
+}
+
+.wakiga_operations .section_title {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-weight: bold;
+}
+
+.wakiga_operations .good_points ul li {
+    padding-left: 90px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.wakiga_operations .good_points ul li h3 {
+    color: #1AAAAA;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.wakiga_operations .good_points ul li h3::before {
+    content: "";
+    color: #1AAAAA;
+    font-size: 50px;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-weight: bold;
+    font-style: italic;
+    position: absolute;
+    left: -80px;
+    bottom: -15px;
+}
+
+
+.wakiga_operations .good_points ul li:nth-child(1) h3::before {
+    content: "01";
+}
+
+.wakiga_operations .good_points ul li:nth-child(2) h3::before {
+    content: "02";
+}
+
+.wakiga_operations .good_points ul li:nth-child(3) h3::before {
+    content: "03";
+}
+
+.wakiga_operations .good_points ul li p {
+    line-height: 1.6;
+}
+
+.wakiga_operations .good_points .bottom_txt {
+    text-align: right;
+}
+
+.wakiga_operations .wakiga {
+    padding: 45px 0 90px;
+    background: #fff;
+    position: relative;
+}
+
+.wakiga_operations .wakiga .container {
+  width: 85%;
+  margin: 0;
+}
+
+.wakiga_operations .wakiga table {
+    background: #fff;
+    width: 100%;
+}
+
+.wakiga_operations .wakiga table tr td, .wakiga table tr th {
+    border: 1px solid #A3CEEF;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.wakiga_operations .wakiga table tr:nth-child(2) th:nth-child(2) {
+    border-top: 2px solid #E84361;
+    border-left: 2px solid #E84361;
+    border-right: 2px solid #E84361;
+    background: #FFEEF3;
+}
+
+.wakiga_operations .wakiga table tr:nth-child(3) td:nth-child(3) {
+    border-left: 2px solid #E84361;
+    border-right: 2px solid #E84361;
+    background: #FFEEF3;
+}
+
+.wakiga_operations .wakiga table tr:nth-child(4) td:nth-child(3) {
+    border-left: 2px solid #E84361;
+    border-right: 2px solid #E84361;
+    background: #FFEEF3;
+}
+
+.wakiga_operations .wakiga table tr:nth-child(5) td:nth-child(3) {
+    border-left: 2px solid #E84361;
+    border-right: 2px solid #E84361;
+    background: #FFEEF3;
+}
+
+.wakiga_operations .wakiga table tr:nth-child(6) td:nth-child(3) {
+    border-left: 2px solid #E84361;
+    border-right: 2px solid #E84361;
+    border-bottom: 2px solid #E84361;
+    background: #FFEEF3;
+}
+
+.wakiga_operations .wakiga img.wkg_bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+	width:250px;
+}
+
+.wakiga_operations .wakiga table tr th span, .wakiga table tr td span {
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.wakiga_operations .treatment {
+    padding: 45px 0 90px;
+    background: url("../img/operations/test-wakiga/treatment_bg.png") center no-repeat;
+        background-size: auto;
+    background-size: cover;
+}
+
+.wakiga_operations .treatment ul {
+    letter-spacing: -0.4em;
+}
+
+.wakiga_operations .treatment ul li {
+    letter-spacing: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+}
+
+.wakiga_operations .treatment ul li .num {
+    height: 180px;
+    margin-bottom: 30px;
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.4;
+    box-sizing: border-box;
+    padding: 22px 0;
+}
+
+.wakiga_operations .treatment ul li .num::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 90px 0 90px 30px;
+    position: absolute;
+    right: -30px;
+    top: 0;
+    z-index: 10;
+}
+
+.wakiga_operations .treatment ul li .num span {
+    font-size: 51px;
+    display: block;
+    font-style: italic;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.wakiga_operations .treatment ul li:nth-child(1) .num {
+    background: #EBF4FF;
+}
+
+.wakiga_operations .treatment ul li:nth-child(1) .num::after {
+    border-color: transparent transparent transparent #EBF4FF;
+}
+
+.wakiga_operations .treatment ul li:nth-child(2) .num {
+    background: #C0DAF9;
+}
+
+.wakiga_operations .treatment ul li:nth-child(2) .num::after {
+    border-color: transparent transparent transparent #C0DAF9;
+}
+
+.wakiga_operations .treatment ul li:nth-child(3) .num {
+    background: #9AC9F7;
+}
+
+.wakiga_operations .treatment ul li:nth-child(3) .num::after {
+    border-color: transparent transparent transparent #9AC9F7;
+}
+
+.wakiga_operations .treatment ul li:nth-child(4) .num {
+    background: #7DB0EF;
+}
+
+.wakiga_operations .treatment ul li:nth-child(4) .num::after {
+    border-color: transparent transparent transparent #7DB0EF;
+}
+
+.wakiga_operations .treatment ul li:nth-child(5) .num {
+    background: #659AE5;
+}
+
+.wakiga_operations .treatment ul li:nth-child(5) .num::after {
+    border-color: transparent transparent transparent #659AE5;
+}
+
+.wakiga_operations .treatment ul li .img {
+    box-sizing: border-box;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    margin-bottom: 12px;
+}
+
+.wakiga_operations .treatment ul li .img img {
+    width: 100%;
+}
+
+.wakiga_operations .treatment ul li p {
+    width: calc(100% - 4px);
+    background: rgba(255,255,255,0.6);
+    margin: 0 auto;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    height: 440px;
+}
+
+.wakiga_operations ul.faq{
+	margin-top:30px;
+}
+
+
+.wakiga_operations ul.faq li {
+    width: 100%;
+    margin-bottom: 30px;
+    border: 4px solid #BF8A8A;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.wakiga_operations ul.faq li .faq_q {
+    height: 70px;
+    line-height: 70px;
+    box-sizing: border-box;
+    /**cursor: pointer;**/
+    background: #BF8A8A;
+    text-align: center;
+    position: relative;
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFF;
+    transition: 0.3s;
+}
+
+ .wakiga_operations ul.faq li .faq_q::before {
+    content: "Q";
+    display: block;
+    font-size: 40px;
+    color: #FCFF88;
+    font-family: arial;
+    position: absolute;
+    left: 20px;
+    line-height: 70px;
+    top: 0;
+}
+
+.wakiga_operations ul.faq li .faq_a {
+    display: block;
+    background: #fff;
+    border-radius: 15px;
+    width: 100%;
+    padding: 30px 45px 20px 70px;
+    box-sizing: border-box;
+    line-height: 1.6;
+    left: 0;
+    position: relative;
+}
+
+.wakiga_operations ul.faq li .faq_a::before {
+    content: "A";
+    display: block;
+    font-size: 40px;
+    color: #DB3E3E;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    left: 20px;
+    line-height: 1;
+}
+
+.wakiga_operations ul.faq li .faq_a::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 18px 15px 0 15px;
+    border-color: #BF8A8A transparent transparent transparent;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 15px);
+}
+
+.wakiga_operations ul.faq li .faq_a span {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.wakiga_operations ul.faq li .faq_a::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 18px 15px 0 15px;
+    border-color: #BF8A8A transparent transparent transparent;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 15px);
+}
+
+/*----------------------------------------------------------
+					ほくろ治療・イボ治療
+----------------------------------------------------------*/
+
+#worry {
+    letter-spacing:-0.4em;
+    margin-bottom: 100px;
+}
+
+#worry .case {
+    letter-spacing:0;
+    width: calc(33.3333% - (20px / 3));
+    margin-right: 10px;
+    display:inline-block;
+    vertical-align:top;
+    line-height: 0;
+}
+
+#worry .case:nth-child(3) {
+    margin-right: 0;
+}
+
+#worry .case img {
+    max-width: 100%;
+}
+
+#worry .case dl dd {
+    text-indent: -1.75em;
+    padding: 20px 10px 20px 30px;
+    line-height: 1.5em;
+    min-height: 175px;
+    background: url(/skincare/lp/img/worry_bg.gif) repeat-y;
+    background-size: contain;
+}
+
+#worry .case dl dd li img {
+    vertical-align: middle;
+    padding-right: 8px;
+}
+
+#worry .case dl dd li {
+    font-size: 13px;
+}
+
+.cheap_recommend{
+    letter-spacing:-0.4em;
+    margin-bottom:60px;
+}
+
+.cheap_recommend li{
+    letter-spacing: 0;
+    display: inline-block;
+    width: calc(50% - 10px);
+    margin-right: 20px;
+    background: -moz-linear-gradient(top, rgba(255,173,2,1) 0%, rgba(250,87,4,1) 50%);
+    background: -webkit-linear-gradient(top, rgba(255,173,2,1) 0%,rgba(250,87,4,1) 50%);
+    background: linear-gradient(to bottom, rgba(255,173,2,1) 0%,rgba(250,87,4,1) 50%);
+    border: 3px solid #FDA76E;
+    box-sizing: border-box;
+    border-radius: 6px;
+    box-shadow: 0 3px 5px 1px #666;
+    position: relative;
+}
+
+.cheap_recommend li:nth-child(2){
+    margin-right:0;
+}
+
+.cheap_recommend li .top_txt {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -56px;
+}
+
+.cheap_recommend li h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    padding: 15px 0 0 15px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 50px;
+    margin-bottom: 35px;
+}
+
+.cheap_recommend li h3 span{
+    font-size: 13px;
+    display:block;
+    text-align:center;
+    margin-bottom:3px;
+}
+
+.cheap_recommend li .img{
+    width: 130px;
+    border: 4px solid #fff;
+    box-shadow: 0 0 2px 1px #666;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(15deg);
+}
+
+.cheap_recommend li .img img{
+    width:100%;
+}
+
+.cheap_recommend li .txt{
+    color: #fff;
+    font-size: 18px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.doctor_r {
+    letter-spacing: -0.4em;
+    margin-bottom: 100px;
+}
+
+.doctor_r .left{
+    letter-spacing:0;
+    display:inline-block;
+    vertical-align:top;
+    width:calc(100% - 220px);
+    margin-right:20px;
+}
+
+.doctor_r .left h3{
+    color: #A8815A;
+    font-size: 24px;
+    font-family: serif;
+    line-height: 1.6;
+    position:relative;
+    padding-bottom:30px;
+}
+
+.doctor_r .left h3 div:nth-child(1){
+    text-align: left;
+    font-weight: bold;
+}
+
+.doctor_r .left h3 div:nth-child(2){
+    text-align: right;
+    font-weight: bold;
+}
+
+.doctor_r .left h3:after {
+    content: "";
+    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(253,253,253,0) 1%, rgba(204,204,204,1) 25%, rgba(153,153,153,1) 50%, rgba(204,204,204,1) 75%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(253,253,253,0) 1%,rgba(204,204,204,1) 25%,rgba(153,153,153,1) 50%,rgba(204,204,204,1) 75%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(253,253,253,0) 1%,rgba(204,204,204,1) 25%,rgba(153,153,153,1) 50%,rgba(204,204,204,1) 75%,rgba(255,255,255,0) 100%);
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 15px;
+}
+
+.doctor_r .left .txt{
+
+}
+
+.doctor_r .left img{
+    max-width:100%;
+    margin-top:15px;
+}
+
+.doctor_r .right{
+    width:200px;
+    letter-spacing:0;
+    display:inline-block;
+    vertical-align:top;
+}
+
+.this_rcmmnd {
+    margin-bottom: 60px;
+}
+
+.this_rcmmnd h3{
+    color:#483D34;
+    text-align:center;
+    font-size:32px;
+    font-weight:bold;
+    margin-bottom: 30px;
+}
+
+.this_rcmmnd ul {
+    letter-spacing:-0.4em;
+}
+
+.this_rcmmnd ul li{
+    background: -moz-linear-gradient(top, rgba(255,155,128,1) 0%, rgba(210,62,14,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,155,128,1) 0%,rgba(210,62,14,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,155,128,1) 0%,rgba(210,62,14,1) 100%);
+    text-align: center;
+    color: #fff;
+    width: 155px;
+    height: 155px;
+    border-radius: 100%;
+    margin-right: calc(70px / 3);
+    display:inline-flex;
+    letter-spacing:0;
+    vertical-align:top;
+    box-shadow: 0 3px 2px 1px #999;
+}
+
+.this_rcmmnd ul li:last-child{
+    margin-right:0;
+}
+
+.this_rcmmnd ul li .circle_txt{
+    display: block;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    font-weight:bold;
+}
+
+#process {
+    text-align: center;
+	margin-bottom: 60px;
+}
+
+#process h2 {
+    padding-bottom: 30px;
+}
+
+#price {
+    text-align: center;
+	margin-bottom: 60px;
+}
+
+#price h3 {
+    margin-bottom: 30px;
+}
+
+#price table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#price table tr th {
+    padding: 12px 10px;
+    background: #8d7768;
+    color: #FFF;
+    width: 130px;
+    border: #8d7768 1px solid;
+	font-weight: bold;
+	text-align: center;
+}
+
+#price table tr td.time {
+    background: #c0aea1;
+    color: #FFF;
+    border: #8d7768 1px solid;
+}
+
+#price table tr td.price_0 {
+    border: #8d7768 1px solid;
+}
+
+#price table span {
+    font-weight: bold;
+    color: #F00;
+}
+
+#price p.attn {
+    color: #F00;
+    font-size: 0.9em;
+    padding: 10px 0 10px 30px;
+    text-align: left;
+}
+
+#price a.button {
+    background: #F38A6D;
+    font-size: 20px;
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 7px 7px 0 0 rgba(0,0,0,0.5);
+}
+
+#price a.button:after {
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-right: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 14px;
+    box-sizing: border-box;
+    right: 13px;
+}
+
+
+#faq {
+
+}
+
+#faq h2{
+
+	text-align:center;
+
+	padding-bottom:30px;
+
+}
+
+#faq p.cv{
+
+	padding-top:30px;
+
+	text-align:center;
+
+}
+
+#faq .tab{
+
+	border-bottom:2px solid #F30;
+
+}#faq .tab ul{
+	letter-spacing: -0.4em;
+}
+
+#faq .tab ul li{
+	letter-spacing: 0;
+	display:inline-block;
+	vertical-align: top;
+	width: calc(50% - 5px);
+	margin-right: 10px;
+
+}
+
+#faq .tab ul li img{
+	width:100%;
+}
+
+
+#faq .tab ul li:nth-child(2){
+	margin-right: 0;
+
+}
+
+#faq #tab_box{
+
+	border:2px solid #F30;
+
+	padding:20px;
+
+}
+
+#faq #tab_box > div{
+	display: none;
+}
+
+#faq #tab_box > div.show{
+	display: block;
+}
+
+#tab_box #tab1 dl dt img,#tab_box #tab2 dl dt img{
+
+	padding-right:10px;
+
+	vertical-align:middle;
+
+}
+
+#tab_box #tab1 dl dt,#tab_box #tab2 dl dt{
+
+	font-size:1.2em;
+
+	font-weight:bold;
+
+	color:#ea4210;
+
+	text-indent:-2.3em;
+
+	padding-left:45px;
+
+}
+
+#tab_box #tab1 dl dd,#tab_box #tab2 dl dd{
+
+	background:#f7efd9;
+
+	padding:10px;
+
+	margin:15px 20px 20px 37px;
+
+    border-radius: 6px;        /* CSS3草案 */
+
+    -webkit-border-radius: 6px;    /* Safari,Google Chrome用 */
+
+    -moz-border-radius: 6px;   /* Firefox用 */
+
+	font-size:0.9em;
+
+	line-height:1.5em;
+
+}
+
+/*----------------------------------------------------------
+					リストカット・傷跡
+----------------------------------------------------------*/
+.laser_operation{
+
+}
+
+.laser_operation h2.ttl{
+    border-bottom: 1px solid #DAC7A7;
+    line-height: 33px;
+    color: #AA805A;
+    padding-bottom: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: serif;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.laser_operation h2.ttl img{
+	margin-right: 5px;
+}
+
+.laser_operation h2.ttl:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #DAC7A7;
+    bottom: 3px;
+    left: 0;
+}
+
+.laser_operation h2.ttl span{
+	position: absolute;
+	font-size: 18px;
+	top: -25px;
+}
+
+.laser_operation ul.menu_list{
+	letter-spacing: -0.4em;
+    margin-bottom: 60px;
+}
+
+.laser_operation ul.menu_list li{
+	letter-spacing: 0;
+	display: inline-block;
+	vertical-align: top;
+	width: 33.3%;
+	border-top: 1px solid #DAC7A7;
+	border-left: 1px solid #DAC7A7;
+	background: -webkit-linear-gradient(rgba(254,253,248,1) 1%, rgba(242,230,209,1) 100%);
+	background: -o-linear-gradient(rgba(254,253,248,1) 1%, rgba(242,230,209,1) 100%);
+	background: linear-gradient(rgba(254,253,248,1) 1%, rgba(242,230,209,1) 100%);
+	box-sizing: border-box;
+}
+
+.laser_operation ul.menu_list li:hover{
+	background: -webkit-linear-gradient(rgba(242,230,209,1) 1%, rgba(254,253,248,1) 100%);
+	background: -o-linear-gradient(rgba(242,230,209,1) 1%, rgba(254,253,248,1) 100%);
+	background: linear-gradient(rgba(242,230,209,1) 1%, rgba(254,253,248,1) 100%);
+}
+
+.laser_operation ul.menu_list li:nth-child(3n){
+	border-right: 1px solid #DAC7A7;
+}
+
+.laser_operation ul.menu_list li a{
+    border-bottom: 15px solid #AA805A;
+    font-size: 20px;
+    color: #AA805A;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-family: serif;
+    padding: 10px 0;
+	position: relative;
+}
+
+.laser_operation ul.menu_list li a:before{
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 9px 4px 0 4px;
+	border-color: #fff transparent transparent transparent;
+	bottom: -12px;
+	left: calc(50% - 4px);
+	position: absolute;
+}
+
+.laser_operation ul.menu_list li a{
+	font-family: Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.laser_operation ul.menu_list li a span{
+	font-size: 13px;
+	color: #DEC8B0;
+	display: block;
+	font-family: Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.laser_operation #tabcontent{
+    background: url(/landing/wristcut/img/tab_bg.jpg) no-repeat top center;
+    background-size: 100% 100%;
+    padding: 20px;
+    height: auto;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+	font-size: 16px;
+}
+.laser_operation #tabcontent .hide{
+	display:none;
+}
+.laser_operation #tabcontent .tabcont ul{
+    float: none;
+    padding: 20px 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.laser_operation #tabcontent .tabcont ul li{
+	line-height:1.4em;
+}
+.laser_operation #tabcontent .tabcont ul li.message{
+	padding:20px 0 20px 20px;
+}
+.laser_operation #tabcontent .tabcont p.pic01{
+	padding:10px 40px 0 0;
+	text-align:right;
+}
+.laser_operation #tabcontent .tabcont p.pic02{
+	text-align:right;
+	padding:10px 40px 0 0;
+}
+.laser_operation #tabcontent .tabcont dl {
+    width: 100%;
+    margin: 0px 0 0 0;
+}
+.laser_operation #tabcontent .tabcont dl dt img{
+	vertical-align:middle;
+	padding-right:10px;
+}
+.laser_operation #tabcontent .tabcont dl dt{
+	font-size:1.2em;
+	font-weight:bold;
+	padding:0 0 8px 3px;
+	color:#a98059;
+}
+.laser_operation #tabcontent .tabcont dl dd{
+	background:#ebd9ba;
+	min-height:80px;
+	padding:15px;
+	font-size:0.85em;
+	line-height:1.4em;
+	color:#666;
+	height: auto;
+}
+
+
+
+
+
+
+.laser_operation dl.cont01,.laser_operation dl.cont02{
+	width:100%;
+	letter-spacing: -0.4em;
+	margin-bottom: 60px;
+}
+
+.laser_operation dl.cont01 dt,.laser_operation dl.cont02 dt {
+    padding: 0 0 20px 0;
+}
+
+.laser_operation dl.cont01 img,.laser_operation dl.cont02 img{
+	width:100%;
+}
+
+.laser_operation dl.cont02 dd ul li,.laser_operation dl.cont03 dd ul li{
+	display:inline-block;
+	vertical-align: middle;
+	vertical-align: 0;
+	width: 50%;
+	padding:5px 5px;
+	box-sizing: border-box;
+}
+
+
+
+
+
+
+.laser_operation #cure{
+	padding:0 0;
+	line-height:1.4em;
+	margin-top: 30px;
+	font-size: 16px;
+}
+
+.laser_operation #cure p{
+	padding:0 10px;
+	line-height:1.4em;
+}
+
+.laser_operation #cure .summary{
+	margin-top: 20px;
+}
+
+.laser_operation #cure .summary h3{
+	padding:30px 0 20px 0;
+}
+
+.laser_operation #cure .summary h3 img {
+    width: 100%;
+}
+
+.laser_operation #cure .summary table{
+	width:100%;
+	margin:20px 0 30px 0;
+	border-collapse:collapse;
+	border: 1px solid #efe7d8;
+}
+
+.laser_operation #cure .summary table th,#cure .summary table td{
+	border:1px dashed #f1ebe1;
+	padding:15px 10px;
+}
+
+.laser_operation #cure .summary table th{
+	background:#f1ebe1;
+	color:#a98059;
+	width:160px;
+	font-weight: bold;
+}
+
+.laser_operation #cure .summary table td{
+	line-height:1.5em;
+}
+
+
+
+
+
+
+
+
+
+.laser_operation #price h2 img{
+	width:100%;
+}
+
+.laser_operation #price dl{
+	margin:0 20px;
+	border-bottom:1px dashed #CC6600;
+}
+.laser_operation #price dl dt{
+	float:left;
+	width:250px;
+	font-weight:bold;
+	padding:20px 30px 10px 40px;
+	text-align: left;
+}
+.laser_operation #price dl dd{
+	font-size:1.2em;
+	padding:20px 30px 10px 10px;
+	text-align: left;
+}
+.laser_operation #price ul{
+	padding:10px 20px;
+	margin:10px 20px;
+	background:#eeeeee;
+	font-size:0.95em;
+	text-align: left;
+}
+.laser_operation #price ul li{
+	line-height:1.5em;
+	font-weight:bold;
+	color:#F00;
+}
+.laser_operation #table p span{
+	color:#F00;
+}
+.laser_operation #table .pay{
+	padding-top:20px;
+}
+.laser_operation #table .pay table{
+	width:800px;
+	text-align:center;
+	margin:30px 0 30px 70px;
+	border-collapse:collapse;
+}
+.laser_operation #table .pay table th{
+	padding:10px 20px;
+	font-size:1.2em;
+	color:#a98059;
+	text-align:left;
+	border-bottom:1px dashed #efe7d8;
+}
+.laser_operation #table .pay table td{
+	font-size:0.9em;
+	line-height:1.4em;
+	text-align:left;
+	padding:10px;
+	border-bottom:1px dashed #efe7d8;
+}
+.laser_operation #table .pay table td span{
+	color:#666;
+	font-size:0.8em;
+}
+.laser_operation #table01{
+	margin:auto;
+	text-align:center;
+	border-collapse:collapse;
+}
+.laser_operation #table01 tr th {
+	color:#a98059;
+	padding:8px;
+	background-color:#f1ebe1;
+	border:1px solid #efe7d8;
+}
+.laser_operation #table01 .price{
+	color:#C00;
+	font-weight:bold;
+}
+.laser_operation #table01 .width{
+	display:none;
+}
+.laser_operation #table01 tr td{
+	padding:10px;
+	border:1px solid #efe7d8;
+}
+
+.laser_operation #faq h2{
+	text-align:left;
+	padding-bottom:15px;
+
+}
+
+.laser_operation #faq dl dt{
+	color:#cb664c;
+	font-weight:bold;
+}
+.laser_operation #faq dl dt img{
+	vertical-align:middle;
+	padding-right:10px;
+}
+
+.laser_operation #faq dl dt span.q{
+	vertical-align:middle;
+	padding-right:10px;
+}
+
+.laser_operation #faq dl dd{
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border-radius: 12px;
+	background:#f6f2ee;
+	padding:12px 15px 12px 15px;
+	margin-left:60px;
+	color:#a98059;
+	font-size:0.9em;
+	line-height:1.4em;
+}
+
+.laser_operation h2.norm{
+	color:#CB664D;
+	font-size: 26px;
+	font-family: serif;
+	border-bottom: 1px solid #CB664D;
+	padding: 0 5px 10px;
+	display: block;
+	font-weight: bold;
+	text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:767px) {
+	.sp{
+		display: none !important;
+	}
+}
+
+
+@media screen and (max-width:767px) {
+	.pc{
+		display: none !important;
+	}
+	/*toppage*/
+	.operationsList {
+		margin: 0
+	}
+	.operationsList li {
+		width: auto;
+		padding: 0;
+		float: none;
+		margin-bottom: 10px;
+	}
+	.operationsList li dd h3 {
+		font-size: 15px;
+		display: block;
+		width: auto;
+		margin: 0.8em 0 0;
+		line-height: 1.4
+	}
+	.operationsList li dd h3 span {
+		display: block;
+		border-bottom: none;
+	}
+	.operationsList li p {
+		font-size: 13px
+	}
+
+	/**detail*/
+	.operationsFlow .photoR {
+		float: none;
+		width: auto;
+		max-width: none;
+		text-align: center;
+		margin: 0 0 15px;
+	}
+	.treatmentStep li .tl {
+		background: none;
+		padding: 0;
+		font-size: 15px;
+		text-align: center;
+	}
+	.treatmentStep li .tl span {
+		background: #E0807C;
+		color: #FFF;
+		display: block;
+		padding: 5px;
+		text-align: center;
+		font-size: 12px;
+		margin: 0 0 10px
+	}
+	.treatmentStep dl dt {
+		float: none;
+		width: auto;
+		margin: 0 0 10px;
+		text-align: center;
+	}
+	.treatmentStep dl dd {
+		float: none;
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+	.placentaItem dt, .hairItem dt, .cItem dt, .item dt {
+		float: none;
+		width: auto;
+		text-align: center !important;
+		margin: 0 0 10px;
+	}
+	.placentaItem dd, .hairItem dd, .cItem dd, .item dd {
+		float: none;
+		width: auto;
+		margin: 0 0 10px;
+		padding: 0;
+	}
+	.causeStepbox .causeStep {
+		margin: 0;
+	}
+	.causeStepbox .causeStep li {
+		float: none;
+		padding: 0;
+		width: auto;
+	}
+	.causeStep li .box {
+		height: auto !important;
+	}
+	.causeStepbox .causeStep .tl {
+		background: none;
+		padding: 0;
+		font-size: 15px;
+		text-align: center;
+	}
+	.causeStepbox .causeStep .tl span {
+		display: block;
+		padding: 5px;
+		text-align: center;
+		font-size: 12px;
+		margin: 0 0 10px
+	}
+	.causeStep li .box .inner dd {
+		font-size: 12px;
+	}
+	.hairStep li .tl {
+		padding: 5px;
+		text-align: center;
+	}
+	.hairStep dl dt {
+		float: none;
+		width: auto;
+		text-align: center;
+		margin: 0 0 15px;
+	}
+	.hairStep dl dd {
+		float: none;
+		width: auto;
+		margin: 0;
+		padding: 0;
+		font-size: 12px;
+	}
+	.mediaList {
+		margin: 0
+	}
+	.mediaList li {
+		padding: 0;
+		margin: 0 0 10px;
+		float: none;
+		text-align: center;
+	}
+	.mediaList li img {
+		min-width: 265px;
+	}
+	.about dt {
+		float: none;
+		display: inline-block;
+		width: auto;
+		margin: 0 0 10px;
+	}
+	.about dd {
+		float: none;
+		padding: 0;
+		margin: 0;
+	}
+	.doubleItem {
+		width: 100%;
+	}
+	.doubleItem li {
+		width: 50%;
+		margin: 15px auto;
+		padding: 10px;
+		box-sizing: border-box;
+		text-align: center;
+	}
+	.tatooList li,.faceList li,.laserList li,.placentaList li,.datsumouList li {width: 50%!important; float: left;}
+	.tatooList li:first-child {width: 100%!important;}
+	.imgCenter {margin: 20px 0; }
+
+	/*180928追記*/
+	.caseTable {
+		font-size: 12px;
+	}
+	.caseTable th {
+		width: 25%;
+	}
+
+	/**20190815わきがoperations**/
+
+	.wakiga_operations #Doctor dl dd {
+		float: none;
+		width: 100%;
+	}
+
+	.wakiga_operations #Doctor dl dt {
+    	float: none;
+    	padding-right: 0;
+    	text-align: center;
+	}
+
+	.wakiga_operations #Doctor dl dt img {
+		width: 140px;
+	}
+
+	.wakiga_operations .drc_right ul{
+		background: #F7F7F7;
+		padding: 10px 10px 10px 45px;
+		border-radius: 15px;
+		margin-bottom: 30px;
+	}
+
+	.wakiga_operations .drc_right ul li{
+		color: #666666;
+		font-size: 14px;
+		line-height: 1.4;
+		position: relative;
+		margin-bottom: 15px;
+	}
+
+	.wakiga_operations .drc_right ul li::before{
+		width: 19px;
+		height: 12px;
+		margin-left: -24px;
+		margin-right: 5px;
+		margin-bottom: -5px;
+	}
+
+	.wakiga_operations .pruning_steps {
+    padding: 100px 0 30px;
+	}
+
+	.wakiga_operations .pruning_steps h2::before {
+    	content: "";
+    	background-size:cover;
+		width: 300px;
+		height: 79px;
+		position: absolute;
+		left: calc(50% - 150px);
+		top: -90px;
+	}
+
+	.wakiga_operations .pruning_steps h2 div {
+    	font-size: 28px;
+	}
+
+
+	.wakiga_operations .pruning_steps h2 div::before {
+		left: -30px;
+	}
+
+	.wakiga_operations .pruning_steps h2 div::after {
+		right: -30px;
+	}
+
+	.wakiga_operations .pruning_steps h2 div span {
+    	font-size: 14px;
+	}
+
+	.wakiga_operations .pruning_steps .pruning_s_content p {
+    	font-size: 16px;
+	}
+
+	.wakiga_operations .pruning_steps .pruning_s_content img {
+    	display: none;
+	}
+
+	.wakiga_operations .price_plan {
+		background-image:none;
+		background-color:#BDB7C3;
+    	/**background-size: cover;**/
+    	padding: 45px 0 60px;
+	}
+
+	.wakiga_operations .price_plan h2 {
+		font-size: 36px;
+	}
+
+	.wakiga_operations .price_plan .price_box {
+		border: 5px #fff solid;
+		width: 100%;
+	}
+
+	.wakiga_operations .price_plan .price_box .curved_txt {
+		width: 110px;
+		height: 100px;
+		left: -8px;
+		top: -8px;
+	}
+
+	.wakiga_operations .price_plan .price_box .curved_txt > div {
+		height: 34px;
+		font-size: 15px;
+		line-height: 34px;
+		transform: rotate(-45deg);
+		width: 124%;
+		margin-left: -35%;
+		margin-top: 16px;
+	}
+
+	.wakiga_operations .price_plan .price_box .prc_note {
+    	display: none;
+	}
+
+	.wakiga_operations .price_plan .price_box > div {
+		padding: 24px 10px 10px 10px;
+	}
+
+	.wakiga_operations .price_plan .price_box table {
+		width: 100%;
+		text-align: center;
+	}
+
+	.wakiga_operations .price_plan .price_box table tr th {
+		font-size: 30px;
+		padding: 0;
+		display: block;
+		text-align:center;
+	}
+
+	.wakiga_operations .price_plan .price_box table tr td {
+		padding: 0;
+		font-size: 32px;
+		display: block;
+	}
+	.wakiga_operations .price_plan .price_box table tr td span {
+		font-size: 50px;
+	}
+
+	.wakiga_operations .price_plan .bttm_txt {
+		margin-left: 0;
+	}
+
+	.wakiga_operations .section_title {
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+
+	.wakiga_operations .good_points ul li {
+		padding-left: 50px;
+	}
+	.wakiga_operations .good_points ul li h3 {
+		font-size: 20px;
+		line-height: 1.4;
+	}
+
+	.wakiga_operations .good_points ul li h3::before {
+		font-size: 40px;
+		left: -56px;
+		bottom: auto;
+		top: 0;
+	}
+
+	.wakiga_operations .wakiga table tr td, .wakiga table tr th {
+		font-size: 12px;
+		padding: 5px;
+	}
+
+	.wakiga_operations .wakiga table tr:nth-child(3) th, .wakiga table tr:nth-child(4) th, .wakiga table tr:nth-child(5) th, .wakiga table tr:nth-child(6) th {
+		width: 20px;
+		line-height: 1.4;
+	}
+
+	.wakiga_operations .wakiga table tr th span, .wakiga table tr td span {
+		font-size: 10px;
+		margin-top: 5px;
+	}
+
+	.wakiga_operations .wakiga img.wkg_bottom {
+		display: none;
+	}
+
+	.wakiga_operations .wakiga {
+		padding: 45px 0 45px;
+	}
+
+	.wakiga_operations .wakiga .container {
+		width: 100%;
+		margin: 0;
+	}
+
+	.wakiga_operations .treatment ul li {
+		display: block;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.wakiga_operations .treatment ul li .num {
+		height: 80px;
+		margin-bottom: 10px;
+		font-size: 18px;
+		padding: 5px 0;
+	    width: calc(100% - 40px);
+	}
+
+	.wakiga_operations .treatment ul li .num span {
+		font-size: 40px;
+		display: block;
+		margin-bottom: 6px;
+		line-height: 1;
+	}
+
+	.wakiga_operations .treatment ul li .num:after {
+		border-width: 40px 0 40px 40px;
+	}
+
+	.wakiga_operations .treatment ul li .img {
+		border-top: 2px solid #fff;
+		border-bottom: 2px solid #fff;
+		border-left: 2px solid #fff;
+		border-right: 2px solid #fff;
+		margin-bottom: 10px;
+	}
+
+	.wakiga_operations .treatment ul li p {
+		width: 100%;
+		padding: 10px 10px;
+		height: auto;
+	}
+
+	.wakiga_operations .treatment ul li .num br{
+		display: none;
+	}
+
+	.wakiga_operations .treatment {
+		padding: 45px 0 45px;
+	}
+
+	.wakiga_operations .treatment ul li .num::after {
+    	right: -40px;
+	}
+
+	.wakiga_operations ul.faq li .faq_q {
+		height: 50px;
+		line-height: 50px;
+		text-align: left;
+		font-size: 14px;
+		padding-left: 35px;
+	}
+
+	.wakiga_operations ul.faq li .faq_q:before {
+		font-size: 30px;
+		left: 0;
+		line-height: 50px;
+	}
+
+	.wakiga_operations ul.faq li {
+		letter-spacing: 0;
+		vertical-align: top;
+		margin-bottom: 10px;
+		width:98%;
+	}
+
+	.wakiga_operations ul.faq li .faq_a {
+		position: relative;
+		top: 0;
+		width: 100%;
+		padding: 20px 5px 10px 35px;
+		border-radius: 0;
+	}
+
+	.wakiga_operations ul.faq li .faq_a span {
+		display: block;
+	}
+
+	.wakiga_operations ul.faq li .faq_a:before {
+		content: "A";
+		display: block;
+		font-size: 30px;
+		color: #DB3E3E;
+		font-family: arial;
+		font-weight: bold;
+		position: absolute;
+		left: 5px;
+		line-height: 1;
+	}
+
+	.wakiga_operations ul.faq {
+		padding-bottom: 0;
+	}
+
+
+/*----------------------------------------------------------
+					ほくろ治療・イボ治療
+----------------------------------------------------------*/
+
+	#worry .case {
+		width: 295px;
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		margin-bottom: 60px;
+	}
+
+	#worry .case:nth-child(3) {
+		margin-right: auto;
+	}
+
+	#worry .case > p img {
+		max-width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.cheap_recommend li {
+		display: block;
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 100px;
+	}
+
+	.cheap_recommend li h3 {
+		font-size: 21px;
+		padding: 10px 0 0 10px;
+	}
+
+	.doctor_r .right {
+		width: 250px;
+		display: block;
+		margin: 0 auto 30px;
+	}
+
+	.doctor_r .left {
+		display: block;
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.doctor_r .left h3 {
+		font-size: 18px;
+	}
+
+	.this_rcmmnd ul li {
+		width: 145px;
+		height: 145px;
+		margin-right: 5px;
+		margin-bottom: 10px;
+	}
+
+	.this_rcmmnd ul li:nth-child(2n) {
+		margin-right: 0;
+	}
+
+	#faq #tab_box {
+		padding: 5px;
+	}
+
+	#tab_box #tab1 dl dd, #tab_box #tab2 dl dd {
+		margin: 10px 5px 30px 5px;
+	}
+
+	#tab_box #tab1 dl dt, #tab_box #tab2 dl dt {
+		font-size: 1em;
+	}
+
+	#faq .tab ul li {
+		display: block;
+		width: 100%;
+		margin-right: 0;
+		max-width: 450px;
+	}
+
+	#faq h2 {
+		height: 26px;
+	}
+
+	#faq h2 img {
+		height: 100%;
+	}
+
+	.this_rcmmnd ul li .circle_txt {
+		font-size: 12px;
+	}
+
+
+/*----------------------------------------------------------
+					リストカット・傷跡
+----------------------------------------------------------*/
+
+	.laser_operation ul.menu_list li a {
+		font-size: 18px;
+	}
+
+	.laser_operation ul.menu_list li {
+		width: 100%;
+	}
+
+	.laser_operation ul.menu_list li:nth-child(1n),
+	.laser_operation ul.menu_list li:nth-child(2n) {
+		border-right: 1px solid #DAC7A7;
+	}
+
+	.laser_operation #tabcontent {
+		padding: 0;
+	}
+
+	.laser_operation #tabcontent .tabcont ul {
+		padding: 20px 0;
+	}
+
+	.laser_operation #tabcontent .tabcont ul li.message {
+		padding: 20px 5px 20px 5px;
+	}
+
+	.laser_operation dl.cont02 dd ul li, .laser_operation dl.cont03 dd ul li {
+		display: block;
+		width: 100%;
+		padding: 5px 5px;
+	}
+
+	.laser_operation h2.ttl {
+		line-height: 20px;
+		padding-bottom: 10px;
+		font-size: 16px;
+	}
+
+	.laser_operation h2.ttl img {
+		width:20px;
+	}
+
+	.laser_operation h2.ttl span {
+		font-size: 12px;
+		top: -20px;
+	}
+
+	.laser_operation #cure .summary table th {
+		width: 65px;
+		font-size: 12px;
+	}
+
+	.laser_operation #cure .summary table td {
+		font-size: 12px;
+	}
+
+	.laser_operation h2.norm {
+		font-size: 18px;
+		padding: 0 5px 5px;
+	}
+
+	.laser_operation #faq dl dt img{
+		float: left;
+		width: 10%;
+	}
+
+	.laser_operation #faq dl dt span.q{
+		float: right;
+		width: 80%;
+	}
+
+	.laser_operation #faq dl dt{
+		margin: 20px 0 10px 0;
+	}
+
+	.laser_operation dl.cont02 dt h2.norm{
+		letter-spacing: -1px;
+	}
+
+	.laser_operation #tabcontent .tabcont ul li h3 {
+	  margin-left: 10px;
+	}
+
+	.laser_operation #faq dl dd{
+		margin-left:0;
+	}
+
+
+
+}wa

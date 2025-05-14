@@ -30,9 +30,9 @@
 <?php endif; ?>
 
 <!--/ページング-->
-<?php if (function_exists("pagination")) {
-    pagination($additional_loop->max_num_pages);
-} ?>
+<?php //if (function_exists("pagination")) {
+    //pagination($additional_loop->max_num_pages);
+//} ?>
 
 </main>
 </div>

@@ -71,7 +71,7 @@
 				}
 				else {
 					// 存在しない
-					echo '<img src="/img/top/no-image.jpg">';
+					echo '/wp-content/themes/ikebukuro_sunshine/img/top/no-image.jpg">';
 				}
 				?>
 				</div>

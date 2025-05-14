@@ -1,0 +1,33 @@
+.blogRanking {
+    border: 1px solid #dd856e;
+    padding: 3%;
+    background: #fefcf9;
+}
+
+.blogRanking h4 {
+    font-size: 2em;
+    font-family: serif;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.blogRanking ul li {
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 2;
+    margin: 0 10% 15px;
+}
+
+.blogRanking ul li span {
+    display: inline-block;
+    color: white;
+    width: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+.blogRanking a {
+    text-decoration: underline;
+}

@@ -1,0 +1,739 @@
+#container {padding: 10px 0;
+}
+#topVi img {
+	width: 100%;
+	height: auto;
+}
+.index_inner {
+	padding: 10px 15px;
+}
+.toppageTitle {
+	line-height: 37px;
+	padding: 7px 0;
+	position: relative;
+	font-size: 24px;
+	font-size: 2.4rem;
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 20px;
+	background: url(/common/img/wood_title.png);
+}
+#topProfile, #topNews {
+	margin-bottom: 30px;
+}
+#topProfile .im {
+	float: left;
+	width: 130px;
+	margin: 0 30px 0 0;
+}
+#topProfile dd {
+	text-align: center;
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1;
+	margin-top: 10px;
+}
+#topProfile dd b {
+	font-weight: normal;
+}
+#topProfile .tx {
+	overflow: hidden;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+#topProfile .btn, #topNews .btn {
+	text-align: right;
+	font-size: 12px;
+	font-size: 1.2rem;
+	margin: 0 10px;
+	text-decoration: underline;
+}
+#topNews .newsbox ol {
+	display: table-cell;
+	vertical-align: top;
+	height: 12.5em;
+	padding: 0 10px;
+}
+#topNews .newsbox li {
+	padding: 0 0 0 1.5em;
+	text-indent: -1.5em;
+	margin: .5em 0;
+	border-bottom: 1px dotted #bbb;
+}
+#topNews .newsbox li:first-child {
+	margin-top: 0;
+}
+#topNews .newsbox li span {
+	margin-right: 1em;
+}
+#topNews .newsbox {
+	font-size: 14px;
+	font-size: 1.4rem;
+	display: table;
+	width: 100%;
+}
+#topProfile .tx p {
+	min-height: 12.5em;
+}
+#pickupTreatment {
+	margin: 0 -12px;
+}
+#pickupTreatment .overItem {
+	width: 50%;
+	float: left;
+	padding: 0 12px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	text-align: center;
+}
+#pickupTreatment .box {
+	height: 218px;
+	overflow: hidden;
+	background: #F4F2F3;
+}
+#pickupTreatment .im {
+	width: 166px;
+	float: left;
+	margin: 0 15px 0 0;
+}
+#pickupTreatment .txbox {
+	overflow: hidden;
+}
+#pickupTreatment .tl {
+	font-weight: bold;
+	font-size: 18px;
+	font-size: 1.8rem;
+	color: #666;
+	margin: 2.5em 0 3em;
+}
+#pickupTreatment li {
+	font-size: 12px;
+	font-size: 1.2rem;
+	color: #852320;
+	padding-left: 1em;
+	text-indent: -1em
+}
+#pickupTreatment li::before {
+	content: "・";
+}
+#pickupTreatment .mark {
+	position: absolute;
+	right: 20px;
+	top: 110px;
+}
+#pickupTreatment .mark + ul li {
+	margin-right: 90px;
+}
+.overItem .box {
+	position: relative;
+	overflow: hidden;
+}
+.overItem .box .im img {
+	width: 100%;
+	height: auto;
+}
+.overItem .layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background: rgba(0, 0, 0, .6);
+	transition: all linear .2s;
+}
+.overItem .text {
+	position: absolute;
+	top: 30%;
+	left: 0;
+	z-index: 1;
+	transition: all linear .2s;
+	opacity: 0;
+	color: #FFF;
+}
+.overItem img {
+	max-width: 100%;
+	height: auto;
+}
+#pickupTreatment .text {
+	font-size: 12px;
+	font-size: 1.2rem;
+	left: 30px;
+	right: 30px;
+	top: 30px
+}
+#pickupTreatment .box.hover .text {
+	top: 40px
+}
+.overItem .btn {
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	color: #FFF;
+	left: 25px;
+	right: 25px;
+	bottom: 25px;
+	background: #FFF;
+	line-height: 28px;
+	transition: all linear .2s;
+	text-align: center;
+}
+.overItem .btn a {
+	display: block;
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+.overItem .btn a span {
+	display: block;
+	background: url(../common/img/ic_arrow02.png) no-repeat left center;
+	padding: 0 0 0 20px;
+	margin: 0 15px;
+	font-weight: bold;
+}
+#pickupTreatment .overItem .btn {
+	right: auto;
+	left: 50%;
+	width: 230px;
+	margin: 0 0 0 -115px;
+	bottom: 40px;
+}
+#pickupTreatment .overItem .box.hover .btn {
+	bottom: 30px
+}
+.overItem .close {
+	display: none;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 34px;
+	height: 34px;
+	color: #FFF;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transition: all linear .2s;
+	opacity: 0;
+	background: #000 url(/common/img/ic_sphead_close.png) no-repeat;
+	background-size: 100%;
+}
+.overItem .box.hover .layer {
+	opacity: 1;
+}
+.overItem .box.hover .text {
+	top: 10px;
+	opacity: 1;
+}
+.overItem .box.hover .btn {
+	opacity: 1;
+	bottom: 20px;
+}
+.overItem .box.hover .close {
+	opacity: 1;
+}
+#topSpecial {
+	clear: both;
+}
+#topSpecial .boxWrap {
+	background: #F4F2F3;
+	padding: 24px 14px;
+	margin: 0 0 15px;
+}
+#topSpecial .boxWrap .tl {
+	font-size: 20px;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #8C302C;
+	line-height: 1;
+	margin: 0 0 25px;
+}
+#topSpecial .list01 {
+	margin: 0 -9px;
+}
+#topSpecial .list01::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+#topSpecial .list01 li {
+	width: 25%;
+	float: left;
+	padding: 0 9px;
+	box-sizing: border-box;
+}
+#topSpecial .list01 .lead {
+	margin: 15px 0 0;
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+#topSpecial .list01 .name {
+	background: rgba(0, 0, 0, .6);
+	line-height: 35px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: #FFF;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+#topSpecial .overItem .layer {
+	position: absolute;
+	top: 35px;
+	bottom: 0;
+	height: auto;
+}
+#topSpecial .overItem .text {
+	top: 50px;
+	left: 20px;
+	right: 20px;
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 1.3
+}
+#topSpecial .overItem .btn a {
+	line-height: 1.3;
+	padding: 10px 10px;
+}
+#topSpecial .overItem .btn span {
+	margin: 0 0 0 5px;
+	text-align: left
+}
+#topSpecial .overItem .box.hover .text {
+	top: 60px;
+}
+#topSpecial .tatooIm {
+	width: 216px;
+	float: left;
+	margin-right: 30px;
+}
+#topSpecial .tatooTx {
+	overflow: hidden;
+}
+#topSpecial .tatooTx .lead {
+	margin: 0 0 1.5em;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+#topSpecial .tatooTx .link {
+	margin: 0 -5px
+}
+#topSpecial .tatooTx .link li {
+	float: left;
+	width: 25%;
+}
+#topSpecial .tatooTx .link li a {
+	display: block;
+	margin: 0 5px;
+	background: #D57871;
+}
+#topSpecial .tatooTx .ex {
+	clear: both;
+	padding-top: 25px;
+}
+#topSpecial .tatooTx .ex dt {
+	float: left;
+	padding: .3em .5em .3em 1em;
+	text-align: center;
+	background: #82231F;
+	letter-spacing: .5em;
+	color: #FFF;
+	font-weight: bold;
+	margin: 0 15px 0 0;
+}
+#topSpecial .tatooTx .ex dd {
+	overflow: hidden;
+	padding-top: .3em;
+	color: #82231F;
+}
+#topTrouble .troubleBox {
+	margin: 0 -10px 20px
+}
+#topTrouble .troubleBox .box {
+	float: left;
+	width: 25%;
+	box-sizing: border-box;
+	padding: 0 10px;
+	margin-bottom: 20px;
+}
+#topTrouble .troubleBox .box a {
+	display: block;
+	padding: 20px;
+	background: #F4F2F3;
+}
+#topTrouble .troubleBox .box .tx {
+	font-size: 12px;
+	font-size: 1.2rem;
+	margin: 15px 0 0;
+	color: #333;
+}
+#topTrouble .troubleBox .box .im {
+	text-align: center;
+}
+#topTrouble .troubleBox .box dt {
+	border-left: 6px solid #81221F;
+	font-size: 14px;
+	font-size: 1.4rem;
+	margin-right: -15px;
+	line-height: 1;
+	padding: 3px 0 3px 10px;
+	margin: 0 0 20px;
+	font-weight: bold;
+}
+#topTrouble .troubleBox .box dt span {
+	font-size: 11px;
+	font-size: 1.1rem;
+}
+#topBlog {
+	margin: 0 0 30px;
+}
+#topBlog ul {
+	margin-bottom: 100px;
+	padding: 0 10px;
+}
+#topBlog li {
+	margin: 0 0 .5em;
+	line-height: 1.4;
+	padding: 0 0 0 1em;
+	text-indent: -1em;
+	border-bottom: 1px dotted #bbb;
+}
+#topBlog li span {
+	margin-right: 1em;
+}
+#topBlog .btn {
+	margin-bottom: 0;
+}
+#topBlog .btn li {
+	border-bottom: 0;
+}
+#topBlog .btn a {
+	padding: 0 10px;
+}
+#twitter {
+	margin-bottom: 30px;
+}
+#twitter .timeline {
+	overflow: hidden;
+}
+#twitter .timeline .box {
+	margin: -43px 0 -47px;
+}
+#topAccess {
+	margin-bottom: 50px;
+}
+#topAccess .map {
+	width: 415px;
+	float: left;
+}
+#topAccess .txBox {
+	width: 495px;
+	float: right;
+}
+#topAccess .txBox hr {
+	border: none;
+	border-bottom: 1px dashed #333;
+	margin: 1em 0;
+}
+
+/*title*/
+.toppageTitle::before {
+	content: "";
+	display: block;
+	position: absolute;
+	background: no-repeat;
+}
+.toppageTitle {
+	padding-left: 60px;
+}
+.toppageTitle:before {
+	width: 40px;
+	height: 38px;
+	top: 50%;
+	margin-top: -17px;
+}
+#topProfile .toppageTitle::before {
+	left: 4px;
+	margin-top: -24px;
+	background-image: url(../img/top/ic_profile.png);
+}
+#topNews .toppageTitle::before {
+	left: 12px;
+	background-image: url(../img/top/ic_news.png);
+	background-size: 32px auto;
+}
+#topSpecial .toppageTitle::before {
+	left: 15px;
+	background-image: url(../img/top/ic_special.png);
+	background-size: 28px auto;
+}
+#topTrouble .toppageTitle::before {
+	left: 14px;
+	background-image: url(../img/top/ic_trouble.png);
+	background-size: 32px auto;
+}
+#topBlog .toppageTitle::before {
+	left: 14px;
+	margin-top: -15px;
+	background-image: url(../img/top/ic_blog.png);
+	background-size: 34px auto;
+}
+#twitter .toppageTitle::before {
+	left: 12px;
+	background-image: url(../img/top/ic_twitter.png);
+	background-size: 38px auto;
+}
+#topAccess .toppageTitle::before {
+	left: 18px;
+	background-image: url(../img/top/ic_access.png);
+	background-size: 25px auto;
+}
+@media screen and (max-width:767px) {
+	.toppageTitle {
+		font-size: 18px;
+		padding-left: 35px !important;
+		line-height: 1;
+		margin: 0 -15px 20px;
+	}
+	.toppageTitle::before {
+		width: 20px;
+		height: 28px;
+		top: auto;
+		margin-top: auto;
+	}
+	#topProfile .toppageTitle::before {
+		left: 4px;
+		background-size: 24px auto;
+		margin-top: -2px;
+	}
+	#topProfile .tx {
+		font-size: 12px;
+	}
+	#topProfile dd {
+		font-size: 11px;
+	}
+	#topProfile .im {
+		width: 100px;
+		margin: 0 15px 0 0;
+	}
+	#topProfile .btn, #topNews .btn {
+		margin: 1.5em 0 0;
+	}
+	#topNews .toppageTitle::before {
+		left: 6px;
+		background-size: 20px auto;
+	}
+	#topNews .newsbox ol {
+		height: auto;
+		padding-left: 0;
+	}
+	#pickupTreatment {
+		margin: 0 0 20px;
+	}
+	#pickupTreatment .overItem {
+		width: auto;
+		float: none;
+		margin-bottom: 10px;
+		padding: 0;
+	}
+	#pickupTreatment .box {
+		height: auto;
+		padding: 0 0 20px;
+	}
+	#pickupTreatment .box::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	#pickupTreatment .layer {
+		display: none;
+	}
+	#pickupTreatment .inbox {
+		position: relative;
+		background: #F4F2F3;
+		padding: 0 0 10px;
+	}
+	#pickupTreatment .inbox::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	#pickupTreatment .im {
+		width: 100px;
+		margin: 0 15px 0 0;
+	}
+	#pickupTreatment .text {
+		position: static;
+		color: inherit;
+		opacity: 1 !important;
+		margin: .8em 20px 0;
+		font-size: 12px;
+	}
+	#pickupTreatment .overItem .btn {
+		position: static;
+		opacity: 1 !important;
+		width: auto;
+		margin: 0;
+		background: none;
+	}
+	#pickupTreatment .btn a {
+		display: block;
+		padding: 5px;
+		margin: 15px 20px 0;
+		background: #FFF;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+	}
+	#pickupTreatment .tl {
+		font-size: 16px;
+		margin: 1.2em 0 1em;
+	}
+	#pickupTreatment .mark + ul li {
+		margin-right: 0;
+	}
+	#pickupTreatment .mark {
+		right: auto;
+		left: 5px;
+		top: 95px;
+		width: 45px;
+	}
+	#pickupTreatment .mark img {
+		width: 100%;
+		height: auto;
+	}
+	#pickupTreatment .close {
+		display: none
+	}
+	#topSpecial .toppageTitle::before {
+		left: 10px;
+		background-size: 15px auto;
+	}
+	#topSpecial .boxWrap .tl {
+		text-align: center;
+	}
+	#topSpecial .list01 li {
+		width: auto;
+		float: none;
+		margin: 0 0 2em
+	}
+	#topSpecial .list01 li:last-child {
+		margin: 0;
+	}
+	#topSpecial .list01 li .overItem {
+		width: auto;
+		max-width: 240px;
+		margin: 0 auto;
+	}
+	#topSpecial .list01 li .overItem .im img {
+		width: 100%;
+		height: auto;
+	}
+	#topSpecial .list01 .lead {display: none;}
+	#topSpecial .tatooIm {
+		width: 100%;
+		max-width: 240px;
+		margin: 0 auto 15px;
+		float: none;
+	}
+	#topSpecial .tatooIm img {
+		width: 100%;
+	}
+	#topSpecial .boxWrap:last-child {
+		position: relative;
+		padding-bottom: 120px;
+	}
+	#topSpecial .tatooTx .link {
+		position: absolute;
+		bottom: 10px;
+		left: 10px;
+		right: 10px;
+	}
+	#topSpecial .tatooTx .link li {
+		float: left;
+		width: 50%;
+		margin: 10px 0 0;
+	}
+	#topSpecial .tatooTx .link li a {
+		line-height: 40px
+	}
+	#topSpecial .tatooTx .ex {
+		font-size: 13px;
+		padding-top: 0;
+	}
+	#topTrouble .toppageTitle::before {
+		left: 7px;
+		background-size: 18px auto;
+	}
+	#topTrouble .troubleBox {
+		margin: 0 -5px 20px;
+	}
+	#topTrouble .troubleBox .box {
+		width: 50%;
+		box-sizing: border-box;
+		padding: 0 5px;
+		margin-bottom: 10px;
+	}
+	#topTrouble .troubleBox .box a {
+		padding: 10px;
+	}
+	#topTrouble .troubleBox .box dt {
+		line-height: 1.4
+	}
+	#topTrouble .troubleBox .box .im {
+		display: none
+	}
+	#topBlog .toppageTitle::before {
+		left: 7px;
+		background-size: 20px auto;
+		margin-top: 0;
+	}
+	#topBlog .btn {
+		position: static;
+		right: 0;
+	}
+	#topBlog ul {
+		margin-bottom: 20px;
+	}
+	#topBlog .btn a {
+		display: block;
+		margin: 0;
+		padding: 0 0 0 10px;
+		text-align: right;
+	}
+	#twitter .toppageTitle::before {
+		left: 7px;
+		background-size: 20px auto;
+	}
+	#topAccess {
+		margin-top: 30px;
+	}
+	#topAccess .toppageTitle::before {
+		left: 10px;
+		background-size: 15px auto;
+	}
+	#topAccess .txBox {
+		width: auto;
+		float: none;
+	}
+	#topAccess .map {
+		width: auto;
+		float: none;
+		margin: 20px 0 0 0;
+	}
+	.touch .overItem .btn, .touch .overItem .close {
+		pointer-events: none;
+	}
+	.touch .overItem .hover .btn, .touch .overItem .hover .close, .touch #pickupTreatment .overItem .btn, .touch #pickupTreatment .overItem .close {
+		pointer-events: auto;
+	}
+	.bx-wrapper .bx-prev{
+		left: 8px;
+		background: url(../img/top/left.png)no-repeat center!important;
+    	background-size: 25px 25px!important;
+	}
+	.bx-wrapper .bx-next{
+		right: 8px;
+		background: url(../img/top/right.png)no-repeat center!important;
+	    background-size: 25px 25px!important;
+	}
+	.pageLink li {float:right;}
+}

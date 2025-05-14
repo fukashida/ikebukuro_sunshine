@@ -1,0 +1,11 @@
+#chargeArea {
+	margin:0 0 40px;
+}
+
+#chargeArea .inner{
+	margin:0 0 20px;
+}
+@media screen and (max-width:767px) {
+#chargeArea .menuList.head li {float: left; width: 50%;}
+#chargeArea .skinList li {float: none; width: 100%!important;}
+}

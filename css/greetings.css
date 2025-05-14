@@ -1,0 +1,65 @@
+.history .photo{
+	float:left;
+        text-align:center;
+}
+.history .txt{
+	float:left;
+        padding:0 0 0 170px;
+        margin:0 0 0 -150px;
+        width:100%;
+        box-sizing:border-box;
+}
+.ranking .rankL{
+	float:left;
+        width:150px;
+}
+.ranking ul{
+	float:left;
+        width:50%;
+}
+
+@media screen and (max-width:767px) {
+	
+.photoR {
+    float: none;
+    margin: 0 0 20px;
+	 text-align:center;
+}
+
+#container .history{
+	margin:0 -20px 0;
+	padding:20px 20px;
+	background:#F5F5F5;
+	border:solid #D6D6D6;
+	border-width:1px 0;
+}
+
+.history .photo {
+    float: none;
+	 margin:0 0 20px;
+}
+
+.history .txt {
+    float: none;
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+.history .baseList span{
+	display:block;
+	width:auto;
+}
+.ranking ul {
+    float: none;
+    width: auto;
+}
+	
+	
+}
+
+@media screen and (max-width:400px) {
+#container .history{
+	margin:0 -15px 0;
+	padding:20px 20px;
+}
+}

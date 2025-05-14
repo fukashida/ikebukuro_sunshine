@@ -1,0 +1,1099 @@
+.mwlift p.checkMoreBtn {
+	background-color: #fba733;
+	width: 250px;
+	margin: auto;
+	text-align: center;
+	padding: 10px 0 10px 10px;
+	font-size: 1.3em;
+	border-radius: 5px;
+	color: #ffffff;
+	cursor: pointer;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.mwlift .blogRanking {
+	border: 1px solid #dd856e;
+	padding: 3%;
+	background: #fefcf9;
+}
+
+.mwlift .blogRanking h4 {
+	font-size: 2em;
+	font-family: serif;
+	line-height: 1.6;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.mwlift .blogRanking ul li {
+	font-size: 1.2em;
+	font-weight: 600;
+	line-height: 2;
+	margin: 0 7% 15px;
+}
+
+.mwlift .blogRanking ul li span {
+	display: inline-block;
+	color: white;
+	width: 30px;
+	text-align: center;
+	box-sizing: border-box;
+	margin-right: 10px;
+}
+
+.mwlift .blogRanking ul li a {
+	text-decoration: underline;
+}
+
+.mwlift h3.subTitle {
+    padding: 0.5em;
+    color: #3c3f42;
+    background: #f4f2f3;
+    border-left: solid 5px #4c0604;
+    text-align: left;
+}
+.mwlift .payment h4 {
+	text-align: center;
+	font-size: 2.4em;
+	margin: 50px auto;
+	font-family: serif;
+}
+
+.mwlift .payment .payment_box {
+	display: table;
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+.mwlift .payment .payment_box_title {
+	width: 220px;
+	color: white;
+	font-size: 1.2em;
+	font-weight: 600;
+	background-color: #848B96;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.mwlift .payment .payment_box p {
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 20px;
+}
+@media screen and (max-width:767px) {
+
+	.mwlift .payment h4 {
+		font-size: 25px;
+		margin: 20px auto;
+	}
+
+	.mwlift .payment .payment_box {
+		display: block;
+		margin-bottom: 30px;
+		width: 100%;
+	}
+
+	.mwlift .payment .payment_box_title {
+		width: 100%;
+		text-align: center;
+		display: block;
+		padding: 7px 0;
+	}
+
+	.mwlift .payment .payment_box p {
+		display: block;
+		padding: 10px 0;
+		width: 100%;
+	}
+	.mwlift .top-menu {
+		margin-top: 0;
+	}
+
+	.mwlift .topNav li {
+		width: 44%;
+		font-size: 14px;
+		padding: 1.5% 2.7%;
+	}
+
+}
+
+em {
+font-style: normal;
+}
+
+/* 20210209 */
+.pc{
+    display: inherit;
+}
+.sp{
+    display: none;
+}
+.big{
+    font-size: 140%;
+}
+
+hr.white-line{
+    height: 1px;
+    background-color: #fff;
+    border: none;
+}
+
+section.bg-mwlift-wallpaper {
+    background: url(https://www.ike-sunshine.co.jp/img/operations/mwlift/mwlift-wallpaper.png);
+    padding: 1em 1em;
+    margin: 2em auto;
+}
+
+section.bg-beige {
+    background: #f0ede1;
+    padding: 1em;
+    margin: 2em auto;
+}
+
+section.bg-reddish-brown {
+    background: #7d3423;
+    padding: 1em 1em;
+    margin: 2em auto;
+}
+
+/**/
+.nowebp  #pageTitle.mwlift {
+    background: #f4f2f3 url(https://www.ike-sunshine.co.jp/img/operations/mwlift/PC_ISC_mwr_top.png)no-repeat;
+    background-size: cover;
+    border: none;
+    padding: 25px;
+    height: 338px;
+}
+.webp #pageTitle.mwlift {
+    background: #f4f2f3 url(https://www.ike-sunshine.co.jp/wp-content/uploads/PC_ISC_mwr_top-scaled.jpg.webp)no-repeat;
+    background-size: cover;
+    border: none;
+    padding: 25px;
+    height: 338px;
+}
+
+#pageTitle.mwlift h1 {
+    position: relative;
+    top: 50px;
+    left: 227px;
+    width: 220px;
+    text-align: center;
+    font-family: serif;
+}
+
+#pageTitle.mwlift p {
+    position: relative;
+    top: 53px;
+    left: 216px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#pageTitle.mwlift .price-setting {
+    margin-top: 20px;
+    display: block;
+    font-family: serif;
+}
+
+#pageTitle.mwlift .small {
+    font-size: 80%;
+}
+
+#pageTitle.mwlift .fee {
+    font-size: 160%;
+    color: #7c3424;
+}
+
+
+.mwlift-new .top-menu {
+    margin-top: -92px;
+}
+
+.mwlift-new .topNav ul {
+    margin-top: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mwlift-new .topNav li {
+    padding: 1% 1.8%;
+    font-size: 1.2em;
+    line-height: 1;
+    flex: 1;
+    border-right: 1px solid #fff;
+    border-collapse: collapse;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mwlift-new .topNav li:first-child{
+    border-left: 1px solid #fff;
+    margin-left: 0.1em;
+}
+
+.mwlift-new .topNav li:last-child{
+    margin-right: 0.1em;
+}
+
+.mwlift-new .topNav li a {
+    color: #fff;
+}
+
+/**/
+.case-photo-list{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+.c-photo {
+    margin: 0 1em;
+    width:100%;
+    flex-basis: auto;
+}
+
+.c-photo h3 {
+    background: #f0ede1;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: serif;
+    padding: 0.3em 0;
+    margin-bottom: 0.3em;
+}
+
+.internal-link{
+    margin: 1em auto;
+    text-align: right;
+}
+
+.internal-link a{
+    color: #434343;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding: 0 16px 0 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.internal-link a:before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #434343;
+}
+.internal-link a:after {
+    position: absolute;
+    top: 5px;
+    bottom: 0;
+    right: 2px;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 4px;
+    height: 4px;
+    border: 4px solid transparent;
+    border-top: 4px solid #fff;
+}
+/**/
+.linkBtn02 a, a.linkBtn02 {
+    display: block;
+    background: #e2453d;
+    text-align: center;
+    position: relative;
+    line-height: 38px;
+    color: #fff;
+    font-size: 1.6rem;
+    transition: all linear .2s;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.linkBtn03 a, a.linkBtn03 {
+    display: block;
+    background: #7d3423;
+    text-align: center;
+    position: relative;
+    line-height: 38px;
+    color: #fff;
+    font-size: 1.6rem;
+    transition: all linear .2s;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+/**/
+.grad-wrap {
+    position: relative;
+    margin-bottom: 3em;
+}
+.grad-btn {
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    bottom: -32px;
+    left: 0;
+    width: 148px;
+    margin: auto;
+    padding: .5em;
+    border-radius: 2px;
+    background: #fff;
+    color: #434343;
+    font-size: 1.3rem;
+    border: 1px solid #7d3423;
+    text-align: center;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.grad-btn::before {
+    content: "タップして続きを見る ▽";
+}
+
+.grad-btn .fa {
+    margin-right: .5em;
+}
+
+.grad-item {
+  position: relative;
+  overflow: hidden;
+  height: 25px; /*隠した状態の高さ*/
+}
+
+.grad-trigger {
+  display: none; /*チェックボックスは常に非表示*/
+}
+.grad-trigger:checked ~ .grad-btn::before {
+  content: "閉じる △" /*チェックされていたら、文言を変更する*/
+}
+.grad-trigger:checked ~ .grad-item {
+  height: auto; /*チェックされていたら、高さを戻す*/
+}
+.grad-trigger:checked ~ .grad-item::before {
+  display: none; /*チェックされていたら、grad-itemのbeforeを非表示にする*/
+}
+
+
+.lineTitle {
+    color: #7d3423;
+    font-size: 1.8rem;
+    padding: .5em 15px;
+    position: relative;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #7d3423;
+    text-shadow: 1px 2px 3px #808080;
+    font-family: serif;
+}
+
+h3.ttl {
+    color: #7d3423;
+    font-size: 1.7em;
+    font-family: serif;
+    font-weight: bold;
+    text-shadow: 1px 2px 3px #808080;
+    margin-bottom: 0.5em;
+    line-height: 1.3;
+}
+
+/**/
+.features {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+    padding: 1em;
+    margin-bottom: 1em;
+    background: #fff;
+    box-shadow: 0.5em 0.5em 0.5em #ddd;
+}
+
+.features-left {
+    flex: 0.5;
+    padding: 1em;
+    border-right: 1px solid #555;
+}
+
+.features-left p {
+    font-size: 1.3em;
+    font-family: serif;
+    color: #e40c1d;
+    text-shadow: 1px 2px 3px #808080;
+}
+
+.features-center {
+    flex: 2.5;
+    padding: 1em 1.5em;
+}
+
+.features-center h3 {
+    font-size: 1.8em;
+    font-family: serif;
+    text-shadow: 1px 2px 3px #808080;
+    margin-bottom: 0.5em;
+    line-height: 1.3;
+}
+
+.features-right {
+    flex: 1.5;
+}
+
+/**/
+.flex-box{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.flex-box .box-left{
+    flex: 1;
+}
+
+.flex-box .box-right{
+    flex: 1;
+}
+
+.price-table {
+    border-bottom: 1px solid #7c3424;
+}
+
+.price-table tr {
+    border-top: 1px solid #7c3424;
+}
+
+.price-table th {
+    background-color: #f0ede1;
+    color: #7c3424;
+    font-size: 1.5em;
+    padding: 1em 0;
+    font-family: serif;
+}
+
+.price-table td {
+    background-color: #fff;
+    color: #7c3424;
+    font-size: 1.5em;
+    font-family: serif;
+}
+/**/
+#case h3.ttl {
+    color: #7c3424;
+    text-align: center;
+    background: #fff;
+    padding: 0.5em;
+    font-size: 1.3em;
+    font-family: serif;
+}
+
+.case-img {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.case-left {
+    flex: 1.3;
+}
+
+.case-right {
+    flex: 1;
+    margin-left: 1em;
+}
+.case-img .label {
+    margin-bottom: 0;
+}
+
+.case-img li{
+    position: relative;
+    padding-left: 1em;
+}
+
+.case-img li:before{
+    position: absolute;
+    content: '－';
+    top: 0;
+    left: 0;
+}
+
+/**/
+table.overview {
+    margin-bottom: 2rem;
+}
+.overview tr {
+    border-bottom: 1px solid #7d3423;
+}
+
+.overview th {
+    width: 30%;
+    padding: 2em 0;
+    box-sizing: border-box;
+    letter-spacing: 1em;
+    text-align: center;
+    vertical-align: top;
+}
+
+.overview td {
+    text-align: left;
+    padding: 2em 0;
+    margin: 0;
+    width: 70%;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.overview tr:last-child{
+    border: none;
+}
+
+/**/
+#faq{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+#faq .acbox {
+    background: #fff;
+    padding: 1em;
+    margin: 1em auto;
+    width: 45%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+.acbox .faq-box h3 {
+    padding: 2rem 0 1rem;
+    position: relative;
+    font-size: 1.3em;
+    border-bottom: 1px solid #555;
+    min-height: 42px;
+}
+
+.acbox .faq-box p {
+    padding: 2rem 0 1rem;
+    position: relative;
+}
+
+.acbox .signboard {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: baseline;
+    justify-content: space-evenly;
+    text-align: center;
+    flex: 1.5;
+    padding-top: 1rem;
+    font-size: 1.7rem;
+}
+
+.acbox .que {
+    font-family: serif;
+    background: #7d3423;
+    padding: 1em;
+    color: #fff;
+    width: 100%;
+}
+
+.acbox .ans {
+    font-family: serif;
+    background: #f0ede1;
+    padding: 1em;
+    color: #7d3423;
+    width: 100%;
+}
+
+.acbox .faq-box {
+    flex: 9;
+    padding: 0 0 0 1em;
+}
+
+/**/
+.doctor_greeting {
+    background: url(https://www.ike-sunshine.co.jp/img/operations/mwlift/PC_ISC_mwr_image16_doctor.png) no-repeat;
+    background-position: bottom right;
+    background-size: 34%;
+    width: 100%;
+}
+
+.nowebp .doctor_greeting {
+    background: url(https://www.ike-sunshine.co.jp/img/operations/mwlift/PC_ISC_mwr_image16_doctor.png) no-repeat;
+    background-position: bottom right;
+    background-size: 34%;
+    width: 100%;
+}
+
+.webp .doctor_greeting {
+    background: url(https://www.ike-sunshine.co.jp/wp-content/uploads/PC_ISC_mwr_image16_doctor.png.webp) no-repeat;
+    background-position: bottom right;
+    background-size: 34%;
+    width: 100%;
+}
+
+.doctor_greeting h3 {
+    color: #A8815A;
+    font-size: 2.2em;
+    font-family: serif;
+    font-weight: bold;
+    line-height: 1.6;
+    position: relative;
+    padding-bottom: 30px;
+    text-shadow: 1px 2px 3px #808080;
+}
+
+.doctor_greeting .degree {
+    text-align: center;
+    font-weight: bold;
+    font-family: serif;
+}
+
+.doctor_greeting .txt {
+    width: 62%;
+}
+
+.doctor_career {
+    background: #f0ede1;
+    padding: 1em;
+    margin: 1em auto;
+}
+
+.doctor_career ul {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+.doctor_career li {
+    float: left;
+    font-size: 14px;
+    min-height: 100px;
+    padding: 5px 10px 5px 5px;
+    color: #444;
+}
+
+.doctor_career li:nth-child(2){
+    border-left: 1px solid #666;
+}
+
+.visit {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+    background: #fff;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.visit-left {
+    flex: 1;
+    order: 1;
+}
+
+.visit-right {
+    flex: 1;
+    order: 2;
+}
+
+.mwlift-new .visit .ttl {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: serif;
+    text-shadow: 1px 2px 3px #808080;
+}
+
+.visit-left img {
+    margin: 0 0 0 -26px;
+}
+
+.visit-right img {
+    margin: 0 0 0 30px;
+}
+
+.flow {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.flow-box {
+    width: 30%;
+}
+
+.flow .img img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.flow-box .txt {
+    margin-top: 1em;
+}
+
+.flow .txt .ttl {
+    color: #7d3423;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mwlift-new #recommended .box .txt .ttl {
+    color: #7d3423;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.mwlift-new #recommended {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.mwlift-new #recommended .box {
+    width: 44%;
+    background: #fff;
+    padding: 1em;
+    margin: 1em auto;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.mwlift-new #recommended .box .img {
+    flex: 1;
+    margin-right: 1em;
+}
+
+.mwlift-new #recommended .box .txt {
+    flex: 2;
+}
+
+
+.payment_box {
+    display: table;
+    margin-bottom: 30px;
+    width: 100%;
+    border-bottom: 1px dashed #7d3423;
+}
+
+.payment_box_title {
+    width: 220px;
+    color: #7d3423;
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: #fff;
+    text-align: center;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.payment_box p {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 599px){
+    .pc{
+        display: none;
+    }
+    .sp{
+        display: inherit;
+    }
+    .nowebp #pageTitle.mwlift {
+        background: #f4f2f3 url(https://www.ike-sunshine.co.jp/wp-content/uploads/2021/02/SP_ISC_mwr_top.png) no-repeat;
+        background-size: cover;
+        border: none;
+        padding: 25px;
+        height: 311px;
+        position: relative;
+    }
+    .webp #pageTitle.mwlift {
+        background: #f4f2f3 url(https://www.ike-sunshine.co.jp/wp-content/uploads/SP_ISC_mwr_top.png.webp) no-repeat;
+        background-size: cover;
+        border: none;
+        padding: 25px;
+        height: 311px;
+        position: relative;
+    }
+    #pageTitle.mwlift h1 {
+        position: absolute;
+        top: 57px;
+        left: 22px;
+        width: 278px;
+        text-align: center;
+        font-family: serif;
+        font-size: 1.8rem;
+    }
+    #pageTitle.mwlift p {
+        position: absolute;
+        top: 119px;
+        left: 46px;
+        font-weight: bold;
+        font-size: 1em;
+        display: block;
+    }
+    .mwlift-new .top-menu {
+        margin-top: -15px;
+    }
+    .mwlift-new .topNav li {
+        padding: 1em;
+        font-size: 1.2em;
+        line-height: 1;
+        flex: 1;
+        border-right: 1px solid #fff;
+        border-collapse: collapse;
+        background: #7d3423;
+        opacity: 0.8;
+        flex-basis: auto;
+        width: 166px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .mwlift-new .topNav li:first-child{
+        border-left: none;
+        margin-left: 0;
+    }
+
+    .mwlift-new .topNav li:last-child{
+        margin-right: 0;
+    }
+
+    .mwlift-new .topNav li a {
+        color: #fff;
+        display: inline;
+        vertical-align: middle;
+    }
+
+    .case-photo-list{
+        display: block;
+    }
+    #toc2 .flex-box{
+        display: block;
+    }
+    #toc2 .flex-box .box-left{
+        margin-bottom: 1em;
+    }
+    #toc2 .box-left h3.ttl {
+        font-size: 1.5em;
+    }
+    #toc2 .features-left {
+        padding: 0 1em;
+        border: none;
+    }
+    #toc2 .features-right{
+        text-align: center;
+    }
+
+    #toc3 .flex-box{
+        display: block;
+    }
+    #toc3 .flex-box .box-left{
+        margin-bottom: 1em;
+    }
+
+
+    .features {
+        display: block;
+    }
+    .features-left p {
+        font-size: 1.3em;
+        font-family: serif;
+        color: #e40c1d;
+        text-shadow: 1px 2px 3px #808080;
+        border-bottom: 1px solid #555;
+    }
+    .features-center {
+        flex: 2.5;
+        padding: 0.5em;
+    }
+    .features-center h3 {
+        font-size: 1.2em;
+    }
+
+    .case-img{
+        display: block;
+    }
+    .case-left{
+        margin-bottom: 1em;
+    }
+
+    #faq .acbox{
+        width: 100%;
+    }
+
+    .doctor_greeting h3 {
+        font-size: 1.6em;
+        padding-bottom: 0;
+    }
+    .doctor_greeting .txt {
+        width: 100%;
+    }
+    .nowebp .doctor_greeting {
+        background: url(https://www.ike-sunshine.co.jp/img/operations/mwlift/SP_ISC_mwr_image16doctor.png) no-repeat;
+        background-position: bottom center;
+        background-size: 77%;
+        width: 100%;
+        min-height: 600px;
+    }
+    .webp .doctor_greeting {
+        background: url(https://www.ike-sunshine.co.jp/wp-content/uploads/SP_ISC_mwr_image16doctor.png.webp) no-repeat;
+        background-position: bottom center;
+        background-size: 77%;
+        width: 100%;
+        min-height: 600px;
+    }
+
+    .doctor_career ul {
+        display: block;
+    }
+    .doctor_career li{
+        float: none;
+    }
+    .doctor_career li:nth-child(2) {
+        border-top: 1px solid #666;
+        border-left: none;
+    }
+    .overview th {
+        width: 100%;
+        padding: 1em 0;
+        box-sizing: border-box;
+        letter-spacing: 0;
+        text-align: left;
+        vertical-align: top;
+        display: block;
+    }
+    .overview td {
+        text-align: left;
+        padding: 0 0 2em;
+        margin: 0;
+        width: 100%;
+        background: #fff;
+        box-sizing: border-box;
+        display: block;
+    }
+    .visit {
+        display: block;
+    }
+    .visit-right img {
+        margin: 0 0 -27px 0;
+    }
+    .visit-left img {
+        margin: 0 0 -27px 0;
+    }
+
+    #toc8 .flow {
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: space-between;
+        justify-content: space-between;
+        overflow-x:scroll;
+    }
+    #toc8 .flow-box {
+        width: 100%;
+        flex: 0 0 100%;
+        border-top: 2px solid #ddd;
+        border-left: 2px solid #ddd;
+        border-bottom: 2px solid #ddd;
+    }
+    #toc8 .flow-box:last-child{
+        border-right: 2px solid #ddd;
+    }
+    #toc8 .flow-box .img {
+        margin: 1em auto;
+        text-align: center;
+    }
+    #toc8 .flow-box .txt {
+        margin-top: 1em;
+        padding: 0 1em 0;
+    }
+
+    .mwlift-new #recommended .box {
+        width: 100%;
+        background: #fff;
+        padding: 1em;
+        margin: 1em auto;
+        display: flex;
+        align-content: space-between;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .mwlift-new #recommended .box .img {
+        order: 2;
+        flex: 0 0 100%;
+        margin-top: 1em;
+        text-align: center;
+    }
+    .mwlift-new #recommended .box .txt {
+        order: 1;
+        flex: 0 0 100%;
+    }
+    .payment_box {
+        display: block;
+        padding: 1em;
+        max-width: 100%;
+        width: auto;
+    }
+    .payment_box_title {
+        width: auto;
+        text-align: left;
+        display: block;
+    }
+    .payment_box p {
+        display: block;
+        vertical-align: middle;
+        margin-top: 1em;
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+}
+@media only screen and (max-width: 415px){
+    .nowebp #pageTitle.mwlift,
+    .webp #pageTitle.mwlift {
+        height: 203px;
+    }
+    #pageTitle.mwlift h1 {
+        top: 46px;
+        left: 5px;
+        width: 227px;
+    }
+    #pageTitle.mwlift p {
+        top: 104px;
+        left: 22px;
+        width: 227px;
+    }
+    #pageTitle.mwlift .price-setting {
+        margin-top: 0px;
+    }
+    .mwlift-new .topNav li{
+        width: 135px;
+    }
+}

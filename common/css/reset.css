@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+/*---------------------------------------------------------------
+  style reset
+----------------------------------------------------------------*/
+body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, ul, ol, li, table, th, td, caption, form, input, address, blockquote, pre, form, iframe,
+header, footer, figure{
+	margin:0;
+	padding:0;
+	font-weight:normal;
+	font-style:normal;
+}
+
+h1, h2, h3, h4, h5{
+	margin:0;
+	padding:0;
+	font-size:100%;
+	line-height:1.1;
+}
+
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+	border:none;
+}
+
+table td,
+table th{
+	border:none;
+}
+
+caption, th{
+	text-align:left;
+}
+
+img{
+	vertical-align:bottom;
+	border:none;
+}
+
+ul, ol{margin:0;padding:0;}
+
+li{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+p{margin:0; padding:0;}
+
+a{outline:none;}

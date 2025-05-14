@@ -183,18 +183,7 @@ return $root_page;
 //自動整形関連
 // remove_filter('the_content', 'wpautop');
 
-//固定ページ　HTMLのみ
-function disable_visual_editor_in_page(){
-	global $typenow;
-	if( $typenow == 'page' ){
-		add_filter('user_can_richedit', 'disable_visual_editor_filter');
-	}
-}
-function disable_visual_editor_filter(){
-	return false;
-}
-add_action( 'load-post.php', 'disable_visual_editor_in_page' );
-add_action( 'load-post-new.php', 'disable_visual_editor_in_page' );
+
 
 // ショートコードインクルード
 /////////////////////////////////////////////////////
@@ -320,3 +309,62 @@ function dequeue_plugins_style() {
   }
 }
 add_action( 'wp_enqueue_scripts', 'dequeue_plugins_style', 9999);
+
+
+//施術一覧のカスタム投稿タイプ
+/////////////////////////////////////////////////////
+function create_operations_post_type() {
+  register_post_type('operations',
+      array(
+          'labels'      => array(
+              'name'          => __('施術一覧', 'textdomain'),
+              'singular_name' => __('施術', 'textdomain'),
+          ),
+          'public'      => true,
+          'has_archive' => true, // ← 必ず `true` にする！
+          'rewrite'     => array('slug' => 'operations'),
+          'supports'    => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
+          'menu_position' => 5,
+          'menu_icon'   => 'dashicons-admin-customizer',
+      )
+  );
+}
+add_action('init', 'create_operations_post_type');
+
+//施術一覧のカスタム投稿タイプのCSSとJS
+/////////////////////////////////////////////////////
+function add_custom_post_css_js() {
+  if (is_singular('operations')) {
+      global $post;
+      $slug = $post->post_name;
+
+      // CSSの読み込み
+      $css_file = get_template_directory() . "/custom/css/{$slug}.css";
+      if (file_exists($css_file)) {
+          echo "<link rel='stylesheet' type='text/css' href='" . get_template_directory_uri() . "/custom/css/{$slug}.css' />";
+      }
+
+      // JSの読み込み
+      $js_file = get_template_directory() . "/custom/js/{$slug}.js";
+      if (file_exists($js_file)) {
+          echo "<script src='" . get_template_directory_uri() . "/custom/js/{$slug}.js'></script>";
+      }
+  }
+}
+add_action('wp_head', 'add_custom_post_css_js');
+
+//カレンダーの「未承認」は枠から外す
+/////////////////////////////////////////////////////
+function get_available_slots($service_id, $date, $time) {
+  global $wpdb;
+  $table_name = $wpdb->prefix . 'booking_package_reservation';
+
+  $approved_count = $wpdb->get_var( $wpdb->prepare(
+      "SELECT COUNT(*) FROM $table_name 
+       WHERE service_id = %d AND start = %s AND status = 'approved'", 
+       $service_id, "{$date} {$time}"
+  ));
+
+  $max_slots = 3; // 1枠あたりの上限（固定なら）
+  return max(0, $max_slots - $approved_count);
+}

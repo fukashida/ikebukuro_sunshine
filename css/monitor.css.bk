@@ -1,0 +1,72 @@
+#monitorArea {
+	margin:0 0 40px;
+}
+
+.mphList li{
+	text-align:center;
+        margin:0 0 10px;
+}
+
+.monitorEntry{
+    border-bottom: 1px solid #DCD6D8;
+    padding:0 0 10px;
+    margin:0 0 10px;
+}
+
+.monitorEntry dt{
+	float:left;
+        font-weight:bold;
+        width:170px;
+        box-sizing:border-box;
+        border:1px solid #822520;
+        padding:10px;
+    background: #F4F2F3;
+}
+.monitorEntry dd{
+	float:left;
+        padding:0 0 0 190px;
+        margin:0 0 0 -170px;
+        box-sizing:border-box;
+        width:100%;
+}
+
+.monitorEntry li::before {
+    content: "●";
+    color: #82231F;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width:767px) {
+.monitorEntry dt {
+    float: none;
+	 display:inline-block;
+	 width:auto;
+	 margin:0 0 10px;
+}
+
+.monitorEntry dd {
+    float: none;
+    padding: 0;
+    margin: 0;
+}
+
+.faq_area_all {
+    margin: 0 0 50px;
+}
+
+.faq_area_all .monphR {
+    width: auto;
+    float: none;
+    text-align: center;
+}
+
+.faq_area_all .montxtL {
+    width: auto;
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+
+}
