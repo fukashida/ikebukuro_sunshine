@@ -45,7 +45,7 @@ body{
 </div>
 <!--/#mainContents-->
 
-<script src="//app.gorilla-efo.com/js/efo.2374.last.js" type="text/javascript"></script>
+
 
 <!-- Yahoo Code for your Conversion Page -->
 <script type="text/javascript">
