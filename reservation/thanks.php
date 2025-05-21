@@ -42,7 +42,7 @@
 	</ol>
 </div>
 
-<script src="//app.gorilla-efo.com/js/efo.2429.last.js" type="text/javascript"></script>
+
 
 <!-- Yahoo Code for your Conversion Page -->
 <script type="text/javascript">
