@@ -84,6 +84,7 @@ function insert_custom_js() {
 
 //管理画面フォント設定
 /////////////////////////////////////////////////////
+add_theme_support('editor-styles');
 add_editor_style('editor-style.css');
 
 
