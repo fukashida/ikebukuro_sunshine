@@ -52,22 +52,31 @@ $data['tracking'] = [
     'device' => $utmData['device'] ?? '未設定',
 ];
 
-// ✅ GASへ送信
-$gasUrl = "https://script.google.com/macros/s/AKfycbw1MwqxHfmK0EECWv1RMsAAKuQMhFa6Sv5Xpg37fcFdx3KixFVEf5_HPTkixgUmrGZ8/exec"; // ←あなたのGAS URL
-
-$options = [
-    'http' => [
-        'method'  => 'POST',
-        'header'  => "Content-Type: application/json",
-        'content' => json_encode($data),
-        'timeout' => 5
-    ]
+// ✅ GASへ送信（複数送信対応）
+$gasUrls = [
+    "https://script.google.com/macros/s/AKfycbw1MwqxHfmK0EECWv1RMsAAKuQMhFa6Sv5Xpg37fcFdx3KixFVEf5_HPTkixgUmrGZ8/exec", // メイン
 ];
 
-$context = stream_context_create($options);
-$response = file_get_contents($gasUrl, false, $context);
+foreach ($gasUrls as $gasUrl) {
+    $options = [
+        'http' => [
+            'method'  => 'POST',
+            'header'  => "Content-Type: application/json",
+            'content' => json_encode($data),
+            'timeout' => 3
+        ]
+    ];
 
-// ✅ GASレスポンスもログ
-file_put_contents(__DIR__ . "/log.txt", "\n[GAS Response]\n" . $response, FILE_APPEND);
+    $context = stream_context_create($options);
+    $response = @file_get_contents($gasUrl, false, $context);
+
+    // ✅ GASレスポンスもログ
+    file_put_contents(
+        __DIR__ . "/log.txt",
+        "\n[GAS URL: $gasUrl]\n$response\n----",
+        FILE_APPEND
+    );
+}
 
 echo "✅ 受信＆送信OK";
+
