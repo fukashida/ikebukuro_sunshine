@@ -36,7 +36,7 @@ $category_link = get_category_link( $cat_id );
 </div>
 
 <!--/ここからコンテンツ-->
-<div id="mainContents">
+<div id="blogContents">
 <main>
 <!-- 
 <?php if ( $GLOBALS['blog_id'] == 2 ) { ?>

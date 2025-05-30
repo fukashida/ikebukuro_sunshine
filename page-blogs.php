@@ -15,7 +15,7 @@
 </div>
 
 <!--/ここからコンテンツ-->
-<div id="mainContents">
+<div id="blogContents">
 <main>
 
 <div id="pageTitle" class="<?php echo get_page($page_id)->post_name; ?>">
