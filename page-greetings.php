@@ -33,41 +33,71 @@
 宜しくお願いいたします。
 </section>
 <section class="secBox">
-<h3 class="baseTitle">院長紹介</h3>
-<section class="secBox">
-<h4 class="subTitle">「美しくなりたい」を応援します。</h4>
-<p class="mb10">どんな時代も「美」を願う「心」の本質は変わりません。</p>
-<p>当院は「患者様の安心と満足を目標にする。」という当たり前のことを第一に考え、本物の美容形成外科を開設いたしました。 「美」と「心」がつながった「ありがとう」と言っていただける病院でありたい。 「美のホームドクターになれたら…」が私たちの願いです。</p>
-<div class="history clrfix">
-<div class="photo"><img src="/wp-content/themes/ikebukuro_sunshine//img/greetings/img_02.jpg" alt="院長　鈴木 栄樹" class="mb10"><p>院長　鈴木 栄樹</p></div>
-<div class="txt fsS">
-<ul class="baseList mb20">
-<li>日本美容外科学会正会員・認定医</li>
-<li>日本美容外科医師会正会員</li>
-<li>日本抗加齢医学会正会員</li>
-</ul>
-<p class="bold">＜院長略歴＞</p>
-<ul class="baseList border">
-<li><span class="w20">95年</span>聖マリアンナ医科大学卒業</li>
-<li><span class="w20">95－97年</span>同大学麻酔科勤務</li>
-<li><span class="w20">97－02年</span>大手美容外科勤務　のちに、分院院長歴任</li>
-<li><span class="w20">03－06年</span>医療法人博済会 鈴木病院　美容外科外来開設</li>
-<li><span class="w20">06年</span>池袋サンシャイン美容外科開設</li>
-</ul>
-<section class="sns-link">
-<ul>
-	<li><a href="https://twitter.com/ikesunshine?ref_src=twsrc%5Etfw" target="_blank" rel="noopener noreferrer"><img src="/wp-content/themes/ikebukuro_sunshine//img/top/sns_icon_twitter.png"></a></li>
-	<li><a href="https://www.instagram.com/ikesunshine331244/" target="_blank" rel="noopener noreferrer"><img src="/wp-content/themes/ikebukuro_sunshine//img/top/sns_icon_insta.png"></a></li>
-</ul>
+	<h3 class="baseTitle">院長紹介</h3>
+	<div class="secBox">
+		<h4 class="subTitle">「美しくなりたい」を応援します。</h4>
+		<p class="mb10">どんな時代も「美」を願う「心」の本質は変わりません。</p>
+		<p>当院は「患者様の安心と満足を目標にする。」という当たり前のことを第一に考え、本物の美容形成外科を開設いたしました。 「美」と「心」がつながった「ありがとう」と言っていただける病院でありたい。 「美のホームドクターになれたら…」が私たちの願いです。</p>
+		<div class="history clrfix">
+			<div class="photo"><img src="/wp-content/themes/ikebukuro_sunshine//img/greetings/img_02.jpg" alt="院長　鈴木 栄樹" class="mb10"><p>院長　鈴木 栄樹</p></div>
+				<div class="txt fsS">
+					<ul class="baseList mb20">
+						<li>日本美容外科学会正会員・認定医</li>
+						<li>日本美容外科医師会正会員</li>
+						<li>日本抗加齢医学会正会員</li>
+					</ul>
+					<p class="bold">＜院長略歴＞</p>
+					<ul class="baseList border">
+						<li><span class="w20">95年</span>聖マリアンナ医科大学卒業</li>
+						<li><span class="w20">95－97年</span>同大学麻酔科勤務</li>
+						<li><span class="w20">97－02年</span>大手美容外科勤務　のちに、分院院長歴任</li>
+						<li><span class="w20">03－06年</span>医療法人博済会 鈴木病院　美容外科外来開設</li>
+						<li><span class="w20">06年</span>池袋サンシャイン美容外科開設</li>
+					</ul>
+					<div class="sns-button">
+						<a href="https://twitter.com/ikesunshine?ref_src=twsrc%5Etfw" target="_blank" rel="noopener noreferrer" class="btn x">公式Xへ</a>
+						<a href="https://www.instagram.com/ikesunshine331244/" target="_blank" rel="noopener noreferrer" class="btn instagram">公式インスタグラムへ</a>
+					</div>
+				</div>
+			</div>
+	</div>
 </section>
-</div>
-</div>
+<section class="sec-con media secBox">
+	<div class="sec-title">
+		<h2 class="sec-heading">メディア掲載</h2>
+		<p class="sec-subtext">テレビ、雑誌等の取材の模様を<br class="sp-blank">紹介します</p>
+	</div>
+	<p class="media-topic">刺青除去・タトゥー除去<br class="sp-blank">テレビ取材</p>
+	<div class="slideshow-container">
+		<div class="slides-wrapper">
+			<div class="slide only-pc"><img src="<?php echo get_template_directory_uri(); ?>/img/greetings/pc-slide01.png" alt=""></div>
+			<div class="slide only-pc"><img src="<?php echo get_template_directory_uri(); ?>/img/greetings/pc-slide02.png" alt=""></div>
+			<div class="slide only-pc"><img src="<?php echo get_template_directory_uri(); ?>/img/greetings/pc-slide03.png" alt=""></div>
+			<div class="slide only-pc"><img src="<?php echo get_template_directory_uri(); ?>/img/greetings/pc-slide04.png" alt=""></div>
+			<div class="slide only-pc"><img src="<?php echo get_template_directory_uri(); ?>/img/greetings/pc-slide05.png" alt=""></div>
+			<div class="slide only-pc"><img src="<?php echo get_template_directory_uri(); ?>/img/greetings/pc-slide06.png" alt=""></div>
+			<div class="slide only-pc"><img src="<?php echo get_template_directory_uri(); ?>/img/greetings/pc-slide07.png" alt=""></div>
+			<div class="slide only-pc"><img src="<?php echo get_template_directory_uri(); ?>/img/greetings/pc-slide08.png" alt=""></div>
+			<div class="slide only-pc"><img src="<?php echo get_template_directory_uri(); ?>/img/greetings/pc-slide09.png" alt=""></div>
+			<div class="slide only-pc"><img src="<?php echo get_template_directory_uri(); ?>/img/greetings/pc-slide10.png" alt=""></div>
+			<div class="slide only-sp"><img src="<?php echo get_template_directory_uri(); ?>/img/greetings/sp-slide01.png" alt=""></div>
+			<div class="slide only-sp"><img src="<?php echo get_template_directory_uri(); ?>/img/greetings/sp-slide02.png" alt=""></div>
+			<div class="slide only-sp"><img src="<?php echo get_template_directory_uri(); ?>/img/greetings/sp-slide03.png" alt=""></div>
+			<div class="slide only-sp"><img src="<?php echo get_template_directory_uri(); ?>/img/greetings/sp-slide04.png" alt=""></div>
+			<div class="slide only-sp"><img src="<?php echo get_template_directory_uri(); ?>/img/greetings/sp-slide05.png" alt=""></div>
+			<div class="slide only-sp"><img src="<?php echo get_template_directory_uri(); ?>/img/greetings/sp-slide06.png" alt=""></div>
+			<div class="slide only-sp"><img src="<?php echo get_template_directory_uri(); ?>/img/greetings/sp-slide07.png" alt=""></div>
+			<div class="slide only-sp"><img src="<?php echo get_template_directory_uri(); ?>/img/greetings/sp-slide08.png" alt=""></div>
+			<div class="slide only-sp"><img src="<?php echo get_template_directory_uri(); ?>/img/greetings/sp-slide09.png" alt=""></div>
+			<div class="slide only-sp"><img src="<?php echo get_template_directory_uri(); ?>/img/greetings/sp-slide10.png" alt=""></div>
+		</div>
+	</div>
 </section>
 <section class="secBox">
 <h4 class="subTitle">治療の一例をご紹介しましょう。たとえば二重まぶたにする時。</h4>
 <p>わざわざサングラスや帽子を用意するのはわずらわしくありませんか。まぶたの腫れない治療を工夫できないでしょうか。適切な麻酔、適量のコラーゲン、最小限の注入痕、施術のテクニックがしっかりしていて、よい器具・材料を惜しまず使えば、腫れを抑え、その日から普段と変わりなく過ごせるのです。もちろん施術の前には入念なカウンセリングを行います。好みのラインをじっくりデザインして、お望みどおりのラインに仕上げていきます。</p>
 </section>
-<section>
+<section class="secBox">
 <h4 class="subTitle">信頼関係は、医師が患者様を想うことから始まると思います。</h4>
 <p class="mb10">患者様の満足、安心のために医師は何ができるか。幅広い経験から親身になって答えを導き出して差し上げたい。そこを私は大切にしています。</p>
 <p>病院に行くのではありません。一人の医師に会いに来てください。その時からあなたは“掛かりつけの美容外科医”を持つことになります。</p>
@@ -118,5 +148,7 @@
 </div>
 
 <?php include (STYLESHEETPATH . '/sidecontact.php'); ?>
+
+<script src="<?php echo get_template_directory_uri(); ?>/common/js/script.js"></script>
 
 <?php get_footer(); ?>
