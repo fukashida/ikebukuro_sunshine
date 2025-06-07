@@ -886,6 +886,54 @@ var error_hCaptcha_for_booking_package = function(response) {
                                     object.createCalendar(calendarData, month, day, year, accountKey, null);
                                     
                                 }
+
+                                // 🔽 電話番号にハイフン追加
+                                function formatPhoneNumber(value) {
+                                    const numbers = value.replace(/[^\d]/g, '');
+                                  
+                                    // 携帯電話（11桁）: 090-1234-5678
+                                    if (/^0[789]0\d{8}$/.test(numbers)) {
+                                      return numbers.replace(/(\d{3})(\d{4})(\d{4})/, '$1-$2-$3');
+                                  
+                                    // 固定電話（03, 06 など2桁市外局番＋8桁）: 03-1234-5678
+                                    } else if (/^0[1-9]{1}\d{1}\d{8}$/.test(numbers)) {
+                                      return numbers.replace(/(\d{2})(\d{4})(\d{4})/, '$1-$2-$3');
+                                  
+                                    // 固定電話（市外局番が3〜5桁のパターン）例: 0235-25-2231
+                                    } else if (/^0\d{9,10}$/.test(numbers)) {
+                                      // 0235の場合など（市外局番4桁＋6桁）
+                                      if (/^0\d{3}\d{6}$/.test(numbers)) {
+                                        return numbers.replace(/(\d{4})(\d{2})(\d{4})/, '$1-$2-$3');
+                                      }
+                                      // 075（京都）など（市外局番3桁＋7桁）
+                                      if (/^0\d{2}\d{7}$/.test(numbers)) {
+                                        return numbers.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
+                                      }
+                                    }
+                                  
+                                    return numbers; // フォーマット対象外はそのまま
+                                  }                                  
+                                const observer = new MutationObserver(() => {
+                                    const telInput = document.getElementById('booking_package_input_tel');
+                                    if (telInput) {
+                                      telInput.addEventListener('input', function (e) {
+                                        let value = e.target.value.replace(/[^\d]/g, '');
+                                        if (value.length >= 11) {
+                                          value = value.slice(0, 11);
+                                          value = value.replace(/(\d{3})(\d{4})(\d{4})/, '$1-$2-$3');
+                                        } else if (value.length >= 10) {
+                                          value = value.replace(/(\d{2,4})(\d{3,4})(\d{3,4})/, '$1-$2-$3');
+                                        }
+                                        telInput.addEventListener('input', function (e) {
+                                            e.target.value = formatPhoneNumber(e.target.value);
+                                          });
+                                      });
+                                      observer.disconnect(); // 一度検知したら停止
+                                    }
+                                  });
+                                  
+                                  observer.observe(document.body, { childList: true, subtree: true });
+                                  
                                 
                                 if (startCalendar === true) {
                                     
@@ -9736,7 +9784,7 @@ var error_hCaptcha_for_booking_package = function(response) {
             // 再診・初診の個別バリデーション回避処理
             const isRevisit = document.querySelector('.addedService[data-key="12"]') !== null;
             const isFirstVisit = document.querySelector('.addedService[data-key="11"]') !== null;
-            const isHokuro = document.querySelector('.addedService[data-key="3"]') !== null;
+            const isHokuro = document.querySelector('.addedService[data-key="4"]') !== null;
             const telInput = document.getElementById('booking_package_input_tel');
             const numberInput = document.getElementById('booking_package_input_number');
             

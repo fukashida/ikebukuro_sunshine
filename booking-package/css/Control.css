@@ -1983,6 +1983,9 @@
 #editPanel .courseAndScheduleRowActive[data-key="3"], #editPanel .courseAndScheduleRow[data-key="3"] {
     display: none;    
 }
+#editPanel .courseAndScheduleRowActive[data-key="4"], #editPanel .courseAndScheduleRow[data-key="4"] {
+    display: none;    
+}
 
 #editPanel .courseAndScheduleRow:hover, #editPanelForSchedule .courseAndScheduleRow:hover, #selectOptionsPanel .courseAndScheduleRow:hover {
 	
