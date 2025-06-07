@@ -1980,10 +1980,18 @@
     color: #32373c;
     
 }
-#editPanel .courseAndScheduleRowActive[data-key="3"], #editPanel .courseAndScheduleRow[data-key="3"] {
+
+#editPanel .scheduleListPanel.courseListPanel.box_shadow .courseAndScheduleRowActive[data-key="3"], #editPanel .scheduleListPanel.courseListPanel.box_shadow .courseAndScheduleRow[data-key="3"] {
+    display: block;    
+}
+#editPanel .scheduleListPanel.courseListPanel.box_shadow .courseAndScheduleRowActive[data-key="4"], #editPanel .scheduleListPanel.courseListPanel.box_shadow .courseAndScheduleRow[data-key="4"] {
+    display: block;   
+}
+
+#editPanel .courseListPanel.box_shadow .courseAndScheduleRowActive[data-key="3"], #editPanel .courseListPanel.box_shadow .courseAndScheduleRow[data-key="3"] {
     display: none;    
 }
-#editPanel .courseAndScheduleRowActive[data-key="4"], #editPanel .courseAndScheduleRow[data-key="4"] {
+#editPanel .courseListPanel.box_shadow .courseAndScheduleRowActive[data-key="4"], #editPanel .courseListPanel.box_shadow .courseAndScheduleRow[data-key="4"] {
     display: none;    
 }
 

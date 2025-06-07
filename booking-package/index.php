@@ -213,6 +213,9 @@ Domain Path: /languages
 			add_action('delete_user', array($this, 'delete_user'));
 			add_action('wp_before_admin_bar_render', array($this, 'admin_toolbar'));
 			
+			add_action('wp_ajax_booking_package_search_customers', array($this, 'wp_ajax_search_customers'));
+
+			
 			add_action('admin_bar_menu', array($this, 'admin_bar_menu'), 100);
 			add_action('wp_ajax_'.$this->action_control, array($this, 'wp_ajax_booking_package'));
 			add_action('wp_ajax_nopriv_'.$this->action_control, array($this, 'wp_ajax_booking_package'));
@@ -326,6 +329,48 @@ Domain Path: /languages
             **/
 			
 		}
+		
+					/**
+				 * 顧客検索用のAJAXエンドポイント
+				 */
+			public function wp_ajax_search_customers() {
+				if (isset($_POST['nonce']) && check_ajax_referer($this->action_control . "_ajax", 'nonce')) {
+
+					// 権限チェック
+					if (!current_user_can('manage_options') && !current_user_can($this->prefix . 'manager') && !current_user_can($this->prefix . 'editor')) {
+						$response = array('status' => 'error', 'message' => __('You do not have sufficient permissions to access this page.', 'booking-package'));
+						wp_send_json($response);
+					}
+
+					$schedule = new booking_package_schedule($this->prefix, $this->plugin_name, $this->currencies, $this->userRoleName);
+
+					$searchTerm = isset($_POST['searchTerm']) ? sanitize_text_field($_POST['searchTerm']) : '';
+					$searchType = isset($_POST['searchType']) ? sanitize_text_field($_POST['searchType']) : 'all';
+					$accountKey = isset($_POST['accountKey']) ? intval($_POST['accountKey']) : null;
+					$offset = isset($_POST['offset']) ? intval($_POST['offset']) : 0;
+					$limit = isset($_POST['limit']) ? intval($_POST['limit']) : 20;
+
+					if (empty($searchTerm)) {
+						$response = array('status' => 'error', 'message' => __('Search term is required', 'booking-package'));
+					} else {
+						try {
+							$result = $schedule->searchBookedCustomers($searchTerm, $searchType, $accountKey, $offset, $limit);
+							$response = array('status' => 'success', 'searchResults' => $result, "test_message" => "OK", "searchTerm" => $searchTerm, "searchType" => $searchType, "accountKey" => $accountKey, "offset" => $offset, "limit" => $limit);
+						} catch (Exception $e) {
+							$response = array('status' => 'error', 'message' => $e->getMessage());
+						}
+					}
+
+					wp_send_json($response);
+				} else {
+					$response = array('status' => 'error', 'message' => __('Nonce error', 'booking-package'));
+					wp_send_json($response);
+				}
+
+				die();
+			}
+		
+		
 		
 		public function plugin_localized($locale) {
 			
@@ -5831,7 +5876,7 @@ Domain Path: /languages
 			$style .= "#booking-package_serviceDetails { background-color: ".$list['Design']['booking_package_backgroundColor']['value']."; }\n";
 			
 			$style .= "#booking-package_calendarPage .pointer:hover { background-color: ".$list['Design']['booking_package_mouseHover']['value']."; }\n";
-			$style .= "#booking-package_calendarPage .holidayPanel { background-color: ".$list['Design']['booking_package_backgroundColorOfRegularHolidays']['value']." !important; }\n";
+			$style .= "#booking-package_calendarPage .holidayPanel { background-color: #f9f9f9 !important; }\n";
 			#$style .= "#booking-package_calendarPage .nationalHoliday { background-color: ".$list['Design']['booking_package_backgroundColorOfNationalHolidays']['value']."; }\n";
 			
 			$styleList = array(
@@ -6543,6 +6588,23 @@ Domain Path: /languages
 				$dictionary['Reset the subscription immediately.'] = __('Reset the subscription immediately.', 'booking-package');
 				$dictionary['Resetting the subscription will deactivate all premium features. Are you sure you want to reset the subscription?'] = __('Resetting the subscription will deactivate all premium features. Are you sure you want to reset the subscription?', 'booking-package');
 				
+				// index.php のgetDictionary関数内に追加
+				$dictionary['Search'] = __('Search', 'booking-package');
+				$dictionary['All fields'] = __('All fields', 'booking-package');
+				$dictionary['Search customers...'] = __('Search customers...', 'booking-package');
+				$dictionary['Search term is required'] = __('Search term is required', 'booking-package');
+				$dictionary['Search Results'] = __('Search Results', 'booking-package');
+				$dictionary['results for'] = __('results for', 'booking-package');
+				$dictionary['No results found'] = __('No results found', 'booking-package');
+				$dictionary['Booking ID'] = __('Booking ID', 'booking-package');
+				$dictionary['Name'] = __('Name', 'booking-package');
+				$dictionary['email'] = __('email', 'booking-package');
+				$dictionary['tel'] = __('tel', 'booking-package');
+				$dictionary['Date'] = __('Date', 'booking-package');
+				$dictionary['Status'] = __('Status', 'booking-package');
+				$dictionary['Actions'] = __('Actions', 'booking-package');
+				$dictionary['Details'] = __('Details', 'booking-package');
+				
 			} else if ($mode == "Upgrade_js") {
 				
 				
@@ -6587,6 +6649,22 @@ Domain Path: /languages
 				$dictionary['Password'] = __('Password', 'booking-package');
 				
 			}
+			
+				$dictionary['Search'] = __('Search', 'booking-package');
+				$dictionary['All fields'] = __('All fields', 'booking-package');
+				$dictionary['Search customers...'] = __('Search customers...', 'booking-package');
+				$dictionary['Search term is required'] = __('Search term is required', 'booking-package');
+				$dictionary['Search Results'] = __('Search Results', 'booking-package');
+				$dictionary['results for'] = __('results for', 'booking-package');
+				$dictionary['No results found'] = __('No results found', 'booking-package');
+				$dictionary['Booking ID'] = __('Booking ID', 'booking-package');
+				$dictionary['Name'] = __('Name', 'booking-package');
+				$dictionary['email'] = __('email', 'booking-package');
+				$dictionary['tel'] = __('tel', 'booking-package');
+				$dictionary['Date'] = __('Date', 'booking-package');
+				$dictionary['Status'] = __('Status', 'booking-package');
+				$dictionary['Actions'] = __('Actions', 'booking-package');
+				$dictionary['Details'] = __('Details', 'booking-package');
 			
 			return $dictionary;
 			

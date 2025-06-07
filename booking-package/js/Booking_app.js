@@ -890,29 +890,44 @@ var error_hCaptcha_for_booking_package = function(response) {
                                 // 🔽 電話番号にハイフン追加
                                 function formatPhoneNumber(value) {
                                     const numbers = value.replace(/[^\d]/g, '');
-                                  
-                                    // 携帯電話（11桁）: 090-1234-5678
+
+                                    // 携帯電話
                                     if (/^0[789]0\d{8}$/.test(numbers)) {
-                                      return numbers.replace(/(\d{3})(\d{4})(\d{4})/, '$1-$2-$3');
-                                  
-                                    // 固定電話（03, 06 など2桁市外局番＋8桁）: 03-1234-5678
-                                    } else if (/^0[1-9]{1}\d{1}\d{8}$/.test(numbers)) {
-                                      return numbers.replace(/(\d{2})(\d{4})(\d{4})/, '$1-$2-$3');
-                                  
-                                    // 固定電話（市外局番が3〜5桁のパターン）例: 0235-25-2231
-                                    } else if (/^0\d{9,10}$/.test(numbers)) {
-                                      // 0235の場合など（市外局番4桁＋6桁）
-                                      if (/^0\d{3}\d{6}$/.test(numbers)) {
-                                        return numbers.replace(/(\d{4})(\d{2})(\d{4})/, '$1-$2-$3');
-                                      }
-                                      // 075（京都）など（市外局番3桁＋7桁）
-                                      if (/^0\d{2}\d{7}$/.test(numbers)) {
-                                        return numbers.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
-                                      }
+                                        return numbers.replace(/(\d{3})(\d{4})(\d{4})/, '$1-$2-$3');
                                     }
-                                  
-                                    return numbers; // フォーマット対象外はそのまま
-                                  }                                  
+
+                                    // 固定電話
+                                    if (/^0\d{9,10}$/.test(numbers)) {
+                                        const fiveDigitAreas = ['01564','01634','01372','04992','01632','01635','01655','01656','01658','05979','07468','08396','08388','08477','08512','08514','08558','08637','08646','08655','08735','08946','08947','09912','09913','09969'];
+                                        const area5 = numbers.substring(0, 5);
+
+                                        // 048台は必ず3桁扱い
+                                        if (numbers.startsWith('048')) {
+                                            return numbers.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
+                                        }
+
+                                        if (fiveDigitAreas.includes(area5)) {
+                                            return numbers.replace(/(\d{5})(\d{1})(\d{4})/, '$1-$2-$3');
+                                        }
+
+                                        // 4桁市外局番
+                                        if (/^0\d{3}\d{6}$/.test(numbers)) {
+                                            return numbers.replace(/(\d{4})(\d{2})(\d{4})/, '$1-$2-$3');
+                                        }
+
+                                        // 3桁市外局番
+                                        if (/^0\d{2}\d{7}$/.test(numbers)) {
+                                            return numbers.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
+                                        }
+
+                                        // 2桁市外局番
+                                        if (/^0\d{1}\d{8}$/.test(numbers)) {
+                                            return numbers.replace(/(\d{2})(\d{4})(\d{4})/, '$1-$2-$3');
+                                        }
+                                    }
+
+                                    return numbers;
+                                }                     
                                 const observer = new MutationObserver(() => {
                                     const telInput = document.getElementById('booking_package_input_tel');
                                     if (telInput) {
@@ -1524,13 +1539,121 @@ var error_hCaptcha_for_booking_package = function(response) {
             if (options.length > 0) {
                 
                 var directlySelectedOptions = true;
-                var optionsTitle = document.createElement("div");
+                // ▼▼▼ ここにアコーディオン機能を追加 ▼▼▼
+                // ▼ オプションパネル
+                var optionsPanel = document.createElement("div");
+                optionsPanel.classList.add("selectOptionList");
+                optionsPanel.style.display = "none";
+
+                // ▼ data-key 取得（例：12、13）
+                const key = table_row.getAttribute("data-key");
+
+                // ▼ 三角矢印の要素作成
+                const arrowIcon = document.createElement("span");
+                arrowIcon.classList.add("toggleArrow");
+
+                Object.assign(arrowIcon.style, {
+                    width: "0",
+                    height: "0",
+                    borderStyle: "solid",
+                    borderWidth: "10px 7px 0 7px",
+                    borderColor: "#666 transparent transparent transparent",
+                    position: "relative",
+                    marginRight: "3px",
+                    float: "right",
+                    display: "inline-block",
+                    transition: "transform 0.2s ease",
+                    cursor: "pointer"
+                });
+
+                // ▼ 親要素に矢印を追加
+                const serviceDetails = table_row.querySelector(".service_details");
+                serviceDetails.style.position = "relative";
+                serviceDetails.appendChild(arrowIcon);
+
+                // ▼ 矢印位置を更新する関数（SP/PCで調整）
+                function updateArrowPosition(arrow, key) {
+                    if (key === "12") {
+                        arrow.style.top = "-35px";
+                    } else if (key === "13") {
+                        arrow.style.top = window.innerWidth <= 540 ? "-93px" : "-63px";
+                    } else {
+                        arrow.style.top = "-25px";
+                    }
+                }
+
+                updateArrowPosition(arrowIcon, key);
+
+                // ▼ resize時にも矢印位置を再調整
+                window.addEventListener("resize", () => {
+                    updateArrowPosition(arrowIcon, key);
+                });
+
+                // ▼ クリックでアコーディオン切替 + スタイル変化
+                serviceDetails.addEventListener("click", () => {
+                    const isShown = optionsPanel.style.display === "block";
+                    optionsPanel.style.display = isShown ? "none" : "block";
+
+                    // ▼ 三角矢印の向き（CSS rotate）
+                    arrowIcon.style.transform = isShown ? "rotate(0deg)" : "rotate(180deg)";
+
+                    // ▼ marginRight の切り替え
+                    arrowIcon.style.marginRight = isShown ? "0px" : "3px";
+                });
+
+                // ▼ オプションタイトル
+                const optionsTitle = document.createElement("div");
                 optionsTitle.classList.add("optionTitle");
                 optionsTitle.textContent = object._i18n.get("Select option");
-                
-                var optionsPanel = document.createElement("div");
                 optionsPanel.appendChild(optionsTitle);
-                optionsPanel.classList.add("selectOptionList");
+
+                // ▼ 以下、各オプションを生成（既存コード）
+                // for (var i = 0; i < options.length; i++) {
+                //     var option = options[i];
+                //     option.selected = 0;
+
+                //     var responseCosts = object._servicesControl.getCostsInService(option, guestsList, parseInt(object._calendarAccount.guestsBool), object._isExtensionsValid);
+
+                //     var titleLabel = document.createElement("span");
+                //     titleLabel.textContent = option.name;
+
+                //     var optionPanel = document.createElement("div");
+                //     optionPanel.setAttribute("data-key", i);
+                //     optionPanel.setAttribute("data-serviceKey", serviceKey);
+                //     optionPanel.classList.add("selectable_option_element");
+                //     optionPanel.appendChild(titleLabel);
+
+                //     if (responseCosts.max != null && !isNaN(parseInt(responseCosts.max)) && parseInt(responseCosts.max) != 0) {
+                //         var optionCostPanel = document.createElement("span");
+                //         optionCostPanel.classList.add("serviceCost");
+                //         optionPanel.appendChild(optionCostPanel);
+                //         var cost = object._format.formatCost(responseCosts.max, object._currency);
+
+                //         if (responseCosts.hasMultipleCosts === true) {
+                //             cost = object._i18n.get('%s to %s', [
+                //                 object._format.formatCost(responseCosts.min, object._currency),
+                //                 object._format.formatCost(responseCosts.max, object._currency)
+                //             ]);
+                //             object.createmMximumAndMinimumElements(responseCosts, optionPanel);
+                //         } else {
+                //             optionCostPanel.textContent = cost;
+                //         }
+                //     }
+
+                //     if (service.directlySelected == 1 && directlySelectedOptions === true) {
+                //         object.setSkipServicesPanel(false);
+                //         directlySelectedOptions = false;
+                //         option.selected = 1;
+                //         optionPanel.classList.add('selected_option_element');
+                //     }
+
+                //     optionsPanel.appendChild(optionPanel);
+
+                //     // ▼ optionPanel.onclick = function() { ... } は元コードのまま
+                // }             
+                
+                // ▲▲▲ アコーディオン処理ここまで ▲▲▲
+
                 table_row.appendChild(optionsPanel);
                 for (var i = 0; i < options.length; i++) {
                     
@@ -2724,6 +2847,29 @@ var error_hCaptcha_for_booking_package = function(response) {
             }
             
             if (callback.day > 0) {
+
+                // ▼ 2ヶ月後以降は予約できないように制限する
+                const today = new Date();
+                const maxDate = new Date(today.getFullYear(), today.getMonth() + 2, today.getDate());
+                const callbackDate = new Date(callback.year, callback.month - 1, callback.day);
+
+                if (callbackDate > maxDate) {
+                    dayPanel.setAttribute('data-onclick', 0);
+                    dayPanel.classList.remove("nationalHoliday");
+                    dayPanel.classList.remove("available_day");
+                    dayPanel.classList.add("closingDay");
+
+                    // 残数表示のシンボルがあれば「×」にする（任意）
+                    const symbolPanel = dayPanel.querySelector('.symbolPanel');
+                    if (symbolPanel) {
+                        symbolPanel.textContent = '×';
+                        symbolPanel.style.color = '#858585';
+                        symbolPanel.style.fontWeight = 'bold';
+                        symbolPanel.style.marginLeft = '18px';
+                    }
+
+                    return; // これ以上の処理をさせない
+                }
                 
                 if (calendarData.schedule[callback.key] != null && calendarData.schedule[callback.key].length != 0) {
                     
@@ -2810,7 +2956,27 @@ var error_hCaptcha_for_booking_package = function(response) {
                         }
                         
                     });
+
+                    // ▼ 日曜日なら無条件で「✕」＆クリック不可にする
+                    if (callback.week === 0) {  // 日曜日
+                        // 残数表示のシンボル書き換え
+                        const symbolPanel = dayPanel.querySelector('.symbolPanel');
+                        if (symbolPanel) {
+                        symbolPanel.textContent = '×';
+                        symbolPanel.style.color = '#858585'; // グレー色
+                        symbolPanel.style.fontWeight = 'bold';
+                        symbolPanel.style.marginLeft = '18px'; // 適宜調整
+                        }
                     
+                        // data-onclick 無効化、クラス変更
+                        dayPanel.setAttribute('data-onclick', 0);
+                        dayPanel.classList.remove("available_day");
+                        dayPanel.classList.add("closingDay");
+                    
+                        // onclickイベント自体を潰す（必要に応じて）
+                        dayPanel.onclick = null;
+                    }
+  
                     if (object._isExtensionsValid == 1 && calendarData.schedule[callback.key].length == 1) {
                         
                         var oneSchedule = calendarData.schedule[callback.key][0];
@@ -6081,7 +6247,27 @@ var error_hCaptcha_for_booking_package = function(response) {
         for (var i = 0; i < calendarData['schedule'][calendarKey].length; i++) {
             
             var schedule = calendarData['schedule'][calendarKey][i];
+
+            // ▼ 2ヶ月以上先の日付は選択不可にする
+            const today = new Date();
+            const maxDate = new Date(today.getFullYear(), today.getMonth() + 2, today.getDate());
+            const scheduleDate = new Date(schedule.year, schedule.month - 1, schedule.day);
+            if (scheduleDate > maxDate) {
+                schedule["select"] = false;
+                continue; // このスケジュールはスキップ
+            }
+            
+            // ▼ すでに false になっていないものだけ true にする
+            if (schedule["select"] !== false) {
+                schedule["select"] = true;
+            }
+
+            if (schedule.hour == 10 && schedule.min == 45) {
+                    schedule["hiddenSlot"] = true;   // ★10:45のみにフラグ
+                }
+
             schedule["select"] = true;
+
             if (parseInt(schedule["remainder"]) == 0 || schedule["stop"] == 'true') {
                 
                 schedule["select"] = false;
@@ -6325,6 +6511,10 @@ var error_hCaptcha_for_booking_package = function(response) {
             table_row = document.createElement("div");
             table_row.setAttribute("data-key", i);
             table_row.appendChild(schedulePanel);
+            // ★ここで非表示化
+            if (schedule["hiddenSlot"] === true) {
+                table_row.style.display = "none";
+            }
             scheduleListPanel.push(table_row);
             titleLabelList.push(titleLabel);
             
@@ -6635,6 +6825,36 @@ var error_hCaptcha_for_booking_package = function(response) {
         } else {
             
             object._console.log(daysListPanel.getBoundingClientRect());
+
+            // 日曜日の曜日ラベルが含まれる枠は非選択にする
+            const today = new Date();
+            const maxDate = new Date(today.getFullYear(), today.getMonth() + 2, today.getDate());
+
+            for (let i = 0; i < daysListPanel.children.length; i++) {
+                const dayEl = daysListPanel.children[i];
+
+                const month = parseInt(dayEl.getAttribute("data-month"));
+                const day = parseInt(dayEl.getAttribute("data-day"));
+                const year = parseInt(dayEl.getAttribute("data-year"));
+                const scheduleDate = new Date(year, month - 1, day);
+
+                const weekEl = dayEl.querySelector('.weekPanel');
+                const weekText = weekEl?.textContent.trim();
+                const isSunday = weekText === "日";
+
+                // ▼ 日曜または2ヶ月以上先なら無効化
+                if (isSunday || scheduleDate > maxDate) {
+                    // data-status を 0 にしてクラス変更
+                    dayEl.setAttribute("data-status", "0");
+                    dayEl.classList.remove("selected_day_slot");
+                    dayEl.classList.add("closed", "selectable_day_slot");
+
+                    // 見た目をグレーアウト（任意）
+                    dayEl.style.pointerEvents = "none";
+                }
+            }
+
+
             object._console.log(scheduleMainPanel.getBoundingClientRect());
             if (scheduleMainPanel.getBoundingClientRect().height < daysListPanel.getBoundingClientRect().height) {
                 
@@ -7930,32 +8150,40 @@ var error_hCaptcha_for_booking_package = function(response) {
                 } else {
                     
                     if (response.status == 'success') { //成功
-                        
+
                         // --- ✅ トラッキング情報の取得 ---
+                        const queryParamsRaw = localStorage.getItem("initial_query_params") || '';
+                        const queryParams = new URLSearchParams(queryParamsRaw);
+                    
+                        // ✅ referrer パラメータがあれば最優先
+                        const paramReferrer = queryParams.get('referrer') 
+                            ? decodeURIComponent(queryParams.get('referrer')) 
+                            : null;
+                    
                         const tracking = {
-                            referrer: localStorage.getItem("initial_referrer") || "不明",
+                            referrer: paramReferrer || localStorage.getItem("initial_referrer") || "不明",
                             link: localStorage.getItem("initial_landing_page") || window.location.href
                         };
-                        
+                    
                         // --- ✅ 送信用データの組み立て ---
                         const inputValues = {};
                         for (const key in inputData) {
                             const field = inputData[key];
                             const inputEl = field.textBox || field.selectBox;
                             if (inputEl && inputEl.id) {
-                            inputValues[inputEl.id] = inputEl.value;
+                                inputValues[inputEl.id] = inputEl.value;
                             }
                         }
-
+                    
                         const serviceInfo = {
                             service: document.querySelector('#booking_package_selectedServicesPanel .addedService .serviceName')?.textContent || '',
                             option: document.querySelector('#booking_package_selectedServicesPanel ul li div .serviceName')?.textContent || '',
                             date: document.querySelector('.value .bookingDate')?.textContent.trim() || '',
                             time: document.querySelector('.value .bookingTime')?.textContent.trim() || ''
-                          };
-
+                        };
+                    
                         const bookingID = response?.lastID || null;
-                        
+                    
                         // --- ✅ 全体の送信データを組み立て ---
                         const bookingPayload = {
                             input: inputValues,
@@ -7963,45 +8191,41 @@ var error_hCaptcha_for_booking_package = function(response) {
                             tracking: tracking,
                             bookingID: bookingID 
                         };
-
+                    
                         // --- ✅ receive.php にPOST送信 ---
                         fetch("/wp-content/themes/ikebukuro_sunshine/receive.php", {
                             method: "POST",
                             headers: {
-                              "Content-Type": "application/json"
+                                "Content-Type": "application/json"
                             },
                             body: JSON.stringify(bookingPayload),
-                            credentials: "same-origin" // ← これが超重要！
-                          })
-                          .then(() => {
+                            credentials: "same-origin"
+                        })
+                        .then(() => {
                             bookingCompleted(response, accountKey);
-                          });                          
-
-                    // 元の処理
-                    cartPanel.removeChild(bookingButtonPanel);
-                    // 3. パラメータ付きでthanksページへリダイレクト
-                    bookingCompleted(response, accountKey);
-
-                    // パラメータ引き継ぎ
-                    function bookingCompleted(response, accountKey) {
-                        const savedParams = localStorage.getItem("initial_query_params");
-                        let url = "/thanks/";
-                        if (savedParams) {
-                          url += "?" + savedParams.replace(/^\?/, "");
+                        });
+                    
+                        // 元の処理
+                        cartPanel.removeChild(bookingButtonPanel);
+                    
+                        // パラメータ引き継ぎ
+                        function bookingCompleted(response, accountKey) {
+                            const savedParams = localStorage.getItem("initial_query_params");
+                            let url = "/thanks/";
+                            if (savedParams) {
+                                url += "?" + savedParams.replace(/^\?/, "");
+                            }
+                            window.location.href = url;
                         }
-                        window.location.href = url;
-                      }
-                      
-                        
+                    
                     } else {
-                        
                         delete response.status;
                         delete response.message;
                         calendarData = response;
                         object._console.log(response);
                         bookingButton.disabled = false;
-                        
                     }
+                    
                     
                 }
                 
@@ -9782,11 +10006,12 @@ var error_hCaptcha_for_booking_package = function(response) {
             object._console.log("bool = " + bool);
             
             // 再診・初診の個別バリデーション回避処理
-            const isRevisit = document.querySelector('.addedService[data-key="12"]') !== null;
-            const isFirstVisit = document.querySelector('.addedService[data-key="11"]') !== null;
+            const isRevisit = document.querySelector('.addedService[data-key="13"]') !== null;
+            const isFirstVisit = document.querySelector('.addedService[data-key="12"]') !== null;
             const isHokuro = document.querySelector('.addedService[data-key="4"]') !== null;
             const telInput = document.getElementById('booking_package_input_tel');
             const numberInput = document.getElementById('booking_package_input_number');
+            const emailInput = document.getElementById('booking_package_input_email');
             
             // 初診なら電話番号はバリデーション付与
             if (isFirstVisit && telInput && formPanelList[key].contains(telInput)) {
@@ -9826,7 +10051,20 @@ var error_hCaptcha_for_booking_package = function(response) {
                 }
                 continue;
             }
-            
+
+            // メールアドレスは常に必須
+            if (isFirstVisit && formPanelList[key].contains(emailInput) || isHokuro && formPanelList[key].contains(emailInput) || isRevisit && formPanelList[key].contains(emailInput)) {
+            if (emailInput.value.trim() === '') {
+                formPanelList[key].setAttribute("data-errorInput", 1);
+                formPanelList[key].classList.add("error_empty_value");
+                sendBool = false;
+            } else {
+                formPanelList[key].removeAttribute("data-errorInput");
+                formPanelList[key].classList.remove("error_empty_value");
+            }
+            continue;
+            }
+              
             
             // 通常バリデーションの結果で処理
             if (bool === true) {
