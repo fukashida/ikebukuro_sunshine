@@ -17,7 +17,6 @@ var booking_manage = null;
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    
     window.addEventListener('load', function() {
         
         var booking_pacage_booked_customers = document.getElementById('booking_pacage_booked_customers');
@@ -126,7 +125,7 @@ function Booking_manage(schedule_data, booking_package_dictionary, webApp) {
     this._typeOfId = 'index';
     this._changeDisplayFormatBookedCustomersForHotel = 'table';
     this._changeDisplayFormatBookedCustomersForDay = 'list';
-    this._mobile = parseInt(schedule_data.mobile);
+    this._mobile = parseInt(schedule_data.mobile);    
     
     if (schedule_data.guestForDayOfTheWeekRates != null) {
             
@@ -676,6 +675,27 @@ function Booking_manage(schedule_data, booking_package_dictionary, webApp) {
             }
             
         }
+
+        // ▼ 検索エリアの追加（buttonPanel）
+        const buttonPanel = document.createElement("div");
+        buttonPanel.className = "buttonPanel";
+
+        const searchInput = document.createElement("input");
+        searchInput.type = "text";
+        searchInput.id = "search_users_text";
+        searchInput.className = "serch_users_text";
+
+        const searchButton = document.createElement("button");
+        searchButton.id = "search_user_button";
+        searchButton.className = "w3tc-button-save button-primary serch_user_button";
+        searchButton.textContent = "検索";
+
+        buttonPanel.appendChild(searchInput);
+        buttonPanel.appendChild(searchButton);
+
+        // ▼ selectCalendarAccountPanel の先頭に追加
+        selectCalendarAccountPanel.appendChild(buttonPanel);
+        //  検索エリアの追加ここまで
         
         select.onchange = function(){
             
@@ -947,7 +967,7 @@ function Booking_manage(schedule_data, booking_package_dictionary, webApp) {
         document.getElementById("frame_toolbar").setAttribute("class", "media_frame_toolbar media_left_zero");
         
         var reservation_users_callback = function(response) {
-            
+
             object._console.log("reservation_users_callback");
             object._console.log("buttonAction = " + object._buttonAction);
             object._console.log(response);
@@ -986,7 +1006,19 @@ function Booking_manage(schedule_data, booking_package_dictionary, webApp) {
         
         var add_reservation_callback = function(response){
             
-            object._console.log(response);
+            // object._console.log("✅ add_reservation_callback:", response);
+
+            // ここで予約完了後のIDを取得する
+            if (response?.lastID || response?.details?.key) {
+                window.bookingID = response.lastID || response.details.key;
+                // console.log("🎯 予約完了 ID:", window.bookingID);
+        
+                // GAS送信
+                if (typeof object.sendToReceivePHP === "function") {
+                    object.sendToReceivePHP();
+                }
+            }
+
             object._hotel.resetCheckDate();
             document.getElementById("reservation_users").setAttribute("class", "media_menu_item active");
             document.getElementById("add_reservation").setAttribute("class", "media_menu_item");
@@ -1261,7 +1293,6 @@ function Booking_manage(schedule_data, booking_package_dictionary, webApp) {
                         add_reservationPanel.setAttribute("class", "");
                         object.add_reservation(add_reservationPanel, month, day, year, calendarData, accountKey, add_reservation_callback);
                         
-                        
                     }
                     
                 }
@@ -1327,6 +1358,16 @@ function Booking_manage(schedule_data, booking_package_dictionary, webApp) {
             };
             
             object.editPanelShow(true);
+
+            // 予約ボタンが表示された後にイベントを仕込む
+            setTimeout(() => {
+                const reserveButton = document.querySelector('#rightButtonPanel .button.media-button.button-primary');
+                if (reserveButton) {
+                    reserveButton.addEventListener("click", function () {
+                        object.sendToReceivePHP(); // ← sendToReceivePHPはobjectに追加した関数
+                    });
+                }
+            }, 100);
                 
         }
         
@@ -1649,6 +1690,7 @@ function Booking_manage(schedule_data, booking_package_dictionary, webApp) {
             
             if (calendarData.account.type === 'day') {
                 
+                // ▼ 時間 (例: 14:30)
                 var th = document.createElement("th");
                 th.setAttribute("scope", "row");
                 th.textContent = object._calendar.getPrintTime(customer.date.hour, customer.date.min);
@@ -1656,32 +1698,34 @@ function Booking_manage(schedule_data, booking_package_dictionary, webApp) {
                 
             }
             
-            var bookingId = document.createElement('div');
-            bookingId.textContent = customer.key;
-            var bookingIdTd = document.createElement("td");
-            bookingIdTd.setAttribute("scope", "row");
-            bookingIdTd.appendChild(bookingId);
-            tr.appendChild(bookingIdTd);
+            // ▼ 予約ID（例: 56, 57...）
+            // var bookingId = document.createElement('div');
+            // bookingId.textContent = customer.key;
+            // var bookingIdTd = document.createElement("td");
+            // bookingIdTd.setAttribute("scope", "row");
+            // bookingIdTd.appendChild(bookingId);
+            // tr.appendChild(bookingIdTd);
             
-            var status = document.createElement("div");
-            status.setAttribute("data-key", key);
-            status.textContent = object._i18n.get(customer.status.toLowerCase());
-            var statusClassName = "pendingLabel";
-            if (customer.status.toLowerCase() == "approved") {
+            // ▼ ステータス（例: 承認済み）
+            // var status = document.createElement("div");
+            // status.setAttribute("data-key", key);
+            // status.textContent = object._i18n.get(customer.status.toLowerCase());
+            // var statusClassName = "pendingLabel";
+            // if (customer.status.toLowerCase() == "approved") {
                 
-                statusClassName = "approvedLabel";
+            //     statusClassName = "approvedLabel";
                 
-            } else if (customer.status.toLowerCase() == "canceled") {
+            // } else if (customer.status.toLowerCase() == "canceled") {
                 
-                statusClassName = "canceledLabel";
+            //     statusClassName = "canceledLabel";
                 
-            }
-            status.classList.add(statusClassName);
+            // }
+            // status.classList.add(statusClassName);
             
-            var td = document.createElement("td");
-            td.setAttribute("scope", "row");
-            td.appendChild(status);
-            tr.appendChild(td);
+            // var td = document.createElement("td");
+            // td.setAttribute("scope", "row");
+            // td.appendChild(status);
+            // tr.appendChild(td);
             
             (function(formData, praivateData, callback) {
                 
@@ -1724,22 +1768,49 @@ function Booking_manage(schedule_data, booking_package_dictionary, webApp) {
                 callback(sort);
                 
             })(object._formData, customer.praivateData, function(praivateData) {
-                
                 object._console.log(praivateData);
-                for (var i = 0; i < 5; i++) {
+                
+                for (var i = 0; i < 2; i++) {
+
+                    // ▼ コース名（courseNamePanel）
+                    const tdCourse = document.createElement("td");
+                    const courseNames = customer.options.map(service => service.name);
+                    tdCourse.textContent = courseNames.join(", ");
+                    tr.appendChild(tdCourse);
+
+                    // ▼ オプション名（optionPanel）
+                    const tdOption = document.createElement("td");
+                    const optionNames = [];
+
+                    customer.options.forEach(service => {
+                        service.options.forEach(option => {
+                            if (parseInt(option.selected) === 1) {
+                                optionNames.push(option.name);
+                            }
+                        });
+                    });
+
+                    tdOption.textContent = optionNames.join(", ");
+                    tr.appendChild(tdOption);
                     
-                    if (praivateData[i] != null) {
-                        
-                        if (typeof praivateData[i].value == "string") {
-                            
-                            praivateData[i].value = praivateData[i].value.replace(/\\/g, "");
-                            
+                    // 予約済みの顧客で表示するリスト
+                    const targetIndexes = [2, 9];
+
+                    // 存在するインデックスだけ抽出
+                    const validIndexes = targetIndexes.filter(i => praivateData[i] != null);
+                    
+                    // 存在する件数だけループ
+                    for (var i = 0; i < validIndexes.length; i++) {
+                        const index = validIndexes[i];
+                        let value = praivateData[index].value;
+                    
+                        if (typeof value === "string") {
+                            value = value.replace(/\\/g, "");
                         }
-                        
-                        var td = document.createElement("td");
-                        td.textContent = praivateData[i].value;
+                    
+                        const td = document.createElement("td");
+                        td.textContent = value;
                         tr.appendChild(td);
-                        
                     }
                     
                 }
@@ -1835,25 +1906,35 @@ function Booking_manage(schedule_data, booking_package_dictionary, webApp) {
                     const timeTablePanel = document.createElement('div');
                     timeTablePanel.classList.add('timeTablePanel');
                     reservation_usersPanel.appendChild(timeTablePanel);
-                    for (var i = 0; i < 24; i++) {
-                        
+
+                    // ←★ここに入れる
+                    timeTablePanel.textContent = '';
+                    window.bookingGroupWrappers = {};
+                    
+                    // 30分刻みのループ（9:00〜15:30）
+                    for (let t = 9.0; t < 16.0; t += 0.5) {
+                        // 時と分を取得
+                        const hour = Math.floor(t);
+                        const minute = (t % 1 === 0) ? '00' : '30';
+                    
+                        const timeStr = String(hour).padStart(2, '0') + ':' + minute;
+                        const gridRowStart = Math.floor(t * 60); // 30分刻みなら、9:00=540, 9:30=570,...
+                    
+                        // 時間ラベルの生成
                         let timeSlot = document.createElement('div');
-                        timeSlot.setAttribute('style', 'grid-row-start: ' + (i * 60) + ';');
+                        timeSlot.setAttribute('style', 'grid-row-start: ' + gridRowStart + ';');
                         timeSlot.classList.add('timeSlotForDay');
-                        timeSlot.textContent = object._calendar.getPrintTime(String(i).padStart(2, '0'), '00');
+                        timeSlot.textContent = timeStr;
+                    
+                        // 予約スロットの生成
                         let customerBox = document.createElement('div');
-                        customerBox.setAttribute('style', 'grid-row-start: ' + (i * 60) + ';');
+                        customerBox.setAttribute('style', 'grid-row-start: ' + gridRowStart + ';');
                         customerBox.classList.add('customerBoxForDay');
-                        if (i === 0) {
-                            
-                            timeSlot.setAttribute('style', 'grid-row-start: 1;');
-                            customerBox.setAttribute('style', 'grid-row-start: 1;');
-                            
-                        }
+                    
+                        // パネルに追加
                         timeTablePanel.appendChild(timeSlot);
                         timeTablePanel.appendChild(customerBox);
-                        
-                    }
+                    }                    
                     
                     const addEmptyTimeSlots = function() {
                         
@@ -1933,6 +2014,30 @@ function Booking_manage(schedule_data, booking_package_dictionary, webApp) {
                     let gridCustomers = [];
                     gridCustomers.push(addEmptyTimeSlots());
                     let columns = 1;
+
+                    // 3軸の処理
+                    function createCustomerBoxForDayGrid() {
+                        const timeTablePanel = document.querySelector('.timeTablePanel');
+
+                        // ★ まず古い枠を削除（ここが重要！）
+                        const oldBoxes = timeTablePanel.querySelectorAll('.customerBoxForDay');
+                        oldBoxes.forEach(box => box.remove());
+
+                        const start = 540; // 9:00
+                        const end = 930;   // 15:30
+                    
+                        for (let row = start; row <= end; row += 30) {
+                            for (let col = 2; col <= 4; col++) {
+                                const box = document.createElement('div');
+                                box.classList.add('customerBoxForDay');
+                                box.setAttribute('style', `grid-row-start: ${row}; grid-column-start: ${col}; grid-column-end: ${col + 1};`);
+                                timeTablePanel.appendChild(box);
+                            }
+                        }
+                    }
+                    
+                    createCustomerBoxForDayGrid(); // ← 毎回実行でOK
+
                     for (var i = 0; i < reservationList.length; i++) {
                         
                         let customer = reservationList[i];
@@ -2004,48 +2109,144 @@ function Booking_manage(schedule_data, booking_package_dictionary, webApp) {
                         }
                         
                         const name = (function(praivateData) {
-                            
-                            var name = [];
-                            for (var i = 0; i < praivateData.length; i++) {
-                                
+                            for (let i = 0; i < praivateData.length; i++) {
                                 if (praivateData[i].isName == "true") {
-                                    
-                                    name.push(praivateData[i].value);
-                                    
+                                    return praivateData[i].value;
                                 }
-                                
                             }
-                            return name.join(" ");
-                            
+                            return '';
                         })(customer.praivateData);
                         
                         const customerInfoLabel = document.createElement('div');
                         customerInfoLabel.classList.add('customerInfoLabel');
-                        customerInfoLabel.textContent = object._calendar.getPrintTime(customer.date.hour, customer.date.min) + " ID: " + customer.key + "\n" + name + "\n" + serviceDetails.services.join(', ');
+                        // 備考やその他の項目を追加（例：index 9）
+                        const targetIndexes = [9];
+                        const extraInfo = (customer.praivateData || [])
+                            .filter((_, i) => targetIndexes.includes(i) && customer.praivateData[i]?.value)
+                            .map((item, i) => {
+                                let value = customer.praivateData[targetIndexes[i]]?.value || '';
+                                return typeof value === "string" ? value.replace(/\\/g, "") : value;
+                            })
+                            .filter(v => v) // 空文字は除外
+                            .join('\n');
+
+                        // 表示をまとめる
+                        customerInfoLabel.textContent = [
+                            name,
+                            serviceDetails.services.join(', '),
+                            extraInfo
+                        ].filter(Boolean).join(', ');
+
+                        // customerInfoLabel.textContent = object._calendar.getPrintTime(customer.date.hour, customer.date.min) + " ID: " + customer.key + "\n" + name + "\n" + serviceDetails.services.join(', ');
+
                         let style = 'grid-column-start: ' + (result.columns + 1) + '; grid-column-end: ' + (result.columns + 2) + '; grid-row-start: ' + startMinutes + '; height: ' + (serviceTime * 2) + 'px; z-index: ' + (i + 1) + ';';
                         if (serviceTime === 0) {
                             
-                            customerInfoLabel.textContent = object._calendar.getPrintTime(customer.date.hour, customer.date.min) + " ID: " + customer.key + "\n" + name;
+                            // customerInfoLabel.textContent = object._calendar.getPrintTime(customer.date.hour, customer.date.min) + " ID: " + customer.key + "\n" + name;
+                            customerInfoLabel.textContent = name;
                             customerInfoLabel.setAttribute('style', 'white-space: nowrap;');
                             style = 'grid-column-start: ' + (result.columns + 1) + '; grid-column-end: ' + (result.columns + 2) + '; grid-row-start: ' + startMinutes + '; height: fit-content; z-index: ' + (i + 1) + ';';
                             
                         }
+
+                        // ループ外または初回実行時にカウンタを初期化（なければ）
+                        if (typeof window.firstVisitCount === 'undefined') {
+                            window.firstVisitCount = 0;
+                        }
+                        if (typeof window.repeatVisitCount === 'undefined') {
+                            window.repeatVisitCount = 0;
+                        }
+
+                        // --- カテゴリ振り分け: 初診 → 2列、再診 → 3列、その他 → 4列 ---
+                        let category = '';
+                        if (customer.options.some(opt => opt.name.includes('初診'))) {
+                            category = 'first';
+                        } else if (customer.options.some(opt => opt.name.includes('再診'))) {
+                            category = 'repeat';
+                        } else {
+                            category = 'other';
+                        }                                                
+
+                        // ここまでで、各予約要素は固定の列番号（2,3,4）となっています。
+                        // 次に、同じカテゴリかつ同じ時間（startMinutes）のもの同士をひとまとめに<div class="flex">で囲みます。
+
+                        // ここではグループ用のラッパーを管理するグローバルオブジェクトを使用します
+                        if (typeof window.bookingGroupWrappers === 'undefined') {
+                            window.bookingGroupWrappers = {};
+                        }
+
+                        object._console.log(gridCustomers);
+                        object._console.log('columns = ' + columns);
                         
+                        timeTablePanel.style.gridTemplateColumns = '80px repeat(3, 1fr)';
+
+                        // グループキーは「カテゴリ_開始時間」として作成（例："first_540"）
+                        let groupKey = category + '_' + startMinutes;
+
+                        // グループラッパーが存在しなければ作成
+                        if (!window.bookingGroupWrappers[groupKey]) {
+                            let flexWrapper = document.createElement('div');
+                            flexWrapper.classList.add('flex');
+                            flexWrapper.classList.add(category + '-group');
+                            flexWrapper.style.display = 'flex';
+                            flexWrapper.style.flexDirection = 'column';
+
+                            // カテゴリに応じて gridColumnStart/End の値を設定する
+                            let columnStart = 2;
+                            if (category === 'first') {
+                                columnStart = 2;
+                            } else if (category === 'repeat') {
+                                columnStart = 3;
+                            } else {
+                                columnStart = 4;
+                            }
+
+                            flexWrapper.style.gridColumnStart = columnStart;
+                            flexWrapper.style.gridColumnEnd = columnStart + 1;
+                            flexWrapper.style.gridRowStart = startMinutes;
+                        
+                            // 対応するboxに追加
+                            let matchedBox = Array.from(document.querySelectorAll('.customerBoxForDay')).find(cell => {
+                                const row = parseInt(cell.style.gridRowStart);
+                                const col = parseInt(cell.style.gridColumnStart);
+                                return row === startMinutes && col === columnStart;
+                            });
+                        
+                            if (matchedBox) {
+                                matchedBox.appendChild(flexWrapper);
+                            } else {
+                                console.warn("該当する枠が見つからなかったため、直接追加します");
+                                timeTablePanel.appendChild(flexWrapper);
+                            }
+                        
+                            window.bookingGroupWrappers[groupKey] = flexWrapper;
+                        }
+
+                        let currentFlexContainer = window.bookingGroupWrappers[groupKey];
+
+
+                        // 予約パネル作成（既存のコード通り）
                         let customerPanel = document.createElement('div');
                         customerPanel.appendChild(customerInfoLabel);
                         customerPanel.setAttribute('data-key', i);
                         customerPanel.setAttribute('style', style);
                         customerPanel.setAttribute('class', statusClassName + ' bookedCustomerPanel');
-                        timeTablePanel.appendChild(customerPanel);
+
+                        if (category === 'first') {
+                            customerPanel.classList.add('first-time-panel'); // ★ここに追記
+                        }
+                        if (category === 'other') {
+                            customerPanel.classList.add('other-time-panel'); // ★ここに追記
+                        }
+
+                        // ここで、直接 timeTablePanel に追加するのではなく、同じグループの flexWrapper に追加
+                        window.bookingGroupWrappers[groupKey].appendChild(customerPanel);
+
                         if (i === 0 && scrollFocus === 'customer') {
-                            
                             let timer = setInterval(function(){
-                                
                                 customerPanel.scrollIntoView({ behavior: "smooth", block: "start" });
                                 clearInterval(timer);
-                                
                             }, 300);
-                            
                         }
                         
                         customerPanel.onclick = function(){
@@ -2075,19 +2276,6 @@ function Booking_manage(schedule_data, booking_package_dictionary, webApp) {
                             });
                             
                         };
-                        
-                    }
-                    
-                    object._console.log(gridCustomers);
-                    object._console.log('columns = ' + columns);
-                    
-                    timeTablePanel.setAttribute('style', 'grid-template-columns: 80px repeat(' + columns + ', 1fr);');
-                    var customerBoxes = timeTablePanel.querySelectorAll('.customerBoxForDay');
-                    for (var i = 0; i < customerBoxes.length; i++) {
-                        
-                        let style = customerBoxes[i].getAttribute('style');
-                        style += ' grid-column-start: 2; grid-column-end: ' + (columns + 2) + ';';
-                        customerBoxes[i].setAttribute('style', style);
                         
                     }
                     
@@ -3508,6 +3696,59 @@ function Booking_manage(schedule_data, booking_package_dictionary, webApp) {
             courseChange.setAttribute("data-status", data_status);
             
         }
+
+        function hideSpecialRows(retry = 0) {
+            const planNames = [...document.querySelectorAll('.courseLinePanel .planName')].map(el => el.textContent);
+          
+            const hasReshin = planNames.some(text => text.includes('再診'));
+            const hasShoshinOrStarLux = planNames.some(text => text.includes('初診') || text.includes('スターラックス'));
+          
+            // ▼ ID行（元々IDというラベルの行）を特定
+            const idRow = [...document.querySelectorAll('#inputFormPanel .row')].find(row => {
+              const nameEl = row.querySelector('.name');
+              return nameEl && nameEl.textContent.trim() === 'ID';
+            });
+          
+            if (idRow) {
+              // ★ 一時的な識別属性を付ける
+              idRow.setAttribute("data-id-converted", "true");
+          
+              const nameEl = idRow.querySelector('.name');
+              nameEl.textContent = '診察券番号';
+            //   console.log('🔤 IDラベルを「診察券番号」に変更');
+          
+              if (hasReshin) {
+                idRow.classList.add('hidden_panel');
+                // console.log('✅ 再診あり → 診察券番号ラベル行（元ID）を非表示');
+              }
+            }
+          
+            // ▼ 診察券番号ラベルを持つ行の中から、元ID行（data-id-converted付き）以外を非表示
+            if (hasShoshinOrStarLux) {
+              const rows = [...document.querySelectorAll('#inputFormPanel .row')].filter(row => {
+                const nameEl = row.querySelector('.name');
+                return nameEl && nameEl.textContent.trim() === '診察券番号';
+              });
+          
+              for (const row of rows) {
+                if (!row.hasAttribute("data-id-converted")) {
+                  row.classList.add('hidden_panel');
+                  console.log('✅ 初診またはスターラックスあり → 診察券番号（別）を非表示');
+                }
+              }
+            }
+          
+            if (retry < 10) {
+              setTimeout(() => {
+                hideSpecialRows(retry + 1);
+              }, 100);
+            }
+          }          
+                       
+          setTimeout(() => {
+            hideSpecialRows(); // ← retryは初期値0で始まる
+          }, 100);
+          
         
     }
     
@@ -4230,7 +4471,6 @@ function Booking_manage(schedule_data, booking_package_dictionary, webApp) {
                 }
                 formPanel.appendChild(rowPanel);
                 formPanelList.push(rowPanel);
-                
             }
             
         }
@@ -5152,6 +5392,43 @@ function Booking_manage(schedule_data, booking_package_dictionary, webApp) {
 	}
     
     this.add_reservation = function(add_reservationPanel, month, day, year, calendarData, accountKey, callback){
+
+        const observer = new MutationObserver(() => {
+            const planNameEls = document.querySelectorAll('.planName');
+            let hasKeyword = false;
+        
+            planNameEls.forEach(el => {
+                // // 管理画面でサービス選択されていない場合
+                // if (el.textContent.includes('(初診) ほくろ除去')) {
+                //     el.textContent = '選択なし';
+                //     console.log('🟢 「(初診) ほくろ除去」を「選択なし」に変更しました');
+                // }
+                // 管理画面以下選択時は診察券番号を非表示にする
+                if (
+                    el.textContent.includes('初診') ||
+                    el.textContent.includes('スターラックス') ||
+                    el.textContent.includes('選択なし')
+                ) {
+                    hasKeyword = true;
+                }
+            });
+        
+            if (hasKeyword) {
+                const allRows = document.querySelectorAll('#inputFormPanel .row');
+                allRows.forEach(row => {
+                    const nameEl = row.querySelector('.name');
+                    if (nameEl && nameEl.textContent.trim() === '診察券番号') {
+                        if (!row.classList.contains('hidden_panel')) {
+                            row.classList.add('hidden_panel');
+                            console.log('🟡 診察券番号の行を非表示にしました');
+                        }
+                    }
+                });
+            }
+        });
+        
+        // 監視開始はそのままでOK
+        observer.observe(document.body, { childList: true, subtree: true });              
         
         var object = this;
         object._buttonAction = "add_reservation";
@@ -5464,11 +5741,9 @@ function Booking_manage(schedule_data, booking_package_dictionary, webApp) {
             bookingCalendar(calendarData);
             
             object.createForm(mainPanel, courseMainPanel, scheduleMainPanel, formMainPanel, month, day, year, calendarData, course, null, null, accountKey, function(response){
-                
-                if(response.action == 'refresh'){
-                    
+
+                if (response.action == 'refresh') {
                     callback(response);
-                    
                 }
                 
             });
@@ -5530,8 +5805,8 @@ function Booking_manage(schedule_data, booking_package_dictionary, webApp) {
                                 object._console.log(response);
                                 courseList[parseInt(response.key)].selectedOptionsList = response.selectedOptions;
                                 object.createSchedule(mainPanel, courseMainPanel, scheduleMainPanel, formMainPanel, month, day, year, calendarData, courseList, response.selectedOptions, accountKey, function(response){
-                                    
-                                    callback(response);
+
+                                callback(response); // ← 元の処理も忘れずに
                                     
                                 });
                                 //callback(response);
@@ -5636,6 +5911,14 @@ function Booking_manage(schedule_data, booking_package_dictionary, webApp) {
                     table_row.appendChild(coursePanel);
                     
                     courseMainPanel.appendChild(table_row);
+
+                    // // 🔽 サービスを選択しない場合の表示
+                    // const courseNameLabels = document.querySelectorAll('.courseListPanel .courseAndScheduleRow span span');
+                    // courseNameLabels.forEach(label => {
+                    //     if (label.textContent.includes('(初診) ほくろ除去')) {
+                    //         label.textContent = '選択なし';
+                    //     }
+                    // });
                     
                     coursePanel.onclick = function(){
                         
@@ -5766,12 +6049,8 @@ function Booking_manage(schedule_data, booking_package_dictionary, webApp) {
                 
             }
             
-        }
-        
-        
-        
-        
-        
+        }      
+    
     }
     
     this.getOptionsPanel = function(course, options, guestsList, closeWithClick, callback){
@@ -5999,6 +6278,8 @@ function Booking_manage(schedule_data, booking_package_dictionary, webApp) {
             }
             
         });
+
+        setTimeout(ensureAgeOptions, 1000); // ← 遅延でDOM構築完了後に実行
         
     }
     
@@ -8724,7 +9005,91 @@ function Booking_manage(schedule_data, booking_package_dictionary, webApp) {
         return {services: services, goodsList: goodsList, totalCost: totalCost};
         
     };
+
+    // GAS送信
+    const observer = new MutationObserver(() => {
+        const buttons = document.querySelectorAll('#rightButtonPanel .button');
+        const reserveButton = Array.from(buttons).find(btn => btn.textContent.includes('予約する'));
     
+        if (reserveButton && !reserveButton.dataset.gasSendSetup) {
+            // console.log("🟢 予約ボタンを検知しました");
     
+            reserveButton.dataset.gasSendSetup = "true"; // 二重登録防止
+    
+            reserveButton.addEventListener("click", function () {
+
+                object.sendToReceivePHP = function() {
+                    const bookingID = window.bookingID || "不明";
+                    const payload = {
+                        bookingID: bookingID,
+                        tracking: {
+                            referrer: localStorage.getItem("initial_referrer") || document.referrer || "",
+                            link: localStorage.getItem("initial_landing_page") || window.location.href,
+                            bookingID: bookingID
+                        },
+                        input: {
+                            booking_package_input_number: document.getElementById("input_number")?.value || "",
+                            booking_package_input_name: document.getElementById("input_name")?.value || "",
+                            booking_package_input_kana: document.getElementById("input_kana")?.value || "",
+                            booking_package_input_age: document.getElementById("input_age")?.value || "",
+                            booking_package_input_tel: document.getElementById("input_tel")?.value || "",
+                            booking_package_input_email: document.getElementById("input_email")?.value || "",
+                            booking_package_input_other: document.getElementById("input_other")?.value || ""
+                        },
+                        service: {
+                            service: document.querySelector('#booking_package_selectedServicesPanel .courseLinePanel .planName')?.textContent || "",
+                            option: document.querySelector('#booking_package_selectedServicesPanel ul li div .planName')?.textContent || "",
+                            date: (() => {
+                                const valueText = document.querySelector('#inputFormPanel .row:nth-child(2) .value')?.textContent?.trim() || "";
+                                return valueText.split(',')[0].trim();
+                            })(),
+                            time: (() => {
+                                const valueText = document.querySelector('#inputFormPanel .row:nth-child(2) .value')?.textContent?.trim() || "";
+                                return valueText.split(',')[1]?.trim() || "";
+                            })()
+                        }
+                    };
+
+                    fetch("/wp-content/themes/ikebukuro_sunshine/receive.php", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(payload)
+                    }).then(res => res.text())
+                    // .then(text => console.log("✅ GAS送信成功", text))
+                    // .catch(err => console.error("❌ GAS送信失敗", err));
+                };
+
+            });
+        }
+    });
+    
+    observer.observe(document.body, { childList: true, subtree: true });    
     
 }
+
+
+// 年齢セレクトに16〜65歳を追加する関数
+function ensureAgeOptions() {
+    const ageSelect = document.getElementById('input_age');
+    if (!ageSelect) return;
+
+    if (ageSelect.options.length < 50) { // 誤って削られてる時も対応
+        ageSelect.innerHTML = ''; // 一度クリアして再構築
+
+        for (let i = 16; i <= 65; i++) {
+            const option = document.createElement('option');
+            option.value = i;
+            option.textContent = i;
+            ageSelect.appendChild(option);
+        }
+        // console.log("✅ 年齢オプションを追加しました");
+    }
+}
+
+// 💡 0.2秒ごとに #input_age の状態を確認・復元
+setInterval(() => {
+    ensureAgeOptions();
+}, 200);
+
+
+

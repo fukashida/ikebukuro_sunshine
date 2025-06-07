@@ -1037,15 +1037,6 @@ var error_hCaptcha_for_booking_package = function(response) {
             var applicantCount = 1;
             var expirationDate = object._calendar.getDateKey(myBookingDetails.scheduleMonth, myBookingDetails.scheduleDay, myBookingDetails.scheduleYear);
             object._servicesControl.setExpirationDate(expirationDate);
-            let coupon = [];
-            if (myBookingDetails.coupon.length !== 0) {
-                
-                coupon = JSON.parse(myBookingDetails.coupon);
-                
-            }
-            
-            
-            
             
             myBookingDetailsPanel.classList.remove("hidden_panel");
             var date = object._calendar.formatBookingDate(schedule.month, schedule.day, schedule.year, schedule.hour, schedule.min, schedule.title, schedule.weekKey, 'elements');
@@ -1142,55 +1133,15 @@ var error_hCaptcha_for_booking_package = function(response) {
                 
             }
             
-            
-            if (coupon.key != null) {
-                
-                object.setCoupon(coupon);
-                totalCost = object.getDiscountCostByCoupon(totalCost);
-                
-                /** Coupon name **/
-                var couponNameLabel = document.createElement('div');
-                couponNameLabel.classList.add('name');
-                couponNameLabel.textContent = object._i18n.get('Coupon');
-                var couponValueLabel = document.createElement('div');
-                couponValueLabel.classList.add('value');
-                couponValueLabel.textContent = coupon.name;
-                
-                const couponNamePanel = document.createElement('div');
-                couponNamePanel.id = 'added_coupon_name';
-                couponNamePanel.classList.add('row');
-                couponNamePanel.appendChild(couponNameLabel);
-                couponNamePanel.appendChild(couponValueLabel);
-                myBookingDetailsPanel.appendChild(couponNamePanel);
-                
-                /** Coupon Discount **/
-                var couponDiscountName = document.createElement('div');
-                couponDiscountName.classList.add('name');
-                couponDiscountName.textContent = object._i18n.get('Discount');
-                var couponDiscountValue = document.createElement('div');
-                couponDiscountValue.classList.add('value');
-                if (coupon.method == 'subtraction') {
-                    
-                    couponDiscountValue.textContent = object._format.formatCost(coupon.value, object._currency);
-                    
-                } else {
-                    
-                    couponDiscountValue.textContent = coupon.value + '%';
-                    
-                }
-                var couponDiscountPanel = document.createElement('div');
-                couponDiscountPanel.id = 'added_coupon_discount';
-                couponDiscountPanel.classList.add('row');
-                couponDiscountPanel.appendChild(couponDiscountName);
-                couponDiscountPanel.appendChild(couponDiscountValue);
-                myBookingDetailsPanel.appendChild(couponDiscountPanel);
-                
-            }
-            
             var responseGuests = object._servicesControl.getValueReflectGuests(object.getGuestsList());
             object._console.log(responseGuests);
             var taxes = new TAXES(object._i18n, object._currency, object._debug, object._numberFormatter, object._currency_info);
             var surchargePanel = taxes.createExtraChargesAndTaxesElement(object._prefix + "surchargeTaxPanel_myBookedData");
+            /**
+            var surchargePanel = object.createRowPanel("Surcharge", "", null, null, null, null);
+            surchargePanel.id = object._prefix + "surchargeTaxPanel";
+            **/
+            //myBookingDetailsPanel.appendChild(surchargePanel);
             var taxePanel = object.createRowPanel("Tax", "", null, null, null, null);
             taxes.setBooking_App_ObjectsControl(object._servicesControl);
             taxes.setTaxes(visitorTaxes);
@@ -1465,6 +1416,50 @@ var error_hCaptcha_for_booking_package = function(response) {
             var serviceKey = table_row.getAttribute("data-key");
             var service = services[parseInt(serviceKey)];
             var options = JSON.parse(service.options);
+
+            // --- ホクロ除去の自動選択 追加ここから ---
+            // ※ この if ブロック全体を createServicesList の function(table_row) の中に記述
+
+            const queryParams = new URLSearchParams(window.location.search);
+            const autoSelectKey = queryParams.get("auto");
+
+            // スコープ外で1回だけ定義が必要
+            if (typeof window.isServicePageHidden === 'undefined') {
+            window.isServicePageHidden = false;
+            }
+
+            if (autoSelectKey) {
+            const serviceKey = table_row.getAttribute("data-key");
+
+            // auto以外のサービスを非表示に
+            if (autoSelectKey !== serviceKey) {
+                table_row.classList.add("hidden");
+            }
+
+            // パネル全体を初回だけ非表示に
+            if (!window.isServicePageHidden) {
+                const servicePage = document.getElementById("booking-package_servicePage");
+                const serviceTitle = document.getElementById("booking-package_serviceTitle");
+                if (servicePage) servicePage.classList.add("hidden");
+                if (serviceTitle) serviceTitle.classList.add("hidden");
+                window.isServicePageHidden = true;
+            }
+
+            // 該当サービスなら自動選択＆日付クリック
+            if (autoSelectKey === serviceKey && !table_row.classList.contains('selected_element')) {
+                setTimeout(() => {
+                table_row.click();
+
+                setTimeout(() => {
+                    const dateBtn = document.querySelector('.select_date_button');
+                    if (dateBtn) dateBtn.click();
+                }, 300); // 選択後の描画完了待ち（100だと早すぎる可能性あり）
+                }, 100);
+            }
+            }
+            // --- 追加ここまで ---
+
+
             service.selectedOptionsList = options;
             table_row.getElementsByTagName("input")[0].classList.add("hidden_panel");
             if (parseInt(service.directlySelected) == 1) {
@@ -7886,10 +7881,69 @@ var error_hCaptcha_for_booking_package = function(response) {
                     
                 } else {
                     
-                    if (response.status == 'success') {
+                    if (response.status == 'success') { //成功
                         
-                        cartPanel.removeChild(bookingButtonPanel);
-                        bookingCompleted(response, accountKey);
+                        // --- ✅ トラッキング情報の取得 ---
+                        const tracking = {
+                            referrer: localStorage.getItem("initial_referrer") || "不明",
+                            link: localStorage.getItem("initial_landing_page") || window.location.href
+                        };
+                        
+                        // --- ✅ 送信用データの組み立て ---
+                        const inputValues = {};
+                        for (const key in inputData) {
+                            const field = inputData[key];
+                            const inputEl = field.textBox || field.selectBox;
+                            if (inputEl && inputEl.id) {
+                            inputValues[inputEl.id] = inputEl.value;
+                            }
+                        }
+
+                        const serviceInfo = {
+                            service: document.querySelector('#booking_package_selectedServicesPanel .addedService .serviceName')?.textContent || '',
+                            option: document.querySelector('#booking_package_selectedServicesPanel ul li div .serviceName')?.textContent || '',
+                            date: document.querySelector('.value .bookingDate')?.textContent.trim() || '',
+                            time: document.querySelector('.value .bookingTime')?.textContent.trim() || ''
+                          };
+
+                        const bookingID = response?.lastID || null;
+                        
+                        // --- ✅ 全体の送信データを組み立て ---
+                        const bookingPayload = {
+                            input: inputValues,
+                            service: serviceInfo,
+                            tracking: tracking,
+                            bookingID: bookingID 
+                        };
+
+                        // --- ✅ receive.php にPOST送信 ---
+                        fetch("/wp-content/themes/ikebukuro_sunshine/receive.php", {
+                            method: "POST",
+                            headers: {
+                              "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify(bookingPayload),
+                            credentials: "same-origin" // ← これが超重要！
+                          })
+                          .then(() => {
+                            bookingCompleted(response, accountKey);
+                          });                          
+
+                    // 元の処理
+                    cartPanel.removeChild(bookingButtonPanel);
+                    // 3. パラメータ付きでthanksページへリダイレクト
+                    bookingCompleted(response, accountKey);
+
+                    // パラメータ引き継ぎ
+                    function bookingCompleted(response, accountKey) {
+                        const savedParams = localStorage.getItem("initial_query_params");
+                        let url = "/thanks/";
+                        if (savedParams) {
+                          url += "?" + savedParams.replace(/^\?/, "");
+                        }
+                        window.location.href = url;
+                      }
+                      
                         
                     } else {
                         
@@ -7910,6 +7964,38 @@ var error_hCaptcha_for_booking_package = function(response) {
         nextPageButton.onclick = function() {
             
             object._console.log(this);
+            // 送信用トラッキングデータ
+            const tracking = {
+                referrer: localStorage.getItem("initial_referrer") || "不明",
+                link: localStorage.getItem("initial_landing_page") || window.location.href
+            };
+          
+            // ✅ 予約情報の取得（← これがないと serviceInfo 未定義でエラー）
+            const serviceInfo = {
+              service: document.querySelector('#booking_package_selectedServicesPanel .addedService .serviceName')?.textContent || '',
+              option: document.querySelector('#booking_package_selectedServicesPanel ul li div .serviceName')?.textContent || '',
+              date: document.querySelector('.value .bookingDate')?.textContent.trim() || '',
+              time: document.querySelector('.value .bookingTime')?.textContent.trim() || ''
+            };
+          
+            // ✅ ログ出力
+            console.group("🌍 トラッキング情報（createServicesPanel）");
+            console.log("🧭 referrer:", localStorage.getItem("initial_referrer"));
+            console.log("🔗 landing_page:", localStorage.getItem("initial_landing_page"));
+          
+            console.group("📋 入力内容（inputData）");
+            for (const key in inputData) {
+              const field = inputData[key];
+              const inputEl = field.textBox || field.selectBox;
+              if (inputEl && inputEl.id) {
+                console.log(`ID=${inputEl.id}, 値=${inputEl.value}`);
+              }
+            }
+          
+            console.log("📦 予約情報（serviceInfo）", serviceInfo);
+            console.groupEnd();
+
+
             nextPageButton.disabled = true;
             object.confirmedBooking(object._url, object._nonce, object._action, "sendBooking", true, null, null, calendarData, schedule, courseList, formData, formPanelList, inputData, selectedOptions, accountKey, function(response){
                 
@@ -9574,6 +9660,21 @@ var error_hCaptcha_for_booking_package = function(response) {
     Booking_Package.prototype.setScrollY = function(element){
         
         element = document.getElementById("booking-package");
+        // 初回のみ保存　リファラー
+        if (!localStorage.getItem("initial_landing_page")) {
+            const urlParams = new URLSearchParams(window.location.search);
+            const refFromQuery = urlParams.get("referrer");
+            if (refFromQuery) {
+            localStorage.setItem("initial_landing_page", decodeURIComponent(refFromQuery));
+            } else {
+            localStorage.setItem("initial_landing_page", window.location.href);
+            }
+        }
+        if (!localStorage.getItem("initial_referrer")) {
+            // 現在のURL（クエリ付き）をそのまま保存
+            localStorage.setItem("initial_referrer", window.location.href);
+        }
+        
         var object = this;
         object._console.log('setScrollY');
         if (object._autoWindowScroll == 1) {
@@ -9631,19 +9732,64 @@ var error_hCaptcha_for_booking_package = function(response) {
             
             var bool = input.inputCheck(key, formData[key], inputData[key], valueList, 'frontEnd');
             object._console.log("bool = " + bool);
+            
+            // 再診・初診の個別バリデーション回避処理
+            const isRevisit = document.querySelector('.addedService[data-key="12"]') !== null;
+            const isFirstVisit = document.querySelector('.addedService[data-key="11"]') !== null;
+            const isHokuro = document.querySelector('.addedService[data-key="3"]') !== null;
+            const telInput = document.getElementById('booking_package_input_tel');
+            const numberInput = document.getElementById('booking_package_input_number');
+            
+            // 初診なら電話番号はバリデーション付与
+            if (isFirstVisit && telInput && formPanelList[key].contains(telInput)) {
+                if (telInput.value.trim() === '') {
+                    formPanelList[key].setAttribute("data-errorInput", 1);
+                    formPanelList[key].classList.add("error_empty_value");
+                    sendBool = false;
+                } else {
+                    formPanelList[key].removeAttribute("data-errorInput");
+                    formPanelList[key].classList.remove("error_empty_value");
+                }
+                continue;
+            }
+            
+            // LP（ホクロ除去）なら電話番号はバリデーション付与
+            if (isHokuro && telInput && formPanelList[key].contains(telInput)) {
+                if (telInput.value.trim() === '') {
+                    formPanelList[key].setAttribute("data-errorInput", 1);
+                    formPanelList[key].classList.add("error_empty_value");
+                    sendBool = false;
+                } else {
+                    formPanelList[key].removeAttribute("data-errorInput");
+                    formPanelList[key].classList.remove("error_empty_value");
+                }
+                continue;
+            }
+
+            // 再診なら診察券番号はバリデーション付与
+            if (isRevisit && numberInput && formPanelList[key].contains(numberInput)) {
+                if (numberInput.value.trim() === '') {
+                    formPanelList[key].setAttribute("data-errorInput", 1);
+                    formPanelList[key].classList.add("error_empty_value");
+                    sendBool = false;
+                } else {
+                    formPanelList[key].removeAttribute("data-errorInput");
+                    formPanelList[key].classList.remove("error_empty_value");
+                }
+                continue;
+            }
+            
+            
+            // 通常バリデーションの結果で処理
             if (bool === true) {
-                
                 formPanelList[key].removeAttribute("data-errorInput");
                 formPanelList[key].classList.remove("error_empty_value");
-                //formPanelList[key].setAttribute("class", "row");
-                
             } else {
-                
                 sendBool = false;
                 formPanelList[key].setAttribute("data-errorInput", 1);
                 formPanelList[key].classList.add("error_empty_value");
-                
             }
+            
             
         }
         
