@@ -47,8 +47,196 @@
             }
             
         }
+		
+		/**
+		 * 予約顧客データを検索するメソッド
+		 * 
+		 * @param string $searchTerm 検索キーワード
+		 * @param string $searchType 検索タイプ (all, email, phone, name などの項目名)
+		 * @param int $accountKey カレンダーアカウントID (オプション)
+		 * @param int $offset ページネーション用オフセット
+		 * @param int $limit 1ページあたりの表示件数
+		 * @return array 検索結果
+		 */
+		public function searchBookedCustomers($searchTerm, $searchType = 'all', $accountKey = null, $offset = 0, $limit = 20) {
+    global $wpdb;
+    
+    $table_name = $wpdb->prefix . "booking_package_booked_customers";
+    $where = "";
+    $searchTerm = trim($searchTerm);
+    
+    // アカウントキーでフィルタリング
+    if ($accountKey !== null && intval($accountKey) > 0) {
+        $where .= " AND accountKey = " . intval($accountKey);
+    }
+    
+    // ステータスによるフィルタリング
+    if ($searchType == 'approved' || $searchType == 'pending' || $searchType == 'canceled') {
+        $where .= " AND status = '" . esc_sql($searchType) . "'";
+    }
+    
+    // SQL検索で試す
+	$escapedSearchTerm = '%' . $wpdb->esc_like($searchTerm) . '%';
+    $query = $wpdb->prepare(
+        "SELECT * FROM $table_name WHERE 
+        (praivateData LIKE %s OR 
+         scheduleTitle LIKE %s OR 
+         courseName LIKE %s OR 
+         payId LIKE %s OR 
+         user_login LIKE %s OR 
+         CONVERT(CAST(`key` AS CHAR) USING utf8) LIKE %s)
+        $where 
+        ORDER BY scheduleUnixTime DESC 
+        LIMIT %d OFFSET %d",
+        $escapedSearchTerm,
+        $escapedSearchTerm,
+        $escapedSearchTerm,
+        $escapedSearchTerm,
+        $escapedSearchTerm,
+        $escapedSearchTerm,
+        $limit,
+        $offset
+    );
+    
+    $rows = $wpdb->get_results($query, ARRAY_A);
+    
+    // SQL検索の結果数をログに出力
+    error_log("SQL検索結果数: " . count($rows));
+    
+    // SQL検索の結果が少ない場合はPHPでフルテキスト検索を試みる
+    if (count($rows) == 0) {
+        // すべての予約データを取得
+        $allQuery = "SELECT * FROM $table_name WHERE 1=1 $where ORDER BY scheduleUnixTime DESC";
+        error_log("全レコード取得クエリ: " . $allQuery);
         
-        public function defaultLabels($type = 'day', $subDirectory = false) {
+        $all_rows = $wpdb->get_results($allQuery, ARRAY_A);
+        error_log("全レコード数: " . count($all_rows));
+        
+        // 検索結果を格納する配列
+        $matched_rows = array();
+        
+        // 各レコードをチェック
+        foreach ($all_rows as $row) {
+            $matched = false;
+            
+            // JSONデータをデコード
+            $praivateData = json_decode($row['praivateData'], true);
+            if ($praivateData === null) {
+                continue; // JSONデコードエラー
+            }
+            
+            // 特定のフィールドタイプのみ検索
+            if ($searchType != 'all' && $searchType != 'approved' && $searchType != 'pending' && $searchType != 'canceled') {
+                // 特定のフィールドで検索
+                foreach ($praivateData as $field) {
+                    if (isset($field['key']) && $field['key'] == $searchType && isset($field['value']) && is_string($field['value'])) {
+                        if (mb_stripos($field['value'], $searchTerm) !== false) {
+                            $matched = true;
+                            break;
+                        }
+                    }
+                }
+            } else {
+                // 全フィールド検索
+                foreach ($praivateData as $field) {
+                    // valueフィールドの検索
+                    if (isset($field['value']) && is_string($field['value'])) {
+                        if (mb_stripos($field['value'], $searchTerm) !== false) {
+                            $matched = true;
+                            break;
+                        }
+                    }
+                    
+                    // nameフィールドの検索
+                    if (isset($field['name']) && is_string($field['name'])) {
+                        if (mb_stripos($field['name'], $searchTerm) !== false) {
+                            $matched = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            
+            if ($matched) {
+                $matched_rows[] = $row;
+            }
+        }
+        
+        error_log("PHP検索ヒット数: " . count($matched_rows));
+        
+        // ページネーション用にスライス
+        $rows = array_slice($matched_rows, $offset, $limit);
+    }
+    
+    $results = array();
+    foreach ($rows as $row) {
+        // JSONデータをデコード
+        $praivateData = json_decode($row['praivateData'], true);
+        
+        if ($praivateData === null) {
+            continue; // JSONデコードエラー
+        }
+        
+        // 最初の結果のJSONデータを表示（デバッグ用）
+        if (count($results) == 0) {
+            error_log("JSONデータサンプル: " . print_r($praivateData, true));
+        }
+        
+        // 顧客情報を配列に追加
+        $customerInfo = array(
+            'key' => $row['key'],
+            'accountKey' => $row['accountKey'],
+            'bookingId' => isset($row['key']) ? $row['key'] : '',
+            'status' => isset($row['status']) ? $row['status'] : '',
+			'options' => isset($row['options']) ? $row['options'] : '',
+            'scheduledDate' => isset($row['scheduleUnixTime']) ? date('Y-m-d', $row['scheduleUnixTime']) : '',
+            'scheduledTime' => isset($row['scheduleUnixTime']) ? date('H:i', $row['scheduleUnixTime']) : '',
+            'scheduleTitle' => isset($row['scheduleTitle']) ? $row['scheduleTitle'] : '',
+            'courseName' => isset($row['courseName']) ? $row['courseName'] : '',
+            'courseTime' => isset($row['courseTime']) ? $row['courseTime'] : 0,
+            'payMode' => isset($row['payMode']) ? $row['payMode'] : '',
+            'payId' => isset($row['payId']) ? $row['payId'] : '',
+            'praivateData' => $praivateData,
+            'user_id' => isset($row['user_id']) ? $row['user_id'] : 0,
+            'user_login' => isset($row['user_login']) ? $row['user_login'] : '',
+            'cancellationToken' => isset($row['cancellationToken']) ? $row['cancellationToken'] : '',
+            'permalink' => isset($row['permalink']) ? $row['permalink'] : '',
+        );
+        
+        $results[] = $customerInfo;
+    }
+    
+    // SQLとPHPどちらを使用したかによって総件数が異なる
+    $totalCount = isset($matched_rows) ? count($matched_rows) : $wpdb->get_var(
+        $wpdb->prepare(
+            "SELECT COUNT(*) FROM $table_name WHERE 
+            (praivateData LIKE %s OR 
+             scheduleTitle LIKE %s OR 
+             courseName LIKE %s OR 
+             payId LIKE %s OR 
+             user_login LIKE %s OR 
+             CONVERT(CAST(`key` AS CHAR) USING utf8) LIKE %s)
+            $where",
+            $escapedSearchTerm,
+            $escapedSearchTerm,
+            $escapedSearchTerm,
+            $escapedSearchTerm,
+            $escapedSearchTerm,
+            $escapedSearchTerm
+        )
+    );
+    
+    error_log("最終結果数: " . count($results));
+    
+    return array(
+        'results' => $results,
+        'totalCount' => intval($totalCount),
+        'maxPages' => ceil(intval($totalCount) / $limit),
+        'currentPage' => floor($offset / $limit) + 1
+    );
+}
+        
+  public function defaultLabels($type = 'day', $subDirectory = false) {
 			
 			$userLabels = array(
 				
@@ -10664,6 +10852,11 @@
 			}
 			
 			$table_name = $wpdb->prefix . "booking_package_booked_customers";
+			// トークンが未定義または空なら生成
+			if (empty($cancellationToken)) {
+				$cancellationToken = hash('ripemd160', uniqid(mt_rand(), true));
+			}
+
 			$valueArray = array(
 				'reserveTime' => intval($sendDate), 
 				'remainderTime' => 0,
@@ -10691,7 +10884,7 @@
 				'checkOut' => intval($checkOut),
 				'accommodationDetails' => sanitize_text_field( json_encode($accommodationDetails) ),
 				'options' => sanitize_text_field( json_encode($services) ),
-				'cancellationToken' => $cancellationToken,
+				'cancellationToken' => $cancellationToken, // ✅ ここに代入される
 				'permalink' => esc_url($permalink),
 				'preparation' => sanitize_text_field( json_encode($preparation) ),
 				'taxes' => sanitize_text_field( json_encode($taxes) ),
@@ -13409,17 +13602,22 @@
 				$contents = str_replace('[totalPaymentAmount]', $amount, $contents);
 				$contents = str_replace('[totalAmount]', $amount, $contents);
 				
-				if (intval($calendarAccount['cancellationOfBooking']) == 1 && !is_null($cancellationUri)) {
-					
-					$contents = str_replace('[cancellationUri]', $cancellationUri, $contents);
-					$contents = str_replace('[bookingCancellationUrl]', $cancellationUri, $contents);
-					
-				} else {
-					
-					$contents = str_replace('[cancellationUri]', "", $contents);
-					$contents = str_replace('[bookingCancellationUrl]', "", $contents);
-					
+				// 強制的にキャンセルURLを生成する処理
+				if (empty($cancellationUri)) {
+					$permalink = home_url('/booking-package/');
+					$bookingID = $bookingID ?? 0;
+					$bookingToken = $cancellationToken ?? '';
+
+					if (empty($bookingToken)) {
+						$bookingToken = $cancellationToken ?? '';
+					}					
+					$cancellationUri = $this->getCancellationUri($permalink, $bookingID, $bookingToken);
 				}
+
+				// 常にリンクを出力
+				$contents = str_replace('[cancellationUri]', $cancellationUri, $contents);
+				$contents = str_replace('[bookingCancellationUrl]', $cancellationUri, $contents);
+
 				
 				if (!empty($coupon) && is_array($coupon) && isset($coupon['key'])) {
 					
@@ -14597,6 +14795,8 @@
 				}
 				
 				$table_name = $wpdb->prefix . "booking_package_booked_customers";
+				// キャンセルリンク用トークンを生成
+				$cancellationToken = hash('ripemd160', uniqid(mt_rand(), true));
 				$sql = $wpdb->prepare(
 					"SELECT * FROM `" . $table_name . "` WHERE `status` = 'approved' AND `bookingReminder` = 0 AND `accountKey` = %d AND `scheduleUnixTime` >= %d AND `scheduleUnixTime` <= %d;", 
 					array(
@@ -14717,6 +14917,8 @@
 			}**/
 			
 		}
+		
+		
 		
 		public function getOnlyNumbers($value) {
 			
