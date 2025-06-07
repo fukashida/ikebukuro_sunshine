@@ -588,9 +588,42 @@ function Booking_manage(schedule_data, booking_package_dictionary, webApp) {
             }
             
             if (callback == null) {
-                
                 object.createCalendar(calendarData, month, day, year, accountKey);
+            
+                // ▼ 電話番号欄が出現したときに自動でハイフンをつける
+                const observer = new MutationObserver(() => {
+                    const telInput = document.getElementById('input_tel');
                 
+                    function formatPhoneNumber(value) {
+                    const numbers = value.replace(/[^\d]/g, '');
+                    if (/^0[789]0\d{8}$/.test(numbers)) {
+                        return numbers.replace(/(\d{3})(\d{4})(\d{4})/, '$1-$2-$3');
+                    }
+                    if (/^0[1-9]{1}\d{1}\d{8}$/.test(numbers)) {
+                        return numbers.replace(/(\d{2})(\d{4})(\d{4})/, '$1-$2-$3');
+                    }
+                    if (/^0\d{9,10}$/.test(numbers)) {
+                        if (/^0\d{3}\d{6}$/.test(numbers)) {
+                        return numbers.replace(/(\d{4})(\d{2})(\d{4})/, '$1-$2-$3');
+                        }
+                        if (/^0\d{2}\d{7}$/.test(numbers)) {
+                        return numbers.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
+                        }
+                    }
+                    return numbers;
+                    }
+                
+                    if (telInput) {
+                    telInput.addEventListener('input', function (e) {
+                        e.target.value = formatPhoneNumber(e.target.value);
+                    });
+                    observer.disconnect(); // 一度バインドしたら監視停止
+                    }
+                });
+                
+                // body以下のすべてのDOM変化を監視
+                observer.observe(document.body, { childList: true, subtree: true });
+  
             } else {
                 
                 callback(calendarData);
@@ -9023,8 +9056,8 @@ function Booking_manage(schedule_data, booking_package_dictionary, webApp) {
                     const payload = {
                         bookingID: bookingID,
                         tracking: {
-                            referrer: localStorage.getItem("initial_referrer") || document.referrer || "",
-                            link: localStorage.getItem("initial_landing_page") || window.location.href,
+                            referrer: "管理画面",
+                            link: "https://stg.ike-sunshine.co.jp/wp-admin/admin.php?page=booking-package%2Findex.php",
                             bookingID: bookingID
                         },
                         input: {
