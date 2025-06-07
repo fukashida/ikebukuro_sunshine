@@ -1980,6 +1980,9 @@
     color: #32373c;
     
 }
+#editPanel .courseAndScheduleRowActive[data-key="3"], #editPanel .courseAndScheduleRow[data-key="3"] {
+    display: none;    
+}
 
 #editPanel .courseAndScheduleRow:hover, #editPanelForSchedule .courseAndScheduleRow:hover, #selectOptionsPanel .courseAndScheduleRow:hover {
 	
@@ -3436,9 +3439,17 @@
 }
 
 #calendarPage .buttonPanel, #schedulePage .buttonPanel {
-	
-	display: table;
+    display: table;
 	float: right;	
+}
+
+#calendarPage .buttonPanel {
+    display: flex;
+    gap: 5px;	
+}
+
+#calendarPage .buttonPanel #search_users_text {
+    height: 30px;
 }
 
 #calendarPage .backButton, #schedulePage .backButton {
@@ -4271,6 +4282,24 @@
     
 }
 
+#media_frame_reservation_content #add_reservationPanel .show_panel_for_new_booking #inputFormPanel .row:nth-child(9) {
+    
+    display: none;
+    
+}
+
+#media_frame_reservation_content #userInfoPanel #inputFormPanel .row:nth-child(12) {
+    
+    display: none;
+    
+}
+
+#inputFormPanel .row[data-key="5"] {
+    
+    display: none;
+    
+}
+
 #inputFormPanel .roomListPanel {
     
     border-bottom: 1px solid #ddd;
@@ -4401,7 +4430,7 @@
 
 #inputFormPanel .courseLinePanelInLink {
     
-    color: #2626ff;
+    color: #444;
     cursor: pointer;
     font-weight: normal;
     float: none;
@@ -4425,7 +4454,7 @@
     
     /**float: left;**/
     margin-left: 1em;
-    
+    display: none;
 }
 
 #inputFormPanel .reflectPanel {
@@ -4551,8 +4580,12 @@
 
 #reservation_usersPanel .visitorApprovedPanel {
     
-    background-color: #98c878;
+    background-color: #eaeaea!important;
     
+}
+
+#reservation_usersPanel .bookedCustomerPanel {
+    color: #555!important;
 }
 
 #reservation_usersPanel .visitorPendingPanel {
@@ -4655,9 +4688,9 @@
 #reservation_usersPanel .timeTablePanel {
     
     display: grid;
-    grid-template-columns: 80px 1fr;
+    /* grid-template-columns: 80px 1fr;
     grid-template-rows: repeat(24, 120px);
-    grid-template-rows: repeat(1440, 2px);
+    grid-template-rows: repeat(1440, 2px); */
     
 }
 /**
@@ -4683,12 +4716,26 @@
     border-radius: 5px;
     cursor: pointer;
     font-weight: 500;
-    height: fit-content;
+    height: fit-content !important;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     display: inline;
+    width: 100%;
     
+}
+
+#reservation_usersPanel .bookedCustomerPanel.first-time-panel { 
+    background-color: #78bf49 !important; 
+}
+#reservation_usersPanel .bookedCustomerPanel.first-time-panel .customerInfoLabel{ 
+    color: white !important; 
+}
+#reservation_usersPanel .bookedCustomerPanel.other-time-panel { 
+    background-color: #f06767 !important; 
+}
+#reservation_usersPanel .bookedCustomerPanel.other-time-panel .customerInfoLabel{ 
+    color: white !important; 
 }
 
 #reservation_usersPanel .bookedCustomerPanel:hover {
@@ -4699,18 +4746,19 @@
 
 #reservation_usersPanel .customerInfoLabel {
     
-    white-space: pre;
+    /* white-space: pre;
     text-overflow: ellipsis;
     overflow: hidden;
-    box-sizing: border-box;
+    box-sizing: border-box; */
     line-height: 1.3em;
+    display: block;
     
 }
 
 #reservation_usersPanel .timeSlotForDay, #reservation_usersPanel .customerBoxForDay {
     
     border-bottom: 1px solid #ddd;
-    height: 120px;
+    height: auto;
     box-sizing: border-box;
     
 }
@@ -5053,7 +5101,7 @@
     
 }
 
-#settingPanel .extensionsValid, #select_package .extensionsValid, #booking_package_calendar_accounts .extensionsValid, #syncPanel .extensionsValid, #memberPanel .extensionsValid, #javascriptPanel .extensionsValid, #blockEmailListsPanel .extensionsValid, #userSettingPanel .extensionsValid {
+#settingPanel .extensionsValid, #select_package .extensionsValid, #booking_package_calendar_accounts .extensionsValid, #syncPanel .extensionsValid, #memberPanel .extensionsValid, #javascriptPanel .extensionsValid, #blockEmailListsPanel .extensionsValid {
     
     color: #ff4646;
     /**

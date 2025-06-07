@@ -7613,7 +7613,7 @@ window.addEventListener('error', function(event) {
             inputTypeList.active.value = 'true';
             inputTypeList.target.value = "adult";
             inputTypeList.required.value = "0";
-            inputTypeList.guestsInCapacity.value = 'excluded';
+            inputTypeList.guestsInCapacity.value = 'included';
             inputTypeList.reflectService.value = 0;
             inputTypeList.reflectAdditional.value = 0;
             
