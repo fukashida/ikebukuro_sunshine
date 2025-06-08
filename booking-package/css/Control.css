@@ -4739,11 +4739,17 @@
 #reservation_usersPanel .bookedCustomerPanel.first-time-panel { 
     background-color: #78bf49 !important; 
 }
+#reservation_usersPanel .bookedCustomerPanel.first-time-panel.visitorCanceledPanel { 
+    background-color: #f0c267 !important;
+}
 #reservation_usersPanel .bookedCustomerPanel.first-time-panel .customerInfoLabel{ 
     color: white !important; 
 }
 #reservation_usersPanel .bookedCustomerPanel.other-time-panel { 
     background-color: #f06767 !important; 
+}
+#reservation_usersPanel .bookedCustomerPanel.other-time-panel.visitorCanceledPanel { 
+    background-color: #f0c267 !important;
 }
 #reservation_usersPanel .bookedCustomerPanel.other-time-panel .customerInfoLabel{ 
     color: white !important; 
