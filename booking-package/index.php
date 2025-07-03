@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Booking Package SAASPROJECT
+Plugin Name: Booking Package SAASPROJECT by SPIRITS
 Plugin URI:  https://saasproject.net/plans/
 Description: Booking Package is a high-performance booking calendar system that anyone can easily use.
 Version:     1.6.74

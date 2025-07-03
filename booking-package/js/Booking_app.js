@@ -1480,7 +1480,7 @@ var error_hCaptcha_for_booking_package = function(response) {
             var service = services[parseInt(serviceKey)];
             var options = JSON.parse(service.options);
 
-            // --- ホクロ除去の自動選択 追加ここから ---
+            // --- LPの自動選択 追加ここから ---
             // ※ この if ブロック全体を createServicesList の function(table_row) の中に記述
 
             const queryParams = new URLSearchParams(window.location.search);
@@ -10009,6 +10009,8 @@ var error_hCaptcha_for_booking_package = function(response) {
             const isRevisit = document.querySelector('.addedService[data-key="13"]') !== null;
             const isFirstVisit = document.querySelector('.addedService[data-key="12"]') !== null;
             const isHokuro = document.querySelector('.addedService[data-key="4"]') !== null;
+            const isNikibi = document.querySelector('.addedService[data-key="5"]') !== null;
+            const isNikibiTrial = document.querySelector('.addedService[data-key="6"]') !== null;
             const telInput = document.getElementById('booking_package_input_tel');
             const numberInput = document.getElementById('booking_package_input_number');
             const emailInput = document.getElementById('booking_package_input_email');
@@ -10028,6 +10030,32 @@ var error_hCaptcha_for_booking_package = function(response) {
             
             // LP（ホクロ除去）なら電話番号はバリデーション付与
             if (isHokuro && telInput && formPanelList[key].contains(telInput)) {
+                if (telInput.value.trim() === '') {
+                    formPanelList[key].setAttribute("data-errorInput", 1);
+                    formPanelList[key].classList.add("error_empty_value");
+                    sendBool = false;
+                } else {
+                    formPanelList[key].removeAttribute("data-errorInput");
+                    formPanelList[key].classList.remove("error_empty_value");
+                }
+                continue;
+            }
+            
+            // LP（ニキビ治療）なら電話番号はバリデーション付与
+            if (isNikibi && telInput && formPanelList[key].contains(telInput)) {
+                if (telInput.value.trim() === '') {
+                    formPanelList[key].setAttribute("data-errorInput", 1);
+                    formPanelList[key].classList.add("error_empty_value");
+                    sendBool = false;
+                } else {
+                    formPanelList[key].removeAttribute("data-errorInput");
+                    formPanelList[key].classList.remove("error_empty_value");
+                }
+                continue;
+            }
+            
+            // LP（ニキビ体験）なら電話番号はバリデーション付与
+            if (isNikibiTrial && telInput && formPanelList[key].contains(telInput)) {
                 if (telInput.value.trim() === '') {
                     formPanelList[key].setAttribute("data-errorInput", 1);
                     formPanelList[key].classList.add("error_empty_value");
