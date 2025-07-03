@@ -1987,11 +1987,23 @@
 #editPanel .scheduleListPanel.courseListPanel.box_shadow .courseAndScheduleRowActive[data-key="4"], #editPanel .scheduleListPanel.courseListPanel.box_shadow .courseAndScheduleRow[data-key="4"] {
     display: block;   
 }
+#editPanel .scheduleListPanel.courseListPanel.box_shadow .courseAndScheduleRowActive[data-key="5"], #editPanel .scheduleListPanel.courseListPanel.box_shadow .courseAndScheduleRow[data-key="5"] {
+    display: block;    
+}
+#editPanel .scheduleListPanel.courseListPanel.box_shadow .courseAndScheduleRowActive[data-key="6"], #editPanel .scheduleListPanel.courseListPanel.box_shadow .courseAndScheduleRow[data-key="6"] {
+    display: block;   
+}
 
 #editPanel .courseListPanel.box_shadow .courseAndScheduleRowActive[data-key="3"], #editPanel .courseListPanel.box_shadow .courseAndScheduleRow[data-key="3"] {
     display: none;    
 }
 #editPanel .courseListPanel.box_shadow .courseAndScheduleRowActive[data-key="4"], #editPanel .courseListPanel.box_shadow .courseAndScheduleRow[data-key="4"] {
+    display: none;    
+}
+#editPanel .courseListPanel.box_shadow .courseAndScheduleRowActive[data-key="5"], #editPanel .courseListPanel.box_shadow .courseAndScheduleRow[data-key="5"] {
+    display: none;    
+}
+#editPanel .courseListPanel.box_shadow .courseAndScheduleRowActive[data-key="6"], #editPanel .courseListPanel.box_shadow .courseAndScheduleRow[data-key="6"] {
     display: none;    
 }
 
