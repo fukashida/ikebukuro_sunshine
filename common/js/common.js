@@ -10,6 +10,7 @@
  *タブの切り替え
  *SP用画像切り替え
  *SP用ナビ
+ *ナビの高さ調整
  *
 */
 
@@ -332,3 +333,16 @@ $(function(){
 		$(this).toggleClass("open");
 	});
 });
+
+// ナビの高さ調整
+// js/fixed-header.js
+function adjustHeaderPadding() {
+	const header = document.querySelector('#header header');
+	if (!header) return;
+	const headerHeight = header.offsetHeight;
+	document.body.style.paddingTop = headerHeight + 'px';
+  }
+  window.addEventListener('load', adjustHeaderPadding);
+  window.addEventListener('resize', adjustHeaderPadding);
+  
+  

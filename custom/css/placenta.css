@@ -80,21 +80,6 @@ em {
         margin: 0 auto 2em;
     }
     
-    section #toc3{
-        position: relative;
-    }
-    
-    section #toc3:before {
-        content: '';
-        position: absolute;
-        background: url(../../../../uploads/ISC-_21simikusumi_08.png)no-repeat;
-        bottom: -42px;
-        right: 122px;
-        width: 200px;
-        height: 180px;
-        background-size: contain;
-    }
-    
     /**/
     .nowebp #pageTitle.placenta {
         background: #f4f2f3 url(../../../../uploads/ISC-_21simikusumi_01.jpg)no-repeat;
@@ -109,6 +94,12 @@ em {
         border: none;
         padding: 25px;
         height: 338px;
+        margin-bottom: 40px;
+    }
+    @media screen and (max-width:1023px) {
+        .webp #pageTitle.placenta {
+            background: #f4f2f3 url(../../../../uploads/ISC-_21simikusumi_01.jpg.webp)no-repeat 30%/cover;
+        } 
     }
     
     #pageTitle.placenta h1 {
@@ -118,21 +109,38 @@ em {
         width: 220px;
         text-align: center;
         font-family: serif;
-        font-size: 3.1rem;
+        font-size: 3.2rem;
+        color: #843D39;
+    }
+    @media screen and (max-width:1023px) {
+        #pageTitle.placenta h1 {
+            left: 12vw;
+        }
     }
     
     #pageTitle.placenta p {
         position: relative;
         top: 60px;
-        left: 241px;
+        left: 210px;
+        display: block;
+        width: fit-content;
+        text-align: center;
         font-weight: bold;
         font-size: 1.2em;
         line-height: 1.3;
+        margin: 0;
+        margin-top: 5px;
+    }
+    @media screen and (max-width:1023px) {
+        #pageTitle.placenta p {
+            left: 10vw;
+        }
     }
     
     #pageTitle.placenta .price-setting {
-        margin-top: 20px;
+        margin-top: 5px;
         display: block;
+        text-align: center;
         font-family: serif;
     }
     
@@ -150,28 +158,11 @@ em {
         margin-top: -92px;
     }
     
-    .placenta .topNav ul {
-        margin-top: 5px;
-        display: flex;
-        text-align: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    
     .placenta .topNav li {
-        padding: 1% 1.8%;
-        font-size: 1.2em;
-        line-height: 1;
-        flex: 1;
-        border-right: 1px solid #fff;
-        border-collapse: collapse;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        flex: 0.33;
     }
     
-    .placenta .topNav li:first-child{
+    /* .placenta .topNav li:first-child{
         border-left: 1px solid #fff;
         margin-left: 0.1em;
     }
@@ -182,7 +173,7 @@ em {
     
     .placenta .topNav li a {
         color: #fff;
-    }
+    } */
     
     /**/
     .case-photo-list{
@@ -591,54 +582,41 @@ em {
         .sp-table{
             display: table;
         }
-        .nowebp #pageTitle.placenta {
-            background: #f4f2f3 url(../../../../uploads/ISC-_21simikusumi_SP01.png) no-repeat;
-            background-size: cover;
-            border: none;
-            padding: 25px;
-            height: 311px;
-            position: relative;
-        }
         .webp #pageTitle.placenta {
-            background: #f4f2f3 url(../../../../uploads/ISC-_21simikusumi_SP01.png.webp) no-repeat;
-            background-size: cover;
+            background: #f4f2f3 url(../../../../uploads/ISC-_21simikusumi_SP01.png.webp) no-repeat center/cover;
             border: none;
             padding: 25px;
-            height: 311px;
+            height: 180px;
             position: relative;
         }
         #pageTitle.placenta h1 {
             position: absolute;
-            top: 41px;
-            left: 22px;
-            width: 275px;
+            top: 20px;
+            left: 12%;
+            width: 40%;
             text-align: center;
             font-family: serif;
-            font-size: 4rem;
+            font-size: 3rem;
         }
         #pageTitle.placenta p {
             position: absolute;
-            top: 180px;
-            left: 67px;
+            top: 110px;
+            left: 7vw;
             font-weight: bold;
             display: block;
-            font-size: 1.5em;
+            font-size: 1.3em;
         }
         .placenta .top-menu {
             margin-top: -15px;
         }
         .placenta .topNav li {
-            padding: 1em;
             font-size: 1.2em;
             line-height: 1;
             flex: 1;
-            border-right: 1px solid #fff;
             border-collapse: collapse;
-            background: #BE9991;
             opacity: 0.8;
             flex-basis: auto;
             width: 166px;
-            border-bottom: 1px solid #fff;
         }
     
         .placenta .topNav li:first-child{
@@ -651,8 +629,9 @@ em {
         }
     
         .placenta .topNav li a {
-            color: #fff;
-            display: inline;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             vertical-align: middle;
         }
     
@@ -665,14 +644,6 @@ em {
     
         .cause-box{
             flex-wrap: wrap;
-        }
-    
-        section #toc3{
-            min-height: 875px;
-        }
-        section #toc3:before {
-            bottom: -51px;
-            right: 87px;
         }
     
         .Improvement{
@@ -819,7 +790,6 @@ em {
             box-sizing: border-box;
             letter-spacing: 0;
             text-align: left;
-            vertical-align: top;
             display: block;
         }
         .overview td {
@@ -833,22 +803,41 @@ em {
         }
     
     }
+    @media only screen and (max-width: 540px){
+        #pageTitle.placenta h1 {
+            position: absolute;
+            top: 40px;
+            left: 12%;
+            width: 40%;
+            text-align: center;
+            font-family: serif;
+            font-size: 2.5rem;
+        }
+        #pageTitle.placenta p {
+            left: 7vw;
+            width: 45vw;
+            font-size: 1em;
+        }
+        .webp #pageTitle.placenta {
+            margin-bottom: 25px;
+        }
+    }
     @media only screen and (max-width: 415px){
         .nowebp #pageTitle.placenta,
         .webp #pageTitle.placenta {
-            height: 203px;
+            height: 150px;
         }
         #pageTitle.placenta h1 {
-            top: 29px;
-            left: -10px;
-            width: 214px;
-            font-size: 3.1rem;
+            width: 50%;
+            left: 7%;
+            top: 34px;
+            line-height: 1.2;
         }
         #pageTitle.placenta p {
-            top: 122px;
-            left: 32px;
-            width: 227px;
-            font-size: 1.2em;
+            top: 100px;
+            left: 21px;
+            width: 50vw;
+            font-size: 0.9em;
         }
         #pageTitle.placenta .price-setting {
             margin-top: 0px;
@@ -856,3 +845,773 @@ em {
     
     }
     
+
+    
+/* ====================================== */
+/*         シミ・肝班・くすみ治療             */
+/*     先頭に「#placenta」をつけてください     */
+/* ====================================== */
+#placenta .table-of-contents{
+    padding-bottom: 100px; padding-top: 20px;
+}
+@media only screen and (max-width: 540px){
+    #placenta .table-of-contents{
+        padding-bottom: 60px; padding-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 540px){
+    #placenta p {
+        font-size: 15px;
+    }
+}
+#placenta .shadow{
+    box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.17);
+}
+#placenta p{
+    margin-bottom: 0;
+}
+#placenta p,#placenta h2,#placenta h3{
+    color: #353535;
+}
+#placenta .blue{
+    color: #16A4BD;
+}
+
+#placenta .bg-blue{
+    background-color: #F5FBFC; padding: 100px 0;
+}
+#placenta .bg-white{
+    background-color: white; padding: 100px 0;
+}
+#placenta .bg-ivory{
+    background-color: #FCF8F2; padding: 100px 0;
+}
+@media only screen and (max-width: 540px){
+    #placenta .bg-blue,#placenta .bg-white,#placenta .bg-ivory{
+        padding: 60px 0;
+    }
+}
+
+#placenta .title-bar{
+    border-top: 2px solid #16A4BD; border-bottom: 2px solid #16A4BD; padding: 30px 0; margin-bottom: 60px;
+}
+#placenta .title-bar h3{
+    margin-bottom: 10px;
+}
+@media only screen and (max-width: 540px){
+    #placenta .title-bar{
+        padding: 20px 0; margin-bottom: 40px;
+    }
+    #placenta .title-bar h3{
+        margin-bottom: 5px;
+    }
+}
+
+#placenta .title-underline{
+    border-bottom: 2px solid #16A4BD; padding: 0px 0 20px; margin-bottom: 40px;
+}
+@media only screen and (max-width: 540px){
+    #placenta .title-underline{
+        padding: 0px 0 15px; margin-bottom: 30px;
+    }
+}
+
+#placenta h2{
+    font-size: 40px; text-align: center; font-family: serif; font-weight: bold;
+}
+#placenta h2#toc11{
+    line-height: 0;
+}
+#placenta h3{
+    font-size: 30px;  font-family: serif; font-weight: bold;
+}
+@media only screen and (max-width: 540px){
+    #placenta h2{
+        font-size: 25px; line-height: 1.5;
+    }
+    #placenta h3{
+        font-size: 18px;
+    }
+}
+
+#placenta .box-white{
+    background-color: white; border-radius: 10px; padding: 50px 40px; margin: 50px 0;
+}
+#placenta .box-white-last{
+    margin: 50px 0 0;
+}
+@media only screen and (max-width: 540px){
+    #placenta .box-white{
+       padding: 30px 25px; margin: 35px 0;
+    }
+    #placenta .box-white-last{
+         margin: 35px 0 0;
+    }
+}
+
+#placenta .dot-list {
+list-style: none; padding-left: 0; margin-bottom: 40px;
+}
+#placenta .dot-list li {
+position: relative; padding-left: 1.5em; margin-bottom: 0.6em;
+}
+#placenta .dot-list li::before {
+content: ""; position: absolute; left: 0; top: 0.4em; width: 0.7em; height: 0.7em; background-color: #16A4BD; border-radius: 50%;
+}
+#placenta .dot-list-small {
+    margin-bottom: 15px;
+}
+#placenta .dot-list-small li{
+    margin-bottom: 0.3em;
+}
+@media only screen and (max-width: 540px){
+    #placenta .dot-list {
+        margin-bottom: 20px;
+    }
+    #placenta .box-white .dot-list {
+        font-size: 14px;
+    }
+}
+
+#placenta .table .table-flex{
+    display: flex; justify-content: center; align-items: stretch; justify-content: center; gap: 5px; margin-bottom: 5px;
+}
+#placenta .table-item, #placenta .table-label,#placenta .table-info {
+  display: flex; align-items: center ;
+}
+#placenta .table .table-item{
+    background-color: #16A4BD; border-radius: 5px; padding: 15px 35px; display: flex; align-items: center; justify-content: center; 
+}
+#placenta .table .table-item p{
+    font-family: serif; font-weight: bold; font-size: 16px; color: white; text-align: center;
+}
+#placenta .table .table-label{
+    background-color: #EFF9FA; border-radius: 5px; border: 1px solid #16A4BD; padding: 15px 35px; text-align: center; display: flex; align-items: center; justify-content: center; width: 70px;
+}
+#placenta .table .table-label p{
+    font-family: serif; font-weight: bold; font-size: 16px;
+}
+#placenta .table .table-info{
+     border: 1px solid #16A4BD; padding: 15px 35px; border-radius: 5px; color: #000; flex: 1;
+}
+@media only screen and (max-width: 1023px){
+    #placenta .table .table-info{
+       padding: 15px;
+       justify-content: center;
+   }
+}
+#placenta .table .table-info p{
+    font-size: 16px; 
+}
+@media only screen and (max-width: 540px){
+    #placenta .table .table-item{
+       padding: 5px 10px;
+    }
+    #placenta .table .table-item p{
+        font-size: 12px;
+    }
+    #placenta .table .table-label{
+        padding: 5px 15px;
+    }
+    #placenta .table .table-label p{
+        font-size: 12px;
+    }
+    #placenta .table .table-info{
+        padding: 5px 15px;
+    }
+    #placenta .table .table-info p{
+        font-size: 12px; 
+    }
+}
+
+
+/* レブライトレーザーの表調整 */
+@media only screen and (max-width: 540px){
+    #placenta .title-underline.sp-mini-subtitle h4{
+        font-size: 18px; line-height: 23px;
+    }
+}
+#placenta .rev .table-item{
+    width: 300px;
+}
+#placenta .rev .table-label{
+    padding: 15px 60px;
+}
+@media only screen and (max-width: 540px){
+    #placenta .rev .table-item{
+        width: 35vw; padding: 5px;
+    }
+    #placenta .rev .table-label{
+        padding: 5px 15px; width: 10vw;
+    }
+}
+/* レブライトレーザーの表調整 */
+#placenta .tre-treatment .table-label{
+    width: 220px;
+}
+#placenta .tre-fee .table-item{
+    width: 280px;
+}
+@media only screen and (max-width: 540px){
+    #placenta .tre-treatment .table-label{
+        width: 22vw;
+    }
+    #placenta .tre-fee .table-item{
+        width: auto;
+        margin: 10px 0 5px;
+    }
+    #placenta .tre-fee .table-label{
+        padding: 10px 5px;
+    }
+}
+/* プラセンタ療法の表調整 */
+#placenta .pla{
+    margin-top: 35px;
+}
+#placenta .pla .table-label{
+    width: 150px;
+}
+@media only screen and (max-width: 540px){
+    #placenta .pla{
+        margin-top: 35px;
+    }
+    #placenta .pla .table-label{
+        width: 20vw; padding: 5px;
+    }
+    #placenta .pla .table-label p{
+        font-size: 12px;
+    }
+}
+/* プラセンタスキンケア改善の調整 */
+#placenta .pla-merchandise{
+    margin: 35px 0 15px;
+}
+#placenta .pla-merchandise .table-item{
+    width: 300px;
+}
+@media only screen and (max-width: 540px){
+    #placenta .pla-merchandise{
+        margin: 20px 0 10px;
+    }
+    #placenta .pla-merchandise .table-item{
+        width: auto; margin: 0 0 5px;
+    }
+    #placenta .pla-merchandise .table-label p{
+        font-size: 12px;
+    }
+    #placenta .annotation{
+        font-size: 12px;
+    }
+}
+  
+
+#placenta .pc-flex{
+    display: flex;
+    gap: 20px;
+}
+@media only screen and (max-width: 1023px){
+    #placenta .pc-flex{
+        flex-wrap: wrap;
+    }
+}
+#placenta .pc-flex > div {
+    flex: 1; min-width: 0;
+}
+#placenta .flex{
+    display: flex;
+}
+#placenta .flex > div {
+    flex: 1; min-width: 0;
+}
+@media only screen and (max-width: 540px){
+    #placenta .pc-flex{
+        display: block;
+    }
+}
+
+#placenta .case-photo .title{
+    font-size: 22px; font-family: serif; font-weight: bold; background-color: #FCF8F2; padding: 10px; margin-bottom: 30px;
+}
+#placenta .case-photo .title p{
+    text-align: center; font-weight: bold;
+}
+#placenta .case-photo .before p,#placenta .after p{
+    font-size: 19px; font-family: serif; font-weight: bold; color: white; padding: 5px 20px;display: inline-block;
+}
+#placenta .case-photo .before p{
+    background-color: #3D3D3D;
+}
+#placenta .case-photo .before{
+    margin-right: 20px;
+}
+#placenta .case-photo .after p{
+    background-color: #16A4BD;
+}
+#placenta .case-photo .flex{
+    gap: 16px;
+}
+#placenta .case-photo .flex img{
+    width: 100%;
+}
+@media only screen and (max-width: 540px){
+    #placenta .case-photo .title{
+        font-size: 14px; margin-bottom: 15px;
+    }
+    #placenta .case-photo .before p,#placenta .after p{
+        font-size: 13px; padding: 2px 15px;
+    }
+    #placenta .case-photo .before{
+        margin-right: 20px;
+    }
+    #placenta .box-case .title-underline h4{
+        font-size: 18px; text-align: center; line-height: 23px;
+    }
+    #placenta .case-photo .flex{
+        gap: 10px;
+    }
+    #placenta .case-photo2{
+        margin-top: 25px;
+    }
+}
+
+#placenta .list-of-treatments{
+    margin-top: 60px;
+}
+#placenta .title-underline h4{
+    font-size: 30px; font-family: serif; font-weight: bold;
+}
+@media only screen and (max-width: 1023px){
+    #placenta .title-underline h4{
+        font-size: 28px; 
+    }
+}
+@media only screen and (max-width: 540px){
+    #placenta .title-underline h4{
+        font-size: 22px; line-height: 30px;
+    }
+}
+
+#placenta .title-top{
+    margin-top: 60px;
+}
+@media only screen and (max-width: 540px){
+    #placenta .title-top{
+        margin-top: 50px;
+    }
+}
+
+#placenta .care{
+    margin-bottom: 40px;
+}
+#placenta .care .title{
+    display: flex; gap: 20px; align-items: center; border-bottom: 2px solid #16A4BD; padding-bottom: 15px; margin-bottom: 40px;
+}
+#placenta .care .title h4{
+    font-size: 35px; font-family: serif; font-weight: bold;
+}
+#placenta .care .title .cause{
+    background-color: #EBF8F9; width: 83px; height: 83px; border-radius: 50%; display: flex;align-items: center; justify-content: center; 
+}
+#placenta .care .title .cause p{
+    font-size: 20px; color: #16A4BD; text-align: center; line-height: 1.2em; font-family: serif; font-weight: bold;
+}
+#placenta .care .pc-flex img{
+    max-width: 271px;
+}
+@media only screen and (max-width: 540px){
+    #placenta .care{
+        margin-bottom: 50px;
+    }
+    #placenta .care .title{
+        padding-bottom: 10px; margin-bottom: 35px; gap: 10px;
+    }
+    #placenta .care .title h4{
+        font-size: 20px; line-height: 25px;
+    }
+    #placenta .care .title .cause{
+        width: 53px; height: 53px;
+    }
+    #placenta .care .title .cause p{
+        font-size: 12px;
+    }
+    #placenta .care .pc-flex img{
+        width: 200px; margin: 0 auto 25px; display: block;
+    }
+}
+
+#placenta .list-of-treatments .flex .treatments{
+    background-color: white; border-radius: 10px; padding: 50px 30px;
+}
+#placenta .list-of-treatments .flex .treatments img{
+    margin-top: 22px;
+}
+#placenta .list-of-treatments .flex{
+    gap: 20px;
+}
+#placenta .list-of-treatments .flex.center{
+    margin: 35px 0;
+}
+#placenta .list-of-treatments .flex .treatments h5{
+    font-size: 28px; font-family: serif; font-weight: bold;
+}
+#placenta .list-of-treatments .flex .treatments ul li{
+    font-size: 16px; font-family: serif; font-weight: bold; position: relative; padding-left: 30px; list-style: none; color: #16A4BD; margin-bottom: 5px;
+}
+#placenta .list-of-treatments .treatments ul li::before {
+    content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 20px; height: 20px; background-image: url("../../img/operations/placenta/check.png"); background-size: contain; background-repeat: no-repeat;
+}
+#placenta .styled-button {
+    display: flex; justify-content: space-between; align-items: center; max-width: 500px; padding: 18px 22px 18px 35px; background: #DFAF71; color: #fff; text-decoration: none; border-radius: 10px; font-weight: bold; font-family: serif; font-size: 20px; margin: 22px 0 0;
+}
+#placenta .styled-button .button-text {
+    flex-grow: 1; text-align: center;
+}
+#placenta .styled-button .arrow-icon {
+    display: inline-block; width: 12px; height: 12px; border-right: 3px solid #fff; border-bottom: 3px solid #fff; transform: rotate(-45deg); border-radius: 3px;  flex-shrink: 0;
+}
+#placenta section #toc3::before{
+    background: none;
+}
+@media only screen and (max-width: 540px){
+    #placenta .list-of-treatments .flex .treatments{
+        border-radius: 7px; padding: 30px 20px; margin-bottom: 25px;
+    }
+    #placenta .list-of-treatments .flex .treatments.treatments-last{
+        margin-bottom: 0px;
+    }
+    #placenta .list-of-treatments .flex{
+        display: block;
+    }
+    #placenta .list-of-treatments .flex.center{
+        margin: 0;
+    }
+    #placenta .list-of-treatments .flex .treatments h5{
+        font-size: 20px;
+    }
+    #placenta .list-of-treatments .flex .treatments ul li{
+        font-size: 14px;
+    }
+    #placenta .styled-button {
+       padding: 12px 17px; font-size: 15px; margin: 24px 0 0;
+    }
+    #placenta .styled-button .arrow-icon {
+        width: 10px; height: 10px; border-right: 2px solid #fff; border-bottom: 2px solid #fff; border-radius: 2px; 
+    }
+}
+
+#placenta .rev-light-laser{
+    max-width: 270px;
+}
+#placenta .features1{
+    margin-top: 50px;
+}
+#placenta .features2{
+    margin: 32px 0 35px;
+}
+#placenta .features1 .pc-flex img{
+    width: 420px; height: 250px; margin-right: 20px;
+}
+#placenta .features2 .pc-flex img{
+    width: 420px; height: 350px; margin-right: 20px;
+}
+#placenta .features{
+    background-color: white; padding: 50px;border-radius: 10px;
+}
+#placenta .features .title-underline h4 span{
+    font-size: 20px; 
+    font-family: serif; 
+    font-weight: bold; 
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #353535;
+}
+@media only screen and (max-width: 540px){
+    #placenta .rev-light-laser{
+        max-width: 200px; display: block; margin: 0 auto 25px;
+    }
+    #placenta .features1 .pc-flex img{
+        width: 295px; height: 175px; margin: 0 auto 25px; display: block;
+    }
+    #placenta .features2 .pc-flex img{
+        width: 295px; height: 246px; margin: 0 auto 25px; display: block;
+    }
+    #placenta .features1{
+        margin-top: 35px;
+    }
+    #placenta .features2{
+        margin: 32px 0 35px;
+    }
+    #placenta .features{
+        padding: 30px 25px; border-radius: 10px;
+    }
+    #placenta .features .title-underline h5{
+        font-size: 18px; margin-bottom: 5px;
+    }
+    #placenta .features .title-underline h4{
+        font-size: 19px; line-height: 25px;
+    }
+}
+
+#placenta .circle-heading {
+    position: relative; padding-left: 1.2em; color: #39B1C7; font-family: serif; font-weight: bold; margin: 40px 0 20px;
+} 
+#placenta .circle-heading::before {
+    content: "●";position: absolute; left: 0; top: 0; color: #39B1C7; font-size: 20px; line-height: 1;
+}
+@media only screen and (max-width: 540px){
+    #placenta .circle-heading {
+        padding-left: 1.8em; margin: 30px 0 15px;
+    } 
+    #placenta .circle-heading::before {
+        font-size: 15px;
+    }
+}
+
+#placenta .effect {
+    display: flex;align-items: center;gap: 10px; margin-bottom: 10px; margin-top: 30px;
+}
+#placenta .effect-number {
+    background-color: #F4FBFC; color: #16A4BD;width: 56px;height: 56px;border-radius: 50%; /* 丸く */display: flex;align-items: center;justify-content: center;font-size: 30px;font-weight: bold;flex-shrink: 0;font-family: serif;letter-spacing: -1px;
+}
+#placenta .effect-title {
+    font-size: 22px;font-weight: bold;margin: 0;font-family: serif;color: #16A4BD;
+}
+@media only screen and (max-width: 540px){
+    #placenta .effect {
+        margin-bottom: 15px; margin-top: 25px;
+    }
+    #placenta .effect-number {
+        width: 40px; height: 40px; font-size: 23px;
+    }
+    #placenta .effect-title {
+        font-size: 18px; line-height: 25px;
+    }
+}
+
+#placenta .instagram{
+    background-color: white;border-radius: 20px 0 0 20px;width: 82vw;margin: 0 0 0 auto;padding: 60px 0px;
+}
+#placenta .instagram-img{
+    max-width: 380px;
+}
+#placenta .instagram-container{
+    max-width: 980px; width: 100%;margin: 0 auto; display: flex; align-items: center; gap: 60px;
+}
+#placenta .instagram-container h4{
+    text-align: center; font-size: 50px; margin-bottom: 20px; font-family: serif;font-weight: bold;
+}
+#placenta .instagram-container p{
+    text-align: center;
+}
+#placenta .instagram-contents{
+    width: 500px;
+}
+#placenta .insta-button {
+  display: flex;align-items: center;justify-content: space-between;padding: 17px 27px;background-color: #DFAF71;color: white;text-decoration: none;font-weight: bold;font-size: 20px; font-family: serif;border-radius: 9999px;box-shadow: 5px 5px 0 #E3E3E3;transition: transform 0.1s ease, box-shadow 0.1s ease;position: relative;gap: 12px;margin-top: 60px;
+}
+#placenta .insta-button:hover {
+  transform: translateY(2px);box-shadow: 0 3px 0 #E3E3E3;
+}
+#placenta .insta-button:active {
+  transform: translateY(5px);box-shadow: 0 0 0 transparent;
+}
+#placenta .insta-icon {
+  width: 36px;height: 36px;object-fit: contain;flex-shrink: 0;
+}
+#placenta .button-text {
+  flex-grow: 1;text-align: center;
+}
+#placenta .arrow-rounded {
+  display: inline-block;width: 10px;height: 10px;border-right: 2px solid #fff;border-bottom: 2px solid #fff;transform: rotate(-45deg);border-radius: 2px;flex-shrink: 0;
+}
+@media only screen and (max-width: 1540px){
+    #placenta .instagram{
+        width: 95vw;
+    }
+}
+@media only screen and (max-width: 540px){
+    #placenta  .instagram-img{
+        max-width: 80vw; margin-bottom: 40px;
+    }
+    #placenta  .instagram{
+        padding: 50px 0px; width: 95vw
+    }
+    #placenta  .instagram-container{
+        max-width: 80vw; display: block;
+    }
+    #placenta  .instagram-container h4{
+        font-size: 30px; margin-bottom: 20px;
+    }
+    #placenta  .instagram-container p{
+        font-size: 16px;
+    }
+    #placenta  .instagram-contents{
+        width: 80vw;
+    }
+    #placenta  .insta-button {
+      padding: 15px 20px; font-size: 15px; margin-top: 50px;box-shadow: 3px 4px 0 #E3E3E3;
+    }
+    #placenta  .arrow-rounded {
+        width: 8px;height: 8px;
+    }
+}
+  
+#placenta .access h2{
+    text-align: left; font-size: 50px; margin-bottom: 15px;
+}
+#placenta .access h3{
+    text-align: left; font-size: 25px; margin-bottom: 55px;
+}
+#placenta .access .access-detail{
+    display: flex; gap: 20px; background-color: #FCF8F2; border-radius: 5px; padding: 25px 30px; margin-top: 30px;
+}
+#placenta .map-wrapper {
+    width: 100%; max-width: 470px; margin-right: 20px; overflow: hidden;
+}
+#placenta .google-map {
+    width: 100%; max-width: 470px; border: 0; display: block;
+}
+#placenta .map-wrapper {
+    flex: 1; max-width: 470px; overflow: hidden; display: flex;
+}
+#placenta .google-map {
+    width: 100%; height: 100%; border: 0; display: block;
+}
+@media only screen and (max-width: 540px){
+    #placenta .access h2{
+        font-size: 30px; margin-bottom: 5px;
+    }
+    #placenta .access h3{
+        font-size: 20px; margin-bottom: 35px;
+    }
+    #placenta .access .access-detail{
+        gap: 25px; padding: 15px 20px; margin-top: 20px;
+    }
+    #placenta .map-wrapper {
+        margin-top: 30px;
+    }
+    #placenta .google-map {
+        height: 370px;
+    }
+}
+
+#placenta .tre{
+    max-width: 196px; height: 215px; margin-right: 20px;
+}
+#placenta .hydro{
+    max-width: 196px; height: 210px; margin-right: 20px;
+}
+#placenta .woman,#placenta .placenta-therapy,#placenta .garlic-injection,#placenta .vitamin-injection,#placenta .ultrasound{
+    max-width: 271px;
+}
+#placenta .tranexamic-acid{
+    max-width: 196px;
+}
+#placenta .lotion,#placenta .cream{
+    max-width: 196px; margin-right: 20px;
+}
+@media only screen and (max-width: 540px){
+    #placenta .tre{
+        max-width: 149px; height: 163px; margin: 0 auto; display: block;
+    }
+    #placenta .hydro{
+        max-width: 149px; height: 158px; margin: 0 auto; display: block;
+    }
+    #placenta .woman,#placenta .tranexamic-acid,#placenta .placenta-therapy,#placenta .garlic-injection,#placenta .vitamin-injection,#placenta .ultrasound{
+        max-width: 200px;display: block;margin: 0 auto 25px;
+    }
+    #placenta .lotion,#placenta .cream{
+        max-width: 150px;display: block;margin: 0 auto 25px;
+    }
+}
+
+/* ボタン */
+#placenta .consultation-card-top{
+    margin-top: 50px;
+}
+#placenta .consultation-card-top2{
+    margin-top: 60px;
+}
+@media only screen and (max-width: 540px){
+    #placenta .consultation-card-top{
+        margin-top: 30px;
+    }
+    #placenta .consultation-card-top2{
+        margin-top: 40px;
+    }
+}
+
+#placenta section#snsreport {
+    min-height: auto;
+}
+#placenta section#snsreport .box{
+    min-height: 490px;
+}
+#placenta section#snsreport .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#placenta section#snsreport h2, #placenta h2#toc3{
+    font-family: 'Source Han Serif', sans-serif;
+    padding: 20px 0;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 40px;
+    margin-bottom: 60px;
+    line-height: 0;
+    border-top: solid 1px #16A4BD;
+    border-bottom: solid 1px #16A4BD;
+  }
+  @media screen and (max-width:767px) {
+    #placenta section#snsreport h2, #placenta h2#toc3{
+      font-size: 23px;
+      margin-bottom: 40px;
+    }
+  }
+#placenta h2 .sub {
+    display: block;
+    font-size: 30px;
+    color: #353535;
+    margin: 0;
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
+  @media screen and (max-width:767px) {
+    #placenta h2 .sub {
+      font-size: 20px;
+    }
+  }
+  #placenta h2 .main {
+    display: block;
+    font-size: 40px;
+    color: #16A4BD;
+    margin: 0;
+    line-height: 0.5;
+  }
+  @media screen and (max-width:767px) {
+    #placenta h2 .main {
+      font-size: 25px;
+    }
+  }
+
+  #placenta .topNav {
+    position: relative;
+    bottom: 11px;
+  }
+  @media screen and (max-width:540px) {
+    #placenta .topNav {
+        position: relative;
+        bottom: -3px;
+      }
+    }
+  #placenta .topNav ul {
+    margin: 0 5px;
+  }
+
+  @media screen and (max-width:540px) {
+    #placenta #toc_box .toc_title {
+        margin-top: 25px;
+    }
+}

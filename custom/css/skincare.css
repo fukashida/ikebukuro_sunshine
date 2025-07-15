@@ -279,12 +279,6 @@
   .sp { display: block !important; }
   }
   
-  @media screen and (max-width: 767px) {
-        img.sp {
-    width:30%;
-    }
-    }
-  
   p.flow-op {
       width: 250px;
   }
@@ -292,3 +286,1025 @@
   em {
   font-style: normal;
   }
+
+  #skincare section {
+    padding: 100px 0;
+  }
+  @media screen and (max-width:767px) {
+    #skincare section {
+      padding: 60px 0;
+    }
+  }
+  #skincare section.yellow {
+    background: #FCF8F2;
+  }
+  #skincare .overview {
+   margin-top: 0;
+  }
+  #skincare .overview p{
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  @media screen and (max-width:1023px) {
+    #skincare .overview p{
+        font-size: 16px;
+    }
+  }
+  #skincare .overview img{
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  @media screen and (max-width:767px) {
+    #skincare .overview img{
+      margin-bottom: 50px;
+    }
+  }
+  #skincare h2 {
+    font-family: 'Source Han Serif', sans-serif;
+    padding: 20px 0;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 40px;
+    margin-bottom: 60px;
+    border-top: solid 1px #16A4BD;
+    border-bottom: solid 1px #16A4BD;
+  }
+  @media screen and (max-width:767px) {
+    #skincare h2 {
+      font-size: 23px;
+      margin-bottom: 40px;
+    }
+  }
+  #skincare h2 .sub {
+    display: block;
+    font-size: 30px;
+    color: #353535;
+    margin: 0;
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
+  @media screen and (max-width:767px) {
+    #skincare h2 .sub {
+      font-size: 20px;
+    }
+  }
+  #skincare h2 .main {
+    display: block;
+    font-size: 40px;
+    color: #16A4BD;
+    margin: 0;
+    line-height: 1.2;
+  }
+  @media screen and (max-width:767px) {
+    #skincare h2 .main {
+      font-size: 25px;
+    }
+  }
+  #skincare h2 span {
+    color: #16A4BD;
+  }
+  #skincare h3 {
+    font-family: 'Source Han Serif', sans-serif;
+    padding-bottom: 20px;
+    line-height: 1.3;
+    font-size: 30px;
+    margin-bottom: 40px;
+    border-bottom: solid 1px #16A4BD;
+  }
+  @media screen and (max-width:767px) {
+    #skincare h3 {
+      padding-bottom: 10px;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+  }
+  #skincare h3 span{
+    color: #16A4BD;
+  
+  }
+  #skincare h4 {
+    font-size: 23px;
+    margin-bottom: 25px;
+    font-family: 'Source Han Serif', sans-serif;
+    color: #DFAF71;
+  }
+  @media screen and (max-width:767px) {
+    #skincare h4 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  }
+  .box-item {
+    padding: 50px 0;
+    background: white;
+    border-radius: 10px;
+    margin-top: 80px;
+  }
+  @media screen and (max-width:1023px) {
+    .box-item {
+      margin-top: 60px;
+    }
+  }
+  @media screen and (max-width:767px) {
+    .box-item {
+      margin-top: 40px;
+      padding: 30px 0;
+    }
+  }
+  #skincare .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media screen and (max-width:1023px) {
+    #skincare .flex{
+      align-items: stretch;
+    }
+  }
+  @media screen and (max-width:767px) {
+    #skincare .flex{
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
+  #skincare .flex .box{
+   padding: 45px 0 0;
+   width: 49%;
+   border-radius: 10px;
+   box-shadow: 0 2px 8px rgba(0,0,0,.25);
+  }
+  @media screen and (max-width:767px) {
+    #skincare .flex .box{
+      padding: 35px 0 0;
+      width: 100%;
+      border-radius: 8px;
+     }
+  }
+  #skincare .flex .box img{
+   margin: 16px auto 30px;
+  }
+  @media screen and (max-width:767px) {
+    #skincare .flex .box img{
+      margin: 16px auto 40px;
+     }
+  }
+  #skincare .flex .box .container{
+  width: 90%;
+  }
+  #skincare .flex .box .point{
+   font-size: 18px;
+   padding: 3px 11px;
+   width: fit-content;
+   background: #FCF8F2;
+   margin-bottom: 5px;
+  }
+  @media screen and (max-width:1023px) {
+    #skincare .flex .box .point{
+      font-size: 16px;
+    }
+  }
+  #skincare .flex .box .point span{
+   font-size: 16px;
+  }
+  #skincare .flex .box a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    padding: 18px 0;
+    border-radius: 0 0 10px 10px;
+    background: #DFAF71;
+    color: white;
+    font-family: 'Source Han Serif', sans-serif;
+    position: relative;
+  }
+  @media screen and (max-width:767px) {
+    #skincare .flex .box a{
+      font-size: 18px;
+      line-height: 1;
+      padding: 18px 0;
+      border-radius: 0 0 8px 8px;
+    }
+  }
+  #skincare .flex .box a::after{
+    position: absolute;
+    content:"";
+    display:inline-block;
+    width:7px;
+    height:7px;
+    right: 30px;
+    top: 45%;
+    border-right:2px solid currentColor;
+    border-top:2px solid currentColor;
+    transform:rotate(45deg);  /* 「＞」を作る */
+    transition:.2s ease;
+  }
+  #skincare .flex .box a:hover::after{
+    right: 25px;
+  }
+
+/* ================================== */
+/*         ほくろ除去・イボ治療           */
+/*   先頭に「#skincare」をつけてください   */
+/* ================================== */
+#skincare .iboaza_goodPoints h2{
+  font-size: 35px;
+}
+@media screen and (max-width:767px) {
+  #skincare .iboaza_goodPoints h2{
+    font-size: 23px;
+  }
+}
+#skincare .iboaza_goodPoints .center{
+  background: radial-gradient(circle, #F4FBFC 0%, rgba(244,251,252,0.89) 86%, rgba(244,251,252,0) 100%);
+  padding: 20px 0;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Source Han Serif', sans-serif;
+}
+@media screen and (max-width:767px) {
+  #skincare .iboaza_goodPoints .center{
+    padding: 15px 0;
+    font-size: 18px;
+  }
+}
+#skincare ul{
+  margin-bottom: 80px;
+}
+@media screen and (max-width:767px) {
+  #skincare ul{
+    margin-bottom: 50px;
+  }
+}
+#skincare ul.white-box li{
+  padding: 40px 50px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 50px;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width:767px) {
+  #skincare ul.white-box li{
+    padding: 40px 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    position: relative;
+    gap: 20px;
+  }
+}
+#skincare ul.white-box li img{
+  width: 24%;
+}
+@media screen and (max-width:767px) {
+  #skincare ul.white-box li img{
+    width: 100%;
+  }
+}
+#skincare ul.white-box li div{
+  flex: 7;
+}
+#skincare ul.white-box li .reason{
+  box-sizing: border-box;
+  padding: 18px 15px 24px;
+  background: #F4FBFC;
+  border-radius: 50%;
+  font-size: 52px;
+  line-height: normal; /* または 数値を調整 */
+  display: flex;
+  height: 106px;
+  width: 106px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  color: #16A4BD;
+  font-family: 'Source Han Serif', sans-serif;
+}
+@media screen and (max-width:767px) {
+  #skincare ul.white-box li .reason{
+    position: absolute;
+    padding: 22px 15px 24px;
+    height: 56px;
+    width: 56px;
+    font-size: 25px;
+    top: 34px;
+    left: 25px;
+  }
+}
+#skincare ul.white-box li p{
+  margin-bottom: 0;
+}
+#skincare ul.white-box li p.t16{
+  margin-top: 15px;
+  font-size: 14px;
+}
+#skincare ul.white-box li h3{
+  padding-bottom: 5px;
+  font-size: 25px;
+  margin-bottom: 30px;
+  border-bottom: solid 2px #16A4BD;
+}
+@media screen and (max-width:767px) {
+  #skincare ul.white-box li h3{
+    padding-bottom: 15px;
+    font-size: 18px;
+    padding-left: 60px;
+  }
+}
+#skincare ul.white-box li h3 span{
+  font-size: 20px;
+  color: #353535;
+  display: inline-block;
+  margin-left: -10px;
+}
+@media screen and (max-width:767px) {
+  #skincare ul.white-box li h3 span{
+    font-size: 16px;
+    margin-left: 0px;
+  }
+}
+#skincare ul.white-box li h3 span.blue{
+  font-size: 25px;
+  color: #16A4BD;
+  margin: 0;
+}
+#skincare ul.white-box li a{
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  padding: 18px 0;
+  border-radius: 45px;
+  font-size: 18px;
+  color: #16A4BD;
+  font-weight: bold;
+  text-align: center;
+  border: solid 1px #16A4BD;
+  font-family: 'Source Han Serif', sans-serif;
+  margin-top: 35px;
+  position: relative;
+}
+@media screen and (max-width:767px) {
+  #skincare ul.white-box li a{
+    padding: 15px 0;
+    font-size: 16px;
+  }
+}
+#skincare ul.white-box li a::after{
+  position: absolute;
+  content:"";
+  display:inline-block;
+  width:7px;
+  height:7px;
+  right: 30px;
+  top: 45%;
+  border-right:2px solid currentColor;
+  border-top:2px solid currentColor;
+  transform:rotate(45deg);  /* 「＞」を作る */
+  transition:.2s ease;
+}
+#skincare ul.white-box li a:hover::after{
+  right: 25px;
+}
+#skincare .method {
+  position: relative;
+  background: url(bg.jpg) center/cover no-repeat; /* 実背景が必要 */
+  isolation: isolate;
+  z-index: 0;
+}
+#skincare h3.center {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-bottom: 65px;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+@media screen and (max-width:767px) {
+  #skincare h3.center {
+    margin-bottom: 50px;
+  }
+}
+#skincare h3.center::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 140px;
+  height: 140px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 1);
+  filter: blur(15px); /* 自身をぼかす（backdropではない） */
+  z-index: -1;
+}
+#skincare .method ul.list {
+  margin-bottom: 20px;
+}
+#skincare ul.list li{
+  margin-bottom: 10px;
+  position: relative;
+  margin-left: 20px;
+}
+#skincare ul.list li::before{
+  position: absolute;
+  content: "";
+  top: 45%;
+  transform: translateY(-50%);
+  left: -20px;
+  width: 12px;
+  height: 12px;
+  background: #16A4BD;
+  border-radius: 50%;
+}
+@media screen and (max-width:767px) {
+  #skincare ul.list li::before{
+    top: 15%;
+    transform: translateY(0%);
+  }
+}
+#skincare table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 10px;
+  margin-bottom: 80px;
+}
+@media screen and (max-width:767px) {
+  #skincare table {
+    border-spacing: 5px;
+    margin-bottom: 40px;
+  }
+}
+#skincare th,#skincare td {
+  background-color: #EFF9FA;
+  border: 1px solid #16A4BD;
+  padding: 15px;
+  vertical-align: middle;
+  border-radius: 5px;
+  display: table-cell;
+}
+@media screen and (max-width:767px) {
+  #skincare th,#skincare td {
+    padding: 10px 12px;
+  }
+}
+#skincare th {
+  font-weight: bold;
+  width: 25%;
+  font-family: 'Source Han Serif', sans-serif;
+}
+@media screen and (max-width:767px) {
+  #skincare th {
+    width: 30%;
+    font-size: 14px;
+  }
+}
+#skincare td {
+  background-color: #fff;
+  border: 1px solid #16A4BD;
+  width: 75%;
+  text-align: left;
+}
+@media screen and (max-width:767px) {
+  #skincare td {
+    font-size: 14px;
+  }
+}
+#skincare .method ul {
+  margin-bottom: 0;
+}
+#skincare .method ul li{
+  align-items: stretch;
+}
+#skincare .method ul.white-box li h3 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+@media screen and (max-width:767px) {
+  #skincare .method ul.white-box li h3 {
+    font-size: 20px;
+    padding-left: 0;
+  }
+}
+#skincare .method ul.white-box li h3.lh03 {
+  line-height: 1;
+  padding-bottom: 20px;
+}
+@media screen and (max-width:767px) {
+  #skincare .method ul.white-box li h3.lh03 {
+    line-height: 1.2;
+  }
+}
+#skincare .method ul.white-box li h3 span {
+  margin-left: 0;
+}
+@media screen and (max-width:767px) {
+  #skincare .method ul.white-box li h3 span {
+    margin-top: 5px;
+    font-size: 18px;
+  }
+}
+#skincare ul.white-box li h3 span.blue {
+  font-size: 30px;
+}
+@media screen and (max-width:767px) {
+  #skincare ul.white-box li h3 span.blue {
+    font-size: 20px;
+  }
+}
+#skincare h3.back{
+  border-radius: 10px;
+  padding: 20px 45px;
+  background: #EFF9FA;
+  border: none;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+@media screen and (max-width:767px) {
+  #skincare h3.back{
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+  }
+}
+#skincare .aftercare h3.center::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 140px;
+  height: 140px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgba(244, 251, 252, 1);
+  filter: blur(20px); /* 自身をぼかす（backdropではない） */
+  z-index: -1;
+}
+@media screen and (max-width:767px) {
+  #skincare .aftercare h3.center::after {
+    width: 110px;
+    height: 110px;
+    filter: blur(12px); /* 自身をぼかす（backdropではない） */
+  }
+}
+#skincare ul.solid-box li{
+  background: white;
+  border: solid 1px #16A4BD;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+@media screen and (max-width:1023px) {
+  #skincare ul.solid-box li{
+    align-items: stretch;
+  }
+}
+@media screen and (max-width:767px) {
+  #skincare ul.solid-box li{
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+  }
+}
+#skincare .solid-box img{
+  width: 24%;
+}
+@media screen and (max-width:1023px) {
+  #skincare .solid-box img{
+    width: 30%;
+  }
+}
+#skincare .solid-box div h4{
+  font-size: 25px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  color: #16A4BD;
+}
+@media screen and (max-width:767px) {
+  #skincare .solid-box div h4{
+    font-size: 20px;
+    line-height: 1.3;
+    padding-left: 110px;
+    margin-bottom: 40px;
+  }
+  #skincare .solid-box .li02 div h4{
+    margin-bottom: 70px;
+  }
+}
+#skincare .aftercare p.btm80{
+  margin-bottom: 80px;
+}
+@media screen and (max-width:767px) {
+  #skincare .aftercare p.btm80{
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width:1023px) {
+  #skincare .aftercare ul.solid-box li div{
+    margin: 30px 0;
+    width: 60%;
+  }
+}
+@media screen and (max-width:767px) {
+  #skincare .aftercare ul.solid-box li div{
+    margin: 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width:767px) {
+  #skincare .aftercare ul.solid-box li img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 113px;
+  }
+}
+#skincare .cost table {
+ margin-bottom: 10px;
+ border-spacing: 8px;
+}
+@media screen and (max-width:767px) {
+  #skincare .cost table {
+    border-spacing: 5px;
+   }
+}
+#skincare .cost p {
+ font-size: 12px;
+ margin-bottom: 80px;
+}
+@media screen and (max-width:767px) {
+  #skincare .cost p {
+    margin-bottom: 40px;
+   }
+}
+#skincare .cost th {
+  background: #68C4D4;
+  color: white;
+}
+@media screen and (max-width:767px) {
+  #skincare .cost th {
+    font-size: 14px;
+  }
+}
+#skincare .cost td {
+  width: 54.5%;
+  background: #fff;
+}
+#skincare .cost td span{
+  font-size: 14px;
+}
+@media screen and (max-width:767px) {
+  #skincare .cost td {
+    font-size: 14px;
+  }
+  #skincare .cost td span{
+    font-size: 12px;
+  }
+}
+#skincare .cost td.td01 {
+ width: 17%;
+ text-align: center;
+ margin-right: 5px;
+ font-weight: bold;
+ font-family: 'Source Han Serif', sans-serif;
+ background: #EFF9FA;
+}
+@media screen and (max-width:767px) {
+  #skincare .cost td.td01 {
+    width: 25%;
+   }
+}
+#skincare .cost .box-item table {
+  margin-bottom: 0;
+}
+#skincare .cost .box-item th {
+  background: #EFF9FA;
+  color: #16A4BD;
+}
+#skincare .cost h3 {
+  font-weight: bold;
+}
+#skincare .cost .box-item table {
+  border-spacing: 5px;
+}
+#skincare .cost .box-item table tr {
+  display: table-row;
+}
+@media screen and (max-width:767px) {
+  #skincare .cost .box-item table tr {
+    display: grid;
+    margin-bottom: 15px;
+  }
+}
+#skincare .cost .box-item table tr.last {
+  margin-bottom: 0;
+}
+#skincare .cost .box-item table th {
+  width:25%;
+  display: table-cell;
+}
+@media screen and (max-width:1023px) {
+  #skincare .cost .box-item table th {
+    width:30%;
+  }
+}
+@media screen and (max-width:767px) {
+  #skincare .cost .box-item table th {
+    width:auto;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+}
+#skincare .cost .box-item table td {
+  width: 95%;
+}
+@media screen and (max-width:767px) {
+  #skincare .cost .box-item table td {
+    width:auto;
+  }
+}
+@media screen and (max-width:1023px) {
+  #skincare .cost .box-item table td img{
+    width: 15%;
+  }
+}
+
+#skincare .flow h3.back {
+  padding: 20px 25px;
+  margin-bottom: 35px;
+  font-weight: bold;
+  font-size: 25px;
+} 
+@media screen and (max-width:767px) {
+  #skincare .flow h3.back {
+    font-size: 20px;
+    padding: 15px;
+    margin-bottom: 25px;
+  }
+}
+#skincare .flow p.point {
+  margin-left: 25px;
+  color: #16A4BD;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+} 
+@media screen and (max-width:767px) {
+  #skincare .flow p {
+    font-size: 16px;
+  } 
+  #skincare .flow p.point {
+    font-size: 18px;
+  } 
+}
+#skincare .flow p.point::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #16A4BD;
+  border-radius: 50%;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+} 
+#skincare .flow p.tel {
+  margin: 20px 0;
+} 
+@media screen and (max-width:767px) {
+  #skincare .flow p.tel {
+    margin: 15px 0;
+  } 
+}
+#skincare .flow p.tel a {
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: bold;
+  color: #DDA55E;
+  font-family: 'Source Han Serif', sans-serif;
+} 
+#skincare .flow a.rese {
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  padding: 18px;
+  border-radius: 45px;
+  background: #DDA55E;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  font-family: 'Source Han Serif', sans-serif;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+} 
+@media screen and (max-width:767px) {
+  #skincare .flow a.rese {
+    width: auto;
+    font-size: 16px;
+    padding: 15px;
+  } 
+}
+#skincare .flow a.rese::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  right: 30px;
+  top: 45%;
+  border-right: 2px solid currentColor;
+  border-top: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: .2s ease;
+}
+#skincare .flow a.rese:hover:after{
+  right: 25px;
+}
+#skincare .flow ul.white-box{
+  margin: 80px auto;
+}
+@media screen and (max-width:767px) {
+  #skincare .flow ul.white-box{
+    margin: 50px auto;
+  }
+}
+#skincare .flow .box-item{
+  padding: 40px 50px;
+  margin: auto;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+@media screen and (max-width:767px) {
+  #skincare .flow .box-item{
+    padding: 20px;
+  }
+  #skincare .flow .white-box h3{
+    padding-left: 0;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+  }
+}
+#skincare .flow .box-item::before{
+  position: absolute;
+  content: "";
+  width:0;
+  height:0;
+  left: 50%;
+  bottom: -16px;
+  border-style:solid;
+  border-width: 17px 15px 0 15px;
+  z-index: 10;
+  border-color: #fff transparent transparent transparent;
+}
+#skincare .flow .box-item.last::before{
+  display: none;
+}
+@media screen and (max-width:767px) {
+  #skincare .flow .box-item::before{
+    border-width: 13px 10px 0 10px;
+    bottom: -13px;
+  }
+}
+#skincare .flow .box-item::after{
+  position: absolute;
+  content: "";
+  width:0;
+  height:0;
+  left: 50%;
+  bottom: -20px;
+  border-style:solid;
+  border-width: 17px 15px 0 15px;
+  border-color: #dcdcdc5a transparent transparent transparent;
+}
+#skincare .flow .box-item.last::after{
+  display: none;
+}
+@media screen and (max-width:767px) {
+  #skincare .flow .box-item::after{
+    border-width: 13px 10px 0 10px;
+    bottom: -16px;
+  }
+}
+#skincare .flow .box-item:nth-child(2){
+  margin: 50px auto;
+}
+@media screen and (max-width:767px) {
+  #skincare .flow .box-item:nth-child(2){
+    margin: 30px auto;
+  }
+}
+#skincare .flow .box-item h3 {
+  color: #16A4BD;
+  font-weight: bold;
+}
+#skincare .flow .box-item h3 span{
+  color: #16A4BD;
+  font-size: 25px;
+  margin-left: 0;
+  margin-right: 15px;
+}
+@media screen and (max-width:767px) {
+  #skincare .flow .sub-container{
+    width: 100%;
+    font-size: 20px;
+  }
+}
+
+#skincare .view h2{
+  line-height: 0.2;
+}
+@media screen and (max-width:767px) {
+  #skincare .view h2{
+    line-height: 0;
+  }
+}
+#skincare .view .swiper-horizontal {
+  max-width: 1250px;
+  width: 100%;
+  margin: auto;
+}
+
+#skincare .view .case-box {
+  background: #fff;
+  border-radius: 8px;
+  padding: 40px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+@media screen and (max-width:767px) {
+  #skincare .view .case-box {
+    padding: 30px 0;
+    width: 80%;
+    margin: auto;
+  }
+}
+#skincare .view .case-box h3{
+  text-align: center;
+  font-size: 25px;
+}
+@media screen and (max-width:767px) {
+  #skincare .view .case-box h3{
+    font-size: 20px;
+  }
+}
+
+#skincare .view .case-box table {
+  border-spacing: 5px;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+#skincare .view .case-box table th{
+  font-size: 16px;
+  width: 23%;
+  display: table-cell;
+}
+@media screen and (max-width:767px) {
+  #skincare .view .case-box table th{
+    font-size: 14px;
+    width: 30%;
+    padding: 10px 0;
+  }
+}
+#skincare .view .case-box table td{
+  font-size: 16px;
+  width: 95%;
+}
+@media screen and (max-width:767px) {
+  #skincare .view .case-box table td{
+    font-size: 14px;
+    width: 70%;
+  }
+}
+#skincare .view .container{
+  max-width: 700px;
+}
+
+#skincare .view  ul.case-info {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+#skincare .view  ul.case-info li {
+  margin-bottom: 8px;
+}
+
+#skincare .topNav li.toForm a {
+  min-height: 60px;
+}
+@media screen and (max-width:1023px) {
+  #skincare .topNav li.toForm a {
+      min-height: 25px;
+  } 
+  #skincare .secBox {
+      padding: 0;
+  }
+}

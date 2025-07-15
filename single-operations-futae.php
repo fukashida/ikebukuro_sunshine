@@ -10,7 +10,7 @@
 </div>
 
 <div id="mainContents">
-<main>
+<main id="futae">
 <!--/ここからコンテンツ-->
 
 <div id="pageTitle" class="futae">

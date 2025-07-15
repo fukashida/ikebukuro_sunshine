@@ -142,7 +142,7 @@
 						</div>
 						<ul>
 							<a href="/operations/hyperhidrosis/"><li>▶︎ 多汗症</li></a>
-							<a href="/operations/wakiga/"><li>▶︎ わきが治療<br class="nb"><span class="nb">　</span>（保険適用）</li></a>
+							<a href="/operations/wakiga/"><li>▶︎ ワキガ治療<br class="nb"><span class="nb">　</span>（保険適用）</li></a>
 							<a href="/operations/bodyline/"><li>▶︎ 刺青除去・<br class="nb"><span class="nb">　</span>タトゥー除去</li></a>
 							<a href="/operations/faceline/"><li>▶︎ 注入療法</li></a>
 						</ul>

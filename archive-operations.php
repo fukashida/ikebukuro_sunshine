@@ -10,7 +10,7 @@
 </div>
 
 <!--/ここからコンテンツ-->
-<div id="mainContents">
+<div id="mainContents" class="archive-operation">
 <main>
 
 <div id="pageTitle" class="operations">
@@ -39,8 +39,8 @@
             array(
                 "slug" => "wakiga",
                 "image" => "/wp-content/themes/ikebukuro_sunshine/img/operations/im_operationslist05.jpg",
-                "alt" => "わきが治療（保険適用）",
-                "title" => "わきが治療（保険適用）",
+                "alt" => "ワキガ治療（保険適用）",
+                "title" => "ワキガ治療（保険適用）",
                 "desc" => "ワキの臭い対策には保険適用のわきが手術で永久に解決いたします"
             ),
             array(
@@ -78,20 +78,20 @@
                 "title" => "交通事故の傷跡治療",
                 "desc" => "交通事故や傷害の傷跡に悩んでいる方へ"
             ),
-            array(
-                "slug" => "faceline",
-                "image" => "/wp-content/themes/ikebukuro_sunshine/img/operations/im_operationslist06.jpg",
-                "alt" => "フェイス・ボディライン",
-                "title" => "注入療法",
-                "desc" => "鼻や輪郭の悩みに短時間でコンプレックス解消"
-            ),
-            array(
-                "slug" => "futae",
-                "image" => "/wp-content/themes/ikebukuro_sunshine/img/operations/im_operationslist03.jpg",
-                "alt" => "二重まぶた・タルミ取り",
-                "title" => "二重まぶた・タルミ取り",
-                "desc" => "お望みの美しい目元へと生まれ変わります"
-            ),
+            // array(
+            //     "slug" => "faceline",
+            //     "image" => "/wp-content/themes/ikebukuro_sunshine/img/operations/im_operationslist06.jpg",
+            //     "alt" => "フェイス・ボディライン",
+            //     "title" => "注入療法",
+            //     "desc" => "鼻や輪郭の悩みに短時間でコンプレックス解消"
+            // ),
+            // array(
+            //     "slug" => "futae",
+            //     "image" => "/wp-content/themes/ikebukuro_sunshine/img/operations/im_operationslist03.jpg",
+            //     "alt" => "二重まぶた・タルミ取り",
+            //     "title" => "二重まぶた・タルミ取り",
+            //     "desc" => "お望みの美しい目元へと生まれ変わります"
+            // ),
             array(
                 "slug" => "bodyline",
                 "image" => "/wp-content/themes/ikebukuro_sunshine/img/operations/im_operationslist07.jpg",
@@ -106,13 +106,13 @@
                 "title" => "シミ・肝斑・くすみ治療",
                 "desc" => "東大式トレチノインクリーム療法"
             ),
-            array(
-                "slug" => "datumousyou",
-                "image" => "/wp-content/themes/ikebukuro_sunshine/img/operations/im_operationslist12.jpg",
-                "alt" => "男性型脱毛症治療（プロペシア）",
-                "title" => "男性型脱毛症治療（プロペシア）",
-                "desc" => "プロペシアを処方いたします"
-            ),
+            // array(
+            //     "slug" => "datumousyou",
+            //     "image" => "/wp-content/themes/ikebukuro_sunshine/img/operations/im_operationslist12.jpg",
+            //     "alt" => "男性型脱毛症治療（プロペシア）",
+            //     "title" => "男性型脱毛症治療（プロペシア）",
+            //     "desc" => "プロペシアを処方いたします"
+            // ),
         );
 
         foreach ($operations as $operation) {

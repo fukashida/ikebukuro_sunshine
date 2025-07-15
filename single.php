@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="breadcrumbs">
+<div class="breadcrumbs blogContents">
 	<ol class="clrfix">
 		<li><a href="/">HOME</a></li>
 		<!-- 

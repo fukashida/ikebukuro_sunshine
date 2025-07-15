@@ -1,16 +1,17 @@
 <?php get_header(); ?>
 
-<div class="breadcrumbs">
+<div class="breadcrumbs blogContents">
 	<ol class="clrfix">
 		<li><a href="/">HOME</a></li>
-		<li>
+		<!-- <li>
 			<?php
 			// カテゴリの取得
 			$current_category = get_queried_object();
 			$category_name = $current_category ? $current_category->name : 'ブログ';
 			echo esc_html($category_name);
 			?>
-		</li>
+		</li> -->
+		<li><?php the_title(); ?></li>
 	</ol>
 </div>
 
@@ -108,9 +109,7 @@
 <div class="breadcrumbs">
 	<ol class="clrfix">
 		<li><a href="/">HOME</a></li>
-		<li>
-			<?php echo esc_html($category_name); ?>
-		</li>
+		<li><?php the_title(); ?></li>
 	</ol>
 </div>
 

@@ -334,25 +334,23 @@ add_action('init', 'create_operations_post_type');
 
 //施術一覧のカスタム投稿タイプのCSSとJS
 /////////////////////////////////////////////////////
-function add_custom_post_css_js() {
-  if (is_singular('operations')) {
-      global $post;
-      $slug = $post->post_name;
-
-      // CSSの読み込み
-      $css_file = get_template_directory() . "/custom/css/{$slug}.css";
-      if (file_exists($css_file)) {
-          echo "<link rel='stylesheet' type='text/css' href='" . get_template_directory_uri() . "/custom/css/{$slug}.css' />";
+function enqueue_operations_assets() {
+  if ( is_singular( 'operations' ) ) {
+      $slug = get_post()->post_name;
+      $css_uri = get_template_directory_uri() . "/custom/css/{$slug}.css";
+      $css_path = get_template_directory()      . "/custom/css/{$slug}.css";
+      if ( file_exists( $css_path ) ) {
+          wp_enqueue_style( "operations-{$slug}", $css_uri, [], filemtime( $css_path ) );
       }
-
-      // JSの読み込み
-      $js_file = get_template_directory() . "/custom/js/{$slug}.js";
-      if (file_exists($js_file)) {
-          echo "<script src='" . get_template_directory_uri() . "/custom/js/{$slug}.js'></script>";
+      $js_uri = get_template_directory_uri() . "/custom/js/{$slug}.js";
+      $js_path = get_template_directory()      . "/custom/js/{$slug}.js";
+      if ( file_exists( $js_path ) ) {
+          wp_enqueue_script( "operations-{$slug}", $js_uri, [], filemtime( $js_path ), true );
       }
   }
 }
-add_action('wp_head', 'add_custom_post_css_js');
+add_action( 'wp_enqueue_scripts', 'enqueue_operations_assets' );
+
 
 //カレンダーの「未承認」は枠から外す
 /////////////////////////////////////////////////////

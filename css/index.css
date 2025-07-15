@@ -1600,9 +1600,6 @@ img{
 
 @media screen and (max-width: 767px){
 
-    #headWrap {
-        margin-top: 0.5em;
-    }
     #headText {
         position: static;
         font-size: 18px;
