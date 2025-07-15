@@ -2378,7 +2378,13 @@ width: 90%;
 
 /* sns */
 #laser section#snsreport .box.left {
-    min-height: 385px;
+    min-height: 495px;
+}
+
+@media screen and (max-width:1023px) {
+    #laser section#snsreport .box.left {
+        min-height: auto;
+    }
 }
 
 @media screen and (max-width:767px) {

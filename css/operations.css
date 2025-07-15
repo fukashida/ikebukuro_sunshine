@@ -1306,6 +1306,7 @@ section#snsreport .box .flex div a{
     background: #DFAF71;
     position: relative;
     margin: auto;
+    margin-top: 20px;
     box-shadow: 4px 5px 0 rgba(0,0,0,.15);
     font-family: 'Source Han Serif', sans-serif;
 }
