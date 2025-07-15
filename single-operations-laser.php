@@ -1849,7 +1849,7 @@
         <div class="box">
           <div class="container item">
             <div class="flex">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/operations/skincare/skincare_insta.webp" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/operations/laser/laser_insta.webp" alt="">
               <div>
                 <h3 id="toc10-1">Instagram</h3>
                 <p>

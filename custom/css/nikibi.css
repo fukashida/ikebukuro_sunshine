@@ -4038,7 +4038,12 @@ dl.caseDescription {
     display: flex;
 }
 #nikibi section#snsreport .box.left {
-    min-height: 380px; 
+    min-height: 490px; 
+}
+@media screen and (max-width:540px) {
+    #nikibi section#snsreport .box.left {
+        min-height: auto; 
+    }
 }
 
 #nikibi .sns .instagram {
