@@ -180,6 +180,8 @@ echo $root_slug
 <!-- ハンバーガーメニュー -->
 <script defer type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/common/js/modernizr.js"></script>
 <script defer type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/common/js/common.js?<?php echo filemtime( get_template_directory() . '/common/js/common.js'); ?>"></script>
+<!-- 施術ページ用js -->
+<script defer type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/common/js/operations.js?<?php echo filemtime( get_template_directory() . '/common/js/operations.js'); ?>"></script>
 <!-- 画像遅延読み込み -->
 <script defer type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/common/js/lazysizes.min.js"></script>
 <!-- background-image webp対応-->

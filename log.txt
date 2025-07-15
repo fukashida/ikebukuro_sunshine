@@ -866,7 +866,7 @@ OKArray
     [service] => Array
         (
             [service] => 再診
-            [option] => わきが治療（保険）・多汗症治療
+            [option] => ワキガ治療（保険）・多汗症治療
             [date] => 2025年04月30日  水曜日,
             [time] => 13:30
         )

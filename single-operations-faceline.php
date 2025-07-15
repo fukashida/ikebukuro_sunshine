@@ -10,7 +10,7 @@
 </div>
 
 <div id="mainContents">
-<main>
+<main id="faceline">
 <!--/ここからコンテンツ-->
 
 <div id="pageTitle" class="faceline">

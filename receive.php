@@ -42,7 +42,7 @@ $utmData = $_SESSION['utm_data'] ?? [];
 
 $data['tracking'] = [
     'referrer' => $referrer,
-    'link' => $link,
+    // 'link' => $link,
     'bookingID' => $bookingID,
     'utm_source' => $utmData['utm_source'] ?? '未設定',
     'utm_medium' => $utmData['utm_medium'] ?? '未設定',

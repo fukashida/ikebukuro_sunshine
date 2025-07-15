@@ -23,7 +23,7 @@
 				<p class="name">池袋サンシャイン美容外科</p>
 			</div>
 			<nav id="footNav" class="clrfix">
-				<p id="footTel"><img src="/wp-content/uploads/footer_2108.png" loading="lazy" width="201" height="36" alt="0120-331-244　受付時間：9:00～17:30（完全予約制）"/></p>
+				<p id="footTel"><img src="<?php echo get_template_directory_uri(); ?>/common/img/footer_logo.svg" loading="lazy" width="201" height="36" alt="0120-331-244　受付時間：9:00～17:30（完全予約制）"/></p>
 				<div class="contents">
 					<p>
 						〒170－0013 東京都豊島区東池袋1-15-3 近代ビル9F<br>
@@ -44,10 +44,10 @@
 							<p>お顔の悩み</p>
 						</div>
 						<ul>
-							<a href="/operations/mwlift/"><li>▶︎ リフトアップ・小顔治療</li></a>
-							<a href="/operations/futae/"><li>▶︎ 二重まぶた・タルミ取り</li></a>
-							<a href="/operations/nikibi/"><li>▶︎ ニキビ・ニキビ跡</li></a>
-							<a href="/operations/placenta/"><li>▶︎ シミ・肝斑・くすみ治療</li></a>
+							<a href="/operations/mwlift/"><li>リフトアップ・小顔治療</li></a>
+							<a href="/operations/futae/"><li>二重まぶた・タルミ取り</li></a>
+							<a href="/operations/nikibi/"><li>ニキビ・ニキビ跡</li></a>
+							<a href="/operations/placenta/"><li>シミ・肝斑・くすみ治療</li></a>
 						</ul>
 					</div>
 					<div class="item">
@@ -55,11 +55,11 @@
 							<p>お肌の悩み</p>
 						</div>
 						<ul>
-							<a href="/operations/laser/"><li>▶︎ リストカット・傷跡</li></a>
-							<a href="/operations/shiwa/"><li>▶︎ ︎交通事故の傷跡治療</li></a>
-							<a href="/operations/skincare/"><li>▶︎ ︎ホクロ・イボ<br class="nb"><span class="nb">　</span>（保険適用）</li></a>
-							<a href="/operations/iboaza/"><li>▶︎ 大きなホクロ・あざ・<br class="nb"><span class="nb">　</span>イボ（保険適用）</li></a>
-							<a href="operations/faceline/"><li>▶︎ シワ・タルミ治療の<br class="nb"><span class="nb">　</span>注入療法</li></a>
+							<a href="/operations/laser/"><li>リストカット・傷跡</li></a>
+							<a href="/operations/shiwa/"><li>︎交通事故の傷跡治療</li></a>
+							<a href="/operations/skincare/"><li>︎ホクロ・イボ<br class="nb"><span class="nb">　</span>（保険適用）</li></a>
+							<a href="/operations/iboaza/"><li>大きなホクロ・あざ・<br class="nb"><span class="nb">　</span>イボ（保険適用）</li></a>
+							<a href="operations/faceline/"><li>シワ・タルミ治療の<br class="nb"><span class="nb">　</span>注入療法</li></a>
 						</ul>
 					</div>
 					<div class="item">
@@ -67,10 +67,10 @@
 							<p>お身体の悩み</p>
 						</div>
 						<ul>
-							<a href="/operations/hyperhidrosis/"><li>▶︎ 多汗症</li></a>
-							<a href="/operations/wakiga/"><li>▶︎ わきが治療<br class="nb"><span class="nb">　</span>（保険適用）</li></a>
-							<a href="/operations/bodyline/"><li>▶︎ 刺青除去・<br class="nb"><span class="nb">　</span>タトゥー除去</li></a>
-							<a href="/operations/faceline/"><li>▶︎ 注入療法</li></a>
+							<a href="/operations/hyperhidrosis/"><li>多汗症</li></a>
+							<a href="/operations/wakiga/"><li>ワキガ治療<br class="nb"><span class="nb">　</span>（保険適用）</li></a>
+							<a href="/operations/bodyline/"><li>刺青除去・<br class="nb"><span class="nb">　</span>タトゥー除去</li></a>
+							<a href="/operations/faceline/"><li>注入療法</li></a>
 						</ul>
 					</div>
 					<div class="item">
@@ -78,7 +78,7 @@
 							<p>その他の悩み</p>
 						</div>
 						<ul class="n2">
-							<a href="/operations/datumousyou/"><li>▶︎ 男性型脱毛症治療<br class="nb2"><span class="nb2">　</span>（プロペシア）</li></a>
+							<a href="/operations/datumousyou/"><li>男性型脱毛症治療<br class="nb2"><span class="nb2">　</span>（プロペシア）</li></a>
 						</ul>
 					</div>
 				</div>
@@ -93,7 +93,7 @@
 </div>
 </div>
 
-<script src="<?php echo get_template_directory_uri(); ?>/common/js/add_param.js"></script>
+<!-- <script src="<?php echo get_template_directory_uri(); ?>/common/js/add_param.js"></script> -->
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const queryParams = getQueryParams(); // URLからパラメータ取得

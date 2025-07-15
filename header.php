@@ -180,6 +180,8 @@ echo $root_slug
 <!-- ハンバーガーメニュー -->
 <script defer type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/common/js/modernizr.js"></script>
 <script defer type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/common/js/common.js?<?php echo filemtime( get_template_directory() . '/common/js/common.js'); ?>"></script>
+<!-- 施術ページ用js -->
+<script defer type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/common/js/operations.js?<?php echo filemtime( get_template_directory() . '/common/js/operations.js'); ?>"></script>
 <!-- 画像遅延読み込み -->
 <script defer type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/common/js/lazysizes.min.js"></script>
 <!-- background-image webp対応-->
@@ -453,18 +455,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="bodyWrap">
 <div id="header">
 	<header>
-	<div id="headWrap">
-		<?php if( is_home() || is_front_page() ) :  ?>
-			<h1 id="headText">池袋サンシャイン美容外科</h1>
-		<?php else: ?>
-			<h1 id="headText"><a href="/">池袋サンシャイン美容外科</a></h1>
-		<?php endif; ?>
-	</div>
-		<p id="headTel"><picture><source srcset="<?php echo get_template_directory_uri(); ?>/common/img/im_head_tel_dark.webp" type='image/webp'><img src="<?php echo get_template_directory_uri(); ?>/common/img/im_head_tel_dark.png" loading="lazy" width="201" height="36" alt="0120-331-244　受付時間：9:00～17:30（完全予約制）" data-eio="p"></picture></p>
-		<ul id="headContact">
-			<li><a href="/reservation/" class="c-orange">カウンセリング予約</a></li>
-			<li><a href="/inquiry/">お問い合わせ</a></li>
-		</ul>
+    <div class="top-menu">
+        <div id="headWrap">
+            <?php if( is_home() || is_front_page() ) :  ?>
+                <h1 id="headText">池袋サンシャイン美容外科</h1>
+            <?php else: ?>
+                <h1 id="headText"><a href="/">池袋サンシャイン美容外科</a></h1>
+            <?php endif; ?>
+        </div>
+        <div class="head-item">
+            <p id="headTel"><picture><source srcset="<?php echo get_template_directory_uri(); ?>/common/img/im_head_tel_dark.svg" type='image/svg'><img src="<?php echo get_template_directory_uri(); ?>/common/img/im_head_tel_dark.svg" loading="lazy" width="201" height="36" alt="0120-331-244　受付時間：9:00～17:30（完全予約制）" data-eio="p"></picture></p>
+            <ul id="headContact">
+                <li><a href="/reservation/" class="c-orange">カウンセリング予約</a></li>
+                <li><a href="/inquiry/">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </div>
 		<div id="gnav">
 			<nav>
 				<ul class="clrfix">
@@ -478,17 +484,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</ul>
 			</nav>
 		</div>
-		<ul id="headNav">
+		<!-- <ul id="headNav">
 			<li><a href="/recruit/">スタッフ募集</a></li>
-		</ul>
+		</ul> -->
 		<a class="spMenu"><span class="icon-menu-1"></span></a>
 		<ul class="spNav">
-			<li><a href="/operations/"><img src="<?php echo get_template_directory_uri(); ?>/common/img/sp_ic04.png" alt="治療メニュー">治療メニュー</a></li>
-			<li><a href="/charge/"><img src="<?php echo get_template_directory_uri(); ?>/common/img/sp_ic03.png" alt="料金一覧">料金一覧</a></li>
-			<li><a href="/blogs/"><img src="<?php echo get_template_directory_uri(); ?>/common/img/sp_ic_blog.png" alt="ブログ">ブログ</a></li>
-			<li><a href="/flow/"><img src="<?php echo get_template_directory_uri(); ?>/common/img/sp_ic_flow.png" alt="ご利用の流れ">ご利用の流れ</a></li>
-			<li><a href="/greetings/"><img src="<?php echo get_template_directory_uri(); ?>/common/img/sp_ic01.png" alt="院長紹介">院長紹介</a></li>
-			<li><a href="/map/"><img src="<?php echo get_template_directory_uri(); ?>/common/img/sp_ic02.png" alt="アクセス・医院概要">アクセス・医院概要</a></li>
+			<li><a href="/">ホーム</a></li>
+			<li><a href="/operations/">施術一覧</a></li>
+			<li><a href="/charge/">料金</a></li>
+			<li><a href="/flow/">ご利用の流れ</a></li>
+			<li><a href="/greetings/">院長紹介</a></li>
+			<li><a href="/map/">当院について</a></li>
+            <li><a href="/blogs/">ブログ</a></li>
 			<li class="bg"><a href="tel:0120331244"><img src="<?php echo get_template_directory_uri(); ?>/common/img/sp_ic_tel.png" alt="電話によるご予約">電話によるご予約</a></li>
 			<li class="bg"><a href="/reservation/"><img src="<?php echo get_template_directory_uri(); ?>/common/img/sp_ic_mail.png" alt="WEB予約フォーム">WEB予約フォーム</a></li>
 			<li>
@@ -517,8 +524,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <!--/#header-->
 
-<?php if( is_home() || is_front_page() ) :  ?>
-<?php else: ?>
+<?php
+  // フロントページ or ホーム 以外 かつ /operations/ 以外の場合だけcontainerを出す
+  $uri = $_SERVER['REQUEST_URI'];
+
+  if ( is_home() || is_front_page() || strpos($uri, '/operations/') === 0 ) :
+    // 何も出力しない
+  else:
+?>
 <!--/topVi-->
 <div id="container">
 <?php endif; ?>

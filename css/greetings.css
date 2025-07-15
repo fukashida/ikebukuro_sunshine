@@ -30,6 +30,8 @@
 	padding:30px 20px;
 	background:#F5F5F5;
 	border-width:1px 0;
+        width: auto;
+        display: block;
 }
 
 .history .photo {
@@ -66,7 +68,7 @@
 /* メディア追記 */
 /* ////////// */
 @font-face {
-        font-family: 'Source Han Serif';
+        font-family: 'Source Han Serif', sans-serif;
         src: url('../common/font/SourceHanSerifJP-Regular.otf') format('opentype');
         font-weight: normal;
         font-style: normal;
@@ -98,7 +100,7 @@ display: none;
 
 /* ボタンセクション */
 .sns-button {
-        font-family: 'Source Han Serif';
+        font-family: 'Source Han Serif', sans-serif;
         display: flex;
         justify-content: center;
         gap: 30px;
@@ -123,7 +125,7 @@ font-weight: bold;
 background-color: #dfae71;
 border-radius: 999px;
 text-decoration: none;
-width: 100%;
+width: 300px;
 height: 70px;
 font-size: 18px;
 padding: 0 24px;
@@ -131,16 +133,21 @@ position: relative;
 box-sizing: border-box;
 }
 @media screen and (max-width: 1080px) {
-.history .sns-button .btn {
-        height: 55px;
+        .history .sns-button .btn {
+                height: 55px;
+        }
 }
+@media screen and (max-width: 767px) {
+        .history .sns-button .btn {
+                width: 100%;
+        }
 }
 .btn.x::before {
 content: "";
 display: block;
 width: 24px;
 height: 21px;
-background-image: url('../img/icon-x.png');
+background-image: url('../img/greetings/icon-x.png');
 background-size: cover;
 background-repeat: no-repeat;
 margin-right: 12px;
@@ -150,7 +157,7 @@ content: "";
 display: block;
 width: 24px;
 height: 24px;
-background-image: url('../img/icon-instagram.png');
+background-image: url('../img/greetings/icon-instagram.png');
 background-size: cover;
 background-repeat: no-repeat;
 margin-right: 12px;
@@ -248,4 +255,12 @@ height: auto;
 max-width: 100%;
 object-fit: contain;
 display: block;
+}
+
+#pageTitle.greetings p {
+        width: 65%;
+        text-shadow:1px 1px 0 #ffffff, -1px -1px 0 #ffffff,
+        -1px 1px 0 #ffffff, 1px -1px 0 #ffffff,
+        0px 1px 0 #ffffff, 0 -1px 0 #ffffff,
+        -1px 0 0 #ffffff, 1px 0 0 #ffffff;
 }

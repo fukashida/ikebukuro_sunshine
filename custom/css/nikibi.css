@@ -1,41 +1,84 @@
-.pc{
+.pc {
     display: inherit;
 }
-.sp{
+
+.sp {
     display: none;
 }
 
-.pc-table{
+.pc-table {
     display: table;
 }
-.sp-table{
+
+.sp-table {
     display: none;
 }
 
-.big{font-size: 140%;}
-.taC{text-align: center;}
-.taL{text-align: left;}
-.taR{text-align: right;}
+.big {
+    font-size: 140%;
+}
 
-.white-color{color: #fff !important;}
-.green-color{color: #4C8237 !important;}
-.red-color{color: #ff0000 !important;}
-.brown-color{color: #822520 !important;}
+.taC {
+    text-align: center;
+}
 
-.mb10{margin-bottom: 10px;}
-.mb20{margin-bottom: 20px;}
-.mb30{margin-bottom: 30px;}
-.mb40{margin-bottom: 40px;}
+.taL {
+    text-align: left;
+}
 
-.fs23{font-size: 23px;}
-.fs28{font-size: 28px;}
-.fs63p{font-size: 63%;}
+.taR {
+    text-align: right;
+}
+
+.white-color {
+    color: #fff !important;
+}
+
+.green-color {
+    color: #4C8237 !important;
+}
+
+.red-color {
+    color: #ff0000 !important;
+}
+
+.brown-color {
+    color: #822520 !important;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.mb40 {
+    margin-bottom: 40px;
+}
+
+.fs23 {
+    font-size: 23px;
+}
+
+.fs28 {
+    font-size: 28px;
+}
+
+.fs63p {
+    font-size: 63%;
+}
 
 .breadcrumbs ol.clrfix br {
     display: none;
 }
 
-.green-title{
+.green-title {
     font-weight: bold;
     padding: .5em 0;
     position: relative;
@@ -55,7 +98,7 @@
     font-family: serif;
 }
 
-.greenHeading{
+.greenHeading {
     background-color: #4C8237;
     color: #fff;
     text-align: center;
@@ -76,71 +119,71 @@
     font-weight: 700;
 }
 
-hr.white-line{
+hr.white-line {
     height: 1px;
     background-color: #fff;
     border: none;
 }
 
-hr.brown-line{
+hr.brown-line {
     border: none;
     border-top: 1px solid #7c3424;
     height: 1px;
     color: #FFFFFF;
 }
 
-hr.dashed{
+hr.dashed {
     border: none;
     border-top: dashed 1px #7c3424;
     height: 1px;
     color: #FFFFFF;
 }
 
-ul.circle li:before{
-   content: '●';
+ul.circle li:before {
+    content: '●';
 }
 
-.bg-white{
+.bg-white {
     background: #fff;
 }
 
 .nikibi p.checkMoreBtn {
-	background-color: #fba733;
-	width: 250px;
-	margin: auto;
-	text-align: center;
-	padding: 10px 0 10px 10px;
-	font-size: 1.3em;
-	border-radius: 5px;
-	color: #ffffff;
-	cursor: pointer;
-	font-weight: 600;
-	margin-bottom: 20px;
+    background-color: #fba733;
+    width: 250px;
+    margin: auto;
+    text-align: center;
+    padding: 10px 0 10px 10px;
+    font-size: 1.3em;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .nikibi .blogRanking {
-	padding: 3%;
+    padding: 3%;
 }
 
 .nikibi .blogRanking ul li {
-	font-size: 1.2em;
-	font-weight: 600;
-	line-height: 2;
-	margin: 0 7% 15px;
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 2;
+    margin: 0 7% 15px;
 }
 
 .nikibi .blogRanking ul li span {
-	display: inline-block;
-	color: white;
-	width: 30px;
-	text-align: center;
-	box-sizing: border-box;
-	margin-right: 10px;
+    display: inline-block;
+    color: white;
+    width: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-right: 10px;
 }
 
 .nikibi .blogRanking ul li a {
     color: #333;
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .nikibi h3.subTitle {
@@ -150,88 +193,93 @@ ul.circle li:before{
     border-left: solid 5px #4c0604;
     text-align: left;
 }
+
 .nikibi .payment h4 {
-	text-align: center;
-	font-size: 2.4em;
-	margin: 50px auto;
-	font-family: serif;
+    text-align: center;
+    font-size: 2.4em;
+    margin: 50px auto;
+    font-family: serif;
 }
 
 .nikibi .payment .payment_box {
-	display: table;
-	margin-bottom: 30px;
-	width: 100%;
+    display: table;
+    margin-bottom: 30px;
+    width: 100%;
 }
 
 .nikibi .payment .payment_box_title {
-	width: 220px;
-	color: white;
-	font-size: 1.2em;
-	font-weight: 600;
-	background-color: #848B96;
-	text-align: center;
-	display: table-cell;
-	vertical-align: middle;
+    width: 220px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: #848B96;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .nikibi .payment .payment_box p {
-	display: table-cell;
-	vertical-align: middle;
-	padding-left: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 20px;
 }
+
 @media screen and (max-width:767px) {
 
-	.nikibi .payment h4 {
-		font-size: 25px;
-		margin: 20px auto;
-	}
+    .nikibi .payment h4 {
+        font-size: 25px;
+        margin: 20px auto;
+    }
 
-	.nikibi .payment .payment_box {
-		display: block;
-		margin-bottom: 30px;
-		width: 100%;
-	}
+    .nikibi .payment .payment_box {
+        display: block;
+        margin-bottom: 30px;
+        width: 100%;
+    }
 
-	.nikibi .payment .payment_box_title {
-		width: 100%;
-		text-align: center;
-		display: block;
-		padding: 7px 0;
-	}
+    .nikibi .payment .payment_box_title {
+        width: 100%;
+        text-align: center;
+        display: block;
+        padding: 7px 0;
+    }
 
-	.nikibi .payment .payment_box p {
-		display: block;
-		padding: 10px 0;
-		width: 100%;
-	}
-	.nikibi .top-menu {
-		margin-top: 0;
-	}
+    .nikibi .payment .payment_box p {
+        display: block;
+        padding: 10px 0;
+        width: 100%;
+    }
 
-	.nikibi .topNav li {
-		width: 44%;
-		font-size: 14px;
-		padding: 1.5% 2.7%;
-	}
+    .nikibi .top-menu {
+        margin-top: 0;
+    }
+
+    .nikibi .topNav li {
+        width: 44%;
+        font-size: 14px;
+        padding: 1.5% 2.7%;
+    }
 
 }
 
 em {
-font-style: normal;
+    font-style: normal;
 }
 
 /* 20210209 */
-.pc{
+.pc {
     display: inherit;
 }
-.sp{
+
+.sp {
     display: none;
 }
-.big{
+
+.big {
     font-size: 140%;
 }
 
-hr.white-line{
+hr.white-line {
     height: 1px;
     background-color: #fff;
     border: none;
@@ -271,21 +319,22 @@ section.bg-reddish-brown.triangle:before {
     border-top: 60px solid rgb(255 255 255 / 80%);
 }
 
-section.bg-spot-wallpaper {
+/* section.bg-spot-wallpaper {
     background: url(/common/img/background.webp);
     padding: 1em 1em;
     margin: 2em auto 0;
-}
+} */
 
 /**/
-.nowebp  #pageTitle.nikibi {
+.nowebp #pageTitle.nikibi {
     background: #f4f2f3 url(https://www.ike-sunshine.co.jp/wp-content/uploads/ISC_21_PC_nikibi_01.jpg)no-repeat;
     background-size: cover;
     border: none;
     padding: 25px;
     height: 338px;
 }
-.webp #pageTitle.nikibi {
+
+#pageTitle.nikibi {
     background: #f4f2f3 url(https://www.ike-sunshine.co.jp/wp-content/uploads/ISC_21_PC_nikibi_01.jpg.webp)no-repeat;
     background-size: cover;
     border: none;
@@ -300,6 +349,7 @@ section.bg-spot-wallpaper {
     width: 220px;
     text-align: center;
     font-family: serif;
+    margin: 0;
 }
 
 #pageTitle.nikibi p {
@@ -307,7 +357,7 @@ section.bg-spot-wallpaper {
     top: 24px;
     left: 188px;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 16px;
     font-family: serif;
     text-align: center;
 }
@@ -329,7 +379,8 @@ section.bg-spot-wallpaper {
 
 
 .nikibi .top-menu {
-    margin-top: -87px;
+    margin-top: -128px;
+    padding: 10px 0;
 }
 
 .nikibi .topNav ul {
@@ -338,14 +389,13 @@ section.bg-spot-wallpaper {
     text-align: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-left: 0;
+    align-items: stretch;
 }
 
 .nikibi .topNav li {
-    padding: 1% 1.8%;
-    font-size: 1.2em;
     line-height: 1;
     flex: 1;
-    border-right: 1px solid #fff;
     border-collapse: collapse;
     width: 100%;
     display: flex;
@@ -353,21 +403,8 @@ section.bg-spot-wallpaper {
     justify-content: center;
 }
 
-.nikibi .topNav li:first-child{
-    border-left: 1px solid #fff;
-    margin-left: 0.1em;
-}
-
-.nikibi .topNav li:last-child{
-    margin-right: 0.1em;
-}
-
-.nikibi .topNav li a {
-    color: #fff;
-}
-
 /**/
-.case-photo-list{
+.case-photo-list {
     display: flex;
     flex-wrap: nowrap;
     align-content: space-between;
@@ -376,7 +413,7 @@ section.bg-spot-wallpaper {
 
 .c-photo {
     margin: 0 1em;
-    width:100%;
+    width: 100%;
     flex-basis: auto;
 }
 
@@ -389,12 +426,12 @@ section.bg-spot-wallpaper {
     margin-bottom: 0.3em;
 }
 
-.internal-link{
+.internal-link {
     margin: 1em auto;
     text-align: right;
 }
 
-.internal-link a{
+.internal-link a {
     color: #434343;
     font-weight: bold;
     position: relative;
@@ -405,7 +442,7 @@ section.bg-spot-wallpaper {
     font-size: 1.1em;
 }
 
-.internal-link a:before{
+.internal-link a:before {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -419,6 +456,7 @@ section.bg-spot-wallpaper {
     border-radius: 50%;
     background: #434343;
 }
+
 .internal-link a:after {
     position: absolute;
     top: 5px;
@@ -433,8 +471,10 @@ section.bg-spot-wallpaper {
     border: 4px solid transparent;
     border-top: 4px solid #fff;
 }
-/**/
-.linkBtn02 a, a.linkBtn02 {
+
+/* 
+.linkBtn02 a,
+a.linkBtn02 {
     display: block;
     background: #e2453d;
     text-align: center;
@@ -474,7 +514,7 @@ section.bg-spot-wallpaper {
     font-family: serif;
 }
 
-.lineTitle-white{
+.lineTitle-white {
     color: #fff;
     border-bottom: 1px solid #fff;
     font-size: 1.8rem;
@@ -487,7 +527,7 @@ section.bg-spot-wallpaper {
     font-family: serif;
 }
 
-.nolineTitle{
+.nolineTitle {
     font-size: 1.5em;
     font-weight: bold;
     color: #7d3423;
@@ -498,7 +538,7 @@ section.bg-spot-wallpaper {
     font-family: serif;
 }
 
-.reddish-brown-title{
+.reddish-brown-title {
     background: #7d3423;
     color: #fff;
     text-align: center;
@@ -508,7 +548,7 @@ section.bg-spot-wallpaper {
     font-family: serif;
 }
 
-.reddish-beige-title{
+.reddish-beige-title {
     background-color: #f0ede1;
     color: #7c3424;
     font-size: 1.2em;
@@ -517,7 +557,7 @@ section.bg-spot-wallpaper {
     font-family: serif;
 }
 
-.reddish-beige-txt{
+.reddish-beige-txt {
     background-color: #f0ede1;
     color: #333;
     font-size: 1.2em;
@@ -528,7 +568,7 @@ section.bg-spot-wallpaper {
     min-height: 52px;
 }
 
-.white-title{
+.white-title {
     background: #fff;
     color: #333;
     text-align: center;
@@ -538,7 +578,7 @@ section.bg-spot-wallpaper {
     font-family: serif;
 }
 
-.black-title{
+.black-title {
     background: #333;
     color: #fff;
     text-align: center;
@@ -548,7 +588,7 @@ section.bg-spot-wallpaper {
     font-family: serif;
 }
 
-.brown-title{
+.brown-title {
     font-size: 1.3em;
     font-weight: bold;
     color: #7c3424;
@@ -565,7 +605,7 @@ h3.ttl {
     text-shadow: 1px 2px 3px #808080;
     margin-bottom: 0.5em;
     line-height: 1.3;
-}
+} */
 
 /**/
 .features {
@@ -610,7 +650,7 @@ h3.ttl {
 }
 
 /**/
-.flex-box{
+.flex-box {
     display: flex;
     flex-wrap: nowrap;
     align-content: space-between;
@@ -619,14 +659,15 @@ h3.ttl {
     margin-bottom: 1em;
 }
 
-.flex-box.flst{
+.flex-box.flst {
     justify-content: flex-start;
 }
-.flex-box .box-left{
+
+.flex-box .box-left {
     flex: 1;
 }
 
-.flex-box .box-right{
+.flex-box .box-right {
     flex: 1;
 }
 
@@ -652,6 +693,7 @@ h3.ttl {
     font-size: 1.5em;
     font-family: serif;
 }
+
 /**/
 #case h3.ttl {
     color: #7c3424;
@@ -679,16 +721,17 @@ h3.ttl {
     flex: 1;
     margin-left: 1em;
 }
+
 .case-img .label {
     margin-bottom: 0;
 }
 
-.case-img li{
+.case-img li {
     position: relative;
     padding-left: 1em;
 }
 
-.case-img li:before{
+.case-img li:before {
     position: absolute;
     content: '－';
     top: 0;
@@ -699,6 +742,7 @@ h3.ttl {
 table.overview {
     margin-bottom: 2rem;
 }
+
 .overview tr {
     border-top: 1px solid #7d3423;
     border-bottom: 1px solid #7d3423;
@@ -722,7 +766,7 @@ table.overview {
 }
 
 /**/
-#faq{
+#faq {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
@@ -854,7 +898,7 @@ table.overview {
     color: #444;
 }
 
-.doctor_career li:nth-child(2){
+.doctor_career li:nth-child(2) {
     border-left: 1px solid #666;
 }
 
@@ -978,19 +1022,20 @@ table.overview {
     padding-bottom: 20px;
 }
 
-.nkibi-nayami{
+.nkibi-nayami {
     background: url(https://www.ike-sunshine.co.jp/wp-content/uploads/ISC_21_PC_nikibi_17.png) no-repeat center;
     text-align: center;
     display: block;
 }
+
 .nkibi-nayami ul {
     display: inline-block;
 }
 
-.nkibi-nayami ul li{
+.nkibi-nayami ul li {
     color: #333;
     font-size: 2rem;
-    padding: .5em 15px;
+    margin-bottom: 10px;
     position: relative;
     font-weight: 700;
     text-align: left;
@@ -998,7 +1043,11 @@ table.overview {
     font-family: serif;
     line-height: 2;
 }
-.nkibi-nayami ul li:before{
+.nkibi-nayami ul li:last-child {
+    margin-bottom: 0;
+}
+
+.nkibi-nayami ul li:before {
     content: '';
     background: url(https://www.ike-sunshine.co.jp/wp-content/uploads/check.png) no-repeat;
     position: absolute;
@@ -1008,31 +1057,31 @@ table.overview {
     height: 38px;
 }
 
-.nkibi-nayami ul li span{
+.nkibi-nayami ul li span {
     color: #7d3423;
     font-size: 110%;
     border-bottom: 1px dashed #7d3423;
 }
 
-.lux-box{
+.lux-box {
     background: #fff url(https://www.ike-sunshine.co.jp/wp-content/uploads/ISC_21_PC_nikibi_19.png) no-repeat right;
     background-size: contain;
     margin: 0 auto;
     width: 98%;
 }
 
-.herf-box{
+.herf-box {
     width: 70%;
     padding: 0.3em;
 }
 
-.care-box{
+.care-box {
     background: #f0ede1 url(https://www.ike-sunshine.co.jp/wp-content/uploads/ISC_21_PC_nikibi_26.jpg) no-repeat right;
     background-size: contain;
     margin: 0 auto;
 }
 
-.flex-half{
+.flex-half {
     width: 49%;
 }
 
@@ -1053,7 +1102,7 @@ table.overview {
 
 .flex-box-one,
 .flex-box-two,
-.flex-box-three{
+.flex-box-three {
     width: 30%;
     margin: 0 auto;
     text-align: center;
@@ -1062,36 +1111,24 @@ table.overview {
 
 .flex-box-one-img img,
 .flex-box-two-img img,
-.flex-box-three-img img{
+.flex-box-three-img img {
     height: 150px;
     object-fit: contain;
 }
 
-.flex-box .flex-text{
+.flex-box .flex-text {
     width: 75%;
     padding: 0 1em;
 }
 
-.flex-box .flex-img{
+.flex-box .flex-img {
     width: 25%;
     padding: 0 1em;
     text-align: center;
 }
 
-.flex-box .flex-img img{
+.flex-box .flex-img img {
     max-width: 100%;
-}
-
-.beige-bar li {
-    background-color: #f0ede1;
-    color: #333;
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: 0.5em;
-    font-family: serif;
-    margin: 0.5em;
-    line-height: 1.5;
-    text-align: center;
 }
 
 dl.caseDescription {
@@ -1099,7 +1136,7 @@ dl.caseDescription {
     flex-wrap: wrap;
 }
 
-.caseDescription dt{
+.caseDescription dt {
     width: 30%;
     border-bottom: 1px solid #7d3423;
     padding: 0.5em 0;
@@ -1112,7 +1149,7 @@ dl.caseDescription {
 }
 
 .caseDescription dt.bn,
-.caseDescription dd.bn{
+.caseDescription dd.bn {
     border-bottom: none;
 }
 
@@ -1126,24 +1163,43 @@ dl.caseDescription {
     display: inline;
 }
 
-@media only screen and (max-width: 599px){
-    .pc{ display: none; }
-    .sp{ display: block; }
-    .pc-table{ display: none; }
-    .sp-table{ display: table; }
-    .fs23{ font-size: 1.3em; }
-    .fs28{ font-size: 1.5em; }
+@media only screen and (max-width: 599px) {
+    .pc {
+        display: none;
+    }
 
-    .catch{
+    .sp {
+        display: block;
+    }
+
+    .pc-table {
+        display: none;
+    }
+
+    .sp-table {
+        display: table;
+    }
+
+    .fs23 {
+        font-size: 1.3em;
+    }
+
+    .fs28 {
+        font-size: 1.5em;
+    }
+
+    .catch {
         margin-top: -15px;
         background-image: linear-gradient(225deg, #24A43E 0%, #47829E 100%);
     }
-    .catch ul{
+
+    .catch ul {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .catch ul li{
+
+    .catch ul li {
         color: #fff;
         font-weight: bold;
         border-left: 1px solid #fff;
@@ -1152,14 +1208,17 @@ dl.caseDescription {
         padding: 0.5em;
         text-align: center;
     }
-    .catch ul li:first-child{
+
+    .catch ul li:first-child {
         border-left: none;
         border-right: none;
     }
-    .catch ul li:last-child{
+
+    .catch ul li:last-child {
         border-left: none;
         border-right: none;
     }
+
     .nowebp #pageTitle.nikibi {
         background: #f4f2f3 url(https://www.ike-sunshine.co.jp/wp-content/uploads/ISC_21_SP_nikibi_01.png) no-repeat;
         background-size: cover;
@@ -1168,6 +1227,7 @@ dl.caseDescription {
         height: 311px;
         position: relative;
     }
+
     .webp #pageTitle.nikibi {
         background: #f4f2f3 url(https://www.ike-sunshine.co.jp/wp-content/uploads/ISC_21_SP_nikibi_01.png.webp) no-repeat;
         background-size: cover;
@@ -1176,6 +1236,7 @@ dl.caseDescription {
         height: 311px;
         position: relative;
     }
+
     #pageTitle.nikibi h1 {
         position: absolute;
         top: 57px;
@@ -1185,6 +1246,7 @@ dl.caseDescription {
         font-family: serif;
         font-size: 1.8rem;
     }
+
     #pageTitle.nikibi p {
         position: absolute;
         top: 119px;
@@ -1193,9 +1255,11 @@ dl.caseDescription {
         font-size: 1em;
         display: block;
     }
+
     .nikibi .top-menu {
         margin-top: -5px;
     }
+
     .nikibi .topNav li {
         padding: 1em;
         font-size: 1.2em;
@@ -1209,46 +1273,53 @@ dl.caseDescription {
         width: 166px;
         border-bottom: 1px solid #fff;
     }
-    .nikibi .topNav li:first-child{
+
+    .nikibi .topNav li:first-child {
         border-left: none;
         margin-left: 0;
     }
-    .nikibi .topNav li:last-child{
+
+    .nikibi .topNav li:last-child {
         margin-right: 0;
     }
+
     .nikibi .topNav li a {
         color: #fff;
         display: inline;
         vertical-align: middle;
     }
 
-    .flex-box.spwrap{
+    .flex-box.spwrap {
         flex-wrap: wrap;
     }
+
     .flex-first,
     .flex-second,
     .flex-third,
-    .flex-four{
+    .flex-four {
         width: 45%;
     }
-    .c-photo{
+
+    .c-photo {
         margin: 0 auto;
     }
 
-    .case-photo-list{
+    .case-photo-list {
         display: block;
     }
 
-    .nkibi-nayami{
+    .nkibi-nayami {
         height: 300px;
         background: url(https://www.ike-sunshine.co.jp/wp-content/uploads/ISC_21_SP_nikibi_16.png) no-repeat center bottom;
         background-size: contain;
     }
+
     .nkibi-nayami ul li {
         color: #333;
         font-size: 1.1em;
     }
-    .nkibi-nayami ul li:before{
+
+    .nkibi-nayami ul li:before {
         background: url(https://www.ike-sunshine.co.jp/wp-content/uploads/sp-check-1.png) no-repeat;
         top: 11px;
         left: -15px;
@@ -1256,26 +1327,33 @@ dl.caseDescription {
         height: 28px;
     }
 
-    .lux-box{
+    .lux-box {
         background: #FFF url(https://www.ike-sunshine.co.jp/wp-content/uploads/ISC_21_PC_nikibi_19.png) no-repeat top right;
         background-size: 70%;
         width: 100%;
     }
-    .lux-box .herf-box{
+
+    .lux-box .herf-box {
         width: 98%;
     }
-    .lux-box .herf-box h3.green-title{
+
+    .lux-box .herf-box h3.green-title {
         position: relative;
         top: 0;
         left: -51px;
     }
-    .beige-bar li{
+
+    .beige-bar li {
         font-size: 1em;
     }
-    .flex-box-one, .flex-box-two, .flex-box-three{
+
+    .flex-box-one,
+    .flex-box-two,
+    .flex-box-three {
         width: 100%;
         margin: 0 auto 1em;
     }
+
     .reddish-beige-txt {
         background-color: #f0ede1;
         color: #333;
@@ -1287,46 +1365,55 @@ dl.caseDescription {
         min-height: auto;
     }
 
-    .flex-box .flex-half{
+    .flex-box .flex-half {
         width: 100%;
         margin: 0 auto 1em;
     }
+
     .flex-box .flex-text {
         width: 60%;
         padding: 0 1em;
         text-align: left;
     }
-    .flex-box .flex-text.w100p{
+
+    .flex-box .flex-text.w100p {
         width: 100%;
     }
+
     .flex-box .flex-img {
         width: 40%;
         padding: 0 1em;
         text-align: center;
     }
-    .flex-box .flex-img.w100p{
+
+    .flex-box .flex-img.w100p {
         width: 100%;
         padding: 1em;
     }
-    .flex-box .flex-img.w100p img{
+
+    .flex-box .flex-img.w100p img {
         width: 50vw;
 
     }
 
-    .lineTitle{
+    .lineTitle {
         font-size: 4.5vw;
     }
+
     .white-title {
         font-size: 4vw;
     }
-    .ThicklineTitle{
+
+    .ThicklineTitle {
         font-size: 6vw;
         text-align: left;
     }
-    .lineTitle-white{
+
+    .lineTitle-white {
         font-size: 4vw;
     }
-    .greenHeading{
+
+    .greenHeading {
         font-size: 4vw;
     }
 
@@ -1334,10 +1421,12 @@ dl.caseDescription {
         background: #f0ede1 url(https://www.ike-sunshine.co.jp/wp-content/uploads/ISC_21_PC_nikibi_26.jpg) no-repeat top right;
         background-size: 40%;
     }
-    .care-box .herf-box{
+
+    .care-box .herf-box {
         width: 100%;
         padding: 0.5em;
     }
+
     .care-box .nolineTitle {
         font-size: 1em;
     }
@@ -1345,6 +1434,7 @@ dl.caseDescription {
     .features {
         display: block;
     }
+
     .features-left p {
         font-size: 1.3em;
         font-family: serif;
@@ -1352,22 +1442,25 @@ dl.caseDescription {
         text-shadow: 1px 2px 3px #808080;
         border-bottom: 1px solid #555;
     }
+
     .features-center {
         flex: 2.5;
         padding: 0.5em;
     }
+
     .features-center h3 {
         font-size: 1.2em;
     }
 
-    .case-img{
+    .case-img {
         display: block;
     }
-    .case-left{
+
+    .case-left {
         margin-bottom: 1em;
     }
 
-    #faq .acbox{
+    #faq .acbox {
         width: 100%;
     }
 
@@ -1375,9 +1468,11 @@ dl.caseDescription {
         font-size: 1.3em;
         padding-bottom: 0;
     }
+
     .doctor_greeting .txt {
         width: 100%;
     }
+
     .nowebp .doctor_greeting {
         background: url(https://www.ike-sunshine.co.jp/img/operations/nikibi/SP_ISC_mwr_image16doctor.png) no-repeat;
         background-position: bottom center;
@@ -1385,6 +1480,7 @@ dl.caseDescription {
         width: 100%;
         min-height: 600px;
     }
+
     .webp .doctor_greeting {
         background: url(https://www.ike-sunshine.co.jp/wp-content/uploads/SP_ISC_mwr_image16doctor.png.webp) no-repeat;
         background-position: bottom center;
@@ -1396,30 +1492,38 @@ dl.caseDescription {
     .doctor_career ul {
         display: block;
     }
-    .doctor_career li{
+
+    .doctor_career li {
         float: none;
     }
+
     .doctor_career li:nth-child(2) {
         border-top: 1px solid #666;
         border-left: none;
     }
+
     .overview th {
         width: 27%;
         font-size: 1em;
     }
+
     .overview td {
         padding: 0.5em;
     }
+
     .visit {
         display: block;
     }
+
     .visit-right img {
         margin: 0 0 -27px 0;
     }
+
     .visit-left img {
         margin: 0 0 -27px 0;
     }
-    .nikibi .visit .ttl{
+
+    .nikibi .visit .ttl {
         font-size: 1.4em;
     }
 
@@ -1428,8 +1532,9 @@ dl.caseDescription {
         flex-wrap: nowrap;
         align-content: space-between;
         justify-content: space-between;
-        overflow-x:scroll;
+        overflow-x: scroll;
     }
+
     #toc5 .flow-box {
         width: 100%;
         flex: 0 0 100%;
@@ -1437,17 +1542,21 @@ dl.caseDescription {
         border-left: 2px solid #ddd;
         border-bottom: 2px solid #ddd;
     }
-    #toc5 .flow-box:last-child{
+
+    #toc5 .flow-box:last-child {
         border-right: 2px solid #ddd;
     }
+
     #toc5 .flow-box .img {
         margin: 1em auto;
         text-align: center;
     }
+
     #toc5 .flow-box .txt {
         margin-top: 1em;
         padding: 0 1em 0;
     }
+
     .nikibi #recommended .box {
         width: 100%;
         background: #fff;
@@ -1458,34 +1567,39 @@ dl.caseDescription {
         justify-content: space-between;
         flex-wrap: wrap;
     }
+
     .nikibi #recommended .box .img {
         order: 2;
         flex: 0 0 100%;
         margin-top: 1em;
         text-align: center;
     }
+
     .nikibi #recommended .box .txt {
         order: 1;
         flex: 0 0 100%;
     }
+
     .payment_box {
         display: block;
         padding: 1em;
         max-width: 100%;
         width: auto;
     }
+
     .payment_box_title {
         width: auto;
         text-align: left;
         display: block;
     }
+
     .payment_box p {
         display: block;
-        vertical-align: middle;
         margin-top: 1em;
         padding-left: 0;
         padding-bottom: 0;
     }
+
     .nikibi .blogRanking ul li {
         font-size: 1em;
         font-weight: 600;
@@ -1495,25 +1609,2752 @@ dl.caseDescription {
         align-items: baseline;
     }
 }
-@media only screen and (max-width: 415px){
+
+@media only screen and (max-width: 415px) {
+
     .nowebp #pageTitle.nikibi,
     .webp #pageTitle.nikibi {
         height: 203px;
     }
+
     #pageTitle.nikibi h1 {
         top: 46px;
         left: 117px;
         width: 138px;
     }
+
     #pageTitle.nikibi p {
         top: 104px;
         left: 138px;
         width: 138px;
     }
+
     #pageTitle.nikibi .price-setting {
         margin-top: 0px;
     }
-    .nikibi .topNav li{
+
+    .nikibi .topNav li {
         width: 135px;
     }
 }
+
+
+/* ================================= */
+/*          ニキビ・ニキビ跡治療           */
+/*     先頭に「#nikibi」をつけてください    */
+/* ================================= */
+
+#nikibi #toc_box .toc_list ul li ul li .toc_num {
+    margin-left: 35px;
+}
+@media screen and (max-width:767px) {
+    #nikibi #toc_box .toc_list ul li ul li .toc_num {
+        margin-left: 25px;
+        width: 35px;
+        margin-right: 5px;
+    }
+    #nikibi #toc_box .toc_list ul li ul li .toc_num.n55 {
+        width: 40px;
+    }
+    #nikibi #toc_box .toc_list ul li ul li .toc_num.n85 {
+        width: 85px;
+    }
+}
+@media screen and (max-width:380px) {
+    #nikibi #toc_box .toc_list ul li ul li .toc_num.n55 {
+        width: 50px;
+    }
+}
+
+/* common */
+#nikibi img {
+    width: 100%;
+}
+
+#nikibi .secTi {
+    border-top: 2px solid #16A4BD;
+    border-bottom: 2px solid #16A4BD;
+    padding: 25px 0;
+    margin-bottom: 60px;
+    text-shadow: none;
+}
+@media screen and (max-width:767px) {
+    #nikibi .secTi {
+        margin-bottom: 40px;
+        padding: 20px 0;
+    } 
+}
+
+#nikibi .lineTitle.subTitle {
+    border-bottom: 1px solid #16A4BD;
+    padding-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #353535;
+    text-shadow: none;
+    font-weight: normal;
+}
+
+#nikibi .mg60 {
+    margin: 60px 0;
+}
+@media screen and (max-width:676px) {
+    #nikibi .mg60 {
+        margin: 30px 0;
+    }
+}
+
+#nikibi .bgfff {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+#nikibi .center {
+    text-align: center;
+}
+
+#nikibi .sp-only {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #nikibi .pc-only {
+        display: none;
+    }
+
+    #nikibi .sp-only {
+        display: block;
+    }
+
+    #nikibi .lineTitle.subTitle {
+        padding: 20px;
+    }
+}
+
+/* cta */
+#nikibi .cta {
+    border: 1px solid #16A4BD;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 60px;
+    padding: 20px 0;
+    background-color: #FFFFFF;
+}
+
+#nikibi .cta p {
+    margin: 0;
+    font-family: "Allura", 'cursive', sans-serif;
+}
+
+#nikibi .cta .img-box {
+    width: 30%;
+}
+
+#nikibi .cta .img-box img {
+    border-radius: 10px;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+#nikibi .tell {
+    width: 30%;
+}
+
+#nikibi .tell .tell-guide {
+    color: #16A4BD;
+    font-size: 21px;
+    text-align: center;
+}
+
+#nikibi .tell .tell-num {
+    font-size: 30px;
+    position: relative;
+    padding-left: 55px;
+    line-height: 1.2;
+}
+
+#nikibi .tell .tell-num::before {
+    content: "";
+    position: absolute;
+    left: 25px;
+    top: 57%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    background-image: url('../../img/operations/nikibi/tell.png');
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#nikibi .tell .tell-num a {
+    color: #16A4BD;
+}
+
+#nikibi .tell .tell-detail {
+    font-size: 18px;
+    text-align: center;
+}
+
+#nikibi .tell .address {
+    font-size: 14px;
+    text-align: center;
+    margin: 5px 0 10px;
+}
+
+#nikibi .tell .attention {
+    background-color: #EFF9FA;
+    font-size: 18px;
+    text-align: center;
+}
+
+#nikibi .cta-btn {
+    width: 40%;
+}
+
+#nikibi .cta-btn p {
+    color: #353535;
+    text-align: center;
+}
+
+#nikibi .cta-btn a {
+    display: block;
+    text-align: center;
+    background-color: #16A4BD;
+    border-radius: 999px;
+    color: #FFFFFF;
+    width: 90%;
+    margin: 30px auto 0;
+    padding: 15px 0;
+}
+
+#nikibi .cta.sp-only {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    #nikibi .cta.pc-only {
+        display: none;
+    }
+
+    #nikibi .cta.sp-only {
+        display: block;
+    }
+
+    #nikibi .cta {
+        flex-direction: column;
+    }
+
+    #nikibi .cta .flex-box {
+        justify-content: center;
+    }
+
+    #nikibi .cta .img-box {
+        width: 150px;
+    }
+
+    #nikibi .tell {
+        width: 150px;
+        margin: 1%;
+    }
+
+    #nikibi .tell .tell-guide {
+        font-size: 11px;
+    }
+
+    #nikibi .tell .address {
+        font-size: 5px;
+    }
+
+    #nikibi .tell .attention {
+        font-size: 11px;
+    }
+
+    #nikibi .tell .tell-detail {
+        font-size: 9px;
+    }
+
+    #nikibi .tell .tell-num {
+        font-size: 15px;
+        padding-left: 35px;
+    }
+
+    #nikibi .tell .tell-num::before {
+        width: 15px;
+        height: 15px;
+        left: 15px;
+    }
+
+    #nikibi .cta-btn p {
+        font-size: 13px;
+    }
+
+    #nikibi .cta-btn a {
+        font-size: 13px;
+        margin: 20px auto 0;
+    }
+
+    #nikibi .cta-btn {
+        width: 100%;
+    }
+}
+
+/* fv */
+#nikibi .fv {
+    position: relative;
+    background: url(https://www.ike-sunshine.co.jp/wp-content/uploads/ISC_21_PC_nikibi_01.jpg)no-repeat center/cover;
+    border: none;
+    height: 400px;
+}
+@media screen and (max-width:1023px) {
+    #nikibi .fv {
+        height: 380px;
+        margin-bottom: 200px;
+    }
+}
+@media screen and (max-width:767px) {
+    #nikibi .fv {
+        height: 270px;
+        margin-bottom: 200px;
+        background: url(../../img/operations/nikibi/header_sp.png)no-repeat center/cover;
+    }
+}
+@media screen and (max-width:540px) {
+    #nikibi .fv {
+        height: 270px;
+        margin-bottom: 200px;
+    }
+}
+
+#nikibi .topNav {
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 99%;
+}
+@media screen and (max-width:1023px) {
+    #nikibi .topNav {
+        bottom: -32%;
+    }
+}
+@media screen and (max-width:767px) {
+    #nikibi .topNav {
+        bottom: -42%;
+    }
+}
+@media screen and (max-width:540px) {
+    #nikibi .topNav {
+        bottom: -62%;
+    }
+}
+
+#nikibi .topNav li a {
+    padding: 8px 14px;
+}
+
+
+#nikibi .pageTitle {
+    position: absolute;
+    width: fit-content;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media screen and (max-width:1023px) {
+    #nikibi .pageTitle {
+        top: 11%;
+        left: 50%;
+    } 
+}
+@media screen and (max-width:767px) {
+    #nikibi .pageTitle {
+        top: 15%;
+        left: 52%;
+    } 
+}
+@media screen and (max-width:540px) {
+    #nikibi .pageTitle {
+        top: 20%;
+        left: 52%;
+    } 
+}
+
+#nikibi .pageTitle h1 {
+    text-align: center;
+    font-family: serif;
+    margin: 0;
+    line-height: 1.0;
+    font-size: 27px;
+}
+
+#nikibi .pageTitle p {
+    text-align: center;
+    font-family: serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-top: 0.7em;
+}
+
+#nikibi .pageTitle .price-setting {
+    margin: 20px 0;
+    display: block;
+    font-family: serif;
+}
+
+#nikibi .pageTitle .small {
+    font-size: 80%;
+}
+
+#nikibi .pageTitle .fee {
+    font-size: 160%;
+    color: #7c3424;
+}
+
+/* #nikibi .topNav {
+    position: relative;
+    bottom: -156px;
+}
+
+#nikibi .topNav ul {
+    gap: 0;
+    margin: 0;
+}
+
+#nikibi .topNav li {
+    width: calc(100% / 6);
+    text-align: center;
+    border-right: 1px solid #FFFFFF;
+    box-sizing: border-box;
+}
+
+#nikibi .topNav li:last-child {
+    border-right: none;
+}
+
+#nikibi .topNav li a {
+    background: transparent;
+    color: #FFFFFF;
+} */
+
+/* 目次 */
+#nikibi .table-of-contents {
+    margin: 30px 0 60px;
+}
+
+#nikibi .table-of-contents .toc-toggle {
+  position: relative;
+  background-color: #D0EDF2;
+  color: #16A4BD;
+  padding: 10px 40px 10px 20px;
+  font-weight: bold;
+  border: 1px solid #16A4BD;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+#nikibi .table-of-contents .toc-toggle::after {
+  content: '＋';
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  font-weight: normal;
+  transition: 0.3s ease;
+}
+
+#nikibi .table-of-contents .toc-toggle.open::after {
+  content: '−';
+}
+
+#nikibi .table-of-contents .toc-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+    padding: 0 70px;
+    background: #F4FBFC;
+    border: 1px solid #F4FBFC;
+    border-radius: 5px;
+    list-style: none;
+    margin-top: 0;
+}
+
+#nikibi .table-of-contents .toc-list li {
+    margin: 20px 0;
+}
+
+#nikibi .table-of-contents .toc-list a {
+    color: #16A4BD;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #949494;
+    display: flex;
+    align-items: center;
+}
+
+#nikibi .table-of-contents .toc-list a span {
+    display: block;
+    width: 50px;
+}
+
+#nikibi .table-of-contents .toc-sublist {
+    margin-top: 15px;
+}
+
+#nikibi .table-of-contents .toc-sublist li {
+    margin: 0;
+}
+
+#nikibi .table-of-contents .toc-sublist a {
+    color: #3D3D3D;
+    font-weight: normal;
+    padding: 0;
+    border: none;
+    font-size: 17px;
+}
+
+#nikibi .table-of-contents .toc-list.open {
+  padding: 50px 70px;
+  max-height: 3000px;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    
+    #nikibi .table-of-contents .toc-list a {
+        font-size: 16px;
+    }
+
+    #nikibi .table-of-contents .toc-sublist a {
+        font-size: 14px;
+    }
+
+    #nikibi .table-of-contents .toc-sublist {
+        padding-left: 13px;
+    }
+
+    #nikibi .table-of-contents .toc-list.open {
+        padding: 50px 20px;
+    }
+}
+
+
+/* 原因とメカニズム */
+#nikibi .bg-spot-wallpaper {
+    background-color: #FCF8F2;
+    padding: 100px 0;
+}
+@media screen and (max-width: 767px) {
+    #nikibi .bg-spot-wallpaper {
+        padding: 60px 0;
+    }
+}
+
+#nikibi .bg-spot-wallpaper .factor {
+    width: 100%;
+    margin: 0;
+    gap: 20px;
+    flex-direction: row-reverse;
+}
+@media screen and (max-width:1023px) {
+    #nikibi .bg-spot-wallpaper .factor {
+        flex-wrap: wrap;
+    }
+}
+
+#nikibi .bg-spot-wallpaper .factor img{
+    height: auto;
+    width: 45%;
+}
+@media screen and (max-width:1023px) {
+    #nikibi .bg-spot-wallpaper .factor img{
+        width: 100%;
+    }
+}
+
+#nikibi .bg-spot-wallpaper .factor>div {
+    flex: 1;
+}
+
+#nikibi .bg-spot-wallpaper .secTi {
+    color: #16A4BD;
+}
+
+#nikibi .bg-spot-wallpaper .acneTypesBox {
+    padding: 60px 50px;
+}
+#nikibi .bg-spot-wallpaper .acneTypesBox h3{
+    text-align: center;
+}
+#nikibi .bg-spot-wallpaper .acneTypesBox h3.up{
+    margin-top: 60px;
+}
+
+#nikibi .bg-spot-wallpaper .acneTypesBox .flex-box {
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    #nikibi .bg-spot-wallpaper {
+        padding: 60px 0;
+    }
+
+    #nikibi .bg-spot-wallpaper .acneTypesBox {
+        padding: 40px 20px;
+    }
+
+    #nikibi .acneTypesBox .flex-first,
+    #nikibi .acneTypesBox .flex-second,
+    #nikibi .acneTypesBox .flex-third,
+    #nikibi .acneTypesBox .flex-four {
+        width: 90%;
+    }
+
+    #nikibi .bg-spot-wallpaper .acneTypesBox .flex-box {
+        gap: 40px;
+        flex-direction: column;
+    }
+}
+
+/* ニキビ・ニキビ跡症例写真 */
+#nikibi .case-photo {
+    background-color: rgba(223, 175, 113, 0.15);
+    padding: 100px 0;
+}
+@media screen and (max-width: 767px) {
+    #nikibi .case-photo {
+        padding: 60px 0;
+    }
+}
+
+#nikibi .case-photo .secTi {
+    color: #16A4BD;
+}
+
+#nikibi .case-photo .desc {
+    text-align: center;
+}
+
+#nikibi .case-photo-lists {
+    padding: 60px 55px;
+    margin-top: 55px;
+    display: block;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+}
+
+#nikibi .case-photo-lists h3{
+    text-align: center;
+}
+
+#nikibi .case-bf {
+    display: flex;
+    justify-content: space-between;
+}
+
+#nikibi .case-photo-list {
+    display: block;
+    width: calc((100% - 60px) / 3);
+}
+
+#nikibi .case-foto-desc {
+    font-family: 'Source Han Serif', sans-serif;
+    background-color: #F0EDE1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #000000;
+    margin: 16px 0 45px;
+}
+
+#nikibi .c-photo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+}
+
+#nikibi .c-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#nikibi .c-photo-bf,
+#nikibi .c-photo-af {
+    position: relative;
+    display: inline-block;
+}
+
+#nikibi .c-photo-bf::before {
+    content: "Before";
+    position: absolute;
+    top: -25px;
+    left: 3px;
+    background-color: #333;
+    color: white;
+    padding: 3px 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#nikibi .c-photo-af::before {
+    content: "After";
+    position: absolute;
+    top: -25px;
+    left: 3px;
+    background-color: #009fb7;
+    color: white;
+    padding: 3px 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    #nikibi .case-photo {
+        padding: 60px 0;
+    }
+
+    #nikibi .case-photo-lists {
+        padding: 40px 20px;
+    }
+
+    #nikibi .case-bf {
+        flex-direction: column;
+    }
+
+    #nikibi .case-photo-list {
+        width: 100%;
+    }
+}
+
+
+/* 悩み */
+#nikibi .concern {
+    padding: 100px 0;
+}
+@media screen and (max-width: 767px) {
+    #nikibi .concern {
+        padding: 60px 0;
+    }
+}
+
+#nikibi .concern-contents .title {
+    border: none;
+    width: fit-content;
+    padding: 0;
+    font-weight: bold;
+    color: #000000;
+    text-shadow: none;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto 60px;
+}
+@media screen and (max-width:767px) {
+    #nikibi .concern-contents .title {
+        margin: 0 auto 40px;
+    }
+}
+#nikibi .concern-contents .title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: rgba(252, 248, 242, 1);
+    filter: blur(8px);
+    z-index: -1;
+}
+#nikibi .concern-contents .title::after {
+    content: "";
+    position: absolute;
+    top: 65%;
+    right: -10%;
+    width: 66px;
+    height: 66px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: rgba(252, 248, 242, 1);
+    filter: blur(10px);
+    z-index: -1;
+}
+@media screen and (max-width:540px) {
+    #nikibi .concern-contents .title::after {
+        top: 85%;
+        right: -30%;
+    }
+}
+
+#nikibi .nkibi-nayami {
+    background: none;
+    position: relative;
+    margin-bottom: 60px;
+    z-index: 0;
+}
+@media screen and (max-width:767px) {
+    #nikibi .nkibi-nayami {
+        margin-bottom: 35px;
+    }  
+}
+
+#nikibi .nkibi-nayami::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 200px;
+    background-image: url('../../img/operations/nikibi/nayami-left.png');
+    background-size: cover;
+    background-position: center;
+}
+@media screen and (max-width:850px) {
+    #nikibi .nkibi-nayami::before {
+        left: -80px;
+    }  
+}
+
+#nikibi .nkibi-nayami::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+    background-image: url('../../img/operations/nikibi/nayami-right.png');
+    background-size: cover;
+    background-position: center;
+}
+@media screen and (max-width:850px) {
+    #nikibi .nkibi-nayami::after {
+        right: -30px;
+    } 
+}
+
+#nikibi .nkibi-nayami ul li:before {
+    display: none;
+}
+
+#nikibi .nkibi-nayami ul li {
+    text-shadow: none;
+    display: flex;
+}
+
+#nikibi .nkibi-nayami ul li p{
+    line-height: 1.5;
+}
+
+#nikibi .nkibi-nayami span {
+    color: #000000;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000000;
+}
+
+#nikibi .nkibi-nayami .nayami-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DFAF71;
+    border-radius: 50%;
+    color: #FFFFFF;
+    width: 60px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+#nikibi .medical-system {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    padding: 50px 50px 60px;
+}
+
+#nikibi .medical-system .title {
+    padding-top: 0;
+    padding-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #353535;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+    text-shadow: none;
+}
+
+#nikibi .medical-system .lux-box {
+    background: none;
+    display: flex;
+    background-color: #FCF8F2;
+}
+#nikibi .medical-system .lux-box .herf-box {
+    flex: 1.5;
+    padding: 30px 47px;
+}
+@media screen and (max-width:540px) {
+    #nikibi .medical-system .lux-box .herf-box {
+        padding: 30px 15px;
+    }
+}
+#nikibi .medical-system .lux-box .herf-box .fs28{
+    font-family: 'Source Han Serif', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+#nikibi .medical-system .lux-box img {
+    flex: 1;
+}
+
+#nikibi .lux-box h3 {
+    color: #000000;
+    text-shadow: none;
+    font-size: 22px;
+}
+
+#nikibi .lux-box .beige-bar li {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    z-index: 0;
+}
+#nikibi .lux-box .beige-bar li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
+    filter: blur(0px);
+    z-index: -1;
+}
+@media screen and (max-width:540px) {
+    #nikibi .lux-box .beige-bar li.li2 {
+        margin: 10px auto 18px;
+    }
+    #nikibi .lux-box .beige-bar li.li2.last {
+        margin: 0;
+    }
+    #nikibi .lux-box .beige-bar li.li2::before {
+        height: 80px;
+    }
+}
+
+#nikibi .medical-system .lux-box img {
+    width: 300px;
+}
+
+#nikibi .sub-system {
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#nikibi .sub-system {
+    background-color: #FCF8F2;
+    width: calc((100% - 170px) / 3);
+    padding: 17px 22px;
+}
+
+#nikibi .sub-system h4 {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    position: relative;
+    z-index: 0;
+    color: #353535;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+#nikibi .sub-system h4::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
+    filter: blur(0px);
+    z-index: -1;
+}
+
+#nikibi .reddish-beige-txt {
+    background-color: transparent;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    #nikibi .concern {
+        padding: 60px 0;
+    }
+
+    #nikibi .nkibi-nayami::before,
+    #nikibi .nkibi-nayami::after {
+        display: none;
+    }
+
+    #nikibi .nkibi-nayami {
+        height: auto;
+    }
+
+    #nikibi .nkibi-nayami ul {
+        padding: 0;
+    }
+
+    #nikibi .concern-contents .img-box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #nikibi .concern-contents .img-box img {
+        width: 35%;
+    }
+
+    #nikibi .medical-system {
+        margin-top: 50px;
+        padding: 40px 20px;
+    }
+
+    #nikibi .flex-box.spwrap {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    #nikibi .sub-system {
+        width: 100%;
+        padding: 17px 0px;
+    }
+    #nikibi .sub-system.last {
+        margin-bottom: 0;
+    }
+
+    #nikibi .herf-box {
+        width: auto;
+    }
+
+    #nikibi .medical-system .lux-box {
+        flex-direction: column-reverse;
+    }
+
+    #nikibi .lux-box h3 {
+        left: 0;
+    }
+
+    #nikibi .medical-system .lux-box img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    @media screen and (max-width:540px) {
+        #nikibi .medical-system .lux-box img {
+            width: 60%;
+        }
+    }
+
+    #nikibi .lux-box .img-box {
+        width: 90%;
+        margin: 10px auto 0;
+    }
+}
+
+/* スターラックス */
+#nikibi .lux-intro {
+    text-align: center;
+}
+
+#nikibi .lux-about {
+    background-color: #FCF8F2;
+    padding: 100px 0 0;
+}
+
+#nikibi .lux-about .secTi {
+    color: #16A4BD;
+    font-size: 35px;
+}
+@media screen and (max-width:767px) {
+    #nikibi .lux-about .secTi {
+        font-size: 23px;
+    }
+}
+
+#nikibi .lux-about .lux-feature {
+    margin: 50px 0 0px;
+    ;
+}
+
+#nikibi .lux-feature-main .flex-box {
+    align-items: center;
+}
+
+#nikibi .lux-feature-main .flex-box .flex-img {
+    width: 350px;
+}
+@media screen and (max-width:1023px) {
+    #nikibi .lux-feature-main .flex-box .flex-img img {
+        width: 50%;
+    } 
+}
+
+#nikibi .lux-feature-main .flex-box .flex-text {
+    width: 550px;
+}
+
+#nikibi .lineTitle.subTitle.left {
+    border-left: none;
+    padding-bottom: 20px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 25px;
+}
+@media screen and (max-width:767px) {
+    #nikibi .lineTitle.subTitle.left {
+        font-size: 22px;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+}
+
+#nikibi .lux-feature-sub {
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+#nikibi .lux-feature-sub .flex-half {
+    padding: 35px;
+    width: 50%;
+}
+
+#nikibi .lux-feature-sub h4 {
+    color: #000000;
+    text-shadow: none;
+    padding: 0;
+    margin: 0;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+@media screen and (max-width:1023px) {
+    #nikibi .lux-feature-sub h4 {
+        text-align: center;
+    }
+}
+
+#nikibi .lux-feature-sub .flex-box {
+    gap: 15px;
+    align-items: flex-start;
+    margin: 0;
+}
+
+#nikibi .lux-feature-sub .flex-box .flex-img {
+    padding: 0;
+    width: 32%;
+}
+
+#nikibi .lux-feature-sub .flex-box .flex-text {
+    padding: 0;
+}
+
+#nikibi .lux-feature-sub .flex-box p {
+    font-size: 16px;
+    margin: 0;
+}
+
+#nikibi .lux-summary {
+    background-color: #FCF8F2;
+    padding: 80px 0 100px;
+}
+
+#nikibi .lux-summary .secTi {
+    color: #16A4BD;
+    font-size: 35px;
+    text-align: center;
+}
+@media screen and (max-width:767px) {
+    #nikibi .lux-summary .secTi {
+        font-size: 25px;
+    }  
+}
+
+#nikibi .lux-feature-table {
+    margin-top: 60px;
+    overflow: hidden;
+}
+@media screen and (max-width:767px) {
+    #nikibi .lux-feature-table {
+        margin-top: 40px;
+    } 
+}
+
+#nikibi .lux-feature-table .lineTitle.subTitle {
+    border-bottom: 2px solid #16A4BD;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 0;
+    padding-bottom: 20px;
+    ;
+}
+@media screen and (max-width:767px) {
+    #nikibi .lux-feature-table .lineTitle.subTitle {
+        font-size: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        ;
+    }
+}
+
+#nikibi .overview {
+    border-collapse: separate;
+    border-spacing: 6px;
+    margin: 0;
+}
+@media screen and (max-width:767px) {
+    #nikibi .overview {
+        border-spacing: 4px;
+    }
+}
+
+#nikibi .overview tr {
+    border: none;
+}
+
+#nikibi .overview th {
+    background-color: #EFF9FA;
+    border: 1px solid #16A4BD;
+    border-radius: 8px;
+    color: #353535;
+    font-size: 18px;
+}
+@media screen and (max-width:767px) {
+    #nikibi .overview th {
+        border-radius: 5px;
+    }
+}
+
+#nikibi .overview td {
+    border: 1px solid #16A4BD;
+    border-radius: 8px;
+    color: #353535;
+    font-size: 18px;
+}
+@media screen and (max-width:767px) {
+    #nikibi .overview td {
+        border-radius: 5px;
+    }
+}
+
+#nikibi .overview .taR {
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+#nikibi .circle {
+    background-color: #FFFFFF;
+    border: 1px solid #16A4BD;
+    padding: 30px 40px;
+    border-radius: 5px;
+}
+@media screen and (max-width:767px) {
+    #nikibi .circle {
+        padding: 20px 15px;
+    } 
+}
+
+#nikibi ul.circle li:before {
+    display: none;
+}
+
+#nikibi .circle li {
+    font-size: 16px;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    list-style-type: disc;
+}
+@media screen and (max-width:767px) {
+    #nikibi .circle li {
+        font-size: 14px;
+    } 
+}
+
+#nikibi .circle li a{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    #nikibi .lux-about .lux-feature {
+        margin: 45px 0 0;
+    }
+
+    #nikibi .lux-feature-main .flex-box {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    #nikibi .lux-feature-main .flex-box .flex-img {
+        width: auto;
+    }
+
+    #nikibi .lux-feature-main .flex-box .flex-text {
+        width: auto;
+    }
+
+    #nikibi .lux-feature-sub {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nikibi .lux-feature-sub .flex-half {
+        width: auto;
+        padding: 30px 20px;
+    }
+
+    #nikibi .lux-feature-sub h3 {
+        text-align: center;
+    }
+
+    #nikibi .lux-feature-sub .flex-box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #nikibi .overview th {
+        font-size: 14px;
+        width: 28%;
+    }
+
+    #nikibi .overview td {
+        font-size: 14px;
+    }
+}
+
+/* スターラックス以外 */
+#nikibi .lux-other {
+    padding: 100px 0;
+}
+@media screen and (max-width: 767px) {
+    #nikibi .lux-other {
+        padding: 60px 0;
+    }
+}
+
+#nikibi .lux-other .secTi {
+    color: #353535;
+}
+
+#nikibi .lux-other .desc {
+    text-align: center;
+}
+
+#nikibi .lux-other .other-treatments {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    margin-top: 60px;
+    padding: 35px 50px 50px;
+}
+@media screen and (max-width:767px) {
+    #nikibi .lux-other .other-treatments {
+        margin-top: 40px;
+    }
+}
+
+#nikibi .lux-other .other-treatments h3{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+@media screen and (max-width:1023px) {
+    #nikibi .lux-other .other-treatments h3{
+        font-size: 22px;
+    }
+}
+
+#nikibi .lux-other .flex-box {
+    gap: 20px;
+}
+
+#nikibi .lux-other .other-treatment {
+    background-color: #FCF8F2;
+    padding: 30px 20px;
+}
+#nikibi .lux-other .other-treatment p{
+    text-align: left;
+}
+
+#nikibi .lux-other .ThicklineTitle {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    position: relative;
+    z-index: 0;
+    color: #353535;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+@media screen and (max-width:1023px) {
+    #nikibi .lux-other .ThicklineTitle {
+        padding: 10px 20px;
+    }
+}
+#nikibi .lux-other .ThicklineTitle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
+    filter: blur(0px);
+    z-index: -1;
+}
+
+#nikibi .lux-other .other-treatment div {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    #nikibi .lux-other .flex-box {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #nikibi .lux-other .other-treatment {
+        width: 90%;
+        padding: 30px 17px;
+    }
+
+    #nikibi .lux-other .ThicklineTitle {
+        width: 150px;
+        margin: 0 auto 20px;
+        text-align: center;
+    }
+
+    #nikibi .lux-other .other-treatment div {
+        width: 100px;
+        height: 100px;
+    }
+
+    .flex-box-one-img img,
+    .flex-box-two-img img,
+    .flex-box-three-img img {
+        height: 100px;
+    }
+
+    #nikibi .lux-other .other-treatment p {
+        text-align: left;
+    }
+
+    #nikibi .lux-other .other-treatments {
+        padding: 30px 22px;
+    }
+}
+
+/* 症例 */
+#nikibi .clinical-case {
+    background-color: #FCF8F2;
+    padding: 100px 0;
+}
+@media screen and (max-width:767px) {
+    #nikibi .clinical-case {
+        padding: 60px 0;
+    } 
+}
+
+#nikibi .clinical-case .secTi {
+    color: #353535;
+}
+
+#nikibi #case h3.ttl {
+    color: #000000;
+    text-shadow: none;
+    background: transparent;
+    text-align: left;
+    font-size: 20px;
+    padding: 0;
+    border: none;
+    margin-bottom: 25px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+#nikibi #case h3.ttl.fs {
+    margin-top: 0;
+}
+
+#nikibi .case-left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 20px 0 0;
+}
+@media screen and (max-width:1023px) {
+    #nikibi .case-left {
+        margin: auto;
+        margin: 20px auto;
+        justify-content: center;
+    } 
+}
+@media screen and (max-width:767px) {
+    #nikibi .case-left {
+        flex-wrap: wrap;
+    } 
+}
+
+#nikibi .case-before,
+#nikibi .case-after,
+#nikibi .case-before02 {
+    margin-top: 30px;
+}
+
+#nikibi .case-before,
+#nikibi .case-after {
+    position: relative;
+    display: inline-block;
+}
+
+#nikibi .case-before img, #nikibi .case-after img, #nikibi .case-before02 img{
+    max-width: 230px;
+    max-height: 150px;
+    width: 100%;
+    height: auto;
+}
+
+#nikibi .case-before::before {
+    content: "Before";
+    position: absolute;
+    top: -45px;
+    left: 0;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 3px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: serif;
+}
+
+#nikibi .case-after::before {
+    content: "After";
+    position: absolute;
+    top: -45px;
+    left: 0;
+    background-color: #16A4BD;
+    color: #FFFFFF;
+    padding: 3px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: serif;
+}
+
+
+#nikibi .clinical-case .arrow {
+    color: #16A4BD;
+    font-size: 25px;
+    position: relative;
+    top: 7%;
+}
+
+#nikibi #case .case-img {
+    background-color: #FFFFFF;
+    margin-bottom: 0;
+    align-items: flex-end;
+}
+
+#nikibi .caseDescription dt {
+    border-bottom: 1px solid #353535;
+    font-size: 16px;
+}
+@media screen and (max-width: 767px) {
+    #nikibi .caseDescription dt {
+        font-size: 14px;
+    }
+}
+#nikibi .caseDescription dt.bn {
+    border-bottom: none;
+}
+
+#nikibi .caseDescription dd {
+    border-bottom: 1px solid #353535;
+    margin: 0;
+    font-size: 16px;
+}
+@media screen and (max-width: 767px) {
+    #nikibi .caseDescription dd {
+        font-size: 14px;
+    }
+}
+#nikibi .caseDescription dd.bn {
+    border-bottom: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    #nikibi #case .case-img {
+        flex-direction: column;
+    }
+
+    #nikibi .case-before {
+        display: flex;
+        flex-wrap: nowrap;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #nikibi .case-before img {
+        display: block;
+        flex: 1;
+        width: calc((100% - 45px) / 2);
+    }
+
+    #nikibi .clinical-case .arrow {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 768px) {
+    #nikibi .clinical-case .arrow.sp-only {
+        display: none !important;
+    }
+    #nikibi .clinical-case .arrow.pc-only {
+        display: block;
+        width: fit-content;
+    }
+}
+
+/* 選ばれる理由 */
+#nikibi .select-reason {
+    padding: 100px 0;
+}
+@media screen and (max-width:767px) {
+    #nikibi .select-reason {
+        padding: 60px 0;
+    } 
+}
+
+#nikibi .select-reason .secTi {
+    color: #353535;
+}
+
+#nikibi .select-reason .desc {
+    text-align: center;
+    margin-bottom: 60px;
+}
+@media screen and (max-width:767px) {
+    #nikibi .select-reason .desc {
+        margin-bottom: 40px;
+    }
+}
+
+#nikibi .select-reason .visit {
+    margin: 20px 0;
+    background-color: #FCF8F2;
+    padding: 0;
+    align-items: stretch;
+}
+@media screen and (max-width:767px) {
+    #nikibi .select-reason .visit {
+        flex-direction: column;
+    }
+}
+#nikibi .select-reason .visit.right {
+    flex-direction: row-reverse;
+}
+@media screen and (max-width:767px) {
+    #nikibi .select-reason .visit.right {
+        flex-direction: column;
+    }
+}
+
+#nikibi .select-reason .visit img{
+    flex:1;
+    height: auto;
+    width: 25%;
+}
+@media screen and (max-width:767px) {
+    #nikibi .select-reason .visit img{
+        width: 100%;
+    }
+}
+
+#nikibi .select-reason .visit-text {
+    padding: 30px 40px;
+    flex: 2;
+}
+@media screen and (max-width:767px) {
+    #nikibi .select-reason .visit-text {
+        padding: 30px;
+    }
+}
+
+#nikibi .select-reason .visit-text dt{
+    margin-top: 20px;
+}
+
+#nikibi .select-reason .ttl {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #DDA55E;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: serif;
+}
+
+#nikibi .select-reason .visit-img img {
+    margin: 0;
+    width: 100%;
+}
+
+#nikibi .visit-left,
+#nikibi .visit-right {
+    flex: 0 1 auto;
+}
+
+#nikibi #visit01 img,
+#nikibi #visit02 img,
+#nikibi #visit03 img,
+#nikibi #visit04 img {
+    width: 250px;
+    height: 100%;
+}
+
+#nikibi .visit-right dt {
+    color: #000000;
+}
+
+#nikibi .visit-right dd {
+    display: block;
+    margin: 0;
+}
+
+#nikibi a.consentBt {
+    font-family: 'Source Han Serif', sans-serif;
+    display: block;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-weight: normal;
+    border: 1px solid #DDA55E;
+    border-radius: 999px;
+    padding: 15px 55px;
+    font-size: 18px;
+    width: 400px;
+    position: relative;
+    width: fit-content;
+    margin-top: 30px;
+}
+#nikibi a.consentBt::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    right: 30px;
+    top: 42%;
+    border-right: 2px solid #DDA55E;
+    border-top: 2px solid #DDA55E;
+    transform: rotate(45deg);
+    transition: .2s ease;
+}
+@media screen and (max-width: 768px) {
+    #nikibi a.consentBt::after {
+        width: 5px;
+        height: 5px;
+        right: 17px;
+        top: 45%;
+    }
+}
+#nikibi a.consentBt:hover::after {
+    right: 25px;
+}
+@media screen and (max-width: 768px) {
+    #nikibi a.consentBt:hover::after {
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #nikibi .select-reason .visit {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #nikibi .visit-right {
+        order: 1;
+    }
+
+    #nikibi #visit01 img,
+    #nikibi #visit02 img,
+    #nikibi #visit03 img,
+    #nikibi #visit04 img {
+        width: 100%;
+        height: auto;
+    }
+
+    #nikibi .select-reason .ttl {
+        font-size: 18px;
+    }
+
+    #nikibi a.consentBt {
+        width: fit-content;
+        padding: 15px 30px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+
+/* 予約から治療の流れ */
+#nikibi .flow3 {
+    background-color: #FCF8F2;
+    padding: 100px 0;
+    border-radius: 8px;
+}
+@media screen and (max-width:767px) {
+    #nikibi .flow3 {
+        padding: 60px 0;
+    } 
+}
+
+#nikibi .flow3 .secTi {
+    color: #16A4BD;
+}
+
+#nikibi .flow-box {
+    background-color: #FFFFFF;
+    padding: 40px 50px 60px;
+    display: flex;
+    align-items: flex-start;
+    width: auto;
+    gap: 40px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#nikibi .flow-box.consultation {
+    margin: 35px 0;
+}
+
+#nikibi .flow-box:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white;
+}
+
+#nikibi .flow-box .img {
+    width: 200px;
+    height: 200px;
+}
+
+#nikibi .flow-box img {
+    width: 100%;
+}
+
+#nikibi .flow-box .txt {
+    margin: 0;
+    width: 600px;
+}
+
+#nikibi .flow-box .ttl {
+    color: #16A4BD;
+    border-bottom: 2px solid #16A4BD;
+    padding-bottom: 18px;
+    font-family: serif;
+    font-weight: bold;
+}
+
+#nikibi .flow-box .explanation {
+    margin: 0;
+    margin-top: 30px;
+}
+
+#nikibi .flow-box.reservation .yellow {
+    font-family: 'Source Han Serif', sans-serif;
+    color: #DDA55E;
+}
+
+#nikibi a.formBt {
+    width: fit-content;
+    font-weight: bold;
+    font-family: 'Source Han Serif', sans-serif;
+    position: relative;
+    display: block;
+    width: fit-content;
+    background-color: #DDA55E;
+    color: #FFFFFF;
+    border: 1px solid #DDA55E;
+    border-radius: 999px;
+    padding: 15px 55px;
+    font-size: 18px;
+    margin-top: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 768px) {
+    #nikibi a.formBt {
+        font-size: 14px;
+    }
+}
+#nikibi a.formBt::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    right: 30px;
+    top: 45%;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    transform: rotate(45deg);
+    transition: .2s ease;
+}
+@media screen and (max-width: 767px) {
+    #nikibi a.formBt::after {
+        width: 5px;
+        height: 5px;
+        right: 17px;
+        top: 42%;
+    }
+}
+#nikibi a.formBt:hover::after {
+    right: 25px;
+}
+@media screen and (max-width: 767px) {
+    #nikibi a.formBt:hover::after {
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #nikibi .flow-box {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 10px;
+    }
+
+    #nikibi .flow-box .img {
+        width: auto;
+        height: auto;
+    }
+
+    #nikibi .flow-box .txt {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #nikibi a.formBt {
+        width: fit-content;
+        padding: 10px 30px;
+        margin-top: 10px;
+        line-height: 1.4;
+    }
+}
+
+/* ケアについて */
+#nikibi .aftercare {
+    padding: 100px 0;
+    background-color: rgba(223, 175, 113, 0.15);
+}
+@media screen and (max-width:767px) {
+    #nikibi .aftercare {
+        padding: 60px 0;
+    } 
+}
+
+#nikibi .aftercare .lineTitle.secTi {
+    color: #16A4BD;
+}
+
+#nikibi .aftercare .lineTitle.secTi span {
+    color: #353535;
+    font-size: 0.7em;
+}
+
+#nikibi .aftercare-boxes {
+    padding: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#nikibi .aftercare-boxes p{
+    margin-bottom: 40px;
+}
+
+#nikibi .aftercare-boxes p.last{
+    margin-bottom: 0px;
+}
+
+#nikibi .aftercare-box h3 {
+    background-color: transparent;
+    color: #353535;
+    border-bottom: 2px solid #16A4BD;
+    text-align: left;
+    padding: 0;
+    padding-bottom: 20px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    #nikibi .aftercare-boxes {
+        padding: 40px 20px;
+    }
+}
+
+/* よくある質問 */
+#nikibi .faq-area {
+    padding: 100px 0;
+}
+@media screen and (max-width: 767px) {
+    #nikibi .faq-area {
+        padding: 60px 0;
+    }
+}
+
+#nikibi .faq-area .lineTitle.secTi {
+    color: #353535;
+}
+
+#nikibi #faq {
+    display: block;
+}
+
+#nikibi #faq .acbox {
+    width: auto;
+    display: block;
+}
+
+#nikibi .acbox .faq-box {
+    background: #EFF9FA;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    background: #f1f9fa;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+#nikibi .faq-inner {
+    padding: 20px;
+}
+
+#nikibi .acbox .faq-box p {
+    padding: 0;
+    margin: 0;
+}
+
+#nikibi .faq-question {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-family: serif;
+    position: relative;
+}
+@media screen and (max-width:767px) {
+#nikibi .faq-question.n1::after {
+    top: -10px;
+}
+}
+
+@media screen and (max-width:767px) {
+    #nikibi #operations-faq .faq-question h3{
+        width: 90%;
+    }
+}
+
+#nikibi .faq-area a{
+    margin-top: 60px;
+    display: block;
+}
+
+#nikibi .faq-question .que {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    background-color: #16A4BD;
+    color: white;
+    border-radius: 50%;
+    font-size: 16px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+#nikibi .toggle-icon {
+    font-size: 20px;
+    font-weight: bold;
+    color: #16A4BD;
+    transition: transform 0.3s ease;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+#nikibi .faq-box.open {
+    max-height: 500px;
+    padding: 15px 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #nikibi #faq .acbox {
+        padding: 0;
+    }
+
+    #nikibi .faq-question {
+        font-size: 16px;
+    }
+}
+
+
+
+/* 院長挨拶 */
+#nikibi .doctor {
+    padding: 100px 0;
+    background-color: rgba(223, 175, 113, 0.16);
+}
+@media screen and (max-width: 767px) {
+    #nikibi .doctor {
+        padding: 60px 0;
+    }
+}
+
+#nikibi .doctor .lineTitle.secTi {
+    color: #353535;
+}
+
+#nikibi .doctor .profile .img-box {
+    width: 50%;
+}
+
+#nikibi .doctor .profile .flex-text {
+    width: 50%;
+    gap: 50px;
+}
+
+#nikibi .doctor .profile .subTitle {
+    color: #DDA55E;
+    font-family: serif;
+}
+
+#nikibi .doctor .profile .name {
+    font-family: serif;
+}
+
+#nikibi .doctor .profile .license li {
+    background-color: #FFFFFF;
+    color: #353535;
+    border: none;
+    min-height: auto;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#nikibi .doctor_greeting h3 {
+    color: #000000;
+    font-size: 30px;
+    text-shadow: none;
+}
+
+#nikibi .doctor_greeting {
+    margin: 60px 0;
+}
+
+#nikibi .doctor_greeting .txt {
+    width: 100%;
+}
+
+#nikibi .timeline {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 170px 0;
+    padding: 20px 100px;
+}
+
+#nikibi .timeline::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #353535;
+    z-index: 0;
+}
+
+#nikibi .timeline-item {
+    position: relative;
+    text-align: center;
+    flex: 1;
+    min-height: 140px;
+    width: 50px;
+}
+
+#nikibi .timeline-top {
+    position: absolute;
+    top: -100px;
+    left: 70%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #353535;
+    position: relative;
+    width: 150px;
+}
+
+#nikibi .timeline-top::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 110px;
+    height: 110px;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 50%;
+    filter: blur(15px);
+    z-index: -1;
+}
+
+#nikibi .timeline-bottom {
+    position: absolute;
+    top: 150px;
+    left: 70%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #353535;
+    position: relative;
+    width: 150px;
+}
+
+#nikibi .timeline-bottom::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 110px;
+    height: 110px;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 50%;
+    filter: blur(15px);
+    z-index: -1;
+}
+
+#nikibi .timeline-year {
+    color: #DDA55E;
+}
+
+#nikibi .timeline-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: #666;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+#nikibi .timeline-item .timeline-top+.timeline-dot::after {
+    content: "";
+    position: absolute;
+    top: -85px;
+    left: 230%;
+    transform: translateX(-50%) rotate(20deg);
+    width: 1px;
+    height: 90px;
+    background-color: #353535;
+}
+
+#nikibi .timeline-item .timeline-dot::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 140%;
+    transform: translateX(-50%) rotate(-15deg);
+    width: 1px;
+    height: 70px;
+    background-color: #353535;
+}
+
+#nikibi .timeline-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #nikibi .flex-box.profile {
+        flex-direction: column;
+    }
+
+    #nikibi .doctor .profile .img-box {
+        width: 100%;
+    }
+
+    #nikibi .doctor .profile .flex-text {
+        width: auto;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #nikibi .doctor .profile .license ul {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #nikibi .doctor .profile .license li {
+        margin: 5px auto;
+        width: 100%;
+        float: none;
+    }
+
+    #nikibi .doctor_greeting h3 {
+        font-size: 20px;
+    }
+
+    #nikibi .timeline {
+        display: none;
+    }
+
+    #nikibi .timeline-mobile {
+        display: block;
+        background: #fdf5ec;
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    #nikibi .timeline-mobile::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 550px;
+        background: #FFFFFF;
+        border-radius: 50%;
+        filter: blur(20px);
+        z-index: 0;
+    }
+
+    #nikibi .timeline-row {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    #nikibi .timeline-year {
+        color: #DDA55E;
+        font-weight: bold;
+        width: 70px;
+        text-align: right;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    #nikibi .timeline-marker {
+        position: relative;
+        width: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    #nikibi .timeline-line {
+        position: absolute;
+        top: -30px;
+        bottom: -130px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1px;
+        background: #353535;
+        z-index: 0;
+    }
+
+    #nikibi .timeline-row:last-child .timeline-line {
+        bottom: 0;
+    }
+
+    #nikibi .dot {
+        position: relative;
+        width: 10px;
+        height: 10px;
+        background: #353535;
+        border-radius: 50%;
+        z-index: 1;
+        margin-top: 5px;
+    }
+
+    #nikibi .timeline-content {
+        flex: 1;
+        padding-left: 10px;
+        color: #353535;
+    }
+}
+
+/* SNS */
+#nikibi .sns {
+    background-color: #FCF8F2;
+    position: relative;
+    overflow: hidden;
+}
+
+#nikibi section#snsreport .box img {
+    width: 40%;
+}
+#nikibi section#snsreport .item .flex {
+    display: flex;
+}
+#nikibi section#snsreport .box.left {
+    min-height: 380px; 
+}
+
+#nikibi .sns .instagram {
+    position: relative;
+    padding: 40px 0 40px 100px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 1500px;
+    left: -3%;
+    margin-top: 60px;
+}
+
+#nikibi .sns .instagram .flex-box {
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+}
+
+#nikibi .sns .instagram .img-box {
+    width: 15%;
+}
+
+#nikibi .sns .instagram h3 {
+    font-size: 30px;
+    font-family: serif;
+    width: 350px;
+    text-align: center;
+    margin-top: 0;
+}
+
+#nikibi .sns .instagram p {
+    font-size: 18px;
+    font-family: serif;
+    width: 350px;
+    text-align: center;
+}
+
+#nikibi .sns .instagram button {
+    width: 350px;
+    background: transparent;
+    border: none;
+}
+
+#nikibi .sns .instagram .sns-btn {
+    display: inline-block;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #DFAF71;
+    border-radius: 999px;
+    padding: 10px 60px;
+    margin: 0 auto;
+}
+
+#nikibi .sns .blog {
+    margin: 60px auto 0;
+    padding: 60px 0 100px;
+    position: relative;
+    z-index: 0;
+}
+
+#nikibi .sns .blog::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30%;
+    width: 1500px;
+    height: 100%;
+    background-color: #FFFFFF;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: -1;
+}
+
+
+#nikibi .sns .blog h3,
+#nikibi .sns .blog dd,
+#nikibi .sns .blog dt {
+    font-family: serif;
+}
+
+#nikibi .sns .blog h3 {
+    margin-right: 0;
+    color: #353535;
+    width: 700px;
+    text-align: center;
+
+}
+
+#nikibi .blog-ranking {
+    width: 700px;
+}
+
+#nikibi .sns .blog dl {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+    margin: 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #868686;
+}
+
+#nikibi .sns .blog dd {
+    color: #FFFFFF;
+    padding: 1px 9px;
+    border-radius: 5px;
+}
+
+#nikibi .sns .blog .no1 dd {
+    background-color: #DFAF71;
+}
+
+#nikibi .sns .blog .no2 dd {
+    background-color: #868686;
+}
+
+#nikibi .sns .blog .no3 dd {
+    background-color: #16A4BD;
+}
+
+@media screen and (max-width: 1024px) {
+    #nikibi .sns .instagram .flex-box {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+}
+
+/* アクセス */
+#nikibi #access {
+    padding: 100px 0;
+}
+@media screen and (max-width: 767px) {
+    #nikibi #access {
+        padding: 60px 0;
+    }
+}
+
+#nikibi .access .flex-box.map-text {
+    gap: 40px;
+}
+
+#nikibi .access .img-box {
+    width: 50%;
+}
+
+#nikibi .access .flex-text {
+    width: 50%;
+}
+
+#nikibi .access h2 {
+    font-family: serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+}
+
+#nikibi .access .store-name {
+    font-family: serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+
+#nikibi .access .contact {
+    background-color: #FCF8F2;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#nikibi .access dt {
+    width: 100px;
+}
+
+#nikibi .access dd {
+    width: 300px;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    #nikibi .access .flex-box.map-text {
+        flex-direction: column-reverse;
+    }
+
+    #nikibi .access .img-box {
+        width: 100%;
+    }
+
+    #nikibi .access .flex-text {
+        width: 100%;
+    }
+}
+
+
+#nikibi h2 {
+    font-family: 'Source Han Serif', sans-serif;
+    padding: 20px 0;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    border-top: solid 1px #16A4BD;
+    border-bottom: solid 1px #16A4BD;
+  }
+  @media screen and (max-width:1023px) {
+    #nikibi h2 {
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+  }
+#nikibi h2 .sub {
+    display: block;
+    font-size: 30px;
+    color: #353535;
+    margin: 0;
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
+  @media screen and (max-width:1023px) {
+    #nikibi h2 .sub {
+      font-size: 20px;
+    }
+  }
+  #nikibi h2 .main {
+    display: block;
+    font-size: 40px;
+    color: #16A4BD;
+    margin: 0;
+    line-height: 1.2;
+  }
+  @media screen and (max-width:1023px) {
+    #nikibi h2 .main {
+      font-size: 25px;
+    }
+  }
+  #nikibi h2 span {
+    color: #16A4BD;
+  }
+  #nikibi h3 {
+    font-family: 'Source Han Serif', sans-serif;
+    padding-bottom: 20px;
+    line-height: 1.3;
+    font-size: 25px;
+    margin-bottom: 40px;
+    border-bottom: solid 2px #16A4BD;
+  }
+  @media screen and (max-width:1023px) {
+    #nikibi h3 {
+      padding-bottom: 10px;
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  }
+  #nikibi h3 span{
+    color: #16A4BD;
+  }
+  #nikibi h4 {
+    font-size: 23px;
+    margin-bottom: 25px;
+    font-family: 'Source Han Serif', sans-serif;
+    color: #DFAF71;
+  }
+  @media screen and (max-width:1023px) {
+    #nikibi h4 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  }
+
+  #nikibi .consultation-card1 {
+    margin-top: 60px;
+  }
+
+  #nikibi #greeting {
+    padding: 100px 0;
+  }
+  @media screen and (max-width: 767px) {
+    #nikibi #greeting {
+        padding: 60px 0;
+      }
+    }
+
+  #nikibi section#greeting h2 {
+    padding: 30px 0;
+    color: #353535;
+    font-weight: bold;
+    font-size: 35px;
+    border: none;
+    border-top: solid 2px #16A4BD;
+    border-bottom: solid 2px #16A4BD;
+    background: none;
+}
+@media screen and (max-width: 767px) {
+    #nikibi section#greeting h2 {
+        padding: 20px 0;
+        font-size: 25px;
+    }
+}
+
+  #nikibi #greeting .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media screen and (max-width: 767px) {
+    #nikibi #greeting .flex {
+        justify-content: center;
+      }
+    }
+
+  #nikibi section.yellow {
+    background: #FCF8F2;
+    padding: 100px 0;
+  }
+  @media screen and (max-width: 767px) {
+    #nikibi section.yellow {
+        padding: 60px 0;
+      }
+    }
