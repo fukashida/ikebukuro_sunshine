@@ -3,7 +3,7 @@
 @import url(//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
 
 @font-face {
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     src: url('../../common/font/SourceHanSerifJP-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
@@ -201,7 +201,7 @@ header .head-item img{
 #headText {
     line-height: 1;
     font-size: 34px;
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
 }
 #headNav {
     top: 10px;
@@ -364,7 +364,7 @@ header .head-item img{
 #footHead .tel dt {
     line-height: 20px;
     float: left;
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
 }
 #footHead .tel dt {
     font-size: 17px;
@@ -1187,7 +1187,7 @@ footer ul.law {
 #pageTitle h2 {
     font-size: 24px;
     font-size: 2.4rem;
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     font-weight: 700;
     line-height: 1
 }

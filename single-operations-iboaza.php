@@ -1051,7 +1051,7 @@
               </div>
             </div>
             <h3 id="toc9-1">
-            ほくろ・イボ・あざについてお悩みでしたら<br>
+            ほくろ・イボ・あざについて<br class="sp">お悩みでしたら<br>
             是非一度ご相談ください
             </h3>
             <p class="text">
@@ -1095,7 +1095,7 @@
         <div class="box left">
           <div class="container item">
               <h3 id="toc10-2">
-                大きなほくろ・イボ・アザ保険適用手術の<br class="sp">ブログランキング
+                大きなほくろ・イボ・アザ<br class="sp">保険適用手術の<br class="sp">ブログランキング
               </h3>
               <ul>
                 <li class="rank01"><a href="/blogs/mole_wart/mole-removal-scars/">ほくろ除去切開による傷跡はいつまで残る？目立たなくするには？</a></li>

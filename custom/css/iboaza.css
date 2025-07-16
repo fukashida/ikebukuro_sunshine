@@ -335,7 +335,7 @@
   width: 100%;
 }
 #iboaza h2 {
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
   padding: 20px 0;
   text-align: center;
   line-height: 1.2;
@@ -379,7 +379,7 @@
   color: #16A4BD;
 }
 #iboaza h3 {
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
   padding-bottom: 20px;
   line-height: 1.3;
   font-size: 25px;
@@ -400,7 +400,7 @@
 #iboaza h4 {
   font-size: 23px;
   margin-bottom: 25px;
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
   color: #DFAF71;
 }
 @media screen and (max-width:767px) {
@@ -491,7 +491,7 @@ width: 90%;
   border-radius: 0 0 10px 10px;
   background: #DFAF71;
   color: white;
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
   position: relative;
 }
 @media screen and (max-width:767px) {
@@ -532,7 +532,7 @@ width: 90%;
   padding: 20px 0;
   text-align: center;
   font-size: 25px;
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
 }
 @media screen and (max-width:767px) {
   #iboaza .iboaza_goodPoints .center{
@@ -601,7 +601,7 @@ width: 90%;
   text-align: center;
   vertical-align: middle;
   color: #16A4BD;
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
 }
 @media screen and (max-width:767px) {
   #iboaza ul.white-box li .reason{
@@ -662,7 +662,7 @@ width: 90%;
   font-weight: bold;
   text-align: center;
   border: solid 1px #16A4BD;
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
   margin-top: 35px;
   position: relative;
 }
@@ -773,7 +773,7 @@ width: 90%;
 #iboaza th {
   font-weight: bold;
   width: 25%;
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
 }
 @media screen and (max-width:767px) {
   #iboaza th {
@@ -990,7 +990,7 @@ width: 90%;
  text-align: center;
  margin-right: 5px;
  font-weight: bold;
- font-family: 'Source Han Serif', sans-serif;
+ font-family: serif;
  background: #D0EDF2;
 }
 @media screen and (max-width:767px) {
@@ -1120,7 +1120,7 @@ width: 90%;
   margin-left: 20px;
   font-weight: bold;
   color: #DDA55E;
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
 } 
 #iboaza .flow a.rese {
   display: block;
@@ -1132,7 +1132,7 @@ width: 90%;
   font-weight: bold;
   color: white;
   text-align: center;
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
   position: relative;
 } 
@@ -1384,7 +1384,7 @@ width: 90%;
 }
 
 #iboaza section#greeting h2{
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     padding: 20px 0;
     text-align: center;
     line-height: 1.2;
@@ -1405,6 +1405,7 @@ width: 90%;
 #iboaza section#greeting h3{
     color: #DDA55E;
     border: none;
+    padding-bottom: 0;
 }
 
 #iboaza section.flow .box-item .blue-box{
@@ -1427,7 +1428,7 @@ width: 90%;
     color: #DDA55E;
     font-weight: bold;
     text-align: center;
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     margin-top: 0;
     border: none;
 }
@@ -1476,6 +1477,11 @@ width: 90%;
     margin-bottom: 10px;
     white-space: nowrap;
     border: none;
+}
+@media screen and (max-width:767px) {
+  #iboaza section.flow .box-item .blue-box h3.step-title {
+    font-size: 18px;
+}
 }
 
 #iboaza section.flow .box-item .blue-box .step-description {
