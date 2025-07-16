@@ -739,7 +739,7 @@ padding-right: 1em;
   }
 }
 #laser h2 {
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
   padding: 25px 0;
   text-align: center;
   line-height: 1.2;
@@ -787,7 +787,7 @@ padding-right: 1em;
   color: #16A4BD;
 }
 #laser h3 {
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
   padding-bottom: 20px;
   line-height: 1.3;
   font-size: 30px;
@@ -813,7 +813,7 @@ padding-right: 1em;
 #laser h4 {
   font-size: 23px;
   margin-bottom: 25px;
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
   color: #DFAF71;
 }
 @media screen and (max-width:767px) {
@@ -907,7 +907,7 @@ width: 90%;
   border-radius: 0 0 10px 10px;
   background: #DFAF71;
   color: white;
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
   position: relative;
 }
 @media screen and (max-width:767px) {
@@ -962,7 +962,7 @@ width: 90%;
 #laser th {
   font-weight: bold;
   width: 25%;
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
 }
 @media screen and (max-width:767px) {
   #laser th {
@@ -1149,7 +1149,7 @@ width: 90%;
     color: #818181;
     display: block;
     transform: translateY(240px);
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     font-weight: 700;
 }
 #laser section.beforeafter .aco {
@@ -1172,7 +1172,7 @@ width: 90%;
 }
 #laser section.beforeafter .aco .content-q p {
     text-align: center;
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     font-weight: 700;
 }
 @media screen and (max-width:767px) {
@@ -1841,7 +1841,7 @@ width: 90%;
   margin-left: 20px;
   font-weight: bold;
   color: #DDA55E;
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
 } 
 #laser .flow a.rese {
   display: block;
@@ -1853,7 +1853,7 @@ width: 90%;
   font-weight: bold;
   color: white;
   text-align: center;
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
   position: relative;
 } 
@@ -2000,7 +2000,7 @@ width: 90%;
     display: block;
     margin: 0 auto;
     text-align: center;
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 }
 #laser section.flow a.flow-button::after {
@@ -2112,7 +2112,7 @@ width: 90%;
     font-weight: bold;
     color: #353535;
     line-height: 1;
-        font-family: 'Source Han Serif', sans-serif;
+        font-family: serif;
 }
 
 #laser section.cost .price-unit {

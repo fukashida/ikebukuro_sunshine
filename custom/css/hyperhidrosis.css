@@ -136,10 +136,10 @@
 }
 @media only screen and (max-width: 540px){
   #hyperhidrosis  h2{
-    font-size: 30px;
+    font-size: 25px;
   }
   #hyperhidrosis  h3{
-    font-size: 20px;
+    font-size: 19px;
   }
 }
 
@@ -272,7 +272,11 @@
     width: 50%; padding: 10px 0;
   }
   #hyperhidrosis .table-contents2 p, #hyperhidrosis .table-contents3 p{
-    font-size: 14px;
+    font-size: 13px;
+  }
+  #hyperhidrosis .table-contents p{
+    font-size: 13px;
+    line-height: 1.2;
   }
   #hyperhidrosis .table-contents3{
     width: 100%; padding: 10px 15px;
@@ -465,6 +469,9 @@
   #hyperhidrosis .application .tel{
       margin-top: 20px;
   }
+  #hyperhidrosis .filling-out-button {
+    width: fit-content;
+  }
   #hyperhidrosis .filling-out-button .button-text{
     font-size: 16px;
   }
@@ -506,7 +513,7 @@
       width: 8px; height: 8px;
   }
   #hyperhidrosis .for-more-details{ 
-    padding: 15px;
+    padding: 15px 30px;
   }
 }
 

@@ -2024,6 +2024,11 @@ table.overview {
 #mwlift p,#mwlift h2,#mwlift h3{
     color: #353535;
 }
+@media screen and (max-width:540px) {
+    #mwlift h2#toc3 {
+        font-size: 22px;
+    }
+}
 #mwlift .blue{
     color: #16A4BD;
 }
@@ -2603,7 +2608,8 @@ table.overview {
         border-radius: 5px; padding: 30px 20px;
     }
     #mwlift .application{
-       padding: 35px 20px; margin-top: 25px;
+       padding: 20px 15px; 
+       margin-top: 25px;
     }
     #mwlift .application .circle-heading {
        font-size: 18px;
@@ -2633,7 +2639,7 @@ table.overview {
 }
 @media only screen and (max-width: 540px){
     #mwlift .filling-out-button {
-        padding: 10px 20px; font-size: 14px;
+        padding: 10px 20px; font-size: 13px;
     }
     #mwlift .filling-out-button .arrow-rounded{
         width: 8px; height: 8px;
@@ -2705,6 +2711,7 @@ table.overview {
 }
 #mwlift .secBox img {
    width: 100%;
+   height: auto;
 }
 
 #mwlift h2 .main {
@@ -2763,10 +2770,12 @@ margin-bottom: 5px;
         display: block;
     }
     #mwlift #snsreport .flex a{
-        margin-top: 50px;
+        margin-top: 20px;
     }
     #mwlift #snsreport img{
-        margin: 0 auto 40px; display: block;
+        margin: 0 auto 40px; 
+        display: block;
+        width: 100%;
     }
 }
 

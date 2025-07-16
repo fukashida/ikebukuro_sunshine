@@ -2269,7 +2269,7 @@ dl.caseDescription {
 }
 
 #nikibi .case-foto-desc {
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     background-color: #F0EDE1;
     text-align: center;
     font-weight: bold;
@@ -2497,6 +2497,11 @@ dl.caseDescription {
     color: #000000;
     text-shadow: none;
 }
+@media screen and (max-width:767px) {
+    #nikibi .medical-system .title {
+        font-size: 22px;
+    }
+}
 
 #nikibi .medical-system .lux-box {
     background: none;
@@ -2509,11 +2514,11 @@ dl.caseDescription {
 }
 @media screen and (max-width:540px) {
     #nikibi .medical-system .lux-box .herf-box {
-        padding: 30px 15px;
+        padding: 20px 0px;
     }
 }
 #nikibi .medical-system .lux-box .herf-box .fs28{
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     font-weight: bold;
     font-size: 22px;
     margin-bottom: 15px;
@@ -2534,6 +2539,11 @@ dl.caseDescription {
     padding: 10px 0;
     position: relative;
     z-index: 0;
+}
+@media screen and (max-width:540px) {
+    #nikibi .lux-box .beige-bar li {
+        font-size: 16px;
+    }
 }
 #nikibi .lux-box .beige-bar li::before {
     content: "";
@@ -2693,7 +2703,7 @@ dl.caseDescription {
 }
 @media screen and (max-width:767px) {
     #nikibi .lux-about .secTi {
-        font-size: 23px;
+        font-size: 22px;
     }
 }
 
@@ -3350,7 +3360,7 @@ dl.caseDescription {
 }
 
 #nikibi a.consentBt {
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     display: block;
     background-color: #FFFFFF;
     color: #000000;
@@ -3419,7 +3429,7 @@ dl.caseDescription {
     #nikibi a.consentBt {
         width: fit-content;
         padding: 15px 30px;
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.4;
     }
 }
@@ -3497,14 +3507,14 @@ dl.caseDescription {
 }
 
 #nikibi .flow-box.reservation .yellow {
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     color: #DDA55E;
 }
 
 #nikibi a.formBt {
     width: fit-content;
     font-weight: bold;
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     position: relative;
     display: block;
     width: fit-content;
@@ -3624,6 +3634,9 @@ dl.caseDescription {
 @media screen and (max-width: 768px) {
     #nikibi .aftercare-boxes {
         padding: 40px 20px;
+    }
+    #nikibi .aftercare-box h3 {
+    padding-bottom: 10px;
     }
 }
 
@@ -4238,7 +4251,7 @@ dl.caseDescription {
 
 
 #nikibi h2 {
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     padding: 20px 0;
     text-align: center;
     line-height: 1.2;
@@ -4283,7 +4296,7 @@ dl.caseDescription {
     color: #16A4BD;
   }
   #nikibi h3 {
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     padding-bottom: 20px;
     line-height: 1.3;
     font-size: 25px;
@@ -4293,7 +4306,7 @@ dl.caseDescription {
   @media screen and (max-width:1023px) {
     #nikibi h3 {
       padding-bottom: 10px;
-      font-size: 20px;
+      font-size: 18px;
       margin-bottom: 30px;
     }
   }
@@ -4303,7 +4316,7 @@ dl.caseDescription {
   #nikibi h4 {
     font-size: 23px;
     margin-bottom: 25px;
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     color: #DFAF71;
   }
   @media screen and (max-width:1023px) {

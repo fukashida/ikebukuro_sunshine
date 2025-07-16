@@ -630,6 +630,8 @@ em {
     
         .placenta .topNav li a {
             display: flex;
+            font-size: 0.8em;
+            min-height: auto;
             align-items: center;
             justify-content: center;
             vertical-align: middle;
@@ -890,6 +892,12 @@ em {
 @media only screen and (max-width: 540px){
     #placenta .bg-blue,#placenta .bg-white,#placenta .bg-ivory{
         padding: 60px 0;
+    }
+    #placenta .bg-ivory#toc5 h2{
+       font-size: 22px;
+    }
+    #placenta .bg-ivory#toc5 h4{
+       font-size: 17px;
     }
 }
 
@@ -1244,6 +1252,7 @@ content: ""; position: absolute; left: 0; top: 0.4em; width: 0.7em; height: 0.7e
     background-color: white; border-radius: 10px; padding: 50px 30px;
 }
 #placenta .list-of-treatments .flex .treatments img{
+    width: 100%;
     margin-top: 22px;
 }
 #placenta .list-of-treatments .flex{
@@ -1349,7 +1358,7 @@ content: ""; position: absolute; left: 0; top: 0.4em; width: 0.7em; height: 0.7e
         font-size: 18px; margin-bottom: 5px;
     }
     #placenta .features .title-underline h4{
-        font-size: 19px; line-height: 25px;
+        font-size: 18px; line-height: 25px;
     }
 }
 
@@ -1432,7 +1441,7 @@ content: ""; position: absolute; left: 0; top: 0.4em; width: 0.7em; height: 0.7e
 }
 @media only screen and (max-width: 540px){
     #placenta  .instagram-img{
-        max-width: 80vw; margin-bottom: 40px;
+        max-width: 80vw; margin-bottom: 0px;
     }
     #placenta  .instagram{
         padding: 50px 0px; width: 95vw
@@ -1553,8 +1562,13 @@ content: ""; position: absolute; left: 0; top: 0.4em; width: 0.7em; height: 0.7e
     align-items: center;
     justify-content: space-between;
 }
+@media screen and (max-width:767px) {
+    #placenta section#snsreport .flex {
+        justify-content: center;
+    }
+}
 #placenta section#snsreport h2, #placenta h2#toc3{
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     padding: 20px 0;
     text-align: center;
     line-height: 1.2;
@@ -1588,7 +1602,7 @@ content: ""; position: absolute; left: 0; top: 0.4em; width: 0.7em; height: 0.7e
     font-size: 40px;
     color: #16A4BD;
     margin: 0;
-    line-height: 0.5;
+    line-height: 1;
   }
   @media screen and (max-width:767px) {
     #placenta h2 .main {

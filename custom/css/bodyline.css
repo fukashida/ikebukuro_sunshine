@@ -717,7 +717,7 @@
   }
 }
 #bodyline h2 {
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
   padding: 20px 0;
   text-align: center;
   line-height: 1.2;
@@ -762,7 +762,7 @@
   color: #16A4BD;
 }
 #bodyline h3 {
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
   padding-bottom: 20px;
   line-height: 1.3;
   font-size: 30px;
@@ -788,7 +788,7 @@
 #bodyline h4 {
   font-size: 23px;
   margin-bottom: 25px;
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
   color: #DFAF71;
 }
 @media screen and (max-width:767px) {
@@ -882,7 +882,7 @@ width: 90%;
   border-radius: 0 0 10px 10px;
   background: #DFAF71;
   color: white;
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
   position: relative;
 }
 @media screen and (max-width:767px) {
@@ -937,7 +937,7 @@ width: 90%;
 #bodyline th {
   font-weight: bold;
   width: 25%;
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
 }
 @media screen and (max-width:767px) {
   #bodyline th {
@@ -1281,6 +1281,14 @@ width: 90%;
     transform: rotate(180deg);
     font-size: 1px;
 }
+@media screen and (max-width:540px) {
+  #bodyline section.intro .flexslider ul.flex-direction-nav li.flex-nav-prev a.flex-prev{
+    top: 65%;
+}
+#bodyline section.intro .flexslider ul.flex-direction-nav li.flex-nav-next a.flex-next{
+  top: 65%;
+}
+}
 #bodyline section.intro .flexslider ul.flex-direction-nav li.flex-nav-prev a.flex-prev::before,
 #bodyline section.intro .flexslider ul.flex-direction-nav li.flex-nav-next a.flex-next::before{
     content: none;
@@ -1293,6 +1301,11 @@ width: 90%;
 }
 #bodyline section.intro .flexslider ul.flex-direction-nav li.flex-nav-prev a.flex-prev{
   left: -30px !important;
+}
+@media screen and (max-width:540px) {
+  #bodyline section.intro .flexslider ul.flex-direction-nav li.flex-nav-prev a.flex-prev{
+    left: -10px !important;
+  }
 }
 #bodyline section.intro .flexslider ul.flex-direction-nav li.flex-nav-next a.flex-next {
     right: -30px !important;
@@ -1309,6 +1322,11 @@ width: 90%;
 #bodyline section.intro .custom-slider .slides li {
   margin-right: 30px;
   transition: transform 0.3s ease;
+}
+@media screen and (max-width:540px) {
+  #bodyline section.intro .custom-slider .slides li {
+    width: 81px !important;
+  }
 }
 #bodyline section.intro .custom-slider .slides li:first-child img {
   margin-left: 30px;
@@ -1361,7 +1379,7 @@ width: 90%;
     color: #818181;
     display: block;
     transform: translateY(200px);
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     font-weight: 700;
 }
 #bodyline section.intro .aco {
@@ -1384,7 +1402,7 @@ width: 90%;
 }
 #bodyline section.intro .aco .content-q p {
     text-align: center;
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     font-weight: 700;
 }
 @media screen and (max-width:767px) {
@@ -1561,7 +1579,7 @@ width: 90%;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
 }
 #bodyline section.method p.subtitle{
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
@@ -1603,7 +1621,7 @@ width: 90%;
   line-height: 1.0;
   display: block;
   text-align: center;
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
   font-weight: 600;
   position: relative;
   margin-top: 20px;
@@ -1673,7 +1691,7 @@ width: 90%;
   color: #16A4BD;
 }
 #bodyline section.attention p.subtitle{
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
@@ -1816,7 +1834,7 @@ width: 90%;
   margin-left: 20px;
   font-weight: bold;
   color: #DDA55E;
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
 } 
 #bodyline section.flow a.rese {
   display: block;
@@ -1828,7 +1846,7 @@ width: 90%;
   font-weight: bold;
   color: white;
   text-align: center;
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
   position: relative;
 } 
@@ -1969,7 +1987,7 @@ width: 90%;
     color: #DDA55E;
     font-weight: bold;
     text-align: center;
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     margin-top: 0;
     border: none;
 }
@@ -2010,7 +2028,7 @@ width: 90%;
     max-width: 470px;
 }
 #bodyline section.flow .box-item .blue-box h5.step-title {
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     font-weight: 400;
     color: #353535;
     font-size: 20px;
@@ -2103,7 +2121,7 @@ width: 90%;
   padding-left: 20px;
 }
 #bodyline section.view dl dt.bold{
-      font-family: 'Source Han Serif', sans-serif;
+      font-family: serif;
 }
 #bodyline section.view .flexslider {
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
@@ -2115,7 +2133,7 @@ width: 90%;
   padding: 0;
   font-weight: 700;
   background: none;
-  font-family: 'Source Han Serif', sans-serif;
+  font-family: serif;
   font-size: 20px;
 }
 #bodyline section.view .flexslider  .flex-control-thumbs{
@@ -2479,7 +2497,7 @@ width: 90%;
   #bodyline .banner-text {
     padding: 60px 50px;
     margin-bottom: 80px;
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     background: url(../../img/operations/bodyline/cost-banner.webp) no-repeat center/cover;
   }
   @media screen and (max-width:540px) {

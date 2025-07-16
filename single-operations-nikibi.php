@@ -358,9 +358,9 @@
             <section class="clr lux-about">
                 <div class="container">
                     <h2 id="toc4" class="lineTitle secTi">皮膚に優しい<br class="sp-only">「スターラックスレーザー」とは</h2>
-                    <p class="lux-intro">従来のレーザー治療と比べ、肌へのダメージや痛みを抑えながら、<br />
-                        <span class="bold">高い効果を発揮する最新の医療レーザー機器</span>です。 <br />
-                        皮膚の表面を冷却しながら圧迫照射を行うことで、施術中の快適さと仕上がりの美しさを両立します。
+                    <p class="lux-intro">従来のレーザー治療と比べ、<br class="sp">肌へのダメージや痛みを抑えながら、<br />
+                        <span class="bold">高い効果を発揮する<br class="sp">最新の医療レーザー機器</span>です。 <br /><br class="sp">
+                        皮膚の表面を冷却しながら<br class="sp">圧迫照射を行うことで、<br class="sp">施術中の快適さと<br class="sp">仕上がりの美しさを両立します。
                     </p>
                     <div class="lux-feature">
                         <div class="lux-feature-main">

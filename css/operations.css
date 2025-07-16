@@ -904,7 +904,7 @@ section.head {
     width: 100%;
 }
 #toc_box .toc_title {
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     display: block;
     background: #D0EDF2;
     color: #16A4BD;
@@ -1018,7 +1018,7 @@ section.head {
     }
 }
 #toc_box li a .toc_num{
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     margin-right: 10px;
 }
 #toc_box .toc_list ul li ul{
@@ -1199,6 +1199,7 @@ section#snsreport .item .flex{
 }
 section#snsreport .box.left h3 {
     font-size: 30px;
+    line-height: 1.3;
     margin-bottom: 70px;
 }
 @media screen and (max-width: 540px) {
@@ -1239,7 +1240,7 @@ section#snsreport .box.left ul li::before{
     left: 0px;
     font-weight: bold;
     color: white;
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
 }
 @media screen and (max-width: 540px) {
     section#snsreport .box.left ul li::before{
@@ -1268,7 +1269,7 @@ section#snsreport .box img{
 @media screen and (max-width: 1160px) {
     section#snsreport .box img{
         flex: 1;
-        width: 100%;
+        width: 30%;
     }
 }
 section#snsreport .box .flex div{
@@ -1308,7 +1309,7 @@ section#snsreport .box .flex div a{
     margin: auto;
     margin-top: 20px;
     box-shadow: 4px 5px 0 rgba(0,0,0,.15);
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
 }
 @media screen and (max-width:540px) {
     section#snsreport .box .flex div a{
@@ -1365,9 +1366,10 @@ section#snsreport .box .flex div a::after {
     text-align: left;
     cursor: pointer;
     font-size: 20px;
+    color: #353535;
     margin-bottom: 25px;
     position: relative;
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
 }
 @media screen and (max-width:767px) {
     #operations-faq .faq-question {
@@ -1487,7 +1489,7 @@ section#snsreport .box .flex div a::after {
     text-align: center;
     background: white;
     border: solid 1px #16A4BD;
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     margin: 10px 0 25px;
     position: relative;
   }
@@ -1557,7 +1559,7 @@ section#access {
     padding: 0;
     border: none;
     text-align: left;
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
 }
 @media screen and (max-width:767px) {
     #access .container h2{
@@ -1568,7 +1570,7 @@ section#access {
     margin-bottom: 50px;
     font-weight: bold;
     font-size: 25px;
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
 }
 @media screen and (max-width:1023px) {
     #access .container p.name{
@@ -1671,7 +1673,7 @@ section#greeting .flex div {
     }
 }
 section#greeting .flex div p{
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     font-weight: bold;
     text-align: center;
     font-size: 30px;
@@ -1699,7 +1701,7 @@ section#greeting .flex div p span{
     }
 }
 section#greeting .flex div p.title{
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     font-weight: bold;
     text-align: center;
     font-size: 25px;
@@ -1773,7 +1775,7 @@ section#greeting h3{
     background: #FAF2E8;
     margin-bottom: 40px;
     font-weight: bold;
-    font-family: 'Source Han Serif', sans-serif;
+    font-family: serif;
     border-bottom: solid 2px #DDA55E;
 }
 @media screen and (max-width:767px) {

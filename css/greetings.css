@@ -68,7 +68,7 @@
 /* メディア追記 */
 /* ////////// */
 @font-face {
-        font-family: 'Source Han Serif', sans-serif;
+        font-family: serif;
         src: url('../common/font/SourceHanSerifJP-Regular.otf') format('opentype');
         font-weight: normal;
         font-style: normal;
@@ -100,7 +100,7 @@ display: none;
 
 /* ボタンセクション */
 .sns-button {
-        font-family: 'Source Han Serif', sans-serif;
+        font-family: serif;
         display: flex;
         justify-content: center;
         gap: 30px;
@@ -114,7 +114,7 @@ display: none;
         }
 }
 .media {
-        font-family: 'Source Han Serif', serif;
+        font-family: serif;
 }
 .history .sns-button .btn {
 display: flex;
