@@ -1654,7 +1654,7 @@ dl.caseDescription {
         margin-right: 5px;
     }
     #nikibi #toc_box .toc_list ul li ul li .toc_num.n55 {
-        width: 40px;
+        width: 45px;
     }
     #nikibi #toc_box .toc_list ul li ul li .toc_num.n85 {
         width: 85px;
@@ -2816,6 +2816,7 @@ dl.caseDescription {
 }
 
 #nikibi .lux-feature-table .lineTitle.subTitle {
+    border: none;
     border-bottom: 2px solid #16A4BD;
     font-size: 25px;
     font-weight: bold;
@@ -4375,4 +4376,12 @@ dl.caseDescription {
     #nikibi section.yellow {
         padding: 60px 0;
       }
+    }
+
+    #nikibi #toc_box .toc_list ul li ul li a.toc12 {
+        display: flex;
+        align-items: flex-start;
+    }
+    #nikibi #toc_box .toc_list ul li ul li a.toc12 span{
+        width: 55px;
     }

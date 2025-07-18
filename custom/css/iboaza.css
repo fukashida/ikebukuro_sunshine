@@ -157,7 +157,7 @@
     line-height:1.6;
 }
 #iboaza .iboaza_goodPoints .agreementDLD{
-    display:inline-block;margin:20px 0;
+    display:inline-block;margin:20px 0 0;
 }
 #iboaza .iboaza_steps{
     display:flex;flex-wrap:wrap;justify-content:space-between

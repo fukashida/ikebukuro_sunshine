@@ -95,7 +95,7 @@
 		<div class="container">
 			<p class="pc"><img src="/wp-content/uploads/2021/03/top-1.png" loading="lazy" alt="スターラックス傷跡治療" width="945" height="403"></p>
 			<p class="sp"><img src="https://stg.ike-sunshine.co.jp/wp-content/uploads/2021/03/sp-top-1.png" loading="lazy" alt="スターラックス傷跡治療" width="500" height="213"></p>
-			<div id="toc_box" class="">
+			<div id="toc_box">
 				<p class="toc_title">目次</p>
 				<div class="toc_list">
 					<ul>
@@ -1849,7 +1849,7 @@
         <div class="box">
           <div class="container item">
             <div class="flex">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/operations/laser/laser_insta.webp" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/operations/laser/laser_insta.webp" alt="Instagramの画像">
               <div>
                 <h3 id="toc10-1">Instagram</h3>
                 <p>

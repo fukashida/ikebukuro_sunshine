@@ -24,9 +24,9 @@
 				<ul>
 					<li class="heightAjst"><a href="#toc1">MWデュアル<br>リフトとは</a></li>
 					<li class="heightAjst"><a href="#toc3">料金について</a></li>
-					<li class="heightAjst"><a href="#toc4">症例写真</a></li>
-					<li class="heightAjst"><a href="#toc8">施術の流れ</a></li>
-					<li class="heightAjst"><a href="#toc6">よくある<br>ご質問</a></li>
+					<li class="heightAjst"><a href="#toc2">症例写真</a></li>
+					<li class="heightAjst"><a href="#toc5">施術の流れ</a></li>
+					<li class="heightAjst"><a href="#toc4">よくある<br>ご質問</a></li>
 					<li class="toForm"><a href="/reservation/" target="_blank" rel="noopener noreferrer">カウンセリング<br>申し込み</a></li>
 				</ul>
 			</div>
@@ -69,7 +69,7 @@
 					  <ul>
 						<li><a href="#toc3-1" class="toc_num" data-number="3-1.">料金</a></li>
 						<li><a href="#toc3-2" class="toc_num" data-number="3-2.">治療概要</a></li>
-						<li><a href="#toc3-3" class="toc_num" data-number="3-2.">お支払い方法</a></li>
+						<li><a href="#toc3-3" class="toc_num" data-number="3-3.">お支払い方法</a></li>
 					  </ul>
 					</li>
 					<li>
@@ -289,7 +289,7 @@
 						<div class="swiper-slide">
 								<div class="case-box">
 								<div class="title-underline">
-									<h3>30代女性の症例</h3>
+									<h3 id="toc2-1">30代女性の症例</h3>
 								</div>
 								<img src="<?php echo get_template_directory_uri(); ?>/img/operations/mwlift/before-after1.png" alt="30代女性"  class="pc">
 								<div class="sp">
@@ -317,7 +317,7 @@
 						<div class="swiper-slide">
 								<div class="case-box">
 								<div class="title-underline">
-									<h3>40代男性の症例</h3>
+									<h3 id="toc2-2">40代男性の症例</h3>
 								</div>
 								<img src="<?php echo get_template_directory_uri(); ?>/img/operations/mwlift/before-after2.png" alt="40代男性" class="pc">
 								<div class="sp">
@@ -345,7 +345,7 @@
 						<div class="swiper-slide">
 								<div class="case-box">
 								<div class="title-underline">
-									<h3>70代女性の症例</h3>
+									<h3 id="toc2-3">70代女性の症例</h3>
 								</div>
 								<img src="<?php echo get_template_directory_uri(); ?>/img/operations/mwlift/before-after3.png" alt="70代女性" class="pc">
 								<div class="sp">
@@ -1020,6 +1020,22 @@ document.addEventListener("DOMContentLoaded", function () {
 	prevEl: ".swiper-button-prev",
 	},
   });
+</script>  
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const tocTitle = document.querySelector('.toc_title');
+  const tocList = document.querySelector('.toc_title + .toc_list');
+
+  if (tocTitle.classList.contains('open')) {
+    tocList.style.display = 'block';
+  }
+
+  tocTitle.addEventListener('click', function () {
+    this.classList.toggle('open');
+    tocList.style.display = this.classList.contains('open') ? 'block' : 'none';
+  });
+});
+
 </script>  
   
 

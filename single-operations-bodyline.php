@@ -22,9 +22,9 @@
 			<div class="topNav">
 				<ul>
 					<li class="heightAjst"><a href="#toc3">治療方法</a></li>
-					<li class="heightAjst"><a href="#toc3-4">ご料金</a></li>
-					<li class="heightAjst"><a href="#toc6">症例写真</a></li>
-					<li class="heightAjst"><a href="#toc5">アフターケア</a></li>
+					<li class="heightAjst"><a href="#toc4-2">ご料金</a></li>
+					<li class="heightAjst"><a href="#toc8">症例写真</a></li>
+					<li class="heightAjst"><a href="#toc10">その他施術について</a></li>
 					<li class="heightAjst"><a href="#toc7">よくある質問</a></li>
 					<li class="heightAjst"><a href="#toc8">刺青除去について</a></li>
 					<li class="toForm"><a href="/reservation/" target="_blank" rel="noopener noreferrer">無料<br class="pc">カウンセリング</a></li>
@@ -89,12 +89,12 @@
 									</a>
 								</li>
 								<li>
-									<a href="#toc3-5">
+									<a href="#toc3-2">
 										<span class="toc_num">3-2.</span> 皮膚切除術とは
 									</a>
 								</li>
 								<li>
-									<a href="#toc3-2">
+									<a href="#toc3-3">
 										<span class="toc_num">3-3.</span> 当院の治療が選ばれる理由
 									</a>
 								</li>
@@ -370,7 +370,7 @@
 	</section>
 	<section class="intro yellow">
 		<div class="container">
-			<div class="title-container" id="toc1">
+			<div class="title-container">
 				<div class="decorative-bg">
 					<div class="decorative-bg-inner">
 						<div class="blur-circle-large"></div>
@@ -379,7 +379,7 @@
 					</div>
 				</div>
 				<div class="title-content">
-					<h2 class="main-title">    
+					<h2 class="main-title" id="toc1">    
 						<span class="mini">一度入れてしまった</span><br class="sp">タトゥー・刺青...<br>
 						実は<span class="big">後悔していませんか？</span>
 					</h2>
@@ -1468,135 +1468,135 @@
 				</div>
 				<div class="flexslider flexslider1">
 					<ul class="slides ">
-						<li data-thumb="/wp-content/uploads/2021/03/img_tattoo05_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm1.webp">
+							<div>
 								<h4 class="labelTitle">2回の分割切除</h4>
 								<ul class="mphList">
 									<li>
-										<img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm1.webp" alt="2回の分割切除" loading="lazy" width="485" height="176">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm1.webp" alt="2回の分割切除">
 									</li>
 								</ul>
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/img_tattoo06_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm2.webp">
+							<div>
 								<h4 class="labelTitle">1回の単純切除</h4>
 								<ul class="mphList">
-									<li><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm2.webp" alt="1回の切除" loading="lazy" width="485" height="176">
+									<li><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm2.webp" alt="1回の切除">
 	
 									</li>
 								</ul>
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0101_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm3.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm3.webp" alt="2回の分割切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm3.webp" alt="2回の分割切除"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0102_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm4.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm4.webp" alt="3回の分割切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm4.webp" alt="3回の分割切除"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0103_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm5.webp">
+							<div>
 								<p class="labelTitle">3回の分割切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm5.webp" alt="2回の分割切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm5.webp" alt="2回の分割切除"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0104_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm6.webp">
+							<div>
 								<p class="labelTitle">3回の分割切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm6.webp" alt="3回の分割切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm6.webp" alt="3回の分割切除"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0105_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm7.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm7.webp" alt="3回の分割切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm7.webp" alt="3回の分割切除"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0106_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm8.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm8.webp" alt="3回の分割切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm8.webp" alt="3回の分割切除"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0107_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm9.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm9.webp" alt="2回の分割切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm9.webp" alt="2回の分割切除"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0108_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm10.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm10.webp" alt="2回の分割切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm10.webp" alt="2回の分割切除"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0109_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm11.webp">
+							<div>
 								<p class="labelTitle">3回の分割切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm11.webp" alt="2回の分割切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm11.webp" alt="2回の分割切除"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0110_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm12.webp">
+							<div>
 								<p class="labelTitle">3回の分割切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm12.webp" alt="2回の分割切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm12.webp" alt="2回の分割切除"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0111_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm13.webp">
+							<div>
 								<p class="labelTitle">3回の分割切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm13.webp" alt="3回の分割切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm13.webp" alt="3回の分割切除"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0112_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm14.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm14.webp" alt="3回の分割切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm14.webp" alt="3回の分割切除"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0113_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm15.webp">
+							<div>
 								<p class="labelTitle">3回の分割切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm15.webp" alt="2回の分割切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm15.webp" alt="2回の分割切除"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0114_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm16.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm16.webp" alt="2回の分割切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm16.webp" alt="2回の分割切除"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/im_case0115_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm17.webp">
+							<div>
 								<p class="labelTitle">1回の単純切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm17.webp" alt="1回の分割切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm17.webp" alt="1回の分割切除"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0116_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm18.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm18.webp" alt="2回の分割切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/upperarm18.webp" alt="2回の分割切除"></p>
 	
 							</div>
 						</li>
@@ -1619,86 +1619,86 @@
 				</dl>
 				<div class="flexslider flexslider2">
 					<ul class="slides ">
-						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/img_tattoo11_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm1.webp">
+							<div>
 								<h4 class="labelTitle">2回の分割切除で完了</h4>
 								<ul class="mphList">
-									<li><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm1.webp" alt="2回の分割切除で完了" loading="lazy" width="485" height="176">
+									<li><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm1.webp" alt="2回の分割切除で完了">
 	
 									</li>
 								</ul>
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/img_tattoo12_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm2.webp">
+							<div>
 								<h4 class="labelTitle">1回の切除で完了</h4>
 								<ul class="mphList">
-									<li><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm2.webp" alt="1回の切除で完了" loading="lazy" width="485" height="176">
+									<li><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm2.webp" alt="1回の切除で完了">
 	
 									</li>
 								</ul>
 							</div>
 						</li>
-						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/im_case0401_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm3.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm3.webp" alt="2回の分割切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm3.webp" alt="2回の分割切除で完了"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0402_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm4.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm4.webp" alt="2回の分割切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm4.webp" alt="2回の分割切除で完了"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0403_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm5.webp">
+							<div>
 								<p class="labelTitle">1回の切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm5.webp" alt="1回の切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm5.webp" alt="1回の切除で完了"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0404_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm6.webp">
+							<div>
 								<p class="labelTitle">3回の分割切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm6.webp" alt="3回の分割切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm6.webp" alt="3回の分割切除で完了"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0405_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm7.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm7.webp" alt="3回の分割切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm7.webp" alt="3回の分割切除で完了"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0406_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm8.webp">
+							<div>
 								<p class="labelTitle">1回の切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm8.webp" alt="1回の切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm8.webp" alt="1回の切除で完了"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0407_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm9.webp">
+							<div>
 								<p class="labelTitle">1回の切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm9.webp" alt="1回の切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm9.webp" alt="1回の切除で完了"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0408_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm10.webp">
+							<div>
 								<p class="labelTitle">1回の切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm10.webp" alt="1回の切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm10.webp" alt="1回の切除で完了"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0409_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm11.webp">
+							<div>
 								<p class="labelTitle">1回の切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm11.webp" alt="1回の切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/forearm11.webp" alt="1回の切除で完了"></p>
 							</div>
 						</li>
 					</ul>
@@ -1721,44 +1721,44 @@
 				</dl>
 				<div class="flexslider flexslider3">
 					<ul class="slides ">
-						<li data-thumb="/wp-content/uploads/2021/03/img_tattoo13_thumb.jpg" loading="lazy" width="485" height="176">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/hand1.webp">
+							<div>
 								<h4 class="labelTitle">1回の切除で完了</h4>
 								<ul class="mphList">
-									<li><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/hand1.webp" alt="1回の切除で完了" loading="lazy" width="485" height="176">
+									<li><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/hand1.webp" alt="1回の切除で完了">
 	
 									</li>
 								</ul>
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/img_tattoo14_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/hand2.webp">
+							<div>
 								<h4 class="labelTitle">1回の切除で完了</h4>
 								<ul class="mphList">
-									<li><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/hand2.webp" alt="1回の切除で完了" loading="lazy" width="485" height="176">
+									<li><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/hand2.webp" alt="1回の切除で完了">
 	
 									</li>
 								</ul>
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0501_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/hand3.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/hand3.webp" alt="2回の分割切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/hand3.webp" alt="2回の分割切除で完了"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0502_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/hand4.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除予定</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/hand4.webp" alt="2回の分割切除予定" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/hand4.webp" alt="2回の分割切除予定"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0503_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/hand5.webp">
+							<div>
 								<p class="labelTitle">1回の切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/hand5.webp" alt="1回の切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/hand5.webp" alt="1回の切除"></p>
 	
 							</div>
 						</li>
@@ -1782,100 +1782,100 @@
 				</dl>
 				<div class="flexslider flexslider4">
 					<ul class="slides ">
-						<li data-thumb="/wp-content/uploads/2021/03/img_tattoo15_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest1.webp">
+							<div>
 								<h4 class="labelTitle">2回の分割切除で完了</h4>
 								<ul class="mphList">
-									<li><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest1.webp" alt="2回の分割切除で完了" loading="lazy" width="485" height="176">
+									<li><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest1.webp" alt="2回の分割切除で完了">
 	
 									</li>
 								</ul>
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/img_tattoo16_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest2.webp">
+							<div>
 								<h4 class="labelTitle">2回の分割切除で完了</h4>
 								<ul class="mphList">
-									<li><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest2.webp" alt="2回の切除で完了" loading="lazy" width="485" height="176">
+									<li><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest2.webp" alt="2回の切除で完了">
 	
 									</li>
 								</ul>
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0702_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest3.webp">
+							<div>
 								<p class="labelTitle">2回の分割予定　1回目の手術後</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest3.webp" alt="2回の分割予定　1回目の手術後" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest3.webp" alt="2回の分割予定　1回目の手術後"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0602_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest4.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest4.webp" alt="2回の分割切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest4.webp" alt="2回の分割切除で完了"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0603_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest5.webp">
+							<div>
 								<p class="labelTitle">3回の分割切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest5.webp" alt="3回の分割切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest5.webp" alt="3回の分割切除で完了"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0604_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest6.webp">
+							<div>
 								<p class="labelTitle">2回の分割予定</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest6.webp" alt="2回の分割予定" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest6.webp" alt="2回の分割予定"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/im_case0605_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest7.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest7.webp" alt="2回の分割切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest7.webp" alt="2回の分割切除"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0606_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest8.webp">
+							<div>
 								<p class="labelTitle">1回の切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest8.webp" alt="1回の切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest8.webp" alt="1回の切除"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0607_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest9.webp">
+							<div>
 								<p class="labelTitle">1回の切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest9.webp" alt="1回の切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest9.webp" alt="1回の切除"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0608_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest10.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest10.webp" alt="2回の分割切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest10.webp" alt="2回の分割切除"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0609_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest11.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest11.webp" alt="2回の分割切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest11.webp" alt="2回の分割切除"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0610_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest12.webp">
+							<div>
 								<p class="labelTitle">1回の切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest12.webp" alt="1回の切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest12.webp" alt="1回の切除"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0611_thumb.jpg" >
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest13.webp" >
+							<div>
 								<p class="labelTitle">1回の切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest13.webp" alt="1回の切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/chest13.webp" alt="1回の切除"></p>
 	
 							</div>
 						</li>
@@ -1897,72 +1897,72 @@
 				</dl>
 				<div class="flexslider flexslider5">
 					<ul class="slides ">
-						<li data-thumb="/wp-content/uploads/2021/03/img_tattoo09_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen1.webp">
+							<div>
 								<h4 class="labelTitle">2回の分割切除</h4>
 								<ul class="mphList">
-									<li><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen1.webp" alt="2回の分割切除" loading="lazy" width="485" height="176">
+									<li><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen1.webp" alt="2回の分割切除">
 	
 									</li>
 								</ul>
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/img_tattoo10_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen2.webp">
+							<div>
 								<h4 class="labelTitle">2回の分割切除</h4>
 								<ul class="mphList">
-									<li><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen2.webp" alt="2回の分割切除" loading="lazy" width="485" height="176">
+									<li><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen2.webp" alt="2回の分割切除">
 	
 									</li>
 								</ul>
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0301_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen3.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen3.webp" alt="2回の分割切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen3.webp" alt="2回の分割切除"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0302_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen4.webp">
+							<div>
 								<p class="labelTitle">3回の分割予定</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen4.webp" alt="3回の分割予定" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen4.webp" alt="3回の分割予定"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0303_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen5.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen5.webp" alt="2回の分割切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen5.webp" alt="2回の分割切除"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0304_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen6.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen6.webp" alt="2回の分割切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen6.webp" alt="2回の分割切除"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0305_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen7.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除予定</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen7.webp" alt="2回の分割切除予定" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen7.webp" alt="2回の分割切除予定"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0306_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen8.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除予定</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen8.webp" alt="2回の分割切除予定" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen8.webp" alt="2回の分割切除予定"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0307_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen9.webp">
+							<div>
 								<p class="labelTitle">1回の切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen9.webp" alt="1回の切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/abdomen9.webp" alt="1回の切除"></p>
 	
 							</div>
 						</li>
@@ -1984,114 +1984,114 @@
 				</dl>
 				<div class="flexslider flexslider6">
 					<ul class="slides ">
-						<li data-thumb="/wp-content/uploads/2021/03/img_tattoo07_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto1.webp">
+							<div>
 								<h4 class="labelTitle">4回の分割切除で完了</h4>
 								<ul class="mphList">
-									<li><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto1.webp" alt="4回の分割切除で完了" loading="lazy" width="485" height="176">
+									<li><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto1.webp" alt="4回の分割切除で完了">
 	
 									</li>
 								</ul>
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/img_tattoo08_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto2.webp">
+							<div>
 								<h4 class="labelTitle">4回の分割切除で完了</h4>
 								<ul class="mphList">
-									<li><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto2.webp" alt="4回の分割切除で完了" loading="lazy" width="485" height="176">
+									<li><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto2.webp" alt="4回の分割切除で完了">
 	
 									</li>
 								</ul>
 							</div>
 						</li>
-						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/im_case0201_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto3.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto3.webp" alt="2回の分割切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto3.webp" alt="2回の分割切除で完了"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0202_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto4.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto4.webp" alt="2回の分割切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto4.webp" alt="2回の分割切除で完了"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0203_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto5.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto5.webp" alt="2回の分割切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto5.webp" alt="2回の分割切除で完了"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0204_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto6.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto6.webp" alt="2回の分割切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto6.webp" alt="2回の分割切除で完了"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0205_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto7.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto7.webp" alt="2回の分割切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto7.webp" alt="2回の分割切除で完了"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0206_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto8.webp">
+							<div>
 								<p class="labelTitle">4回の分割切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto8.webp" alt="4回の分割切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto8.webp" alt="4回の分割切除で完了"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0207_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto9.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto9.webp" alt="2回の分割切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto9.webp" alt="2回の分割切除で完了"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0208_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto10.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto10.webp" alt="2回の分割切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto10.webp" alt="2回の分割切除で完了"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0209_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto11.webp">
+							<div>
 								<p class="labelTitle">4回の分割切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto11.webp" alt="4回の分割切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto11.webp" alt="4回の分割切除で完了"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0210_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto12.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto12.webp" alt="2回の分割切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto12.webp" alt="2回の分割切除で完了"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0211_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto13.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto13.webp" alt="2回の分割切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto13.webp" alt="2回の分割切除で完了"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0212_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto14.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto14.webp" alt="2回の分割切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto14.webp" alt="2回の分割切除で完了"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0213_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto15.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除で完了</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto15.webp" alt="2回の分割切除で完了" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/backtatto15.webp" alt="2回の分割切除で完了"></p>
 	
 							</div>
 						</li>
@@ -2119,41 +2119,41 @@
 				</dl>
 				<div class="flexslider flexslider7">
 					<ul class="slides ">
-						<li data-thumb="/wp-content/uploads/2021/03/img_tattoo18_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/legs1.webp">
+							<div>
 								<h4 class="labelTitle">2回の分割切除</h4>
 								<ul class="mphList">
-									<li><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/legs1.webp" alt="2回の分割切除" loading="lazy" width="485" height="176">
+									<li><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/legs1.webp" alt="2回の分割切除">
 	
 									</li>
 								</ul>
 							</div>
 						</li>
-						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/im_case0701_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/legs2.webp">
+							<div>
 								<p class="labelTitle">※足の部分のみの除去をご希望</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/legs2.webp" alt="足の部分のみの除去をご希望" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/legs2.webp" alt="足の部分のみの除去をご希望"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0702_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/legs3.webp">
+							<div>
 								<p class="labelTitle">2回の分割予定　1回目の手術後</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/legs3.webp" alt="2回の分割予定　1回目の手術後" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/legs3.webp" alt="2回の分割予定　1回目の手術後"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0703_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/legs4.webp">
+							<div>
 								<p class="labelTitle">2回の分割予定　1回目の手術後</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/legs4.webp" alt="2回の分割予定　1回目の手術後" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/legs4.webp" alt="2回の分割予定　1回目の手術後"></p>
 	
 							</div>
 						</li>
-						<li data-thumb="/wp-content/uploads/2021/03/im_case0704_thumb.jpg">
-							<div class="">
+						<li data-thumb="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/legs5.webp">
+							<div>
 								<p class="labelTitle">2回の分割切除</p>
-								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/legs5.webp" alt="2回の分割切除" loading="lazy" width="485" height="176"></p>
+								<p class="textC"><img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/legs5.webp" alt="2回の分割切除"></p>
 	
 							</div>
 						</li>
@@ -2162,8 +2162,8 @@
 			</div>
 			<a href="/reservation/">
 				<picture>
-				<img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/common/img/banner.webp" alt="banner" width="1830" height="366" class="aligncenter size-full wp-image-341 pc" data-eio="p">
-				<img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/common/img/banner_sp.webp" alt="banner" width="1830" height="366" class="aligncenter size-full wp-image-341 sp" data-eio="p">
+				<img src="<?php echo get_template_directory_uri(); ?>/common/img/banner.webp" alt="banner" width="1830" height="366" class="aligncenter size-full wp-image-341 pc" data-eio="p">
+				<img src="<?php echo get_template_directory_uri(); ?>/common/img/banner_sp.webp" alt="banner" width="1830" height="366" class="aligncenter size-full wp-image-341 sp" data-eio="p">
 				</picture>
 			</a>
 		</div>
@@ -2406,7 +2406,7 @@
         <div class="box">
           <div class="container item">
             <div class="flex">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/bodyline_insta.webp" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/operations/bodyline/bodyline_insta.webp" alt="Instagramの画像">
               <div>
                 <h3 id="toc12-1">Instagram</h3>
                 <p>
@@ -2492,5 +2492,42 @@
     });
   });
 </script>
+
+<!-- スライドの遅延解除 -->
+<script>
+function getGridSize() {
+  return 1; // すべてのデバイスで1枚
+}
+const sliders = document.querySelectorAll('.flexslider');
+const observer = new IntersectionObserver((entries, obs) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      $(entry.target).flexslider({
+        animation: "slide",
+        controlNav: false, // ドット非表示
+        directionNav: true,
+        itemWidth: 270,
+        itemMargin: 10,
+        minItems: getGridSize(),
+        maxItems: getGridSize(),
+        move: 1
+      });
+      obs.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+sliders.forEach(slider => observer.observe(slider));
+
+window.addEventListener('resize', function () {
+  // リサイズ時に枚数を調整する
+  $('.flexslider').each(function () {
+    $(this).data('flexslider').vars.minItems = getGridSize();
+    $(this).data('flexslider').vars.maxItems = getGridSize();
+  });
+});
+</script>
+
+
 
 <?php get_footer(); ?>

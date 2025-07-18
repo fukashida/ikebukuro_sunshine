@@ -16,11 +16,11 @@ $('.q').on('click', function() {//タイトル要素をクリックしたら
 // リストカット・beforeafterのflexslider
 $(document).ready(function(){
 
-    function isTablet() {
-        return $(window).width() <= 1023;
-    }
     function isMobile() {
         return $(window).width() <= 540;
+    }
+    function isTablet() {
+        return $(window).width() <= 1023;
     }
 
   function initializeFlexSlider() {
@@ -65,7 +65,7 @@ $(document).ready(function(){
     } else {
       // PCの場合（元の設定）
       settings.itemWidth = 200;
-      settings.itemMargin = 30;
+      settings.itemMargin = 5;
       settings.minItems = 5;
       settings.maxItems = 5;
     }

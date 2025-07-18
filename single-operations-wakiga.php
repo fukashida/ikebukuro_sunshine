@@ -152,7 +152,7 @@
 			<ul>
 				<li class="heightAjst"><a href="#toc1">ワキガとは</a></li>
 				<li class="heightAjst"><a href="#toc2-2">ご料金</a></li>
-				<li class="heightAjst"><a href="#toc4">ワキガ手術詳細</a></li>
+				<li class="heightAjst"><a href="#toc5">ワキガ手術詳細</a></li>
 				<li class="heightAjst"><a href="/operations/hyperhidrosis/">多汗症治療</a></li>
 				<li class="heightAjst"><a href="#toc7">よくある質問</a></li>
 				<li class="toForm"><a href="/reservation/" target="_blank" rel="noopener noreferrer">カウンセリング<br>申し込み</a></li>
@@ -280,7 +280,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#toc5-4">
+								<a href="#toc5-5">
 									<span class="toc_num">5－3</span>05.&nbsp;経過観察
 								</a>
 							</li>
