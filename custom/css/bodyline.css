@@ -2184,6 +2184,12 @@ width: 90%;
       padding: 15px;
   }
 }
+@media screen and (max-width:540px) {
+    #bodyline section.view .flexslider ul.flex-direction-nav li.flex-nav-prev a.flex-prev,
+    #bodyline section.view .flexslider ul.flex-direction-nav li.flex-nav-next a.flex-next{
+      top: 65%;
+    }
+}
 
 /* faq */
 #bodyline section.faq h3{
@@ -2594,7 +2600,7 @@ width: 90%;
       width: 80%;
     }
     #bodyline .title {
-      font-size: 25px;
+      font-size: 22.5px;
     }
     #bodyline .sub-title {
       font-size: 25px;

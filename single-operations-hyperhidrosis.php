@@ -30,9 +30,9 @@
 				<ul>
 					<li class="heightAjst"><a href="#toc1">多汗症とは</a></li>
 					<li class="heightAjst"><a href="#toc2-2">ご料金</a></li>
-					<li class=""><a href="#toc2">発汗抑制<br>注射とは</a></li>
+					<li><a href="#toc2">発汗抑制<br>注射とは</a></li>
 					<li class="heightAjst"><a href="/operations/wakiga/">保険適用手術</a></li>
-					<li class=""><a href="#toc5">その他の<br>多汗症治療法</a></li>
+					<li><a href="#toc5">その他の<br>多汗症治療法</a></li>
 					<li class="toForm"><a href="/reservation/" target="_blank" rel="noopener noreferrer">カウンセリング<br>申し込み</a></li>
 				</ul>
 			</div>
@@ -580,8 +580,8 @@
 			<div class="flow">
 				<div class="speech-box">
 					<div class="pc-flex">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/operations/hyperhidrosis/consultation.png" alt="" class="flow-img pc">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/operations/hyperhidrosis/consultation-sp.png" alt="" class="flow-img sp">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/operations/hyperhidrosis/consultation.png" alt="診察・治療説明" class="flow-img pc">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/operations/hyperhidrosis/consultation-sp.png" alt="診察・治療説明" class="flow-img sp">
 						<div>
 							<div class="title-underline">
 								<h3 id="toc4-1">1.&nbsp;診察・治療説明</h3>
@@ -595,8 +595,8 @@
 			<div class="flow">
 				<div class="speech-box">
 					<div class="pc-flex">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/operations/hyperhidrosis/first-treatment.png" alt="" class="flow-img pc">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/operations/hyperhidrosis/first-treatment-sp.png" alt="" class="flow-img sp">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/operations/hyperhidrosis/first-treatment.png" alt="初回治療" class="flow-img pc">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/operations/hyperhidrosis/first-treatment-sp.png" alt="初回治療" class="flow-img sp">
 						<div>
 							<div class="title-underline">
 								<h3 id="toc4-2">2.&nbsp;初回治療</h3>
@@ -610,8 +610,8 @@
 			<div class="flow">
 				<div class="speech-box">
 					<div class="pc-flex">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/operations/hyperhidrosis/calendar.png" alt="" class="flow-img pc">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/operations/hyperhidrosis/calendar-sp.png" alt="" class="flow-img sp">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/operations/hyperhidrosis/calendar.png" alt="アフターケア・治療後の通院" class="flow-img pc">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/operations/hyperhidrosis/calendar-sp.png" alt="アフターケア・治療後の通院" class="flow-img sp">
 						<div>
 							<div class="title-underline">
 								<h3 id="toc4-3">3.&nbsp;アフターケア・治療後の通院</h3>

@@ -110,10 +110,10 @@
         <div class="topNav">
           <ul>
             <li><a href="#toc1">ホクロ・イボ・アザ<br>のお悩み</a></li>
-            <li class="heightAjst"><a href="#toc1-3">治療メリット</a></li>
+            <li class="heightAjst"><a href="#toc2">治療メリット</a></li>
             <li class="heightAjst"><a href="/operations/iboaza#hokuro07">皮膚切除術</a></li>
-            <li class="heightAjst"><a href="#toc4">症例写真</a></li>
-            <li class="heightAjst"><a href="#toc5">よくある質問</a></li>
+            <li class="heightAjst"><a href="#toc7">症例写真</a></li>
+            <li class="heightAjst"><a href="#toc8">よくある質問</a></li>
             <li class="toForm"><a href="/reservation/" target="_blank" rel="noopener noreferrer">カウンセリング<br>申し込み</a></li>
           </ul>
         </div>

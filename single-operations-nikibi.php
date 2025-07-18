@@ -33,7 +33,7 @@
 
             <section class="table-of-contents">
                 <div class="container">
-                <div id="toc_box" class="">
+                <div id="toc_box">
 				<p class="toc_title">目次</p>
 				<div class="toc_list">
 					<ul>
@@ -119,9 +119,9 @@
 								<span class="toc_num">9.</span> ご予約から治療までの全体のながれ
 							</a>
               <ul>
-								<li><a href="#toc9-1"><span class="toc_num">8-1.</span> 1. 予約のお申込み</a></li>
-								<li><a href="#toc9-2"><span class="toc_num">8-2.</span> 2. カウンセリング</a></li>
-								<li><a href="#toc9-3"><span class="toc_num">8-3.</span> 3. 施術</a></li>
+								<li><a href="#toc9-1"><span class="toc_num">9-1.</span> 1. 予約のお申込み</a></li>
+								<li><a href="#toc9-2"><span class="toc_num">9-2.</span> 2. カウンセリング</a></li>
+								<li><a href="#toc9-3"><span class="toc_num">9-3.</span> 3. 施術</a></li>
 							</ul>
 						</li>
 						<li>
@@ -588,7 +588,7 @@
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/operations/nikibi/case01-before02.png"
                                         alt="男性 両頬の治療前" class="pc-only">
                                 </div>
-                                <p class="arrow pc-only">▶</p>
+                                <p class="arrow pc-only">▶︎</p>
                                 <p class="arrow sp-only">▼</p>
                                 <div class="case-after">
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/operations/nikibi/case01-after.png"
@@ -614,7 +614,7 @@
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/operations/nikibi/case02-before.png"
                                         alt="男性 両頬とこめかみ治療前">
                                 </div>
-                                <p class="arrow pc-only">▶</p>
+                                <p class="arrow pc-only">▶︎</p>
                                 <p class="arrow sp-only">▼</p>
                                 <div class="case-after">
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/operations/nikibi/case02-after.png"
@@ -640,7 +640,7 @@
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/operations/nikibi/case03-before.png"
                                         alt="女性 両頬の治療前">
                                 </div>
-                                <p class="arrow pc-only">▶</p>
+                                <p class="arrow pc-only">▶︎</p>
                                 <p class="arrow sp-only">▼</p>
                                 <div class="case-after">
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/operations/nikibi/case03-after.png"
@@ -666,7 +666,7 @@
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/operations/nikibi/case04-before.png"
                                         alt="女性 両頬のニキビ跡治療治療前">
                                 </div>
-                                <p class="arrow pc-only">▶</p>
+                                <p class="arrow pc-only">▶︎</p>
                                 <p class="arrow sp-only">▼</p>
                                 <div class="case-after">
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/operations/nikibi/case04-after.png"
@@ -692,7 +692,7 @@
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/operations/nikibi/case05-before.png"
                                         alt="女性 両頬のニキビ跡治療治療前">
                                 </div>
-                                <p class="arrow pc-only">▶</p>
+                                <p class="arrow pc-only">▶︎</p>
                                 <p class="arrow sp-only">▼</p>
                                 <div class="case-after">
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/operations/nikibi/case05-after.png"
@@ -718,7 +718,7 @@
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/operations/nikibi/case06-before.png"
                                         alt="男性 両頬のニキビ跡治療前">
                                 </div>
-                                <p class="arrow pc-only">▶</p>
+                                <p class="arrow pc-only">▶︎</p>
                                 <p class="arrow sp-only">▼</p>
                                 <div class="case-after">
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/operations/nikibi/case06-after.png"
@@ -744,7 +744,7 @@
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/operations/nikibi/case07-before.png"
                                         alt="女性 あご・口周りのニキビ跡治療症例前">
                                 </div>
-                                <p class="arrow pc-only">▶</p>
+                                <p class="arrow pc-only">▶︎</p>
                                 <p class="arrow sp-only">▼</p>
                                 <div class="case-after">
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/operations/nikibi/case07-after.png"
@@ -770,7 +770,7 @@
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/operations/nikibi/case08-before.png"
                                         alt="女性 両頬のニキビ跡治療前">
                                 </div>
-                                <p class="arrow pc-only">▶</p>
+                                <p class="arrow pc-only">▶︎</p>
                                 <p class="arrow sp-only">▼</p>
                                 <div class="case-after">
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/operations/nikibi/case08-after.png"

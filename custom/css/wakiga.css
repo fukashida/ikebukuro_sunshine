@@ -535,7 +535,12 @@
     height: 30px;
   }
   #wakiga .mini-title{
-    font-size: 25px;
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 540px){
+  #wakiga .mini-sub-title{
+    font-size: 20px;
   }
 }
 
@@ -1064,6 +1069,9 @@
   }
   #wakiga .surgery .surgery-flow img{
     max-width: 70vw; margin: 0 auto 35px;
+  }
+  #wakiga .surgery .title{
+    font-size: 18px;
   }
 }
 @media only screen and (max-width: 321px){

@@ -125,7 +125,7 @@
                     <h4><strong>該当箇所が小さい方</strong></h4>
                     <p class="point">レーザー治療</p>
                     <p>保険1個　<strong>8,000円～10,000円</strong></p>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/operations/skincare/hokuro_laser.webp" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/operations/skincare/hokuro_laser.webp" alt="レーザー治療">
                   </div>
                   <a href="/operations/skincare#toc3">レーザー治療はこちら</a>
                 </div>
@@ -134,7 +134,7 @@
                     <h4><strong>該当箇所が1cm以上の方</strong></h4>
                     <p class="point">皮膚切除術<span>（再発の心配不要！）</span></p>
                     <p>保険1個　<strong>15,000円～20,000円</strong></p>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/operations/skincare/hokuro_excision.webp" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/operations/skincare/hokuro_excision.webp" alt="皮膚切除術">
                   </div>
                   <a href="#toc4">皮膚切除術はこちら</a>
                 </div>
@@ -813,7 +813,7 @@
           </div>
           <div class="box-item">
             <div class="sub-container">
-				<h3 id="toc6-2"><strong>皮膚の下にある腫瘍(母斑・皮下腫瘍の除去例)</strong></h3>
+				<h3 id="toc6-2"><strong>皮膚の下にある腫瘍<br class="sp">(母斑・皮下腫瘍の除去例)</strong></h3>
 				<img src="<?php echo get_template_directory_uri(); ?>/img/operations/iboaza/bfaf02.webp" alt="皮膚の下にある腫瘍(母斑・皮下腫瘍の除去例)の写真">
 				<table>
 					<tr>
@@ -1080,7 +1080,7 @@
         <div class="box">
           <div class="container item">
             <div class="flex">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/operations/skincare/skincare_insta.webp" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/operations/skincare/skincare_insta.webp" alt="Instagramの画像">
               <div>
                 <h3 id="toc10-1">Instagram</h3>
                 <p>
